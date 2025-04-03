@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.raleway {
+  font-family: "Raleway", sans-serif;
+}
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-family: "Raleway", sans-serif;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@layer utilities {
+  .raleway {
+    font-family: "Raleway", sans-serif;
+  }
+  .montserrat {
+    font-family: "Montserrat", sans-serif;
+  }
+  body {
+    font-family: "Montserrat", sans-serif;
+  }
+  .max-width {
+    max-width: 1280px;
+    margin: 0 auto !important;
+    width: 100%;
+    @media (width <= 768px) {
+      max-width: 100%;
+      padding: 0 1rem;
+    }
+  }
+
+  .max_screen {
+    max-width: 1600px !important;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .xLargeHeading {
+    font-size: 4rem;
+    line-height: normal;
+
+    @media (width < 640px) {
+      font-size: 2rem;
+      line-height: normal;
+    }
+  }
+
+  .largeHeading {
+    font-size: 3.3125rem;
+    line-height: normal;
+
+    @media (width < 640px) {
+      font-size: 1.75rem;
+      line-height: normal;
+    }
+  }
+
+  .mediumHeading {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    @media (width < 640px) {
+      font-size: 1.625rem;
+      line-height: 2rem;
+    }
+  }
+
+  .heading {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    @media (width < 640px) {
+      font-size: 1.375rem;
+      line-height: 1.5rem;
+    }
+  }
+
+  .heading1 {
+    font-size: 1.75rem;
+    // line-height: normal;
+
+    @media (width < 640px) {
+      font-size: 1.25rem;
+      // line-height: normal;
+    }
+  }
+
+  .heading2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+
+    @media (width < 640px) {
+      font-size: 1.125rem;
+      line-height: 1.5rem;
+    }
+  }
+
+  .heading3 {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    @media (width < 640px) {
+      font-size: 1rem;
+      // line-height: normal;
+    }
+  }
+
+  .heading4 {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    @media (width < 640px) {
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+    }
+  }
+
+  .description1 {
+    font-size: 1rem;
+    // line-height: normal;
+
+    @media (width < 640px) {
+      font-size: 0.75rem;
+      // line-height: normal;
+    }
+  }
+
+  .description2 {
+    font-size: 0.875rem;
+    // line-height: normal;
+
+    @media (width < 640px) {
+      font-size: 0.625rem;
+      // line-height: normal;
+    }
+  }
+
+  .description3 {
+    font-size: 0.75rem;
+    // line-height: normal;
+
+    @media (width < 640px) {
+      font-size: 0.5rem;
+      // line-height: normal;
+    }
+  }
+
+  .box-shadow {
+    box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px) translateX(-5px);
+    &:active {
+      box-shadow: none;
+      transform: translateY(0) translateX(0);
+    }
+  }
+
+  .box-shadow2 {
+    background: #fff;
+    box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
+  }
+}

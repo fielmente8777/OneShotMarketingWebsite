@@ -1,8 +1,11 @@
 import {
   Beauty,
+  CallIcon,
   Clothing,
   Hotel,
   Immigration,
+  LocationOnIcon,
+  MailIcon,
   PerformanceMarketing,
   Restaurant,
   SearchEngineOptimization,
@@ -17,7 +20,7 @@ export const homePageData = {
     subTitle: "One Shot Marketing",
     description:
       "Unlock your brand’s potential with digital strategies that deliver results.",
-    src: "",
+    src: imagesLink + "bnr1.webp",
     images: [""],
   },
   trustedTopBrands: {
@@ -183,7 +186,9 @@ export const homePageData = {
   featuredClient: {
     title: "FEATURED CLIENT WORK",
     subTitle: `<b>Highlighting</b> Impactful Projects that Delivered <b>success.</b>`,
-    desc: ["At One Shot Marketing, we take pride in delivering tailored digital marketing solutions that make a difference."],
+    desc: [
+      "At One Shot Marketing, we take pride in delivering tailored digital marketing solutions that make a difference.",
+    ],
     src: imagesLink + "im2.webp",
     images: [""],
     links: [
@@ -195,13 +200,420 @@ export const homePageData = {
   },
   contactUs: {
     title: "Contact Us",
-    subTitle: `<strong>Let's Talk!</strong> We'd love to hear from you.`,
-    desc: "",
-    ref: "",
+    subTitle: `<b>Connect</b> with an <b>Expert Today!</b>`,
+    desc: [
+      "Got questions or ready to get started? We're here to help! Fill out the form, and one of our experts will get in touch with you promptly.",
+      `<b>Prefer to speak directly? Call us at <a href="tel:+14388554446">+1 438 855-4446</a></b>`,
+    ],
     testimonial: [
       {
-        name: "",
-        desc: "",
+        name: "IK Bar",
+        desc: "One Shot Marketing’s digital marketing services, encompassing website development and social media management, were exceptional. They seamlessly integrated our brand identity into the website design and crafted engaging content for our social media channels.",
+        rating: 5,
+      },
+      {
+        name: "IK Bar",
+        desc: "One Shot Marketing’s digital marketing services, encompassing website development and social media management, were exceptional. They seamlessly integrated our brand identity into the website design and crafted engaging content for our social media channels.",
+        rating: 5,
+      },
+      {
+        name: "IK Bar",
+        desc: "One Shot Marketing’s digital marketing services, encompassing website development and social media management, were exceptional. They seamlessly integrated our brand identity into the website design and crafted engaging content for our social media channels.",
+        rating: 5,
+      },
+    ],
+  },
+};
+
+export const AboutUsPageData = {
+  bannnerData: {
+    title: "ABOUT US",
+    subTitle: "One Shot Marketing",
+    description:
+      "Unlock your brand’s potential with digital strategies that deliver results.",
+    src: imagesLink + "bnr2.webp",
+    images: [""],
+  },
+  featuredIn: {
+    title: "Featured In",
+    images: [
+      {
+        src: imagesLink + "inc.webp",
+        alt: "inc",
+      },
+      {
+        src: imagesLink + "meta.webp",
+        alt: "meta",
+      },
+      {
+        src: imagesLink + "micro.webp",
+        alt: "microsoft",
+      },
+      {
+        src: imagesLink + "amazon.webp",
+        alt: "amazon",
+      },
+      {
+        src: imagesLink + "google.webp",
+        alt: "google",
+      },
+    ],
+  },
+  aboutUs: {
+    title: "ABOUT US",
+    subTitle: `<b>Transforming</b> Brands through Expert Digital <b>Marketing.</b>`,
+    desc: [
+      "One Shot Marketing delivers results-driven digital marketing solutions to elevate your brand. Specializing in SEO, performance marketing, social media management, and content creation, we craft tailored strategies that drive measurable growth and maximize ROI.",
+      "With a focus on data-driven insights and innovative tactics, we continuously optimize your online presence to boost traffic, engagement, and conversions. Our customer-centric approach ensures long-term success in the ever-evolving digital landscape.",
+    ],
+    src: imagesLink + "logoimg.webp",
+    images: [""],
+    links: [
+      {
+        name: "Contact Us",
+        href: "/contact-us",
+      },
+    ],
+  },
+  whyChooseUs: {
+    title: "WHY CHOOSE US?",
+    subTitle: `<b>Expert Strategies,</b> Proven Results, and <b>Dedication</b> to Your <b> Brand’s Success!</b>`,
+    desc: [
+      "One Shot Marketing is a trusted name in the digital marketing industry. No more dealing with poor communication, unclear reports, or limited services.",
+      "One Shot Marketing is flexible and adaptable. Whether you’re a small startup or an established enterprise, we tailor strategies to fit your unique business needs. We’ll craft a customized marketing plan that aligns perfectly with your goals, no matter the industry.",
+    ],
+    src: imagesLink + "im6.webp",
+    images: [""],
+    links: [
+      {
+        name: "Get a FREE quote!",
+        href: "",
+      },
+    ],
+  },
+  mileStones: [
+    {
+      number: "350+",
+      title: "Happy Clients",
+      desc: "We take pride in helping clients achieve goals, build partnerships, and deliver exceptional, lasting results.",
+    },
+    {
+      number: "8+",
+      title: "Years of Experience",
+      desc: "Driving growth through innovative digital marketing strategies, delivering measurable results that elevate your brand.",
+    },
+    {
+      number: "300+",
+      title: "Websites Designed",
+      desc: "Our expertise and innovation have earned industry awards, showcasing our commitment to delivering outstanding digital solutions.",
+    },
+  ],
+  contactUs: {
+    title: "Contact Us",
+    subTitle: `<b>Connect</b> with an <b>Expert Today!</b>`,
+    desc: [
+      "Got questions or ready to get started? We're here to help! Fill out the form, and one of our experts will get in touch with you promptly.",
+      `<b>Prefer to speak directly? Call us at <a href="tel:+14388554446">+1 438 855-4446</a></b>`,
+    ],
+    testimonial: [
+      {
+        name: "IK Bar",
+        desc: "One Shot Marketing’s digital marketing services, encompassing website development and social media management, were exceptional. They seamlessly integrated our brand identity into the website design and crafted engaging content for our social media channels.",
+        rating: 5,
+      },
+      {
+        name: "IK Bar",
+        desc: "One Shot Marketing’s digital marketing services, encompassing website development and social media management, were exceptional. They seamlessly integrated our brand identity into the website design and crafted engaging content for our social media channels.",
+        rating: 5,
+      },
+      {
+        name: "IK Bar",
+        desc: "One Shot Marketing’s digital marketing services, encompassing website development and social media management, were exceptional. They seamlessly integrated our brand identity into the website design and crafted engaging content for our social media channels.",
+        rating: 5,
+      },
+    ],
+  },
+};
+export const IndustriesPageData = {
+  bannnerData: {
+    title: "INDUSTRIES WE SERVE",
+    subTitle: "One Shot Marketing",
+    description:
+      "Unlock your brand’s potential with digital strategies that deliver results.",
+    src: imagesLink + "bnr2.webp",
+    images: [""],
+  },
+  exploreIndustries: {
+    title: "EXPLORE INDUSTRIES WE SERVE",
+    subTitle: `<b>Empowering</b> a Diverse Range of Industries with Tailored <b>Solutions!</b>`,
+    industries: {
+      cards: [
+        {
+          title: "Hotel Industry",
+          desc: "Helping hotels stand out in a crowded market with targeted digital marketing strategies. From SEO to social media, we drive bookings and boost online visibility for your property.",
+          src: "",
+          images: [""],
+        },
+        {
+          title: "Restaurant Industry",
+          desc: "Transforming restaurant brands with creative digital marketing solutions that attract diners. We specialize in social media campaigns, online ads, & SEO to drive traffic and increase sales.",
+          src: "",
+          images: [""],
+        },
+        {
+          title: "Immigration Industry",
+          desc: "Elevating immigration brands with targeted digital marketing that reaches the right audience. From engaging social media campaigns and strategic online ads to SEO optimization.",
+          src: "",
+          images: [""],
+        },
+        {
+          title: "Beauty Industry",
+          desc: "Elevating beauty brands with powerful digital marketing strategies that captivate your audience. From influencer partnerships to targeted ads, we boost sales in the beauty.",
+          src: "",
+          images: [""],
+        },
+        {
+          title: "Clothing Industry",
+          desc: "Boosting clothing brands with innovative digital marketing strategies to drive sales and enhance visibility. We specialize in social media, influencer partnerships, and targeted ads.",
+          src: "",
+          images: [""],
+        },
+      ],
+      links: [
+        {
+          name: "Get a FREE quote!",
+          href: "",
+        },
+      ],
+    },
+  },
+  featuredClient: {
+    title: "FEATURED CLIENT WORK",
+    subTitle: `<b>Highlighting</b> Impactful Projects that Delivered <b>success.</b>`,
+    desc: [
+      "At One Shot Marketing, we take pride in delivering tailored digital marketing solutions that make a difference.",
+    ],
+    src: imagesLink + "im3.webp",
+    images: [""],
+    links: [
+      {
+        name: "Get a FREE quote!",
+        href: "",
+      },
+    ],
+  },
+  contactUs: {
+    title: "Contact Us",
+    subTitle: `<b>Connect</b> with an <b>Expert Today!</b>`,
+    desc: [
+      "Got questions or ready to get started? We're here to help! Fill out the form, and one of our experts will get in touch with you promptly.",
+      `<b>Prefer to speak directly? Call us at <a href="tel:+14388554446">+1 438 855-4446</a></b>`,
+    ],
+    testimonial: [
+      {
+        name: "IK Bar",
+        desc: "One Shot Marketing’s digital marketing services, encompassing website development and social media management, were exceptional. They seamlessly integrated our brand identity into the website design and crafted engaging content for our social media channels.",
+        rating: 5,
+      },
+      {
+        name: "IK Bar",
+        desc: "One Shot Marketing’s digital marketing services, encompassing website development and social media management, were exceptional. They seamlessly integrated our brand identity into the website design and crafted engaging content for our social media channels.",
+        rating: 5,
+      },
+      {
+        name: "IK Bar",
+        desc: "One Shot Marketing’s digital marketing services, encompassing website development and social media management, were exceptional. They seamlessly integrated our brand identity into the website design and crafted engaging content for our social media channels.",
+        rating: 5,
+      },
+    ],
+  },
+};
+export const ServicePageData = {
+  bannnerData: {
+    title: "OUR SERVICES",
+    subTitle: "One Shot Marketing",
+    description:
+      "Unlock your brand’s potential with digital strategies that deliver results.",
+    src: imagesLink + "bnr2.webp",
+    images: [""],
+  },
+  digitalMarketing: {
+    title: "CANADA’S#1 RATED DIGITAL MARKETING AGENCY",
+    subTitle: `Unlock Your <b>Brand’s Potential</b> with <b>Digital Solutions.</b>`,
+    desc: [
+      "With One Shot Marketing, you gain access to top-tier services, streamlined processes, and a dedicated team focused on driving the growth of your business. Our innovative strategies, tailored approach, and commitment to results ensure your brand stands out, attracting more customers and achieving measurable success.",
+    ],
+    src: imagesLink + "im7.webp",
+    images: [""],
+    featuredIn: [""],
+  },
+  services: {
+    title: "ALL SERVICES",
+    subTitle: `Digital Marketing Services`,
+    services: [
+      {
+        title: "HOTEL INDUSTRY SERVICES",
+        desc: [
+          "Performance Marketing",
+          "Social Media Marketing",
+          "Website Design & Development",
+          "Search Engine Optimisation",
+          "OTA Listing",
+        ],
+        image: {
+          src: "",
+          alt: "",
+        },
+        icon: <Hotel />,
+        href: "/industries-we-serve/hotel-industry",
+      },
+      {
+        title: "RESTAURANT INDUSTRY SERVICES",
+        desc: [
+          "Website Design & Development",
+          "Search Engine Optimisation",
+          "Social Media Marketing",
+          "Performance Marketing",
+        ],
+        image: {
+          src: "",
+          alt: "",
+        },
+        icon: <Restaurant />,
+        href: "/industries-we-serve/restaurant-industry",
+      },
+      {
+        title: "IMMIGRATION INDUSTRY SERVICES",
+        desc: [
+          "Website Design & Development",
+          "Search Engine Optimisation",
+          "Social Media Marketing",
+          "Performance Marketing",
+        ],
+        image: {
+          src: "",
+          alt: "",
+        },
+        icon: <Immigration />,
+        href: "/industries-we-serve/immigration-industry",
+      },
+      {
+        title: "BEAUTY INDUSTRY SERVICES",
+        desc: [
+          "Website Design & Development",
+          "Performance Marketing",
+          "CRM",
+          "Social Media Marketing",
+        ],
+        image: {
+          src: "",
+          alt: "",
+        },
+        icon: <Beauty />,
+        href: "/industries-we-serve/beauty-industry",
+      },
+      {
+        title: "CLOTHING INDUSTRY SERVICES",
+        desc: [
+          "Website Design & Development",
+          "Search Engine Optimisation",
+          "CRM",
+          "Social Media Marketing",
+          "Performance Marketing",
+        ],
+        image: {
+          src: "",
+          alt: "",
+        },
+        icon: <Clothing />,
+        href: "/industries-we-serve/clothing-industry",
+      },
+    ],
+    links: [
+      {
+        name: "Get a FREE quote!",
+        href: "",
+      },
+    ],
+  },
+  featuredClient: {
+    title: "FEATURED CLIENT WORK",
+    subTitle: `<b>Highlighting</b> Impactful Projects that Delivered <b>success.</b>`,
+    desc: [
+      "At One Shot Marketing, we take pride in delivering tailored digital marketing solutions that make a difference.",
+    ],
+    src: imagesLink + "im3.webp",
+    images: [""],
+    links: [
+      {
+        name: "Get a FREE quote!",
+        href: "",
+      },
+    ],
+  },
+  contactUs: {
+    title: "Contact Us",
+    subTitle: `<b>Connect</b> with an <b>Expert Today!</b>`,
+    desc: [
+      "Got questions or ready to get started? We're here to help! Fill out the form, and one of our experts will get in touch with you promptly.",
+      `<b>Prefer to speak directly? Call us at <a href="tel:+14388554446">+1 438 855-4446</a></b>`,
+    ],
+    testimonial: [
+      {
+        name: "IK Bar",
+        desc: "One Shot Marketing’s digital marketing services, encompassing website development and social media management, were exceptional. They seamlessly integrated our brand identity into the website design and crafted engaging content for our social media channels.",
+        rating: 5,
+      },
+      {
+        name: "IK Bar",
+        desc: "One Shot Marketing’s digital marketing services, encompassing website development and social media management, were exceptional. They seamlessly integrated our brand identity into the website design and crafted engaging content for our social media channels.",
+        rating: 5,
+      },
+      {
+        name: "IK Bar",
+        desc: "One Shot Marketing’s digital marketing services, encompassing website development and social media management, were exceptional. They seamlessly integrated our brand identity into the website design and crafted engaging content for our social media channels.",
+        rating: 5,
+      },
+    ],
+  },
+};
+
+export const ContactUsPageData = {
+  contactUs: {
+    title: "Contact Us",
+    subTitle: `Let’s <b>Connect -</b> We'd Love to Hear from You!`,
+    desc: [
+      "Whether you're looking to refresh your brand and website, kick off a new campaign, expand your customer base, or enter a new market, we have the expertise and strategies to help you succeed.",
+    ],
+    contactInfo: [
+      {
+        title: "Address",
+        desc: [
+          "3064 Hurontario St. Mississauga, ON",
+          "148 St Surrey, BC V3S 3E8, Canada",
+        ],
+        icon: <LocationOnIcon />,
+      },
+      {
+        title: "Phone",
+        desc: ["+1 (438) 855-4446"],
+        icon: <CallIcon className="text-black fill-dark" />,
+      },
+      {
+        title: "Email Id",
+        desc: ["info@oneshotmarketing.ca"],
+        icon: <MailIcon className="text-black fill-dark" />,
+      },
+    ],
+  },
+  location: {
+    title: "VIEW ON MAP",
+    subTitle: "3064 Hurontario St. Mississauga, <b>Ontario</b>",
+    src: "",
+    links: [
+      {
+        name: "Get a FREE quote!",
+        href: "",
       },
     ],
   },

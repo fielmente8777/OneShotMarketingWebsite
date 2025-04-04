@@ -42,7 +42,7 @@ const Footer = () => {
                   <li key={index}>
                     <Link
                       href={sublink.href}
-                      className="hover:text-secondary capitalize"
+                      className={`hover:text-secondary ${link.title.toLowerCase() === "contact" ? "" : "capitalize"}`}
                     >
                       {sublink.name}
                     </Link>
@@ -59,17 +59,22 @@ const Footer = () => {
             <p className="text-center">
               © {currentYear} One Shot Marketing, Canada
             </p>
-            <p className="text-center">• All rights reserved</p>
-            <p className="text-center">
+            <p className="text-center">•  All rights reserved</p>
+            {/* <p className="text-center">
               • Design & Developed by{" "}
               <Link href="/https://eazotel.com" className="font-bold">
                 Eazotel
               </Link>
-            </p>
+            </p> */}
           </div>
           <ul className="flex max-lg:flex-col justify-center items-center gap-2">
             <li className="">
-              <Link href="/privacy-policy" className="capitalize hover:text-secondary description1">Privacy policy</Link>
+              <Link
+                href="/privacy-policy"
+                className="capitalize hover:text-secondary description1"
+              >
+                Privacy policy
+              </Link>
             </li>
             <li className="">•</li>
             <li className="">

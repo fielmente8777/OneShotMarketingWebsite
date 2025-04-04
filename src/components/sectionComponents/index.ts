@@ -4,6 +4,8 @@ import SectionWithContainer from "./SectionWithContainer";
 import SectionTitleSubTitle from "./SectionTitleSubTitle";
 import TwoColSection from "@/components/sectionComponents/TwoColSection";
 import TwoColSection2 from "./TwoColSection2";
+import ContactUsSection from './ContactUsSection';
+import MileStoneSection from './MileStoneSection';
 export {
   Container,
   Section,
@@ -11,4 +13,6 @@ export {
   SectionTitleSubTitle,
   TwoColSection,
   TwoColSection2,
+  ContactUsSection,
+  MileStoneSection,
 };

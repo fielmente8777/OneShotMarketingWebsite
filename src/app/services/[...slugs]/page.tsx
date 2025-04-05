@@ -1,4 +1,10 @@
-import { Banner, ContactUsSection, ServicesSection, TwoColSection } from "@/components";
+import {
+  Banner,
+  ContactUsSection,
+  PageNotFound,
+  ServicesSection,
+  TwoColSection,
+} from "@/components";
 import Banner2 from "@/components/banner/Banner2";
 import { pageData2, pagesData } from "@/data/slugData";
 
@@ -23,7 +29,9 @@ export async function generateStaticParams() {
 export async function generateMetadata(props: Params) {
   const data = await props.params;
   const slugs = await data.slugs;
-  const slugsData = pageData2.find((item) => item.slug.join("/") === slugs.join("/"));
+  const slugsData = pageData2.find(
+    (item) => item.slug.split("/").join("/") === slugs.join("/")
+  );
   if (!slugsData) {
     return {
       title: "Services",
@@ -43,13 +51,15 @@ const page = async (props: Params) => {
   const data = await props.params;
   const slugs = await data.slugs;
   if (!slugs) {
-    return <div>Loading...</div>;
+    return <PageNotFound />;
   }
 
   if (slugs.length === 2) {
-    const slugsData = pageData2.find((item) => item.slug.join("/") === slugs.join("/"));
+    const slugsData = pageData2.find(
+      (item) => item.slug.split("/").join("/") === slugs.join("/")
+    );
     if (!slugsData) {
-      return <div>Loading...</div>;
+      return <PageNotFound />;
     }
     return (
       <main>
@@ -63,7 +73,7 @@ const page = async (props: Params) => {
   if (slugs.length === 1) {
     const slugsData = pagesData.find((item) => item.slug === slugs[0]);
     if (!slugsData) {
-      return <div>Loading...</div>;
+      return <PageNotFound />;
     }
     return (
       <main>

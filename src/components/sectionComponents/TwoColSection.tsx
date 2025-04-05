@@ -14,6 +14,9 @@ export interface TwoColSectionProps {
   }[];
   btnCss?: boolean;
   index?: number;
+  imageClassName?: string;
+  aspect?: string;
+  btn2Css?: boolean;
 }
 const TwoColSection: React.FC<TwoColSectionProps> = ({
   title,
@@ -23,12 +26,15 @@ const TwoColSection: React.FC<TwoColSectionProps> = ({
   links,
   btnCss = false,
   index,
+  imageClassName = "",
+  aspect = "",
+  btn2Css = false,
 }) => {
   return (
     <SectionWithContainer>
       <div className="grid md:grid-cols-2 grid-cols-1 gap-4 md:gap-6">
         <div
-          className={`w-full relative md:aspect-[4/2.8] aspect-[4/3.5] ${
+          className={`w-full relative ${aspect ? aspect : "md:aspect-[4/2.8] aspect-[4/3.5]"}  ${
             index
               ? index % 2 === 0
                 ? "md:order-1 order-2"
@@ -40,7 +46,8 @@ const TwoColSection: React.FC<TwoColSectionProps> = ({
             src={src}
             alt={title}
             fill
-            className="object-cover rounded-2xl"
+            className={`object-cover rounded-2xl ${imageClassName}`}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
         </div>
         <div
@@ -58,12 +65,12 @@ const TwoColSection: React.FC<TwoColSectionProps> = ({
               dangerouslySetInnerHTML={{ __html: item }}
             ></p>
           ))}
-          <ul className="flex max-lg:flex-col items-center gap-2 mt-auto">
+          <ul className="flex max-lg:flex-col items-center md:gap-8 gap-6 mt-auto">
             {links?.map((link, index) => (
               <li key={index} className="flex items-center gap-1">
                 <LinkButton
                   href={link.href}
-                  className={`raleway ${index === 0 ? `${btnCss ? "bg-dark " : "bg-secondary"} text-white hover:box-shadow flex items-center gap-1 rounded-lg py-3 px-6` : "text-dark underline underline-offset-4 hover:text-primary"} font-semibold`}
+                  className={`raleway  ${index === 0 ? `${btnCss ? "bg-dark " : "bg-secondary"} text-white hover:box-shadow flex items-center gap-1 rounded-lg py-3 px-6` : `${btn2Css ? "text-secondary " : "text-dark"}  underline underline-offset-4 hover:text-primary`} font-semibold`}
                 >
                   {link.name}
                 </LinkButton>

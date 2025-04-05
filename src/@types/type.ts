@@ -27,3 +27,12 @@ export interface BannerProps {
   src: string;
   images?: string[];
 }
+
+export interface FaqSectionProps {
+  title: string;
+  src: string;
+  faqs: {
+    question: string;
+    answer: string[];
+  }[];
+}

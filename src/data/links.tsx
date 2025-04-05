@@ -221,19 +221,19 @@ export const FooterLinks: FooterLinksProps[] = [
     links: [
       {
         name: "hotel digital marketing",
-        href: "/services/hotel-industry",
+        href: "/industries-we-serve/hotel-industry",
       },
       {
         name: "restaurant digital marketing",
-        href: "/services/restaurant-industry",
+        href: "/industries-we-serve/restaurant-industry",
       },
       {
         name: "beauty digital marketing",
-        href: "/services/beauty-industry",
+        href: "/industries-we-serve/beauty-industry",
       },
       {
         name: "clothing digital marketing",
-        href: "/services/clothing-industry",
+        href: "/industries-we-serve/clothing-industry",
       },
     ],
   },

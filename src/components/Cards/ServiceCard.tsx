@@ -17,7 +17,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   return (
     <div className="w-full bg-white rounded-2xl border border-primary hover:box-shadow duration-300 transition-all ease-in-out flex flex-col items-center justify-center gap-4 py-6 px-4">
       <span className="">{icon ? icon : ""}</span>
-      <Tag className={`heading2 text-center font-medium text-primary ${titlePx ? "md:px-10" : ""}`}>
+      <Tag className={`heading2 text-center font-medium md:h-[4.3ch] text-primary ${titlePx ? "md:px-10" : ""}`}>
         {title}
       </Tag>
       <div className="w-full h-[1px] bg-secondary max-w-[6.5rem]"></div>

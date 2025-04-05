@@ -8,17 +8,18 @@ import {
   TwoColSection2,
   ContactUsSection,
   MileStoneSection,
-  ServicesSection
+  ServicesSection,
 } from "./sectionComponents";
 import { Navbar, MobileNav } from "./navbar";
 import Footer from "./footer/Footer";
 import SliderSwip from "./SliderSwip";
-import { ServiceCard, ServiceCard2, TestimonialCard } from "./Cards";
+import { ServiceCard, ServiceCard2, TestimonialCard, Accordion } from "./Cards";
 import Whatsapp from "./ContactButton/WhatsApp";
 import Call from "./ContactButton/Call";
 import { Banner } from "./banner";
 import { Form1, Form } from "./forms";
 import LazyLoadedMap from "./maps/LazyLoadedMap";
+import PageNotFound from "./PageNotFound";
 
 export {
   Banner,
@@ -44,5 +45,7 @@ export {
   Form,
   MileStoneSection,
   LazyLoadedMap,
-  ServicesSection
+  PageNotFound,
+  ServicesSection,
+  Accordion,
 };

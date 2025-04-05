@@ -1,4 +1,6 @@
-import { pageData2 } from "@/data/slugData";
+import { Banner, ContactUsSection, ServicesSection, TwoColSection } from "@/components";
+import Banner2 from "@/components/banner/Banner2";
+import { pageData2, pagesData } from "@/data/slugData";
 
 interface Params {
   params: Promise<{
@@ -7,50 +9,71 @@ interface Params {
 }
 
 export async function generateStaticParams() {
-  const datas = pageData2;
-  console.log("datas", datas);
-  const dataList = pageData2;
-  // console.log("dataList", dataList);
-  return dataList.map((data) => ({
-    slugs: data.slug,
+  const dataList = pagesData;
+  const data2 = pageData2;
+  const slugs = dataList.map((data) => data.slug);
+  const slugs2 = data2.map((data) => data.slug);
+  const allSlugs = [...slugs, ...slugs2];
+  return allSlugs.map((slug) => ({
+    slugs: typeof slug === "string" ? slug.split("/") : slug,
+    fallback: false,
   }));
 }
 
 export async function generateMetadata(props: Params) {
-  const slugs = await props.params;
-
-  const slugsSlug = await slugs.slugs;
-  const slugsData = pageData2.find((data) => data.slug === slugsSlug);
-
+  const data = await props.params;
+  const slugs = await data.slugs;
+  const slugsData = pageData2.find((item) => item.slug.join("/") === slugs.join("/"));
   if (!slugsData) {
     return {
-      title: "slugs We Serve",
-      description: "slugs We Serve",
+      title: "Services",
+      description: "Services",
     };
   }
-  return {
-    title: slugsData.title,
-    description: slugsData.title,
-  };
+  const slugsData2 = pagesData.find((item) => item.slug === slugs[0]);
+  if (!slugsData2) {
+    return {
+      title: "Services",
+      description: "Services",
+    };
+  }
 }
 
 const page = async (props: Params) => {
   const data = await props.params;
-  const slugsSlug = await data.slugs;
-  const slugsData = pageData2.find(
-    (data) => data.slug === slugsSlug.splice(0, 1)[0]
-  );
-  if (!slugsData) {
-    return <h1>Slugs We Serve</h1>;
+  const slugs = await data.slugs;
+  if (!slugs) {
+    return <div>Loading...</div>;
   }
-  console.log("slugsData", slugsData);
-  return (
-    <main>
-      <h1>Slugs We Serve</h1>
-      <h2>{slugsData.title}</h2>
-      {/* Add more content based on slugsData */}
-    </main>
-  );
+
+  if (slugs.length === 2) {
+    const slugsData = pageData2.find((item) => item.slug.join("/") === slugs.join("/"));
+    if (!slugsData) {
+      return <div>Loading...</div>;
+    }
+    return (
+      <main>
+        <Banner {...slugsData.bannnerData} />
+        <TwoColSection {...slugsData.aboutUs} />
+        <ServicesSection {...slugsData.services} />
+        <ContactUsSection {...slugsData.contactUs} tick />
+      </main>
+    );
+  }
+  if (slugs.length === 1) {
+    const slugsData = pagesData.find((item) => item.slug === slugs[0]);
+    if (!slugsData) {
+      return <div>Loading...</div>;
+    }
+    return (
+      <main>
+        <Banner2 {...slugsData.banner} />
+        <TwoColSection {...slugsData.aboutUs} />
+        <ServicesSection {...slugsData.services} />
+        <ContactUsSection {...slugsData.contactUs} tick />
+      </main>
+    );
+  }
 };
 
 export default page;

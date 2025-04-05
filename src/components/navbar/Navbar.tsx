@@ -46,7 +46,7 @@ const Navbar = () => {
                       {link.subLinks.map((subLink, index) => {
                         return (
                           <>
-                            <span className="relative group nav-2" key={index}>
+                            <span className="relative group nav-2" key={index+1}>
                               <Link
                                 href={subLink.href ? subLink.href : "#"}
                                 className={`w-full text-nowrap py-2 px-4 flex items-center gap-1 group capitalize text-light font-semibold description1 hover:bg-gray-200 ${pathName === subLink.href ? "bg-gray-200" : ""}`}
@@ -63,7 +63,7 @@ const Navbar = () => {
                                   {subLink.subLinks?.map(
                                     (nestedSubLink, nestedIndex) => {
                                       return (
-                                        <span className="" key={nestedIndex}>
+                                        <span className="" key={nestedIndex+2}>
                                           <Link
                                             href={
                                               nestedSubLink.href

@@ -8,6 +8,7 @@ import {
   TwoColSection2,
   ContactUsSection,
   MileStoneSection,
+  ServicesSection
 } from "./sectionComponents";
 import { Navbar, MobileNav } from "./navbar";
 import Footer from "./footer/Footer";
@@ -43,4 +44,5 @@ export {
   Form,
   MileStoneSection,
   LazyLoadedMap,
+  ServicesSection
 };

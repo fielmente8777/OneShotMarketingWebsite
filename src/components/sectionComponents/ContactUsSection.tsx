@@ -5,12 +5,13 @@ import SliderSwip from "../SliderSwip";
 import SectionTitleSubTitle from "./SectionTitleSubTitle";
 import SectionWithContainer from "./SectionWithContainer";
 import { TestimonialCard } from "../Cards";
-import { BtnPrev } from "@/data/icons";
+import { BtnNext, BtnPrev, TickIcon } from "@/data/icons";
 
 export interface ContactUsSectionProps {
   title: string;
   subTitle: string;
   desc: string[];
+  tick?: boolean;
   testimonial: {
     name: string;
     desc: string;
@@ -23,6 +24,7 @@ const ContactUsSection: React.FC<ContactUsSectionProps> = ({
   subTitle,
   desc,
   testimonial,
+  tick = false,
 }) => {
   return (
     <SectionWithContainer>
@@ -33,14 +35,24 @@ const ContactUsSection: React.FC<ContactUsSectionProps> = ({
             subTitle={subTitle}
             subTitleClassName="text-dark md:pe-4"
           />
-          {desc.map((item, index) => (
-            <p
-              key={index}
-              className="heading4 text-dark"
-              dangerouslySetInnerHTML={{ __html: item }}
-            ></p>
-          ))}
-          <div className="w-full relative">
+          {!tick
+            ? desc.map((item: string, index: number) => (
+                <p
+                  key={index}
+                  className="heading4 text-dark"
+                  dangerouslySetInnerHTML={{ __html: item }}
+                ></p>
+              ))
+            : desc.map((item: string, index: number) => (
+                <p key={index} className="heading4 text-dark flex gap-3">
+                  <span>
+                    {" "}
+                    <TickIcon className="w-4 aspect-square" />
+                  </span>{" "}
+                  {item}
+                </p>
+              ))}
+          <div className="w-full relative md:mt-4 mt-0">
             <SliderSwip
               data={testimonial}
               slidesPerView={1}
@@ -77,7 +89,7 @@ const ContactUsSection: React.FC<ContactUsSectionProps> = ({
                 <BtnPrev className="w-10 aspect-square hover:scale-105 active:scale-95" />
               </button>
               <button className="testimonial-next">
-                <BtnPrev className="w-10 aspect-square rotate-180 hover:scale-105 active:scale-95" />
+                <BtnNext className="w-10 aspect-square hover:scale-105 active:scale-95" />
               </button>
             </div>
           </div>

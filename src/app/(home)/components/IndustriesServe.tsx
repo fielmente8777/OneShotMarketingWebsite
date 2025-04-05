@@ -15,7 +15,7 @@ const IndustriesServe: React.FC<CommonProps> = ({
   links,
 }) => {
   return (
-    <SectionWithContainer>
+    <SectionWithContainer sectionId="industries">
       <div className="w-full flex flex-col items-center justify-center gap-4 lg:gap-10">
         <SectionTitleSubTitle title={title} subTitle={subTitle} textCenter />
         <div className="lg:grid grid-cols-5 hidden gap-4">

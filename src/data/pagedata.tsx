@@ -93,7 +93,7 @@ export const homePageData = {
     links: [
       {
         name: "Explore All Industry Services",
-        href: "",
+        href: "#industries",
       },
       {
         name: "Contact Us",
@@ -113,7 +113,7 @@ export const homePageData = {
     links: [
       {
         name: "About Us",
-        href: "",
+        href: "/about-us",
       },
       {
         name: "Contact Us",

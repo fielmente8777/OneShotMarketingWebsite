@@ -4,7 +4,7 @@ import { JSX } from "react";
 export interface ServiceCardProps {
   icon?: React.ReactNode;
   title: string;
-  desc: string;
+  desc?: string;
   level?: 1 | 2 | 3 | 4 | 5 | 6;
   href?: string;
 }

@@ -86,7 +86,7 @@ export const NaveLinks: NveLinksProps[] = [
           },
           {
             name: "OTA listing - optimization and management",
-            href: "/services/hotel-industry/ota-listing-optimization-and-management",
+            href: "/services/hotel-industry/OTA-listings-and-management",
           },
         ],
       },

@@ -21,8 +21,8 @@ const Banner: React.FC<BannerProps> = ({
         <div className="absolute inset-0 bg-black opacity-80"></div>
         <div className="absolute inset-0 w-full h-full flex items-center justify-center">
           <Container>
-            <div className="flex flex-col items-center justify-center gap-6">
-              <div className="">
+            <div className="flex flex-col items-center justify-center gap-6 w-full">
+              <div className="w-full">
                 <h1 className="text-xl font-semibold text-secondary text-center uppercase">
                   {title}
                 </h1>
@@ -33,7 +33,7 @@ const Banner: React.FC<BannerProps> = ({
               <div className="w-full max-w-7xl lg:block hidden">
                 <Form1 />
               </div>
-              <p className="heading3 text-white">{description}</p>
+              <p className="heading3 text-white text-center max-w-4xl tracking-wide w-full">{description}</p>
             </div>
           </Container>
         </div>

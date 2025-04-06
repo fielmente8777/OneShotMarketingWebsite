@@ -13,15 +13,15 @@ const ServicesSection: React.FC<CommonProps> = ({
   services,
 }) => {
   return (
-    <SectionWithContainer>
+    <SectionWithContainer sectionClassName="bg-primary">
       <div className="flex flex-col items-center justify-center gap-8 py-10 w-full">
         <SectionTitleSubTitle
           title={title}
           subTitle={subTitle}
-          subTitleClassName=""
+          subTitleClassName="text-white"
           textCenter
         />
-        <div className="w-full relative">
+        <div className="w-full relative service-slider">
           <SliderSwip
             data={services}
             slidesPerView={1}
@@ -33,6 +33,7 @@ const ServicesSection: React.FC<CommonProps> = ({
             }}
             pagination={{
               clickable: true,
+              el: ".service-pagination",
             }}
             loop={true}
             speed={1000}
@@ -59,6 +60,7 @@ const ServicesSection: React.FC<CommonProps> = ({
           >
             {(item) => <ServiceCard {...item} level={4} />}
           </SliderSwip>
+          <div className="service-pagination flex items-center justify-center gap-1 mt-4"></div>
           <button className="absolute service-prev top-1/2  -translate-y-1/2 -left-2 z-10">
             <BtnPrev width={36} />
           </button>

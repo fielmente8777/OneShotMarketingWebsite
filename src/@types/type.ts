@@ -6,7 +6,7 @@ export interface CommonProps {
   desc?: string;
   services: {
     title: string;
-    desc: string;
+    desc?: string;
     image?: {
       src: string;
       alt: string;

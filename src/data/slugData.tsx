@@ -2032,7 +2032,7 @@ export const pageData2 = [
     },
   },
   {
-    slug: "beauty-industry/CRM",
+    slug: "beauty-industry/crm",
     title: "CRM",
     bannnerData: {
       title: "TRANSFORM YOUR HOTEL’S REACH WITH",
@@ -2397,7 +2397,7 @@ export const pageData2 = [
     },
   },
   {
-    slug: "clothing-industry/CRM",
+    slug: "clothing-industry/crm",
     title: "CRM",
     bannnerData: {
       title: "TRANSFORM YOUR HOTEL’S REACH WITH",

@@ -39,8 +39,7 @@ select {
 
 @layer utilities {
   .no-spinner::-webkit-outer-spin-button,
-  .no-spinner::-webkit-inner-spin-button 
-  .no-spinner::-moz-focus-inner,
+  .no-spinner::-webkit-inner-spin-button .no-spinner::-moz-focus-inner,
   .no-spinner::-webkit-inner-spin-button {
     @apply appearance-none;
     margin: 0;
@@ -197,6 +196,11 @@ select {
   }
 
   .box-shadow2 {
+    background: #fff;
+    box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
+  }
+
+  .box-shadow3 {
     background: #fff;
     box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
   }

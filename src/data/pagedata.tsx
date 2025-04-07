@@ -238,24 +238,24 @@ export const AboutUsPageData = {
     title: "Featured In",
     images: [
       {
-        src: imagesLink + "inc.webp",
+        src: imagesLink + "Forbes.webp",
+        alt: "Forbes",
+      },
+      {
+        src: imagesLink + "builtin.webp",
+        alt: "builtin",
+      },
+      {
+        src: imagesLink + "inclo.webp",
         alt: "inc",
       },
       {
-        src: imagesLink + "meta.webp",
-        alt: "meta",
+        src: imagesLink + "fast_company.webp",
+        alt: "fastcompany",
       },
       {
-        src: imagesLink + "micro.webp",
-        alt: "microsoft",
-      },
-      {
-        src: imagesLink + "amazon.webp",
-        alt: "amazon",
-      },
-      {
-        src: imagesLink + "google.webp",
-        alt: "google",
+        src: imagesLink + "clutch.webp",
+        alt: "clutch",
       },
     ],
   },

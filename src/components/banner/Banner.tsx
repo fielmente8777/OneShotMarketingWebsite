@@ -10,7 +10,7 @@ const Banner: React.FC<BannerProps> = ({
   src,
 }) => {
   return (
-    <Section className="relative !pt-0">
+    <Section className="relative !py-0">
       <div className="relative w-full md:aspect-[4/1.7] aspect-[4/2.5]">
         <Image
           src={src}

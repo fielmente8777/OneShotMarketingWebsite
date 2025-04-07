@@ -17,7 +17,7 @@ export interface TwoColSectionProps {
   imageClassName?: string;
   aspect?: string;
   btn2Css?: boolean;
-  featuredIn: {
+  featuredIn?: {
     title: string;
     images: string[];
   };

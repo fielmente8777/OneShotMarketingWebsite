@@ -15,8 +15,8 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
 }) => {
   const Tag = `h${level}` as keyof JSX.IntrinsicElements;
   return (
-    <div className="w-full bg-white rounded-2xl border border-primary hover:box-shadow duration-300 transition-all ease-in-out flex flex-col items-center justify-center gap-4 py-6 px-4">
-      <span className="">{icon ? icon : ""}</span>
+    <div className="w-full bg-white rounded-2xl border border-primary md:hover:box-shadow duration-300 transition-all ease-in-out flex flex-col items-center justify-center gap-4 py-6 px-4">
+      { icon && <span className="">{icon}</span>}
       <Tag className={`heading2 text-center font-medium md:h-[4.3ch] text-primary ${titlePx ? "md:px-10" : ""}`}>
         {title}
       </Tag>

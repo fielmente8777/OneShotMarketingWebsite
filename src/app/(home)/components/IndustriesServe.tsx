@@ -15,7 +15,7 @@ const IndustriesServe: React.FC<CommonProps> = ({
   links,
 }) => {
   return (
-    <SectionWithContainer sectionId="industries">
+    <SectionWithContainer sectionId="industries" sectionClassName="bg-bg2">
       <div className="w-full flex flex-col items-center justify-center gap-4 lg:gap-10">
         <SectionTitleSubTitle title={title} subTitle={subTitle} textCenter />
         <div className="lg:grid grid-cols-5 hidden gap-4">
@@ -53,7 +53,7 @@ const IndustriesServe: React.FC<CommonProps> = ({
             <li key={index}>
               <OnlyButton
                 // href={item.href}
-                className={`${index === 0 ? "bg-secondary px-4 py-2 rounded hover:box-shadow" : "underline underline-offset-4 hover:text-secondary"} font-semibold text-white decoration1 text-center`}
+                className={`${index === 0 ? "bg-secondary px-4 py-2 md:px-6 md:py-3 rounded hover:box-shadow" : "underline underline-offset-4 hover:text-secondary"} font-semibold text-white decoration1 text-center`}
               >
                 {item.name}
               </OnlyButton>

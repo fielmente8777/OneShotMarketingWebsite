@@ -44,12 +44,12 @@ const FeaturedServices: React.FC<CommonProps> = ({
           {(item) => <ServiceCard {...item} level={4} />}
         </SliderSwip>
         <p className="heading4 text-center max-w-6xl w-full">{desc}</p>
-        <ul className="flex items-center justify-center gap-4">
+        <ul className="flex items-center max-lg:flex-col justify-center gap-4">
           {links?.map((item, index) => (
             <li key={index}>
               <LinkButton
                 href={item.href}
-                className={`${index === 0 ? "bg-secondary px-4 py-2 rounded hover:box-shadow" : "underline underline-offset-4 hover:text-secondary"} font-semibold text-white decoration1 text-center`}
+                className={`${index === 0 ? "bg-secondary px-4 py-2 md:py-3 rounded hover:box-shadow" : "underline underline-offset-4 hover:text-secondary"} font-semibold text-white decoration1 text-center`}
               >
                 {item.name}
               </LinkButton>

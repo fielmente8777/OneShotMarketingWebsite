@@ -67,7 +67,7 @@ const Footer = () => {
               </Link>
             </p> */}
           </div>
-          <ul className="flex max-lg:flex-col justify-center items-center gap-2">
+          <ul className="flex max-lg:mt-2 justify-center items-center gap-2">
             <li className="">
               <Link
                 href="/privacy-policy"

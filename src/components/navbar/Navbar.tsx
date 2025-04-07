@@ -5,22 +5,42 @@ import Link from "next/link";
 import { NaveLinks } from "@/data/links";
 import { DropDownIcon, OutlinePhone } from "@/data/icons";
 import { usePathname } from "next/navigation";
+import { AiOutlineMenu } from "react-icons/ai";
+import { useEffect, useState } from "react";
+import MobileNav from "./MobileNav";
 
 const Navbar = () => {
   const pathName = usePathname();
+  const [mobileMenu, setMobileMenu] = useState(false);
+  useEffect(() => {
+    if (mobileMenu) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [mobileMenu]);
   return (
     <header className="max_screen">
       <Container>
         <nav className="flex items-center justify-between py-3">
+          <div className="max-lg:block hidden">
+            <button className="lg:hidden" onClick={() => setMobileMenu(true)}>
+              <AiOutlineMenu size={25} color="#183f62" />
+            </button>
+            <MobileNav mobileMenu={mobileMenu} setMobileMenu={setMobileMenu} />
+          </div>
           <div className="">
-            <Link href={"/"} className="flex items-center">
+            <Link
+              href={"/"}
+              className="flex relative md:h-[3.5rem] h-[2.5rem]  md:aspect-[4/1.8] aspect-[3/1.5]"
+            >
               <Image
                 src="/logo.png"
                 alt="one shot logo"
-                width={123.2}
-                height={64}
-                priority={true}
-                quality={100}
+                fill
               />
             </Link>
           </div>
@@ -46,7 +66,10 @@ const Navbar = () => {
                       {link.subLinks.map((subLink, index) => {
                         return (
                           <>
-                            <span className="relative group nav-2" key={index+1}>
+                            <span
+                              className="relative group nav-2"
+                              key={index + 1}
+                            >
                               <Link
                                 href={subLink.href ? subLink.href : "#"}
                                 className={`w-full text-nowrap py-2 px-4 flex items-center gap-1 group capitalize text-light font-semibold description1 hover:bg-gray-200 ${pathName === subLink.href ? "bg-gray-200" : ""}`}
@@ -63,7 +86,10 @@ const Navbar = () => {
                                   {subLink.subLinks?.map(
                                     (nestedSubLink, nestedIndex) => {
                                       return (
-                                        <span className="" key={nestedIndex+2}>
+                                        <span
+                                          className=""
+                                          key={nestedIndex + 2}
+                                        >
                                           <Link
                                             href={
                                               nestedSubLink.href
@@ -93,12 +119,12 @@ const Navbar = () => {
           <Link
             href={"tel:438-855-4446"}
             target="_blank"
-            className="px-4 py-2 hover:box-shadow flex items-center gap-1 border border-primary bg-white text-primary rounded-lg hover:bg-primary hover:text-white duration-300 transition-all ease-in-out"
+            className="md:px-4 md:py-2 md:hover:box-shadow flex items-center gap-1 md:border border-primary bg-white text-primary rounded-lg hover:bg-primary hover:text-white duration-300 transition-all ease-in-out"
           >
             <span className="">
-              <OutlinePhone className="fill-current stroke-currentColor w-7 aspect-square" />
+              <OutlinePhone className="fill-current stroke-currentColor md:w-7 aspect-square" />
             </span>
-            438-855-4446
+            <span className="md:block hidden"> 438-855-4446</span>
           </Link>
         </nav>
       </Container>

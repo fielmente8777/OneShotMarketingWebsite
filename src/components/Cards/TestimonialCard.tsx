@@ -11,7 +11,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
   rating,
 }) => {
   return (
-    <div className="w-full flex flex-col gap-4 rounded-2xl bg-white py-6 px-8 border border-primary box-shadow2">
+    <div className="w-full flex flex-col gap-4 rounded-2xl bg-white md:py-6 md:px-8 p-3 border border-primary box-shadow2">
       {rating > 0 && (
         <div className="flex gap-1">
           {[...Array(rating)].map((_, index) => (

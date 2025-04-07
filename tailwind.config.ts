@@ -16,7 +16,7 @@ export default {
         light1: "#6D6D6D",
         dark: "#363636",
         normal: "#393939",
-        extra: "#FFFEED",
+        bg2: "#F5F6F4",
       },
     },
   },

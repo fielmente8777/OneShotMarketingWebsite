@@ -11,7 +11,7 @@ const Banner: React.FC<BannerProps> = ({
 }) => {
   return (
     <Section className="relative !pt-0">
-      <div className="relative w-full md:aspect-[4/1.7] aspect-[4/3.5]">
+      <div className="relative w-full md:aspect-[4/1.7] aspect-[4/2.5]">
         <Image
           src={src}
           alt={title ? title : "banner"}
@@ -23,7 +23,7 @@ const Banner: React.FC<BannerProps> = ({
           <Container>
             <div className="flex flex-col items-center justify-center gap-6 w-full">
               <div className="w-full">
-                <h1 className="text-xl font-semibold text-secondary text-center uppercase">
+                <h1 className="md:text-xl text-lg font-semibold text-secondary text-center uppercase">
                   {title}
                 </h1>
                 <h2 className="largeHeading font-bold text-white text-center">
@@ -33,7 +33,7 @@ const Banner: React.FC<BannerProps> = ({
               <div className="w-full max-w-7xl lg:block hidden">
                 <Form1 />
               </div>
-              <p className="heading3 text-white text-center max-w-4xl tracking-wide w-full">{description}</p>
+              <p className="heading3 text-white text-center max-w-4xl tracking-wide w-full max-lg:hidden">{description}</p>
             </div>
           </Container>
         </div>

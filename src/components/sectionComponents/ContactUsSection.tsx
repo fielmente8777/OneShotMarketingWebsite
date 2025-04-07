@@ -29,7 +29,7 @@ const ContactUsSection: React.FC<ContactUsSectionProps> = ({
   return (
     <SectionWithContainer>
       <div className="grid md:grid-cols-6 grid-cols-1 gap-4 md:gap-6">
-        <div className={`flex flex-col gap-4 col-span-4 w-full`}>
+        <div className={`flex flex-col gap-4 md:col-span-4 col-span-2 w-full`}>
           <SectionTitleSubTitle
             title={title}
             subTitle={subTitle}
@@ -81,7 +81,8 @@ const ContactUsSection: React.FC<ContactUsSectionProps> = ({
                     spaceBetween: 24,
                   },
                 }}
-                classNameSwiper="w-full"
+                classNameSwiper="w-full "
+                classNameSwiperSlide="w-full p-1"
               >
                 {(item) => <TestimonialCard {...item} />}
               </SliderSwip>

@@ -2,6 +2,7 @@ import { homePageData } from "@/data/pagedata";
 import {
   Banner,
   ContactUsSection,
+  FormSection,
   TwoColSection,
   TwoColSection2,
 } from "@/components";
@@ -14,6 +15,7 @@ export default function Home() {
     <main>
       <Banner {...homePageData.bannnerData} />
       <TrustedBrand {...homePageData.trustedTopBrands} />
+      <FormSection desc={homePageData.bannnerData.description} />
       <FeaturedServices {...homePageData.featuredServices} />
       <TwoColSection {...homePageData.experience} btnCss />
       <IndustriesServe {...homePageData.industries} />

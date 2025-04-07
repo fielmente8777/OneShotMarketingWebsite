@@ -19,7 +19,7 @@ const ServiceCard2: React.FC<ServiceCardProps> = ({
   return (
     <Link
       href={href ? href : ""}
-      className="w-full bg-white rounded-2xl group border border-primary hover:box-shadow shadow-2xl duration-300 transition-all ease-in-out flex flex-col items-center justify-center gap-4 py-6 px-4"
+      className="w-full bg-white rounded-2xl group border border-primary md:hover:box-shadow md:shadow-2xl duration-300 transition-all ease-in-out flex flex-col items-center justify-center gap-4 py-6 px-4"
     >
       <span className="">{icon ? icon : ""}</span>
       <Tag className="heading2 text-center font-medium text-primary px-10">

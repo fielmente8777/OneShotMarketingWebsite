@@ -26,13 +26,13 @@ const TwoColSection2: React.FC<TwoColSectionProps> = ({
     <SectionWithContainer>
       <div className="grid md:grid-cols-6 grid-cols-1 gap-4 md:gap-6">
         <div
-          className={`w-full col-span-4 relative md:aspect-[4/2] aspect-[4/3.5]`}
+          className={`w-full md:col-span-4 col-span-2 relative md:aspect-[4/2] aspect-[4/2.5]`}
         >
           <Image
             src={src}
             alt={title}
             fill
-            className="object-cover object-top rounded-2xl "
+            className="md:object-cover object-top rounded-2xl "
           />
         </div>
         <div className={`flex flex-col gap-4 col-span-2`}>

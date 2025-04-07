@@ -9,11 +9,18 @@ import {
   ContactUsSection,
   MileStoneSection,
   ServicesSection,
+  FormSection,
 } from "./sectionComponents";
 import { Navbar, MobileNav } from "./navbar";
 import Footer from "./footer/Footer";
 import SliderSwip from "./SliderSwip";
-import { ServiceCard, ServiceCard2, TestimonialCard, Accordion } from "./Cards";
+import {
+  ServiceCard,
+  ServiceCard2,
+  ServiceCard3,
+  TestimonialCard,
+  Accordion,
+} from "./Cards";
 import Whatsapp from "./ContactButton/WhatsApp";
 import Call from "./ContactButton/Call";
 import { Banner } from "./banner";
@@ -37,6 +44,7 @@ export {
   SliderSwip,
   ServiceCard,
   ServiceCard2,
+  ServiceCard3,
   TestimonialCard,
   TwoColSection,
   Whatsapp,
@@ -48,4 +56,5 @@ export {
   PageNotFound,
   ServicesSection,
   Accordion,
+  FormSection,
 };

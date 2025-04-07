@@ -44,13 +44,13 @@ const Form1 = () => {
   });
   return (
     <form
-      className={`w-full grid ${extend ? "grid-cols-6 gap-y-4" : "grid-cols-7"} text-white transition-all duration-500 ease-in-out transform ${
+      className={`w-full md:grid flex flex-col max-lg:gap-2 ${extend ? "grid-cols-6 md:gap-y-4 max-lg:mb-8" : "grid-cols-7"} text-white transition-all duration-500 ease-in-out transform ${
         extend ? "scale-y-105" : "scale-100"
       } bg-dark p-2 rounded-lg shadow-xl`}
       onClick={() => setExtend(true)}
       ref={formRef}
     >
-      <div className="col-span-2 border-r border-light flex items-center justify-center gap-2 w-full py-3 px-4">
+      <div className="col-span-2 md:border-r border-light flex items-center justify-center gap-2 w-full py-3 px-4">
         <label htmlFor="name">
           <UserIcon />
         </label>
@@ -62,7 +62,7 @@ const Form1 = () => {
           className="w-full bg-transparent text-white placeholder:text-white rounded-lg  focus:outline-none outline-none"
         />
       </div>
-      <div className="col-span-2 border-r border-light flex items-center justify-center gap-2 w-full py-3 px-4">
+      <div className="col-span-2 md:border-r border-light flex items-center justify-center gap-2 w-full py-3 px-4">
         <label htmlFor="phone">
           <CallIcon />
         </label>
@@ -87,7 +87,7 @@ const Form1 = () => {
         />
       </div>
       <div
-        className={`col-span-2 border-r border-light ${extend ? "block" : "hidden"}`}
+        className={`col-span-2 md:border-r border-light ${extend ? "block" : "hidden"}`}
       >
         <div className="w-full relative" ref={dropDownRef}>
           <button

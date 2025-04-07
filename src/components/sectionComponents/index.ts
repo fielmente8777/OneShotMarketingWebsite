@@ -7,6 +7,7 @@ import TwoColSection2 from "./TwoColSection2";
 import ContactUsSection from "./ContactUsSection";
 import MileStoneSection from "./MileStoneSection";
 import ServicesSection from "./ServicesSection";
+import FormSection from './FormSection';
 export {
   Container,
   Section,
@@ -17,4 +18,5 @@ export {
   ContactUsSection,
   MileStoneSection,
   ServicesSection,
+  FormSection
 };

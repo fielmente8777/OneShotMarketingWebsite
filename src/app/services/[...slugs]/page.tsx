@@ -1,6 +1,7 @@
 import {
   Banner,
   ContactUsSection,
+  FormSection,
   PageNotFound,
   ServicesSection,
   TwoColSection,
@@ -64,6 +65,7 @@ const page = async (props: Params) => {
     return (
       <main>
         <Banner {...slugsData.bannnerData} />
+        <FormSection desc={slugsData.bannnerData.description} />
         <TwoColSection {...slugsData.aboutUs} />
         <ServicesSection {...slugsData.services} />
         <ContactUsSection {...slugsData.contactUs} tick />

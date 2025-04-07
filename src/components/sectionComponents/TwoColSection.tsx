@@ -17,6 +17,10 @@ export interface TwoColSectionProps {
   imageClassName?: string;
   aspect?: string;
   btn2Css?: boolean;
+  featuredIn: {
+    title: string;
+    images: string[];
+  };
 }
 const TwoColSection: React.FC<TwoColSectionProps> = ({
   title,
@@ -29,6 +33,7 @@ const TwoColSection: React.FC<TwoColSectionProps> = ({
   imageClassName = "",
   aspect = "",
   btn2Css = false,
+  featuredIn,
 }) => {
   return (
     <SectionWithContainer>
@@ -65,18 +70,37 @@ const TwoColSection: React.FC<TwoColSectionProps> = ({
               dangerouslySetInnerHTML={{ __html: item }}
             ></p>
           ))}
-          <ul className="flex max-lg:flex-col items-center md:gap-8 gap-6 mt-auto">
-            {links?.map((link, index) => (
-              <li key={index} className="flex items-center gap-1">
-                <LinkButton
-                  href={link.href}
-                  className={`raleway  ${index === 0 ? `${btnCss ? "bg-dark " : "bg-secondary"} text-white hover:box-shadow flex items-center gap-1 rounded-lg py-3 px-6` : `${btn2Css ? "text-secondary " : "text-dark"}  underline underline-offset-4 hover:text-primary`} font-semibold`}
-                >
-                  {link.name}
-                </LinkButton>
-              </li>
-            ))}
-          </ul>
+          {featuredIn && (
+            <div className="flex flex-col gap-4">
+              <h2 className="heading3 font-semibold text-secondary">{featuredIn.title}</h2>
+              <div className="flex gap-8">
+                {featuredIn.images.map((image, index) => (
+                  <Image
+                    src={image}
+                    alt={featuredIn.title}
+                    key={index}
+                    width={160}
+                    height={100}
+                    className="object-contain"
+                  />
+                ))}
+              </div>
+            </div>
+          )}
+          {links && (
+            <ul className="flex max-lg:flex-col items-center md:gap-8 gap-6 mt-auto">
+              {links?.map((link, index) => (
+                <li key={index} className="flex items-center gap-1">
+                  <LinkButton
+                    href={link.href}
+                    className={`raleway  ${index === 0 ? `${btnCss ? "bg-dark " : "bg-secondary"} text-white hover:box-shadow flex items-center gap-1 rounded-lg py-3 px-6` : `${btn2Css ? "text-secondary " : "text-dark"}  underline underline-offset-4 hover:text-primary`} font-semibold`}
+                  >
+                    {link.name}
+                  </LinkButton>
+                </li>
+              ))}
+            </ul>
+          )}
         </div>
       </div>
     </SectionWithContainer>

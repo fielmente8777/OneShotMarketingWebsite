@@ -350,31 +350,31 @@ export const IndustriesPageData = {
       {
         title: "Hotel Industry",
         desc: "Helping hotels stand out in a crowded market with targeted digital marketing strategies. From SEO to social media, we drive bookings and boost online visibility for your property.",
-        src: imagesLink+"im11.webp",
+        src: imagesLink + "im11.webp",
         images: [""],
       },
       {
         title: "Restaurant Industry",
         desc: "Transforming restaurant brands with creative digital marketing solutions that attract diners. We specialize in social media campaigns, online ads, & SEO to drive traffic and increase sales.",
-        src: imagesLink+"im9.webp",
+        src: imagesLink + "im9.webp",
         images: [""],
       },
       {
         title: "Immigration Industry",
         desc: "Elevating immigration brands with targeted digital marketing that reaches the right audience. From engaging social media campaigns and strategic online ads to SEO optimization.",
-        src: imagesLink+"im8.webp",
+        src: imagesLink + "im8.webp",
         images: [""],
       },
       {
         title: "Beauty Industry",
         desc: "Elevating beauty brands with powerful digital marketing strategies that captivate your audience. From influencer partnerships to targeted ads, we boost sales in the beauty.",
-        src: imagesLink+"im10.webp",
+        src: imagesLink + "im10.webp",
         images: [""],
       },
       {
         title: "Clothing Industry",
         desc: "Boosting clothing brands with innovative digital marketing strategies to drive sales and enhance visibility. We specialize in social media, influencer partnerships, and targeted ads.",
-        src: imagesLink+"im5.webp",
+        src: imagesLink + "im5.webp",
         images: [""],
       },
     ],
@@ -443,7 +443,15 @@ export const ServicePageData = {
     ],
     src: imagesLink + "im7.webp",
     images: [""],
-    featuredIn: [""],
+    featuredIn: {
+      title: "Featured In",
+      images: [
+        imagesLink + "Forbes.webp",
+        imagesLink + "Bloomberg_Businessweek.webp",
+        imagesLink + "bloomberg.webp",
+        imagesLink + "inclo.webp",
+      ],
+    },
   },
   services: {
     title: "ALL SERVICES",

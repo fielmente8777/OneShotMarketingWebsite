@@ -78,7 +78,7 @@ const Form = () => {
           email: userEmail,
           Name: userName,
           Contact: userPhone, // Combine country code and phone number
-          Description: userMessage,
+          Description: `Industry Name ${selected}, Message: ${userMessage},`,
         },
         {
           headers: {

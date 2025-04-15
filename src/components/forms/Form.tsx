@@ -2,13 +2,17 @@
 
 import axios from "axios";
 import React, { useMemo, useRef, useState } from "react";
-import { useRouter } from "next/navigation";
+// import { useRouter } from "next/navigation";
 import { countries } from "@/data/countryCode";
 import { DropDownIcon } from "@/data/icons";
 import useClickOutside from "@/hooks/useClickOutside";
 
-const Form = () => {
-  const router = useRouter();
+const Form = ({
+  setOpenForm,
+}: {
+  setOpenForm?: React.Dispatch<React.SetStateAction<boolean>>;
+}) => {
+  // const router = useRouter();
   const [userName, setUserName] = useState("");
   const [userEmail, setUserEmail] = useState("");
   const [userMessage, setUserMessage] = useState("");
@@ -94,8 +98,10 @@ const Form = () => {
         setUserMessage("");
         setUserPhone("");
         // setCountryCode("+91"); // Reset country code
+        if (setOpenForm) setOpenForm(false);
         setFormRes(false);
-        router.push("/thank-you/");
+
+        // router.push("/thank-you/");
       } else {
         setFormRes(false);
         alert("Something went wrong!");

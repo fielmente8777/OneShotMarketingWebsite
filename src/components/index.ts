@@ -27,6 +27,7 @@ import { Banner } from "./banner";
 import { Form1, Form } from "./forms";
 import LazyLoadedMap from "./maps/LazyLoadedMap";
 import PageNotFound from "./PageNotFound";
+import FormPopup from './popup/FormPopup';
 
 export {
   Banner,
@@ -57,4 +58,5 @@ export {
   ServicesSection,
   Accordion,
   FormSection,
+  FormPopup
 };

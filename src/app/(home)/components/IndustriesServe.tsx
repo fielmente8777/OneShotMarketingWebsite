@@ -1,12 +1,14 @@
 "use client";
 import { CommonProps } from "@/@types/type";
 import {
+  FormPopup,
   OnlyButton,
   SectionTitleSubTitle,
   SectionWithContainer,
   SliderSwip,
 } from "@/components";
 import ServiceCard2 from "@/components/Cards/ServiceCard2";
+import { useState } from "react";
 
 const IndustriesServe: React.FC<CommonProps> = ({
   title,
@@ -14,6 +16,7 @@ const IndustriesServe: React.FC<CommonProps> = ({
   services,
   links,
 }) => {
+  const [openForm, setOpenForm] = useState(false);
   return (
     <SectionWithContainer sectionId="industries" sectionClassName="bg-bg2">
       <div className="w-full flex flex-col items-center justify-center gap-4 lg:gap-10">
@@ -53,6 +56,7 @@ const IndustriesServe: React.FC<CommonProps> = ({
             <li key={index}>
               <OnlyButton
                 // href={item.href}
+                onclick={() => setOpenForm(true)}
                 className={`${index === 0 ? "bg-secondary px-4 py-2 md:px-6 md:py-3 rounded hover:box-shadow" : "underline underline-offset-4 hover:text-secondary"} font-semibold text-white decoration1 text-center`}
               >
                 {item.name}
@@ -61,6 +65,7 @@ const IndustriesServe: React.FC<CommonProps> = ({
           ))}
         </ul>
       </div>
+      <FormPopup openForm={openForm} setOpenForm={setOpenForm} />
     </SectionWithContainer>
   );
 };

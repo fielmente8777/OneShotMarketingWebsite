@@ -6,7 +6,7 @@ export interface ServiceCardProps {
   level?: 1 | 2 | 3 | 4 | 5 | 6;
   titlePx?: boolean;
 }
-const ServiceCard: React.FC<ServiceCardProps> = ({
+const ServiceCard4: React.FC<ServiceCardProps> = ({
   icon,
   title,
   desc,
@@ -17,15 +17,15 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   return (
     <div className="w-full bg-white rounded-2xl border border-primary md:hover:box-shadow duration-300 transition-all ease-in-out flex flex-col items-center justify-center gap-4 py-6 px-4">
       {icon && <span className="">{icon}</span>}
+      <div className="w-full h-[1px] bg-secondary max-w-[6.5rem]"></div>
       <Tag
         className={`heading2 text-center font-medium md:h-[4.3ch] text-primary ${titlePx ? "md:px-10" : ""}`}
       >
         {title}
       </Tag>
-      <div className="w-full h-[1px] bg-secondary max-w-[6.5rem]"></div>
-      <p className="heading4 text-center text-primary">{desc}</p>
+      {desc && <p className="heading4 text-center text-primary">{desc}</p>}
     </div>
   );
 };
 
-export default ServiceCard;
+export default ServiceCard4;

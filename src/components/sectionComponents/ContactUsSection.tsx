@@ -11,6 +11,8 @@ export interface ContactUsSectionProps {
   title: string;
   subTitle: string;
   desc: string[];
+  desc2?: string[];
+  number?: string;
   tick?: boolean;
   testimonial?: {
     name: string;
@@ -25,10 +27,12 @@ const ContactUsSection: React.FC<ContactUsSectionProps> = ({
   desc,
   testimonial,
   tick = false,
+  desc2,
+  number,
 }) => {
   return (
     <SectionWithContainer>
-      <div className="grid md:grid-cols-6 grid-cols-1 gap-4 md:gap-6">
+      <div className="grid md:grid-cols-6 grid-cols-1 gap-4 md:gap-8">
         <div className={`flex flex-col gap-4 md:col-span-4 col-span-2 w-full`}>
           <SectionTitleSubTitle
             title={title}
@@ -93,6 +97,23 @@ const ContactUsSection: React.FC<ContactUsSectionProps> = ({
                 <button className="testimonial-next">
                   <BtnNext className="w-10 aspect-square hover:scale-105 active:scale-95" />
                 </button>
+              </div>
+            </div>
+          )}
+          {desc2 && (
+            <div className="flex max-lg:flex-col items-center gap-4">
+              <h2 className="md:text-4xl text-3xl inter font-semibold text-primary">
+                {number}
+              </h2>
+
+              <div className="flex flex-col gap-4">
+                {desc2.map((item, index) => (
+                  <p
+                    key={index}
+                    className="heading3 text-primary font-medium"
+                    dangerouslySetInnerHTML={{ __html: item }}
+                  ></p>
+                ))}
               </div>
             </div>
           )}

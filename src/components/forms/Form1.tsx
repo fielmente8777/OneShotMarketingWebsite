@@ -1,5 +1,5 @@
 "use client";
-import { useMemo, useRef, useState } from "react";
+import { ChangeEvent, useMemo, useRef, useState } from "react";
 import { OnlyButton } from "../buttons";
 import useClickOutside from "@/hooks/useClickOutside";
 import {
@@ -10,12 +10,80 @@ import {
   MessageIcon,
   UserIcon,
 } from "@/data/icons";
+import axios from "axios";
 
 const Form1 = () => {
   const [extend, setExtend] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const formRef = useRef<HTMLFormElement | null>(null);
   const dropDownRef = useRef<HTMLDivElement | null>(null);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+
+  const handleChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    // if (userPhone.length !== 10) {
+    //   setErrorMessage("Phone number must be exactly 10 digits.");
+    //   return;
+    // }
+
+    // if (!emailRegex.test(userEmail)) {
+    //   setEmailErrorMessage("Please enter a valid email address.");
+    //   return;
+    // }
+
+    try {
+      // setFormRes(true);
+      const { data } = await axios.post(
+        "https://nexon.eazotel.com/eazotel/addcontacts",
+        {
+          Domain: "sumit", // Replace with your actual domain value
+          // Domain: "",
+          email: formData?.email,
+          Name: formData?.name,
+          Contact: `${formData?.phone}`, // Combine country code and phone number
+          Description: `Industry Name ${selected}, Message: ${formData?.message},`,
+        },
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+
+      // if (data.Status) {
+      //   setFormRes(true);
+      //   setUserName("");
+      //   setUserEmail("");
+      //   setUserMessage("");
+      //   setUserPhone("");
+      //   // setCountryCode("+91"); // Reset country code
+      //   setFormRes(false);
+      //   // router.push("/thank-you/");
+      // } else {
+      //   setFormRes(false);
+      //   alert("Something went wrong!");
+      // }
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   const industries = useMemo(
     () => [
       "select Industry",
@@ -36,14 +104,17 @@ const Form1 = () => {
       setExtend(false);
     }
   });
+
   useClickOutside(dropDownRef, () => {
     if (isOpen) {
       setIsOpen(false);
       setSelected(industries[0]);
     }
   });
+
   return (
     <form
+      onSubmit={handleSubmit}
       className={`w-full md:grid flex flex-col max-lg:gap-2 ${extend ? "grid-cols-6 md:gap-y-4 max-lg:mb-8" : "grid-cols-7"} text-white transition-all duration-500 ease-in-out transform ${
         extend ? "scale-y-105" : "scale-100"
       } bg-dark p-2 rounded-lg shadow-xl`}
@@ -58,10 +129,12 @@ const Form1 = () => {
           type="text"
           name="name"
           id="name"
-          placeholder="Name"
+          placeholder="Full Name"
+          onChange={handleChange}
           className="w-full bg-transparent text-white placeholder:text-white rounded-lg  focus:outline-none outline-none"
         />
       </div>
+
       <div className="col-span-2 md:border-r border-light flex items-center justify-center gap-2 w-full py-3 px-4">
         <label htmlFor="phone">
           <CallIcon />
@@ -70,22 +143,26 @@ const Form1 = () => {
           type="tel"
           name="phone"
           id="phone"
-          placeholder="Phone"
-          className="w-full bg-transparent text-white placeholder:text-white rounded-lg focus:outline-none outline-none"
+          placeholder="Phone Number"
+          onChange={handleChange}
+          className="w-full bg-transparent text-white placeholder:text-white no-spinner rounded-lg focus:outline-none outline-none"
         />
       </div>
       <div className="col-span-2 w-full flex items-center justify-center gap-2 py-3 px-4">
         <label htmlFor="email">
           <MailIcon />
         </label>
+
         <input
           type="email"
           name="email"
           id="email"
-          placeholder="Email"
+          placeholder="Email Id"
+          onChange={handleChange}
           className="w-full bg-transparent text-white placeholder:text-white rounded-lg focus:outline-none outline-none"
         />
       </div>
+
       <div
         className={`col-span-2 md:border-r border-light ${extend ? "block" : "hidden"}`}
       >
@@ -146,9 +223,11 @@ const Form1 = () => {
           id="message"
           placeholder="Message"
           rows={1}
+          onChange={handleChange}
           className="w-full bg-transparent text-white placeholder:text-white focus:outline-none outline-none resize-none"
-        ></textarea>
+        />
       </div>
+
       <OnlyButton
         Props={{ type: "submit" }}
         className={`${extend ? "col-span-2 ms-1" : "col-span-1"} bg-secondary hover:bg-white hover:text-primary flex items-center justify-center py-3 rounded-lg font-semibold hover:shadow-2xl hover:scale-[1.01]`}

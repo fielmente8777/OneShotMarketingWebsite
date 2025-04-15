@@ -30,7 +30,7 @@ const Banner: React.FC<BannerProps> = ({
                   {subTitle}
                 </h2>
               </div>
-              <div className="w-full max-w-7xl lg:block hidden">
+              <div className="w-full max-w-[73rem] lg:block hidden">
                 <Form1 />
               </div>
               <p className="heading3 text-white text-center max-w-4xl tracking-wide w-full max-lg:hidden">{description}</p>

@@ -66,8 +66,8 @@ const page = async (props: Params) => {
       <main>
         <Banner {...slugsData.bannnerData} />
         <FormSection desc={slugsData.bannnerData.description} />
-        <TwoColSection {...slugsData.aboutUs} />
-        <ServicesSection {...slugsData.services} />
+        <TwoColSection {...slugsData.aboutUs} isRounded={false} aspect="aspect-[4/3.5]" />
+        <ServicesSection {...slugsData.services} noOslider={5}/>
         <ContactUsSection {...slugsData.contactUs} tick />
       </main>
     );

@@ -82,7 +82,7 @@ const Form = ({
           email: userEmail,
           Name: userName,
           Contact: userPhone, // Combine country code and phone number
-          Description: userMessage,
+          Description: `Industry Name ${selected}, Message: ${userMessage},`,
         },
         {
           headers: {
@@ -155,7 +155,7 @@ const Form = ({
             placeholder="Mobile number*"
             value={userPhone}
             onChange={handlePhoneChange}
-            className="w-full bg-transparent border-l border-light px-2 py-3 placeholder:text-[#4C4C4C] text-black no-spinner focus:outline-none"
+            className="w-full bg-transparent border-l border-light px-2 py-3 placeholder:text-[#4C4C4C] text-black no-spinner appearance-none focus:outline-none"
           />
         </div>
       ),

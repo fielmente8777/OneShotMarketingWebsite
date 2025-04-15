@@ -687,8 +687,10 @@ export const pageData2 = [
       ],
       desc2:[`visitors exit your website before room booking. <b>We will help you sell more.</b>`],
       number: "70%",
-      src: imagesLink + "im2.webp",
+      src: imagesLink + "hiim1.webp",
       images: [""],
+      aspect:"aspect-[4/4]",
+      imageClassName:"!rounded-none"
     },
     services: {
       title: "KEY FEATURES",
@@ -772,7 +774,8 @@ export const pageData2 = [
         "Social media platforms like Facebook, Instagram, LinkedIn, and Twitter are absolute goldmines when it comes to attracting potential guests to your hotel. Just think about it: a single post, story, or ad can grab the attention of someone who’s planning their next getaway, and in the best case, that one interaction can turn into a loyal customer for years to come.",
         "That’s where our social media marketing service comes in. We don’t just post for the sake of posting; we take the time to understand your hotel's unique vibe and target audience. From creating eye-catching content that tells your story, to engaging with your followers in a meaningful way, we help build a real connection. And it’s not just about organic growth — we also run highly-targeted paid campaigns designed to drive bookings directly.",
       ],
-      src: imagesLink + "im2.webp",
+      src: imagesLink + "hiim2.webp",
+      aspect:"aspect-[4/4] ",
       images: [""],
       links: [
         {
@@ -849,21 +852,21 @@ export const pageData2 = [
     slug: "hotel-industry/website-design-and-development",
     title: "Website Design & Development",
     bannnerData: {
-      title: "TRANSFORM YOUR HOTEL’S REACH WITH",
-      subTitle: "Expert Hotel Social Media Marketing",
+      title: "CREATE A CAPTIVATING ONLINE PRESENCE WITH",
+      subTitle: "Hotel Website Design & Development Services",
       description:
-        "Gain exposure to your target audience with the right social media marketing strategies for your brand.",
+        "From seamless bookings to captivating visuals, we design websites that elevate your hotel’s brand and guest experience.",
       src: imagesLink + "bnr2.webp",
       images: [""],
     },
     aboutUs: {
       title: "BOOST YOUR HOTEL BUSINESS",
-      subTitle: `Campaigns that <b>Drive your Business with Trends! </b>`,
+      subTitle: `<b>Website</b> that Turns Casual Visitors into <b>Loyal Guests!</b>`,
       desc: [
-        "Social media platforms like Facebook, Instagram, LinkedIn, and Twitter are absolute goldmines when it comes to attracting potential guests to your hotel. Just think about it: a single post, story, or ad can grab the attention of someone who’s planning their next getaway, and in the best case, that one interaction can turn into a loyal customer for years to come.",
-        "That’s where our social media marketing service comes in. We don’t just post for the sake of posting; we take the time to understand your hotel's unique vibe and target audience. From creating eye-catching content that tells your story, to engaging with your followers in a meaningful way, we help build a real connection. And it’s not just about organic growth — we also run highly-targeted paid campaigns designed to drive bookings directly.",
+        "Your website is the heartbeat of your hotel’s online presence – it’s often the first place potential guests will discover your property. That’s why we focus on creating custom websites that not only look amazing but are incredibly easy for guests to navigate. We understand that booking a room should be a smooth, hassle-free experience, so we design intuitive booking systems that make securing a stay a breeze.",
+        "With mobile-friendly designs, your website will look stunning on any device, ensuring that guests can easily browse, book, and learn more about your hotel no matter where they are. Our goal is to make sure your site loads quickly, offers a seamless user experience, and most importantly, converts visitors into confirmed bookings.",
       ],
-      src: imagesLink + "im2.webp",
+      src: imagesLink + "hiim3.webp",
       images: [""],
       links: [
         {
@@ -874,10 +877,10 @@ export const pageData2 = [
     },
     services: {
       title: "KEY FEATURES",
-      subTitle: `Turn Likes into Bookings with Creative,<br /> <b> Results-Driven Social Campaigns</b>`,
+      subTitle: `Seamless User Experience from <br /> <b> Browsing to Booking</b>`,
       services: [
         {
-          title: "SOCIAL MEDIA STRATEGY",
+          title: "MOBILE-FRIENDLY",
           image: {
             src: "",
             alt: "",
@@ -885,7 +888,7 @@ export const pageData2 = [
           icon: <PerformanceMarketing2 />,
         },
         {
-          title: "CONTENT CREATION",
+          title: "BOOKING ENGINE",
           image: {
             src: "",
             alt: "",
@@ -893,7 +896,7 @@ export const pageData2 = [
           icon: <SocialMediaMarketing />,
         },
         {
-          title: "COMMUNITY MANAGEMENT",
+          title: "USER-FRIENDLY INTERFACE",
           image: {
             src: "",
             alt: "",
@@ -901,7 +904,7 @@ export const pageData2 = [
           icon: <WebsiteDesignDevelopment />,
         },
         {
-          title: "PAID ADVERTISING",
+          title: "ENHANCED SITE SPEED",
           image: {
             src: "",
             alt: "",
@@ -909,7 +912,7 @@ export const pageData2 = [
           icon: <SearchEngineOptimization2 />,
         },
         {
-          title: "SOCIAL MEDIA ANALYTICS",
+          title: "SEO-OPTIMIZED STRUCTURE",
           image: {
             src: "",
             alt: "",
@@ -926,35 +929,36 @@ export const pageData2 = [
     },
     contactUs: {
       title: "CONTACT US TO KNOW MORE",
-      subTitle: `Explore the power of <b>Hotel Social Media Marketing</b> services.`,
+      subTitle: `<b>Build Stunning Visuals</b> for your Visitors with our <b>Website Development services!</b>`,
       desc: [
         "Leading Hotel digital marketing agency in Ontario.",
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],
-     number: "45%",
-     desc2:[`of hotel guests say they are likely to book a  <b>promotion seen on social media.</b>`],
+     number: "65%",
+     desc2:[`of online hotel bookings happening directly on  <b>brand websites.</b>`],
     },
   },
   {
     slug: "hotel-industry/search-engine-optimization",
     title: "Search Engine Optimization",
     bannnerData: {
-      title: "TRANSFORM YOUR HOTEL’S REACH WITH",
-      subTitle: "Expert Hotel Social Media Marketing",
+      title: "UNLOCK YOUR HOTEL’S POTENTIAL BUSINESS WITH",
+      subTitle: "Expert SEO Services",
       description:
-        "Gain exposure to your target audience with the right social media marketing strategies for your brand.",
+        "Boost your online visibility, attract more guests, and drive bookings with targeted SEO strategies tailored for the hospitality industry.",
       src: imagesLink + "bnr2.webp",
       images: [""],
     },
     aboutUs: {
       title: "BOOST YOUR HOTEL BUSINESS",
-      subTitle: `Campaigns that <b>Drive your Business with Trends! </b>`,
+      subTitle: `SEO that <b>Drives Success from the Root! </b>`,
       desc: [
-        "Social media platforms like Facebook, Instagram, LinkedIn, and Twitter are absolute goldmines when it comes to attracting potential guests to your hotel. Just think about it: a single post, story, or ad can grab the attention of someone who’s planning their next getaway, and in the best case, that one interaction can turn into a loyal customer for years to come.",
-        "That’s where our social media marketing service comes in. We don’t just post for the sake of posting; we take the time to understand your hotel's unique vibe and target audience. From creating eye-catching content that tells your story, to engaging with your followers in a meaningful way, we help build a real connection. And it’s not just about organic growth — we also run highly-targeted paid campaigns designed to drive bookings directly.",
+        "Ever wondered how your competitors are consistently bringing in more business? The secret is simple – SEO. By optimizing your website for search engines, they’re making sure their hotel ranks higher when potential guests search for accommodations in your area. Our SEO services are designed to boost your hotel’s visibility, making it easier for future guests to find you when they search for relevant keywords. The result? More organic traffic to your site, and ultimately, more bookings.",
+        "We focus on strategies that will help your website rank higher on Google and other major search engines. By targeting specific, high-value search terms related to your hotel, we make sure you’re not just another option in a crowded market.",
       ],
-      src: imagesLink + "im2.webp",
+      src: imagesLink + "hiim4.webp",
+      aspect: "aspect-[4/4]",
       images: [""],
       links: [
         {
@@ -965,10 +969,10 @@ export const pageData2 = [
     },
     services: {
       title: "KEY FEATURES",
-      subTitle: `Turn Likes into Bookings with Creative,<br /> <b> Results-Driven Social Campaigns</b>`,
+      subTitle: `Attract <b>Organic Traffic & Potential</b>,<br /> <b> Business</b> with our range of services!`,
       services: [
         {
-          title: "SOCIAL MEDIA STRATEGY",
+          title: "ON-PAGE SEO",
           image: {
             src: "",
             alt: "",
@@ -976,7 +980,7 @@ export const pageData2 = [
           icon: <PerformanceMarketing2 />,
         },
         {
-          title: "CONTENT CREATION",
+          title: "LOCAL SEO",
           image: {
             src: "",
             alt: "",
@@ -984,7 +988,7 @@ export const pageData2 = [
           icon: <SocialMediaMarketing />,
         },
         {
-          title: "COMMUNITY MANAGEMENT",
+          title: "LINK- BUILDING",
           image: {
             src: "",
             alt: "",
@@ -992,7 +996,7 @@ export const pageData2 = [
           icon: <WebsiteDesignDevelopment />,
         },
         {
-          title: "PAID ADVERTISING",
+          title: "KEYWORD RESEARCH",
           image: {
             src: "",
             alt: "",
@@ -1000,7 +1004,7 @@ export const pageData2 = [
           icon: <SearchEngineOptimization2 />,
         },
         {
-          title: "SOCIAL MEDIA ANALYTICS",
+          title: "PERFORMANCE TRACKING",
           image: {
             src: "",
             alt: "",
@@ -1017,35 +1021,34 @@ export const pageData2 = [
     },
     contactUs: {
       title: "CONTACT US TO KNOW MORE",
-      subTitle: `Explore the power of <b>Hotel Social Media Marketing</b> services.`,
+      subTitle: `Reach Out for Expert <b>Hotel SEO Services</b>`,
       desc: [
         "Leading Hotel digital marketing agency in Ontario.",
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],
-     number: "45%",
-     desc2:[`of hotel guests say they are likely to book a  <b>promotion seen on social media.</b>`],
+     number: "75%",
+     desc2:[`of searchers never go past the  <b>first page of search results!</b>`],
     },
   },
   {
     slug: "hotel-industry/OTA-listings-and-management",
     title: "OTA Listings and Management",
     bannnerData: {
-      title: "TRANSFORM YOUR HOTEL’S REACH WITH",
-      subTitle: "Expert Hotel Social Media Marketing",
+      title: "EXPAND YOUR HOTEL’S",
+      subTitle: "Presence on Leading OTAs",
       description:
-        "Gain exposure to your target audience with the right social media marketing strategies for your brand.",
+        "Unlock greater exposure and higher bookings with expert OTA management tailored to your property.",
       src: imagesLink + "bnr2.webp",
       images: [""],
     },
     aboutUs: {
       title: "BOOST YOUR HOTEL BUSINESS",
-      subTitle: `Campaigns that <b>Drive your Business with Trends! </b>`,
+      subTitle: `Build your <b>Hotel's Presence </b>on <b>Leading OTA's Today!</b>`,
       desc: [
-        "Social media platforms like Facebook, Instagram, LinkedIn, and Twitter are absolute goldmines when it comes to attracting potential guests to your hotel. Just think about it: a single post, story, or ad can grab the attention of someone who’s planning their next getaway, and in the best case, that one interaction can turn into a loyal customer for years to come.",
-        "That’s where our social media marketing service comes in. We don’t just post for the sake of posting; we take the time to understand your hotel's unique vibe and target audience. From creating eye-catching content that tells your story, to engaging with your followers in a meaningful way, we help build a real connection. And it’s not just about organic growth — we also run highly-targeted paid campaigns designed to drive bookings directly.",
+        "Maintaining presence on Online Travel Agencies is essential for maximum visibility and reach. Sites like Booking.com, Expedia, and Airbnb are the strongest marketplaces for your hotel. One Shot manages and optimizes your OTA listings to ensure they are fully optimized for visibility and conversions. From updating images and descriptions to optimizing pricing strategies, we ensure your property stands out in a crowded market.Explore your possibilities with top hotel marketing agencies in Canada.",
       ],
-      src: imagesLink + "im2.webp",
+      src: imagesLink + "hiim5.webp",
       images: [""],
       links: [
         {
@@ -1056,10 +1059,10 @@ export const pageData2 = [
     },
     services: {
       title: "KEY FEATURES",
-      subTitle: `Turn Likes into Bookings with Creative,<br /> <b> Results-Driven Social Campaigns</b>`,
+      subTitle: `Reach Across the <b>World’s Top OTAs</b> with<br /> our <b>Optimization Strategies</b>`,
       services: [
         {
-          title: "SOCIAL MEDIA STRATEGY",
+          title: "PROFILE OPTIMIZATION",
           image: {
             src: "",
             alt: "",
@@ -1067,7 +1070,7 @@ export const pageData2 = [
           icon: <PerformanceMarketing2 />,
         },
         {
-          title: "CONTENT CREATION",
+          title: "PRICING STRATEGY",
           image: {
             src: "",
             alt: "",
@@ -1075,7 +1078,7 @@ export const pageData2 = [
           icon: <SocialMediaMarketing />,
         },
         {
-          title: "COMMUNITY MANAGEMENT",
+          title: "RATE PARITY MANAGEMENT",
           image: {
             src: "",
             alt: "",
@@ -1083,7 +1086,7 @@ export const pageData2 = [
           icon: <WebsiteDesignDevelopment />,
         },
         {
-          title: "PAID ADVERTISING",
+          title: "SEASONAL PROMOTIONS",
           image: {
             src: "",
             alt: "",
@@ -1091,7 +1094,7 @@ export const pageData2 = [
           icon: <SearchEngineOptimization2 />,
         },
         {
-          title: "SOCIAL MEDIA ANALYTICS",
+          title: "REPUTATION MANAGEMENT",
           image: {
             src: "",
             alt: "",
@@ -1108,14 +1111,14 @@ export const pageData2 = [
     },
     contactUs: {
       title: "CONTACT US TO KNOW MORE",
-      subTitle: `Explore the power of <b>Hotel Social Media Marketing</b> services.`,
+      subTitle: `<b>Unlock the Power of OTAs</b> for Your Hotel.`,
       desc: [
         "Leading Hotel digital marketing agency in Ontario.",
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],
-     number: "45%",
-     desc2:[`of hotel guests say they are likely to book a  <b>promotion seen on social media.</b>`],
+     number: "80%",
+     desc2:[`of people rely on OTAs rather than  <b>search engines to make their travel arrangements!</b>`],
     },
   },
   // restaurant industry service
@@ -1123,21 +1126,21 @@ export const pageData2 = [
     slug: "restaurant-industry/website-design-and-development",
     title: "Website Design & Development",
     bannnerData: {
-      title: "TRANSFORM YOUR HOTEL’S REACH WITH",
-      subTitle: "Expert Hotel Social Media Marketing",
+      title: "CREATE A WEBSITE THAT",
+      subTitle: "Brings Diners Straight to Your Door!",
       description:
-        "Gain exposure to your target audience with the right social media marketing strategies for your brand.",
+        "Transform your online presence with a stunning, user-friendly website designed to attract customers and boost online presence!",
       src: imagesLink + "bnr2.webp",
       images: [""],
     },
     aboutUs: {
-      title: "BOOST YOUR HOTEL BUSINESS",
-      subTitle: `Campaigns that <b>Drive your Business with Trends! </b>`,
+      title: "BOOST YOUR RESTAURANT BUSINESS",
+      subTitle: `<b>Build a Presence</b> that Stays for a Lifetime with our <b>Website Designing Expertise!</b>`,
       desc: [
-        "Social media platforms like Facebook, Instagram, LinkedIn, and Twitter are absolute goldmines when it comes to attracting potential guests to your hotel. Just think about it: a single post, story, or ad can grab the attention of someone who’s planning their next getaway, and in the best case, that one interaction can turn into a loyal customer for years to come.",
-        "That’s where our social media marketing service comes in. We don’t just post for the sake of posting; we take the time to understand your hotel's unique vibe and target audience. From creating eye-catching content that tells your story, to engaging with your followers in a meaningful way, we help build a real connection. And it’s not just about organic growth — we also run highly-targeted paid campaigns designed to drive bookings directly.",
+        "Custom designs are essential to portray the essence of your restaurant. Conveying a vibe that best explains your space- is a feat not everyone can achieve! We offer custom website design and development that ensures your site is visually appealing, user-friendly, and optimized for online reservations. Whether it’s showcasing your menu or integrating with your reservation system, we create websites that make it easy for your customers to connect with you. ",
+        "Our custom designs ensure that your site not only looks stunning but also functions flawlessly, from easy navigation to seamless reservation booking. Let’s create a website that gives your customers a taste of what’s to come—and leaves them hungry for more!",
       ],
-      src: imagesLink + "im2.webp",
+      src: imagesLink + "riim1.webp",
       images: [""],
       links: [
         {
@@ -1148,10 +1151,10 @@ export const pageData2 = [
     },
     services: {
       title: "KEY FEATURES",
-      subTitle: `Turn Likes into Bookings with Creative,<br /> <b> Results-Driven Social Campaigns</b>`,
+      subTitle: `<b>Elevate user experience for your clients!</b>`,
       services: [
         {
-          title: "SOCIAL MEDIA STRATEGY",
+          title: "MOBILE-FRIENDLY",
           image: {
             src: "",
             alt: "",
@@ -1159,7 +1162,7 @@ export const pageData2 = [
           icon: <PerformanceMarketing2 />,
         },
         {
-          title: "CONTENT CREATION",
+          title: "BOOKING ENGINE",
           image: {
             src: "",
             alt: "",
@@ -1167,7 +1170,7 @@ export const pageData2 = [
           icon: <SocialMediaMarketing />,
         },
         {
-          title: "COMMUNITY MANAGEMENT",
+          title: "USER-FRIENDLY INTERFACE",
           image: {
             src: "",
             alt: "",
@@ -1175,7 +1178,7 @@ export const pageData2 = [
           icon: <WebsiteDesignDevelopment />,
         },
         {
-          title: "PAID ADVERTISING",
+          title: "ENHANCED SITE SPEED",
           image: {
             src: "",
             alt: "",
@@ -1183,7 +1186,7 @@ export const pageData2 = [
           icon: <SearchEngineOptimization2 />,
         },
         {
-          title: "SOCIAL MEDIA ANALYTICS",
+          title: "SEO-OPTIMIZED STRUCTURE",
           image: {
             src: "",
             alt: "",
@@ -1200,49 +1203,47 @@ export const pageData2 = [
     },
     contactUs: {
       title: "CONTACT US TO KNOW MORE",
-      subTitle: `Explore the power of <b>Hotel Social Media Marketing</b> services.`,
+      subTitle: `Let’s build a website that <b>works as hard as your kitchen!</b>`,
       desc: [
         "Leading Hotel digital marketing agency in Ontario.",
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],
-     number: "45%",
-     desc2:[`of hotel guests say they are likely to book a  <b>promotion seen on social media.</b>`],
+     number: "35%",
+     desc2:[`boost in customer retention- <b>seen with an optimized website.</b>`],
     },
   },
   {
     slug: "restaurant-industry/search-engine-optimization",
     title: "Search Engine Optimization",
     bannnerData: {
-      title: "TRANSFORM YOUR HOTEL’S REACH WITH",
-      subTitle: "Expert Hotel Social Media Marketing",
+      title: "PUT YOUR RESTAURANT ON THE MAP WITH",
+      subTitle: "Expert SEO Services!",
       description:
-        "Gain exposure to your target audience with the right social media marketing strategies for your brand.",
+        "Stand out online and draw in more diners with SEO strategies crafted to boost traffic and maximize bookings.",
       src: imagesLink + "bnr2.webp",
       images: [""],
     },
     aboutUs: {
-      title: "BOOST YOUR HOTEL BUSINESS",
-      subTitle: `Campaigns that <b>Drive your Business with Trends! </b>`,
+      title: "BOOST YOUR RESTAURANT BUSINESS",
+      subTitle: `SEO that Boosts <b>your Image to the Right Audience!</b>`,
       desc: [
-        "Social media platforms like Facebook, Instagram, LinkedIn, and Twitter are absolute goldmines when it comes to attracting potential guests to your hotel. Just think about it: a single post, story, or ad can grab the attention of someone who’s planning their next getaway, and in the best case, that one interaction can turn into a loyal customer for years to come.",
-        "That’s where our social media marketing service comes in. We don’t just post for the sake of posting; we take the time to understand your hotel's unique vibe and target audience. From creating eye-catching content that tells your story, to engaging with your followers in a meaningful way, we help build a real connection. And it’s not just about organic growth — we also run highly-targeted paid campaigns designed to drive bookings directly.",
+        "How would you know if someone around you is looking for some curated flavours that only you serve? The answer- SEO. To ensure your restaurant gets noticed by potential diners, we offer expert SEO services that help your website rank higher on search engines like Google. By optimizing your website’s content and structure, we help you attract more organic traffic from search terms related to your location, cuisine, and dining experience",
+        `Imagine someone Googling "best sushi near me" or "romantic dinner spots” in your city—you want to be the first name they see! We make sure your restaurant is the one that stands out when it matters most, bringing in diners who are already searching for what you offer. It’s time to make your restaurant the first thing they find!`,
       ],
-      src: imagesLink + "im2.webp",
+      src: imagesLink + "riim2.webp",
       images: [""],
-      links: [
-        {
-          name: "Get a FREE quote now!",
-          href: "",
-        },
-      ]
+      desc2: [
+        `visitors exit your website before room booking. <b>We will help you sell more.</b>`,
+      ],
+      number:"70%",
     },
     services: {
       title: "KEY FEATURES",
-      subTitle: `Turn Likes into Bookings with Creative,<br /> <b> Results-Driven Social Campaigns</b>`,
+      subTitle: `<b>Turn the Tables to Full Capacity </b><br /> through our<b> SEO strategies!</b>`,
       services: [
         {
-          title: "SOCIAL MEDIA STRATEGY",
+          title: "ON-PAGE SEO",
           image: {
             src: "",
             alt: "",
@@ -1250,7 +1251,7 @@ export const pageData2 = [
           icon: <PerformanceMarketing2 />,
         },
         {
-          title: "CONTENT CREATION",
+          title: "LOCAL SEO",
           image: {
             src: "",
             alt: "",
@@ -1258,7 +1259,7 @@ export const pageData2 = [
           icon: <SocialMediaMarketing />,
         },
         {
-          title: "COMMUNITY MANAGEMENT",
+          title: "LINK- BUILDING",
           image: {
             src: "",
             alt: "",
@@ -1266,7 +1267,7 @@ export const pageData2 = [
           icon: <WebsiteDesignDevelopment />,
         },
         {
-          title: "PAID ADVERTISING",
+          title: "KEYWORD RESEARCH",
           image: {
             src: "",
             alt: "",
@@ -1274,7 +1275,7 @@ export const pageData2 = [
           icon: <SearchEngineOptimization2 />,
         },
         {
-          title: "SOCIAL MEDIA ANALYTICS",
+          title: "PERFORMANCE TRACKING",
           image: {
             src: "",
             alt: "",
@@ -1291,35 +1292,34 @@ export const pageData2 = [
     },
     contactUs: {
       title: "CONTACT US TO KNOW MORE",
-      subTitle: `Explore the power of <b>Hotel Social Media Marketing</b> services.`,
+      subTitle: `Contact us Today and <b>Let’s Help More Diners Find your Restaurant!</b>`,
       desc: [
         "Leading Hotel digital marketing agency in Ontario.",
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],
-     number: "45%",
-     desc2:[`of hotel guests say they are likely to book a  <b>promotion seen on social media.</b>`],
+     number: "60%",
+     desc2:[`increase in organic traffic- <b>seen with restaurant SEO strategies!</b>`],
     },
   },
   {
     slug: "restaurant-industry/social-media-marketing",
     title: "Social Media Marketing",
     bannnerData: {
-      title: "TRANSFORM YOUR HOTEL’S REACH WITH",
-      subTitle: "Expert Hotel Social Media Marketing",
+      title: "READY TO MAKE YOUR",
+      subTitle: "Restaurant the Talk of the Town?",
       description:
-        "Gain exposure to your target audience with the right social media marketing strategies for your brand.",
+        "Engage your audience, increase reservations, and build a loyal community with targeted social media marketing.",
       src: imagesLink + "bnr2.webp",
       images: [""],
     },
     aboutUs: {
-      title: "BOOST YOUR HOTEL BUSINESS",
-      subTitle: `Campaigns that <b>Drive your Business with Trends! </b>`,
+      title: "BOOST YOUR RESTAURANT BUSINESS",
+      subTitle: `<b>Make Social Channels</b> that exude <b>your Authenticity!</b>`,
       desc: [
-        "Social media platforms like Facebook, Instagram, LinkedIn, and Twitter are absolute goldmines when it comes to attracting potential guests to your hotel. Just think about it: a single post, story, or ad can grab the attention of someone who’s planning their next getaway, and in the best case, that one interaction can turn into a loyal customer for years to come.",
-        "That’s where our social media marketing service comes in. We don’t just post for the sake of posting; we take the time to understand your hotel's unique vibe and target audience. From creating eye-catching content that tells your story, to engaging with your followers in a meaningful way, we help build a real connection. And it’s not just about organic growth — we also run highly-targeted paid campaigns designed to drive bookings directly.",
+        "A single social media post done right can do wonders for your restaurant—it’s all about sparking curiosity and making your audience crave what you serve! We understand that today’s diners are looking for more than just great food; they want an experience they can connect with, share, and talk about. That’s where we come in! From mouthwatering photos of your latest dishes to behind-the-scenes glimpses of your kitchen, we’ll help you create content that not only showcases your menu but also tells your unique story. We’ll help you build a strong, authentic online presence, ensuring your restaurant becomes a go-to spot that people can’t stop talking about—both online and in person. Ready to turn your social media followers into your biggest fans? Let’s make it happen!",
       ],
-      src: imagesLink + "im2.webp",
+      src: imagesLink + "riim3.webp",
       images: [""],
       links: [
         {
@@ -1330,7 +1330,7 @@ export const pageData2 = [
     },
     services: {
       title: "KEY FEATURES",
-      subTitle: `Turn Likes into Bookings with Creative,<br /> <b> Results-Driven Social Campaigns</b>`,
+      subTitle: `Elevate your <b> social media presence</b>`,
       services: [
         {
           title: "SOCIAL MEDIA STRATEGY",
@@ -1382,35 +1382,35 @@ export const pageData2 = [
     },
     contactUs: {
       title: "CONTACT US TO KNOW MORE",
-      subTitle: `Explore the power of <b>Hotel Social Media Marketing</b> services.`,
+      subTitle: `Create a buzz with <b> Our Marketing Expertise!</b>`,
       desc: [
         "Leading Hotel digital marketing agency in Ontario.",
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],
      number: "45%",
-     desc2:[`of hotel guests say they are likely to book a  <b>promotion seen on social media.</b>`],
+     desc2:[`increase in customer engagement recorded through <b>social media marketing!</b>`],
     },
   },
   {
     slug: "restaurant-industry/performance-marketing",
     title: "Performance Marketing",
     bannnerData: {
-      title: "TRANSFORM YOUR HOTEL’S REACH WITH",
-      subTitle: "Expert Hotel Social Media Marketing",
+      title: "BOOST YOUR RESTAURANT'S SUCCESS WITH",
+      subTitle: "Data-Driven Marketing Services",
       description:
-        "Gain exposure to your target audience with the right social media marketing strategies for your brand.",
+        "Maximize foot traffic, increase online orders, and elevate your restaurant's brand with personalized performance marketing strategies.",
       src: imagesLink + "bnr2.webp",
       images: [""],
     },
     aboutUs: {
-      title: "BOOST YOUR HOTEL BUSINESS",
-      subTitle: `Campaigns that <b>Drive your Business with Trends! </b>`,
+      title: "BOOST YOUR RESTAURANT BUSINESS",
+      subTitle: `Build Performance Channels that <b>Drive Sales for your Restaurant!</b>`,
       desc: [
-        "Social media platforms like Facebook, Instagram, LinkedIn, and Twitter are absolute goldmines when it comes to attracting potential guests to your hotel. Just think about it: a single post, story, or ad can grab the attention of someone who’s planning their next getaway, and in the best case, that one interaction can turn into a loyal customer for years to come.",
-        "That’s where our social media marketing service comes in. We don’t just post for the sake of posting; we take the time to understand your hotel's unique vibe and target audience. From creating eye-catching content that tells your story, to engaging with your followers in a meaningful way, we help build a real connection. And it’s not just about organic growth — we also run highly-targeted paid campaigns designed to drive bookings directly.",
+        "As a restaurant owner, you know that every busy night is a testament to your hard work and dedication. But keeping that momentum going requires smart marketing that works as hard as you do. That’s where One Shot comes in. We don’t just set up ads and forget about them—we’re constantly fine-tuning, optimizing, and analyzing results to ensure every penny you spend delivers the best possible return. Whether it’s attracting new faces or re-engaging your loyal regulars, our tailored campaigns on Google, social media, and display networks are designed to keep your tables full and your kitchen bustling.",
+        "We’re here to help your restaurant shine, even in a crowded market. Let’s make every marketing move count! ",
       ],
-      src: imagesLink + "im2.webp",
+      src: imagesLink + "riim4.webp",
       images: [""],
       links: [
         {
@@ -1421,10 +1421,10 @@ export const pageData2 = [
     },
     services: {
       title: "KEY FEATURES",
-      subTitle: `Turn Likes into Bookings with Creative,<br /> <b> Results-Driven Social Campaigns</b>`,
+      subTitle: `<b>Elevates your Performance Strategy</b><br /> with Key Offerings`,
       services: [
         {
-          title: "SOCIAL MEDIA STRATEGY",
+          title: "PAID SEARCH CAMPAIGNS",
           image: {
             src: "",
             alt: "",
@@ -1432,7 +1432,7 @@ export const pageData2 = [
           icon: <PerformanceMarketing2 />,
         },
         {
-          title: "CONTENT CREATION",
+          title: "PERFORMANCE ANALYTICS",
           image: {
             src: "",
             alt: "",
@@ -1440,7 +1440,7 @@ export const pageData2 = [
           icon: <SocialMediaMarketing />,
         },
         {
-          title: "COMMUNITY MANAGEMENT",
+          title: "CONVERSION TRACKING",
           image: {
             src: "",
             alt: "",
@@ -1448,7 +1448,7 @@ export const pageData2 = [
           icon: <WebsiteDesignDevelopment />,
         },
         {
-          title: "PAID ADVERTISING",
+          title: "RETARGETING ADS",
           image: {
             src: "",
             alt: "",
@@ -1456,7 +1456,7 @@ export const pageData2 = [
           icon: <SearchEngineOptimization2 />,
         },
         {
-          title: "SOCIAL MEDIA ANALYTICS",
+          title: "DETAILED REPORTING",
           image: {
             src: "",
             alt: "",
@@ -1473,14 +1473,14 @@ export const pageData2 = [
     },
     contactUs: {
       title: "CONTACT US TO KNOW MORE",
-      subTitle: `Explore the power of <b>Hotel Social Media Marketing</b> services.`,
+      subTitle: `<b>Metrics to Footfall</b> with Our Restaurant <b>Performance Marketing Services!</b>`,
       desc: [
         "Leading Hotel digital marketing agency in Ontario.",
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],
-     number: "45%",
-     desc2:[`of hotel guests say they are likely to book a  <b>promotion seen on social media.</b>`],
+     number: "40%",
+     desc2:[`increase in revenue within the first 6 months!with  <b>excellent performance marketing!</b>`],
     },
   },
   // immigration industry service
@@ -1488,21 +1488,22 @@ export const pageData2 = [
     slug: "immigration-industry/website-design-and-development",
     title: "Website Design & Development",
     bannnerData: {
-      title: "TRANSFORM YOUR HOTEL’S REACH WITH",
-      subTitle: "Expert Hotel Social Media Marketing",
+      title: "A WEBSITE THAT SPEAKS FOR YOUR",
+      subTitle: "Trust and Credibility",
       description:
-        "Gain exposure to your target audience with the right social media marketing strategies for your brand.",
+        "Build a professional, user-friendly website that attracts clients and showcases your immigration services with expert design and development.",
       src: imagesLink + "bnr2.webp",
       images: [""],
     },
     aboutUs: {
-      title: "BOOST YOUR HOTEL BUSINESS",
+      title: "BOOST YOUR IMMIGRATION BUSINESS",
       subTitle: `Campaigns that <b>Drive your Business with Trends! </b>`,
       desc: [
-        "Social media platforms like Facebook, Instagram, LinkedIn, and Twitter are absolute goldmines when it comes to attracting potential guests to your hotel. Just think about it: a single post, story, or ad can grab the attention of someone who’s planning their next getaway, and in the best case, that one interaction can turn into a loyal customer for years to come.",
-        "That’s where our social media marketing service comes in. We don’t just post for the sake of posting; we take the time to understand your hotel's unique vibe and target audience. From creating eye-catching content that tells your story, to engaging with your followers in a meaningful way, we help build a real connection. And it’s not just about organic growth — we also run highly-targeted paid campaigns designed to drive bookings directly.",
+        "Looking to create a website that truly represents your immigration agency? Our design and development services focus on crafting user-friendly, responsive websites that make it easy for clients to explore visa options and get the help they need.",
+        "Our team not only ensures your website is visually appealing but also highly functional, with easy-to-navigate pages, clear calls to action, and integrated forms for inquiries or consultations. With a strong online presence, your agency will not only stand out but also build lasting relationships with clients who can trust you to guide them through their immigration journey.",
+        `<b>Let’s create a website that not only showcases your expertise but also drives real results!</b>`
       ],
-      src: imagesLink + "im2.webp",
+      src: imagesLink + "immiim1.webp",
       images: [""],
       links: [
         {
@@ -1513,10 +1514,10 @@ export const pageData2 = [
     },
     services: {
       title: "KEY FEATURES",
-      subTitle: `Turn Likes into Bookings with Creative,<br /> <b> Results-Driven Social Campaigns</b>`,
+      subTitle: `Know what a Website does for your <br /> <b>Business Credibility</b>`,
       services: [
         {
-          title: "SOCIAL MEDIA STRATEGY",
+          title: "MOBILE-FRIENDLY",
           image: {
             src: "",
             alt: "",
@@ -1524,7 +1525,7 @@ export const pageData2 = [
           icon: <PerformanceMarketing2 />,
         },
         {
-          title: "CONTENT CREATION",
+          title: "BOOKING ENGINE",
           image: {
             src: "",
             alt: "",
@@ -1532,7 +1533,7 @@ export const pageData2 = [
           icon: <SocialMediaMarketing />,
         },
         {
-          title: "COMMUNITY MANAGEMENT",
+          title: "USER-FRIENDLY INTERFACE",
           image: {
             src: "",
             alt: "",
@@ -1540,7 +1541,7 @@ export const pageData2 = [
           icon: <WebsiteDesignDevelopment />,
         },
         {
-          title: "PAID ADVERTISING",
+          title: "ENHANCED SITE SPEED",
           image: {
             src: "",
             alt: "",
@@ -1548,7 +1549,7 @@ export const pageData2 = [
           icon: <SearchEngineOptimization2 />,
         },
         {
-          title: "SOCIAL MEDIA ANALYTICS",
+          title: "SEO-OPTIMIZED STRUCTURE",
           image: {
             src: "",
             alt: "",
@@ -1565,35 +1566,35 @@ export const pageData2 = [
     },
     contactUs: {
       title: "CONTACT US TO KNOW MORE",
-      subTitle: `Explore the power of <b>Hotel Social Media Marketing</b> services.`,
+      subTitle: `Let’s Turn your Ideas into a <b>Website that Converts!</b>`,
       desc: [
         "Leading Hotel digital marketing agency in Ontario.",
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],
-     number: "45%",
-     desc2:[`of hotel guests say they are likely to book a  <b>promotion seen on social media.</b>`],
+     number: "56%",
+     desc2:[`increase in online inquiries- <b>when your immigration website is optimized!</b>`],
     },
   },
   {
     slug: "immigration-industry/search-engine-optimization",
     title: "Search Engine Optimization",
     bannnerData: {
-      title: "TRANSFORM YOUR HOTEL’S REACH WITH",
-      subTitle: "Expert Hotel Social Media Marketing",
+      title: "BOOST YOUR IMMIGRATION AGENCY'S",
+      subTitle: "Visibility with Expert SEO!",
       description:
-        "Gain exposure to your target audience with the right social media marketing strategies for your brand.",
+        "Attract more clients and rank higher on search engines with personalized SEO strategies.",
       src: imagesLink + "bnr2.webp",
       images: [""],
     },
     aboutUs: {
-      title: "BOOST YOUR HOTEL BUSINESS",
-      subTitle: `Campaigns that <b>Drive your Business with Trends! </b>`,
+      title: "BOOST YOUR IMMIGRATION BUSINESS",
+      subTitle: `Reach the <b>Right Clientele</b> with our <b>Expert SEO Services!</b>`,
       desc: [
-        "Social media platforms like Facebook, Instagram, LinkedIn, and Twitter are absolute goldmines when it comes to attracting potential guests to your hotel. Just think about it: a single post, story, or ad can grab the attention of someone who’s planning their next getaway, and in the best case, that one interaction can turn into a loyal customer for years to come.",
-        "That’s where our social media marketing service comes in. We don’t just post for the sake of posting; we take the time to understand your hotel's unique vibe and target audience. From creating eye-catching content that tells your story, to engaging with your followers in a meaningful way, we help build a real connection. And it’s not just about organic growth — we also run highly-targeted paid campaigns designed to drive bookings directly.",
+        "Want your immigration agency to stand out online? Our SEO services boost your visibility with targeted keywords, engaging content, and niche targeting. One Shot employs proven strategies to help you rank higher on search engines and attract clients that are searching for a trusted service.",
+        "We focus on more than just keywords—we take a comprehensive approach, optimizing your site’s structure, content, and even local SEO, to ensure it ranks higher on search engines. Whether someone’s looking for visa assistance or immigration advice in your area, we make sure your agency shows up at the top of their search. By continuously monitoring and adjusting our strategies, we ensure your online presence grows steadily, bringing in new leads and building your agency’s reputation as a trusted expert in the field",
       ],
-      src: imagesLink + "im2.webp",
+      src: imagesLink + "hiim4.webp",
       images: [""],
       links: [
         {
@@ -1604,10 +1605,10 @@ export const pageData2 = [
     },
     services: {
       title: "KEY FEATURES",
-      subTitle: `Turn Likes into Bookings with Creative,<br /> <b> Results-Driven Social Campaigns</b>`,
+      subTitle: `Wondering how <b>SEO strategies amp</b><br /> <b> your business?</b> Discover now.`,
       services: [
         {
-          title: "SOCIAL MEDIA STRATEGY",
+          title: "ON-PAGE SEO",
           image: {
             src: "",
             alt: "",
@@ -1615,7 +1616,7 @@ export const pageData2 = [
           icon: <PerformanceMarketing2 />,
         },
         {
-          title: "CONTENT CREATION",
+          title: "LOCAL SEO",
           image: {
             src: "",
             alt: "",
@@ -1623,7 +1624,7 @@ export const pageData2 = [
           icon: <SocialMediaMarketing />,
         },
         {
-          title: "COMMUNITY MANAGEMENT",
+          title: "LINK- BUILDING",
           image: {
             src: "",
             alt: "",
@@ -1631,7 +1632,7 @@ export const pageData2 = [
           icon: <WebsiteDesignDevelopment />,
         },
         {
-          title: "PAID ADVERTISING",
+          title: "KEYWORD RESEARCH",
           image: {
             src: "",
             alt: "",
@@ -1639,7 +1640,7 @@ export const pageData2 = [
           icon: <SearchEngineOptimization2 />,
         },
         {
-          title: "SOCIAL MEDIA ANALYTICS",
+          title: "PERFORMANCE TRACKING",
           image: {
             src: "",
             alt: "",
@@ -1656,35 +1657,35 @@ export const pageData2 = [
     },
     contactUs: {
       title: "CONTACT US TO KNOW MORE",
-      subTitle: `Explore the power of <b>Hotel Social Media Marketing</b> services.`,
+      subTitle: `It’s time to make a <b>lasting impression!</b>`,
       desc: [
         "Leading Hotel digital marketing agency in Ontario.",
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],
      number: "45%",
-     desc2:[`of hotel guests say they are likely to book a  <b>promotion seen on social media.</b>`],
+     desc2:[`increase is noted in website traffic with   <b>optimized SEO services!</b>`],
     },
   },
   {
     slug: "immigration-industry/social-media-marketing",
     title: "Social Media Marketing",
     bannnerData: {
-      title: "TRANSFORM YOUR HOTEL’S REACH WITH",
-      subTitle: "Expert Hotel Social Media Marketing",
+      title: "TURN FOLLOWERS INTO CLIENTS WITH",
+      subTitle: "Exceptional Social Media Strategies!",
       description:
-        "Gain exposure to your target audience with the right social media marketing strategies for your brand.",
+        "Engage potential clients, build trust, and grow your immigration consulting business through strategic social media campaigns",
       src: imagesLink + "bnr2.webp",
       images: [""],
     },
     aboutUs: {
-      title: "BOOST YOUR HOTEL BUSINESS",
-      subTitle: `Campaigns that <b>Drive your Business with Trends! </b>`,
+      title: "BOOST YOUR IMMIGRATION BUSINESS",
+      subTitle: `A Social Media Channel that Builds a <b>Credible Presence Across Channels!</b>`,
       desc: [
-        "Social media platforms like Facebook, Instagram, LinkedIn, and Twitter are absolute goldmines when it comes to attracting potential guests to your hotel. Just think about it: a single post, story, or ad can grab the attention of someone who’s planning their next getaway, and in the best case, that one interaction can turn into a loyal customer for years to come.",
-        "That’s where our social media marketing service comes in. We don’t just post for the sake of posting; we take the time to understand your hotel's unique vibe and target audience. From creating eye-catching content that tells your story, to engaging with your followers in a meaningful way, we help build a real connection. And it’s not just about organic growth — we also run highly-targeted paid campaigns designed to drive bookings directly.",
+        "In a world where social media is often the first place people turn to for answers, your immigration services need to stand out in the digital crowd. That’s where One Shot Marketing comes in—we help you craft meaningful, engaging content that speaks directly to your audience's needs and concerns. Whether it's through informative posts, success stories, or answering common questions, we ensure that your social media presence builds trust and credibility. By tapping into the power of social media, we make it easier for prospective clients to find you, connect with you, and ultimately, choose you as their go-to resource for immigration support. ",
+        `<b>Let’s turn your social media into a tool that not only informs but also converts leads into loyal clients.</b>`,
       ],
-      src: imagesLink + "im2.webp",
+      src: imagesLink + "hiim2.webp",
       images: [""],
       links: [
         {
@@ -1695,10 +1696,10 @@ export const pageData2 = [
     },
     services: {
       title: "KEY FEATURES",
-      subTitle: `Turn Likes into Bookings with Creative,<br /> <b> Results-Driven Social Campaigns</b>`,
+      subTitle: `Know how your <b>Social Media Channels</b><br /> Come into Play`,
       services: [
         {
-          title: "SOCIAL MEDIA STRATEGY",
+          title: "CONTENT CREATION",
           image: {
             src: "",
             alt: "",
@@ -1706,7 +1707,7 @@ export const pageData2 = [
           icon: <PerformanceMarketing2 />,
         },
         {
-          title: "CONTENT CREATION",
+          title: "PLATFORM STRATEGY",
           image: {
             src: "",
             alt: "",
@@ -1714,7 +1715,7 @@ export const pageData2 = [
           icon: <SocialMediaMarketing />,
         },
         {
-          title: "COMMUNITY MANAGEMENT",
+          title: "ENGAGEMENT CAMPAIGNS",
           image: {
             src: "",
             alt: "",
@@ -1722,7 +1723,7 @@ export const pageData2 = [
           icon: <WebsiteDesignDevelopment />,
         },
         {
-          title: "PAID ADVERTISING",
+          title: "PAID SOCIAL ADVERTISING",
           image: {
             src: "",
             alt: "",
@@ -1730,7 +1731,7 @@ export const pageData2 = [
           icon: <SearchEngineOptimization2 />,
         },
         {
-          title: "SOCIAL MEDIA ANALYTICS",
+          title: "DETAILED REPORTING",
           image: {
             src: "",
             alt: "",
@@ -1747,35 +1748,35 @@ export const pageData2 = [
     },
     contactUs: {
       title: "CONTACT US TO KNOW MORE",
-      subTitle: `Explore the power of <b>Hotel Social Media Marketing</b> services.`,
+      subTitle: `Let’s make your <b>Social Media Work for your Consultancy!</b>`,
       desc: [
         "Leading Hotel digital marketing agency in Ontario.",
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],
-     number: "45%",
-     desc2:[`of hotel guests say they are likely to book a  <b>promotion seen on social media.</b>`],
+     number: "40%",
+     desc2:[`increase in client engagement is seen with robust  <b>social media marketing for immigration consultancy!</b>`],
     },
   },
   {
     slug: "immigration-industry/performance-marketing",
     title: "Performance Marketing",
     bannnerData: {
-      title: "TRANSFORM YOUR HOTEL’S REACH WITH",
-      subTitle: "Expert Hotel Social Media Marketing",
+      title: "EMPOWER YOUR IMMIGRATION BUSINESS WITH",
+      subTitle: "Performance-Driven Marketing!",
       description:
-        "Gain exposure to your target audience with the right social media marketing strategies for your brand.",
+        "Boost your client base and grow your immigration practice with customized marketing strategies that bring you the right leads.",
       src: imagesLink + "bnr2.webp",
       images: [""],
     },
     aboutUs: {
-      title: "BOOST YOUR HOTEL BUSINESS",
-      subTitle: `Campaigns that <b>Drive your Business with Trends! </b>`,
+      title: "BOOST YOUR IMMIGRATION BUSINESS",
+      subTitle: `Bring the Right Numbers with our <b>Performance Marketing Strategies!</b>`,
       desc: [
-        "Social media platforms like Facebook, Instagram, LinkedIn, and Twitter are absolute goldmines when it comes to attracting potential guests to your hotel. Just think about it: a single post, story, or ad can grab the attention of someone who’s planning their next getaway, and in the best case, that one interaction can turn into a loyal customer for years to come.",
-        "That’s where our social media marketing service comes in. We don’t just post for the sake of posting; we take the time to understand your hotel's unique vibe and target audience. From creating eye-catching content that tells your story, to engaging with your followers in a meaningful way, we help build a real connection. And it’s not just about organic growth — we also run highly-targeted paid campaigns designed to drive bookings directly.",
+        "Maximize your investment with our Performance Marketing services tailored specifically for immigration consultants. We know that finding the right clients is crucial for your business, which is why we focus on strategies that speak directly to your target audience. Using data-driven insights, we ensure that your marketing efforts are aimed at the people who need your services the most—at exactly the right time. Whether it's prospective clients seeking visas, residency, or legal advice, our approach connects you with the individuals most likely to take action.",
+        "With One Shot, you're not just throwing ads into the void—you're building a smart, sustainable strategy that brings in qualified leads and measurable results. Let us help you grow your immigration consulting business by targeting the right people, increasing inquiries, and ultimately converting those leads into loyal clients.",
       ],
-      src: imagesLink + "im2.webp",
+      src: imagesLink + "riim4.webp",
       images: [""],
       links: [
         {
@@ -1786,10 +1787,10 @@ export const pageData2 = [
     },
     services: {
       title: "KEY FEATURES",
-      subTitle: `Turn Likes into Bookings with Creative,<br /> <b> Results-Driven Social Campaigns</b>`,
+      subTitle: `<b>Boost your immigration consultancy</b><br/>with the right strategies.`,
       services: [
         {
-          title: "SOCIAL MEDIA STRATEGY",
+          title: "PPC ADVERTISING",
           image: {
             src: "",
             alt: "",
@@ -1797,7 +1798,7 @@ export const pageData2 = [
           icon: <PerformanceMarketing2 />,
         },
         {
-          title: "CONTENT CREATION",
+          title: "PAID SOCIAL CAMPAIGNS",
           image: {
             src: "",
             alt: "",
@@ -1805,7 +1806,7 @@ export const pageData2 = [
           icon: <SocialMediaMarketing />,
         },
         {
-          title: "COMMUNITY MANAGEMENT",
+          title: "LEAD GENERATION",
           image: {
             src: "",
             alt: "",
@@ -1813,7 +1814,7 @@ export const pageData2 = [
           icon: <WebsiteDesignDevelopment />,
         },
         {
-          title: "PAID ADVERTISING",
+          title: "RETARGETING & REMARKETING",
           image: {
             src: "",
             alt: "",
@@ -1821,7 +1822,7 @@ export const pageData2 = [
           icon: <SearchEngineOptimization2 />,
         },
         {
-          title: "SOCIAL MEDIA ANALYTICS",
+          title: "DETAILED REPORTING",
           image: {
             src: "",
             alt: "",
@@ -1838,14 +1839,14 @@ export const pageData2 = [
     },
     contactUs: {
       title: "CONTACT US TO KNOW MORE",
-      subTitle: `Explore the power of <b>Hotel Social Media Marketing</b> services.`,
+      subTitle: `Ready to expand your <b>Immigration consultancy reach?</b>`,
       desc: [
         "Leading Hotel digital marketing agency in Ontario.",
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],
-     number: "45%",
-     desc2:[`of hotel guests say they are likely to book a  <b>promotion seen on social media.</b>`],
+     number: "35%",
+     desc2:[`increase in client inquiries- seen with  <b>Immigration performance marketing!</b>`],
     },
   },
   // beauty industry service
@@ -1853,21 +1854,21 @@ export const pageData2 = [
     slug: "beauty-industry/website-design-and-development",
     title: "Website Design & Development",
     bannnerData: {
-      title: "TRANSFORM YOUR HOTEL’S REACH WITH",
-      subTitle: "Expert Hotel Social Media Marketing",
+      title: "CAPTIVATE AND CONVERT",
+      subTitle: "Just like your Beauty Business!",
       description:
-        "Gain exposure to your target audience with the right social media marketing strategies for your brand.",
+        "A sleek, modern website is the first step in growing your beauty business—let’s create one that converts.",
       src: imagesLink + "bnr2.webp",
       images: [""],
     },
     aboutUs: {
-      title: "BOOST YOUR HOTEL BUSINESS",
-      subTitle: `Campaigns that <b>Drive your Business with Trends! </b>`,
+      title: "BOOST YOUR BEAUTY BRAND",
+      subTitle: `Build a Website that <b>Captivates your Audience!</b>`,
       desc: [
-        "Social media platforms like Facebook, Instagram, LinkedIn, and Twitter are absolute goldmines when it comes to attracting potential guests to your hotel. Just think about it: a single post, story, or ad can grab the attention of someone who’s planning their next getaway, and in the best case, that one interaction can turn into a loyal customer for years to come.",
-        "That’s where our social media marketing service comes in. We don’t just post for the sake of posting; we take the time to understand your hotel's unique vibe and target audience. From creating eye-catching content that tells your story, to engaging with your followers in a meaningful way, we help build a real connection. And it’s not just about organic growth — we also run highly-targeted paid campaigns designed to drive bookings directly.",
+        "Your website is the virtual storefront of your beauty business, and it needs to captivate and convert. At One Shot Marketing, we design stunning, easy-to-navigate websites that reflect the luxury and quality of your brand while making it effortless for customers to shop and learn more about your beauty products or services.",
+        "From showcasing your beauty services with stunning imagery to making online booking or shopping a breeze, we ensure every element is designed to build trust and drive conversions. Plus, with mobile optimization, your website will look flawless on any device, ensuring that no matter where your clients are, they can easily access your offerings. Let's work together to create a website that not only reflects your brand's elegance but also drives real results for your business!",
       ],
-      src: imagesLink + "im2.webp",
+      src: imagesLink + "biim1.webp",
       images: [""],
       links: [
         {
@@ -1878,10 +1879,10 @@ export const pageData2 = [
     },
     services: {
       title: "KEY FEATURES",
-      subTitle: `Turn Likes into Bookings with Creative,<br /> <b> Results-Driven Social Campaigns</b>`,
+      subTitle: `Discover how a <b>Website can change the</b><br /> <b> Game for You!</b>`,
       services: [
         {
-          title: "SOCIAL MEDIA STRATEGY",
+          title: "MOBILE-FRIENDLY",
           image: {
             src: "",
             alt: "",
@@ -1889,7 +1890,7 @@ export const pageData2 = [
           icon: <PerformanceMarketing2 />,
         },
         {
-          title: "CONTENT CREATION",
+          title: "E-COMMERCE INTEGRATION",
           image: {
             src: "",
             alt: "",
@@ -1897,7 +1898,7 @@ export const pageData2 = [
           icon: <SocialMediaMarketing />,
         },
         {
-          title: "COMMUNITY MANAGEMENT",
+          title: "USER-FRIENDLY INTERFACE",
           image: {
             src: "",
             alt: "",
@@ -1905,7 +1906,7 @@ export const pageData2 = [
           icon: <WebsiteDesignDevelopment />,
         },
         {
-          title: "PAID ADVERTISING",
+          title: "ENHANCED SITE SPEED",
           image: {
             src: "",
             alt: "",
@@ -1913,7 +1914,7 @@ export const pageData2 = [
           icon: <SearchEngineOptimization2 />,
         },
         {
-          title: "SOCIAL MEDIA ANALYTICS",
+          title: "SEO-OPTIMIZED STRUCTURE",
           image: {
             src: "",
             alt: "",
@@ -1930,35 +1931,35 @@ export const pageData2 = [
     },
     contactUs: {
       title: "CONTACT US TO KNOW MORE",
-      subTitle: `Explore the power of <b>Hotel Social Media Marketing</b> services.`,
+      subTitle: `Your beauty business deserves a  <b>Website that Works for You!</b>`,
       desc: [
         "Leading Hotel digital marketing agency in Ontario.",
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],
-     number: "45%",
-     desc2:[`of hotel guests say they are likely to book a  <b>promotion seen on social media.</b>`],
+     number: "50%",
+     desc2:[`increase in online bookings-  <b>when your beauty website works its best!</b>`],
     },
   },
   {
     slug: "beauty-industry/performance-marketing",
     title: "Performance Marketing",
     bannnerData: {
-      title: "TRANSFORM YOUR HOTEL’S REACH WITH",
-      subTitle: "Expert Hotel Social Media Marketing",
+      title: "READY TO DRIVE",
+      subTitle: "Sales for your Beauty Business?",
       description:
-        "Gain exposure to your target audience with the right social media marketing strategies for your brand.",
+        "Stand out in the competitive beauty industry with marketing strategies that drive traffic and increase sales.",
       src: imagesLink + "bnr2.webp",
       images: [""],
     },
     aboutUs: {
-      title: "BOOST YOUR HOTEL BUSINESS",
-      subTitle: `Campaigns that <b>Drive your Business with Trends! </b>`,
+      title: "BOOST YOUR BEAUTY BRAND",
+      subTitle: `<b>Performance</b> that Turns Trends into <b>your Business!</b>`,
       desc: [
-        "Social media platforms like Facebook, Instagram, LinkedIn, and Twitter are absolute goldmines when it comes to attracting potential guests to your hotel. Just think about it: a single post, story, or ad can grab the attention of someone who’s planning their next getaway, and in the best case, that one interaction can turn into a loyal customer for years to come.",
-        "That’s where our social media marketing service comes in. We don’t just post for the sake of posting; we take the time to understand your hotel's unique vibe and target audience. From creating eye-catching content that tells your story, to engaging with your followers in a meaningful way, we help build a real connection. And it’s not just about organic growth — we also run highly-targeted paid campaigns designed to drive bookings directly.",
+        "When it comes to beauty, results matter. At One Shot Marketing, we get that every ad should not only showcase your products but also deliver real, measurable outcomes. We track every click, every purchase, and ensure your marketing dollars are working hard for you. No fluff, just results. If you want to see your beauty business grow through campaigns that make a difference, we’re here to help you shine.",
+        "Whether it’s promoting a new product, offering exclusive deals, or building brand awareness, we tailor each campaign to reach the right people at the right time. With detailed analytics and ongoing optimization, we ensure that every dollar you spend is getting you closer to your goals. At One Shot Marketing, we’re here to help your beauty business not just stay relevant, but thrive and stand out in a crowded market. Let’s create campaigns that truly move the needle!",
       ],
-      src: imagesLink + "im2.webp",
+      src: imagesLink + "riim4.webp",
       images: [""],
       links: [
         {
@@ -1969,10 +1970,10 @@ export const pageData2 = [
     },
     services: {
       title: "KEY FEATURES",
-      subTitle: `Turn Likes into Bookings with Creative,<br /> <b> Results-Driven Social Campaigns</b>`,
+      subTitle: `See how a <b>Beauty Business Actually</b><br /> <b> Thrives!</b>`,
       services: [
         {
-          title: "SOCIAL MEDIA STRATEGY",
+          title: "PPC ADVERTISING",
           image: {
             src: "",
             alt: "",
@@ -1980,7 +1981,7 @@ export const pageData2 = [
           icon: <PerformanceMarketing2 />,
         },
         {
-          title: "CONTENT CREATION",
+          title: "PAID SOCIAL CAMPAIGNS",
           image: {
             src: "",
             alt: "",
@@ -1988,7 +1989,7 @@ export const pageData2 = [
           icon: <SocialMediaMarketing />,
         },
         {
-          title: "COMMUNITY MANAGEMENT",
+          title: "LEAD GENERATION",
           image: {
             src: "",
             alt: "",
@@ -1996,7 +1997,7 @@ export const pageData2 = [
           icon: <WebsiteDesignDevelopment />,
         },
         {
-          title: "PAID ADVERTISING",
+          title: "RETARGETING & REMARKETING",
           image: {
             src: "",
             alt: "",
@@ -2004,7 +2005,7 @@ export const pageData2 = [
           icon: <SearchEngineOptimization2 />,
         },
         {
-          title: "SOCIAL MEDIA ANALYTICS",
+          title: "DETAILED REPORTING",
           image: {
             src: "",
             alt: "",
@@ -2021,35 +2022,35 @@ export const pageData2 = [
     },
     contactUs: {
       title: "CONTACT US TO KNOW MORE",
-      subTitle: `Explore the power of <b>Hotel Social Media Marketing</b> services.`,
+      subTitle: `Want to see your <b>Beauty Business Thrive?</b>`,
       desc: [
         "Leading Hotel digital marketing agency in Ontario.",
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],
-     number: "45%",
-     desc2:[`of hotel guests say they are likely to book a  <b>promotion seen on social media.</b>`],
+     number: "35%",
+     desc2:[`increase in customer engagement is seen in beauty brands through <b>performance marketing.</b>`],
     },
   },
   {
     slug: "beauty-industry/crm",
     title: "CRM",
     bannnerData: {
-      title: "TRANSFORM YOUR HOTEL’S REACH WITH",
-      subTitle: "Expert Hotel Social Media Marketing",
+      title: "BUILD LASTING AND MEANINGFUL",
+      subTitle: "Relationships with our CRM Solutions!",
       description:
-        "Gain exposure to your target audience with the right social media marketing strategies for your brand.",
+        "Enhance customer loyalty and boost retention by leveraging tailored CRM strategies that nurture relationships and drive business.",
       src: imagesLink + "bnr2.webp",
       images: [""],
     },
     aboutUs: {
-      title: "BOOST YOUR HOTEL BUSINESS",
-      subTitle: `Campaigns that <b>Drive your Business with Trends! </b>`,
+      title: "BOOST YOUR BEAUTY BRAND",
+      subTitle: `Connect with your <b>Audience like Never Before!</b>`,
       desc: [
-        "Social media platforms like Facebook, Instagram, LinkedIn, and Twitter are absolute goldmines when it comes to attracting potential guests to your hotel. Just think about it: a single post, story, or ad can grab the attention of someone who’s planning their next getaway, and in the best case, that one interaction can turn into a loyal customer for years to come.",
-        "That’s where our social media marketing service comes in. We don’t just post for the sake of posting; we take the time to understand your hotel's unique vibe and target audience. From creating eye-catching content that tells your story, to engaging with your followers in a meaningful way, we help build a real connection. And it’s not just about organic growth — we also run highly-targeted paid campaigns designed to drive bookings directly.",
+        "Beauty is all about relationships—connecting with customers, understanding their needs, and delivering personalized experiences. By centralizing customer data and automating follow-ups, we ensure that your beauty business never misses an opportunity to engage with your customers. Whether it’s sending them special offers, reminding them to restock their favorite products, or offering personalized recommendations, we create meaningful connections that keep your clients coming back. After all, loyal customers are the heart of every successful beauty business.",
+        "Beauty is all about relationships—connecting with customers, understanding their needs, and delivering personalized experiences. By centralizing customer data and automating follow-ups, we ensure that your beauty business never misses an opportunity to engage with your customers. Whether it’s sending them special offers, reminding them to restock their favorite products, or offering personalized recommendations, we create meaningful connections that keep your clients coming back. After all, loyal customers are the heart of every successful beauty business.",
       ],
-      src: imagesLink + "im2.webp",
+      src: imagesLink + "biim2.webp",
       images: [""],
       links: [
         {
@@ -2060,10 +2061,10 @@ export const pageData2 = [
     },
     services: {
       title: "KEY FEATURES",
-      subTitle: `Turn Likes into Bookings with Creative,<br /> <b> Results-Driven Social Campaigns</b>`,
+      subTitle: `Customer Retention is all about the <br /> <b>Right Strategy!</b>`,
       services: [
         {
-          title: "SOCIAL MEDIA STRATEGY",
+          title: "CONTACT MANAGEMENT",
           image: {
             src: "",
             alt: "",
@@ -2071,7 +2072,7 @@ export const pageData2 = [
           icon: <PerformanceMarketing2 />,
         },
         {
-          title: "CONTENT CREATION",
+          title: "LEAD TRACKING",
           image: {
             src: "",
             alt: "",
@@ -2079,7 +2080,7 @@ export const pageData2 = [
           icon: <SocialMediaMarketing />,
         },
         {
-          title: "COMMUNITY MANAGEMENT",
+          title: "SALES AUTOMATION",
           image: {
             src: "",
             alt: "",
@@ -2087,7 +2088,7 @@ export const pageData2 = [
           icon: <WebsiteDesignDevelopment />,
         },
         {
-          title: "PAID ADVERTISING",
+          title: "REPORTING & ANALYTICS",
           image: {
             src: "",
             alt: "",
@@ -2095,7 +2096,7 @@ export const pageData2 = [
           icon: <SearchEngineOptimization2 />,
         },
         {
-          title: "SOCIAL MEDIA ANALYTICS",
+          title: "CUSTOMER SUPPORT",
           image: {
             src: "",
             alt: "",
@@ -2112,35 +2113,34 @@ export const pageData2 = [
     },
     contactUs: {
       title: "CONTACT US TO KNOW MORE",
-      subTitle: `Explore the power of <b>Hotel Social Media Marketing</b> services.`,
+      subTitle: `Connect and Build Client Relationships with <b>Best CRM Solutions</b>`,
       desc: [
         "Leading Hotel digital marketing agency in Ontario.",
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],
-     number: "45%",
-     desc2:[`of hotel guests say they are likely to book a  <b>promotion seen on social media.</b>`],
+     number: "30%",
+     desc2:[`boost in lifetime value- <b>a big boost seen through beauty CRM strategies!</b>`],
     },
   },
   {
     slug: "beauty-industry/social-media-marketing",
     title: "Social Media Marketing",
     bannnerData: {
-      title: "TRANSFORM YOUR HOTEL’S REACH WITH",
-      subTitle: "Expert Hotel Social Media Marketing",
+      title: "TURN HEADS AND CREATE EVERLASTING TRENDS WITH OUR",
+      subTitle: "Social Media Marketing Tactics!",
       description:
-        "Gain exposure to your target audience with the right social media marketing strategies for your brand.",
+        "Grow your following organically by creating trends and quality that shines through.",
       src: imagesLink + "bnr2.webp",
       images: [""],
     },
     aboutUs: {
-      title: "BOOST YOUR HOTEL BUSINESS",
-      subTitle: `Campaigns that <b>Drive your Business with Trends! </b>`,
+      title: "BOOST YOUR BEAUTY BRAND",
+      subTitle: `A Social Media that Drives Trends to <b>Become your Revenue!</b>`,
       desc: [
-        "Social media platforms like Facebook, Instagram, LinkedIn, and Twitter are absolute goldmines when it comes to attracting potential guests to your hotel. Just think about it: a single post, story, or ad can grab the attention of someone who’s planning their next getaway, and in the best case, that one interaction can turn into a loyal customer for years to come.",
-        "That’s where our social media marketing service comes in. We don’t just post for the sake of posting; we take the time to understand your hotel's unique vibe and target audience. From creating eye-catching content that tells your story, to engaging with your followers in a meaningful way, we help build a real connection. And it’s not just about organic growth — we also run highly-targeted paid campaigns designed to drive bookings directly.",
+        "In the beauty industry, social media is everything. It's where trends start, products go viral, and loyal customers are made. At One Shot Marketing, we create social media strategies that not only engage but also inspire your audience to take action.From organic content to paid campaigns, we’ll elevate your beauty brand and turn your social channels into powerful sales tools that build a community of passionate followers.",
       ],
-      src: imagesLink + "im2.webp",
+      src: imagesLink + "hiim2.webp",
       images: [""],
       links: [
         {
@@ -2151,10 +2151,10 @@ export const pageData2 = [
     },
     services: {
       title: "KEY FEATURES",
-      subTitle: `Turn Likes into Bookings with Creative,<br /> <b> Results-Driven Social Campaigns</b>`,
+      subTitle: `Learn what’s so magical about the <br /> <b>power of social media marketing!</b>`,
       services: [
         {
-          title: "SOCIAL MEDIA STRATEGY",
+          title: "CONTENT CREATION",
           image: {
             src: "",
             alt: "",
@@ -2162,7 +2162,7 @@ export const pageData2 = [
           icon: <PerformanceMarketing2 />,
         },
         {
-          title: "CONTENT CREATION",
+          title: "PLATFORM STRATEGY",
           image: {
             src: "",
             alt: "",
@@ -2170,7 +2170,7 @@ export const pageData2 = [
           icon: <SocialMediaMarketing />,
         },
         {
-          title: "COMMUNITY MANAGEMENT",
+          title: "ENGAGEMENT CAMPAIGNS",
           image: {
             src: "",
             alt: "",
@@ -2178,7 +2178,7 @@ export const pageData2 = [
           icon: <WebsiteDesignDevelopment />,
         },
         {
-          title: "PAID ADVERTISING",
+          title: "PAID SOCIAL ADVERTISING",
           image: {
             src: "",
             alt: "",
@@ -2186,7 +2186,7 @@ export const pageData2 = [
           icon: <SearchEngineOptimization2 />,
         },
         {
-          title: "SOCIAL MEDIA ANALYTICS",
+          title: "DETAILED REPORTING",
           image: {
             src: "",
             alt: "",
@@ -2203,14 +2203,14 @@ export const pageData2 = [
     },
     contactUs: {
       title: "CONTACT US TO KNOW MORE",
-      subTitle: `Explore the power of <b>Hotel Social Media Marketing</b> services.`,
+      subTitle: `Create a Buzz with your <b>Creative Insights through One Shot!</b>`,
       desc: [
         "Leading Hotel digital marketing agency in Ontario.",
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],
      number: "45%",
-     desc2:[`of hotel guests say they are likely to book a  <b>promotion seen on social media.</b>`],
+     desc2:[`increase in client engagement is seen when beauty brands employ <b>social media marketing!</b>`],
     },
   },
   // clothing industry services

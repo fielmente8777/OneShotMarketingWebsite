@@ -12,7 +12,6 @@ const page = () => {
     <main>
       <Banner {...ServicePageData.bannnerData} />
       <FormSection desc={ServicePageData.bannnerData.description} />
-
       <TwoColSection {...ServicePageData.digitalMarketing} />
       <TwoColSection2 {...ServicePageData.featuredClient} />
       <ContactUsSection {...ServicePageData.contactUs} />

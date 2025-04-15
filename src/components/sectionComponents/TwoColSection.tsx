@@ -7,6 +7,8 @@ export interface TwoColSectionProps {
   title: string;
   subTitle: string;
   desc: string[];
+  desc2?: string[];
+  number?: string;
   src: string;
   links?: {
     name: string;
@@ -21,6 +23,7 @@ export interface TwoColSectionProps {
     title: string;
     images: string[];
   };
+  isRounded?: boolean;
 }
 const TwoColSection: React.FC<TwoColSectionProps> = ({
   title,
@@ -34,10 +37,13 @@ const TwoColSection: React.FC<TwoColSectionProps> = ({
   aspect = "",
   btn2Css = false,
   featuredIn,
+  isRounded = true,
+  desc2,
+  number,
 }) => {
   return (
     <SectionWithContainer>
-      <div className="grid md:grid-cols-2 grid-cols-1 gap-4 md:gap-6">
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-4 md:gap-6 items-center">
         <div
           className={`w-full relative ${aspect ? aspect : "md:aspect-[4/2.8] aspect-[4/3.5]"}  ${
             index
@@ -51,7 +57,7 @@ const TwoColSection: React.FC<TwoColSectionProps> = ({
             src={src}
             alt={title}
             fill
-            className={`object-cover rounded-2xl ${imageClassName}`}
+            className={`object-cover ${isRounded && "rounded-2xl"}  ${imageClassName}`}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
         </div>
@@ -72,7 +78,9 @@ const TwoColSection: React.FC<TwoColSectionProps> = ({
           ))}
           {featuredIn && (
             <div className="flex flex-col gap-4">
-              <h2 className="heading3 font-semibold text-secondary">{featuredIn.title}</h2>
+              <h2 className="heading3 font-semibold text-secondary">
+                {featuredIn.title}
+              </h2>
               <div className="flex gap-8">
                 {featuredIn.images.map((image, index) => (
                   <Image
@@ -100,6 +108,24 @@ const TwoColSection: React.FC<TwoColSectionProps> = ({
                 </li>
               ))}
             </ul>
+          )}
+
+          {desc2 && (
+            <div className="flex max-lg:flex-col items-center gap-4">
+              <h2 className="md:text-4xl text-3xl inter font-semibold text-primary">
+                {number}
+              </h2>
+
+              <div className="flex flex-col gap-4">
+                {desc2.map((item, index) => (
+                  <p
+                    key={index}
+                    className="heading4 text-primary font-medium"
+                    dangerouslySetInnerHTML={{ __html: item }}
+                  ></p>
+                ))}
+              </div>
+            </div>
           )}
         </div>
       </div>

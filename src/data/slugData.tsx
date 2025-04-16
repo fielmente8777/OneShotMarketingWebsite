@@ -1,8 +1,26 @@
 import {
+  CentralizedData,
+  ContentCreation,
+  ConversionTracking,
+  DetailedReporting,
+  ECommerceIntegration,
+  EnhancedSiteSpeed,
+  LoyaltyPrograms,
+  MobileFriendly,
+  OnPageSEO,
   OtaListings,
+  PaidSearCampaigns,
+  PaidSocialCampaigns,
+  PerformanceAnalytics,
   PerformanceMarketing2,
+  PersonalizedEmail,
+  PPCAdvertising,
+  RetargetingAds,
   SearchEngineOptimization2,
+  SEOOptimizedStructure,
+  SocailMediaStrategy,
   SocialMediaMarketing,
+  UserFriendlyInterface,
   WebsiteDesignDevelopment,
 } from "./icons";
 import { imagesLink } from "./links";
@@ -685,12 +703,14 @@ export const pageData2 = [
         "A hotel needs visitors, reviews, and countless eyes on it to explore its full capacity—and expanding this reach requires measured strategies. One Shot focuses on delivering results by creating data-driven campaigns across multiple channels. We drive high-quality traffic, increase conversions, and optimize ad spend to help your hotel gain more direct bookings at the best possible cost.",
         "Our expert team leverages advanced targeting techniques to reach potential guests at every stage of their booking journey. We continuously monitor and refine our campaigns, ensuring that your hotel stays ahead of the competition.",
       ],
-      desc2:[`visitors exit your website before room booking. <b>We will help you sell more.</b>`],
+      desc2: [
+        `visitors exit your website before room booking. <b>We will help you sell more.</b>`,
+      ],
       number: "70%",
       src: imagesLink + "hiim1.webp",
       images: [""],
-      aspect:"aspect-[4/4]",
-      imageClassName:"!rounded-none"
+      aspect: "aspect-[4/4]",
+      imageClassName: "!rounded-none",
     },
     services: {
       title: "KEY FEATURES",
@@ -702,7 +722,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <PerformanceMarketing2 />,
+          icon: <PaidSearCampaigns />,
         },
         {
           title: "PERFORMANCE ANALYTICS",
@@ -710,7 +730,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <SocialMediaMarketing />,
+          icon: <PerformanceAnalytics />,
         },
         {
           title: "CONVERSION TRACKING",
@@ -718,7 +738,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <WebsiteDesignDevelopment />,
+          icon: <ConversionTracking />,
         },
         {
           title: "RETARGETING ADS",
@@ -726,7 +746,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <SearchEngineOptimization2 />,
+          icon: <RetargetingAds />,
         },
         {
           title: "DETAILED REPORTING",
@@ -734,7 +754,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <OtaListings />,
+          icon: <DetailedReporting />,
         },
       ],
       links: [
@@ -752,8 +772,10 @@ export const pageData2 = [
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],
-     number: "90%",
-     desc2:[`visitors exit your website before room booking. <b>We will help you sell more.</b>`],
+      number: "90%",
+      desc2: [
+        `visitors exit your website before room booking. <b>We will help you sell more.</b>`,
+      ],
     },
   },
   {
@@ -775,14 +797,14 @@ export const pageData2 = [
         "That’s where our social media marketing service comes in. We don’t just post for the sake of posting; we take the time to understand your hotel's unique vibe and target audience. From creating eye-catching content that tells your story, to engaging with your followers in a meaningful way, we help build a real connection. And it’s not just about organic growth — we also run highly-targeted paid campaigns designed to drive bookings directly.",
       ],
       src: imagesLink + "hiim2.webp",
-      aspect:"aspect-[4/4] ",
+      aspect: "aspect-[4/4] ",
       images: [""],
       links: [
         {
           name: "Get a FREE quote now!",
           href: "",
         },
-      ]
+      ],
     },
     services: {
       title: "KEY FEATURES",
@@ -794,7 +816,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <PerformanceMarketing2 />,
+          icon: <SocailMediaStrategy />,
         },
         {
           title: "CONTENT CREATION",
@@ -802,7 +824,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <SocialMediaMarketing />,
+          icon: <ContentCreation />,
         },
         {
           title: "COMMUNITY MANAGEMENT",
@@ -810,7 +832,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <WebsiteDesignDevelopment />,
+          icon: <ConversionTracking />, // need to update
         },
         {
           title: "PAID ADVERTISING",
@@ -818,7 +840,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <SearchEngineOptimization2 />,
+          icon: <RetargetingAds />,
         },
         {
           title: "SOCIAL MEDIA ANALYTICS",
@@ -826,7 +848,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <OtaListings />,
+          icon: <DetailedReporting />,
         },
       ],
       links: [
@@ -844,8 +866,10 @@ export const pageData2 = [
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],
-     number: "45%",
-     desc2:[`of hotel guests say they are likely to book a  <b>promotion seen on social media.</b>`],
+      number: "45%",
+      desc2: [
+        `of hotel guests say they are likely to book a  <b>promotion seen on social media.</b>`,
+      ],
     },
   },
   {
@@ -873,7 +897,7 @@ export const pageData2 = [
           name: "Get a FREE quote now!",
           href: "",
         },
-      ]
+      ],
     },
     services: {
       title: "KEY FEATURES",
@@ -885,7 +909,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <PerformanceMarketing2 />,
+          icon: <MobileFriendly />,
         },
         {
           title: "BOOKING ENGINE",
@@ -893,7 +917,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <SocialMediaMarketing />,
+          icon: <PerformanceAnalytics />, // need to update
         },
         {
           title: "USER-FRIENDLY INTERFACE",
@@ -901,7 +925,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <WebsiteDesignDevelopment />,
+          icon: <UserFriendlyInterface />,
         },
         {
           title: "ENHANCED SITE SPEED",
@@ -909,7 +933,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <SearchEngineOptimization2 />,
+          icon: <EnhancedSiteSpeed />,
         },
         {
           title: "SEO-OPTIMIZED STRUCTURE",
@@ -917,7 +941,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <OtaListings />,
+          icon: <DetailedReporting />,
         },
       ],
       links: [
@@ -935,8 +959,10 @@ export const pageData2 = [
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],
-     number: "65%",
-     desc2:[`of online hotel bookings happening directly on  <b>brand websites.</b>`],
+      number: "65%",
+      desc2: [
+        `of online hotel bookings happening directly on  <b>brand websites.</b>`,
+      ],
     },
   },
   {
@@ -965,7 +991,7 @@ export const pageData2 = [
           name: "Get a FREE quote now!",
           href: "",
         },
-      ]
+      ],
     },
     services: {
       title: "KEY FEATURES",
@@ -977,7 +1003,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <PerformanceMarketing2 />,
+          icon: <OnPageSEO />,
         },
         {
           title: "LOCAL SEO",
@@ -985,7 +1011,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <SocialMediaMarketing />,
+          icon: <PerformanceAnalytics />,
         },
         {
           title: "LINK- BUILDING",
@@ -993,7 +1019,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <WebsiteDesignDevelopment />,
+          icon: <ConversionTracking />,
         },
         {
           title: "KEYWORD RESEARCH",
@@ -1001,7 +1027,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <SearchEngineOptimization2 />,
+          icon: <RetargetingAds />,
         },
         {
           title: "PERFORMANCE TRACKING",
@@ -1009,7 +1035,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <OtaListings />,
+          icon: <DetailedReporting />,
         },
       ],
       links: [
@@ -1027,8 +1053,10 @@ export const pageData2 = [
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],
-     number: "75%",
-     desc2:[`of searchers never go past the  <b>first page of search results!</b>`],
+      number: "75%",
+      desc2: [
+        `of searchers never go past the  <b>first page of search results!</b>`,
+      ],
     },
   },
   {
@@ -1055,7 +1083,7 @@ export const pageData2 = [
           name: "Get a FREE quote now!",
           href: "",
         },
-      ]
+      ],
     },
     services: {
       title: "KEY FEATURES",
@@ -1067,7 +1095,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <PerformanceMarketing2 />,
+          icon: <SocailMediaStrategy />, // need to update
         },
         {
           title: "PRICING STRATEGY",
@@ -1075,7 +1103,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <SocialMediaMarketing />,
+          icon: <PerformanceAnalytics />,
         },
         {
           title: "RATE PARITY MANAGEMENT",
@@ -1083,7 +1111,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <WebsiteDesignDevelopment />,
+          icon: <ConversionTracking />,
         },
         {
           title: "SEASONAL PROMOTIONS",
@@ -1091,7 +1119,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <SearchEngineOptimization2 />,
+          icon: <RetargetingAds />,
         },
         {
           title: "REPUTATION MANAGEMENT",
@@ -1099,7 +1127,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <OtaListings />,
+          icon: <DetailedReporting />,
         },
       ],
       links: [
@@ -1117,8 +1145,10 @@ export const pageData2 = [
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],
-     number: "80%",
-     desc2:[`of people rely on OTAs rather than  <b>search engines to make their travel arrangements!</b>`],
+      number: "80%",
+      desc2: [
+        `of people rely on OTAs rather than  <b>search engines to make their travel arrangements!</b>`,
+      ],
     },
   },
   // restaurant industry service
@@ -1147,7 +1177,7 @@ export const pageData2 = [
           name: "Get a FREE quote now!",
           href: "",
         },
-      ]
+      ],
     },
     services: {
       title: "KEY FEATURES",
@@ -1159,7 +1189,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <PerformanceMarketing2 />,
+          icon: <MobileFriendly />,
         },
         {
           title: "BOOKING ENGINE",
@@ -1167,7 +1197,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <SocialMediaMarketing />,
+          icon: <PerformanceAnalytics />, // need to update
         },
         {
           title: "USER-FRIENDLY INTERFACE",
@@ -1175,7 +1205,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <WebsiteDesignDevelopment />,
+          icon: <UserFriendlyInterface />,
         },
         {
           title: "ENHANCED SITE SPEED",
@@ -1183,7 +1213,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <SearchEngineOptimization2 />,
+          icon: <EnhancedSiteSpeed />,
         },
         {
           title: "SEO-OPTIMIZED STRUCTURE",
@@ -1191,7 +1221,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <OtaListings />,
+          icon: <SEOOptimizedStructure />,
         },
       ],
       links: [
@@ -1209,8 +1239,10 @@ export const pageData2 = [
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],
-     number: "35%",
-     desc2:[`boost in customer retention- <b>seen with an optimized website.</b>`],
+      number: "35%",
+      desc2: [
+        `boost in customer retention- <b>seen with an optimized website.</b>`,
+      ],
     },
   },
   {
@@ -1236,7 +1268,7 @@ export const pageData2 = [
       desc2: [
         `visitors exit your website before room booking. <b>We will help you sell more.</b>`,
       ],
-      number:"70%",
+      number: "70%",
     },
     services: {
       title: "KEY FEATURES",
@@ -1248,7 +1280,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <PerformanceMarketing2 />,
+          icon: <OnPageSEO />,
         },
         {
           title: "LOCAL SEO",
@@ -1256,7 +1288,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <SocialMediaMarketing />,
+          icon: <PerformanceAnalytics />,
         },
         {
           title: "LINK- BUILDING",
@@ -1264,7 +1296,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <WebsiteDesignDevelopment />,
+          icon: <ConversionTracking />,
         },
         {
           title: "KEYWORD RESEARCH",
@@ -1272,7 +1304,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <SearchEngineOptimization2 />,
+          icon: <RetargetingAds />,
         },
         {
           title: "PERFORMANCE TRACKING",
@@ -1280,9 +1312,9 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <OtaListings />,
+          icon: <DetailedReporting />,
         },
-      ],
+      ], // need to all update
       links: [
         {
           name: "Call Us Now!",
@@ -1298,8 +1330,10 @@ export const pageData2 = [
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],
-     number: "60%",
-     desc2:[`increase in organic traffic- <b>seen with restaurant SEO strategies!</b>`],
+      number: "60%",
+      desc2: [
+        `increase in organic traffic- <b>seen with restaurant SEO strategies!</b>`,
+      ],
     },
   },
   {
@@ -1326,7 +1360,7 @@ export const pageData2 = [
           name: "Get a FREE quote now!",
           href: "",
         },
-      ]
+      ],
     },
     services: {
       title: "KEY FEATURES",
@@ -1338,7 +1372,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <PerformanceMarketing2 />,
+          icon: <SocailMediaStrategy />,
         },
         {
           title: "CONTENT CREATION",
@@ -1346,7 +1380,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <SocialMediaMarketing />,
+          icon: <ContentCreation />,
         },
         {
           title: "COMMUNITY MANAGEMENT",
@@ -1354,7 +1388,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <WebsiteDesignDevelopment />,
+          icon: <ConversionTracking />, // need to update
         },
         {
           title: "PAID ADVERTISING",
@@ -1362,7 +1396,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <SearchEngineOptimization2 />,
+          icon: <RetargetingAds />, // need to update
         },
         {
           title: "SOCIAL MEDIA ANALYTICS",
@@ -1370,7 +1404,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <OtaListings />,
+          icon: <DetailedReporting />,
         },
       ],
       links: [
@@ -1388,8 +1422,10 @@ export const pageData2 = [
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],
-     number: "45%",
-     desc2:[`increase in customer engagement recorded through <b>social media marketing!</b>`],
+      number: "45%",
+      desc2: [
+        `increase in customer engagement recorded through <b>social media marketing!</b>`,
+      ],
     },
   },
   {
@@ -1417,7 +1453,7 @@ export const pageData2 = [
           name: "Get a FREE quote now!",
           href: "",
         },
-      ]
+      ],
     },
     services: {
       title: "KEY FEATURES",
@@ -1429,7 +1465,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <PerformanceMarketing2 />,
+          icon: <SocailMediaStrategy />, // need to update
         },
         {
           title: "PERFORMANCE ANALYTICS",
@@ -1437,7 +1473,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <SocialMediaMarketing />,
+          icon: <PerformanceAnalytics />,
         },
         {
           title: "CONVERSION TRACKING",
@@ -1445,7 +1481,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <WebsiteDesignDevelopment />,
+          icon: <ConversionTracking />,
         },
         {
           title: "RETARGETING ADS",
@@ -1453,7 +1489,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <SearchEngineOptimization2 />,
+          icon: <RetargetingAds />,
         },
         {
           title: "DETAILED REPORTING",
@@ -1461,7 +1497,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <OtaListings />,
+          icon: <DetailedReporting />,
         },
       ],
       links: [
@@ -1479,8 +1515,10 @@ export const pageData2 = [
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],
-     number: "40%",
-     desc2:[`increase in revenue within the first 6 months!with  <b>excellent performance marketing!</b>`],
+      number: "40%",
+      desc2: [
+        `increase in revenue within the first 6 months!with  <b>excellent performance marketing!</b>`,
+      ],
     },
   },
   // immigration industry service
@@ -1501,7 +1539,7 @@ export const pageData2 = [
       desc: [
         "Looking to create a website that truly represents your immigration agency? Our design and development services focus on crafting user-friendly, responsive websites that make it easy for clients to explore visa options and get the help they need.",
         "Our team not only ensures your website is visually appealing but also highly functional, with easy-to-navigate pages, clear calls to action, and integrated forms for inquiries or consultations. With a strong online presence, your agency will not only stand out but also build lasting relationships with clients who can trust you to guide them through their immigration journey.",
-        `<b>Let’s create a website that not only showcases your expertise but also drives real results!</b>`
+        `<b>Let’s create a website that not only showcases your expertise but also drives real results!</b>`,
       ],
       src: imagesLink + "immiim1.webp",
       images: [""],
@@ -1510,7 +1548,7 @@ export const pageData2 = [
           name: "Get a FREE quote now!",
           href: "",
         },
-      ]
+      ],
     },
     services: {
       title: "KEY FEATURES",
@@ -1522,7 +1560,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <PerformanceMarketing2 />,
+          icon: <MobileFriendly />,
         },
         {
           title: "BOOKING ENGINE",
@@ -1530,7 +1568,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <SocialMediaMarketing />,
+          icon: <PerformanceAnalytics />, // need to update
         },
         {
           title: "USER-FRIENDLY INTERFACE",
@@ -1538,7 +1576,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <WebsiteDesignDevelopment />,
+          icon: <UserFriendlyInterface />,
         },
         {
           title: "ENHANCED SITE SPEED",
@@ -1546,7 +1584,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <SearchEngineOptimization2 />,
+          icon: <EnhancedSiteSpeed />,
         },
         {
           title: "SEO-OPTIMIZED STRUCTURE",
@@ -1554,7 +1592,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <OtaListings />,
+          icon: <SEOOptimizedStructure />,
         },
       ],
       links: [
@@ -1572,8 +1610,10 @@ export const pageData2 = [
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],
-     number: "56%",
-     desc2:[`increase in online inquiries- <b>when your immigration website is optimized!</b>`],
+      number: "56%",
+      desc2: [
+        `increase in online inquiries- <b>when your immigration website is optimized!</b>`,
+      ],
     },
   },
   {
@@ -1601,7 +1641,7 @@ export const pageData2 = [
           name: "Get a FREE quote now!",
           href: "",
         },
-      ]
+      ],
     },
     services: {
       title: "KEY FEATURES",
@@ -1613,7 +1653,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <PerformanceMarketing2 />,
+          icon: <OnPageSEO />,
         },
         {
           title: "LOCAL SEO",
@@ -1621,7 +1661,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <SocialMediaMarketing />,
+          icon: <PerformanceAnalytics />, // need to update
         },
         {
           title: "LINK- BUILDING",
@@ -1629,7 +1669,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <WebsiteDesignDevelopment />,
+          icon: <ConversionTracking />, // need to update
         },
         {
           title: "KEYWORD RESEARCH",
@@ -1637,7 +1677,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <SearchEngineOptimization2 />,
+          icon: <RetargetingAds />, // need to update
         },
         {
           title: "PERFORMANCE TRACKING",
@@ -1645,7 +1685,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <OtaListings />,
+          icon: <DetailedReporting />,
         },
       ],
       links: [
@@ -1663,8 +1703,10 @@ export const pageData2 = [
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],
-     number: "45%",
-     desc2:[`increase is noted in website traffic with   <b>optimized SEO services!</b>`],
+      number: "45%",
+      desc2: [
+        `increase is noted in website traffic with   <b>optimized SEO services!</b>`,
+      ],
     },
   },
   {
@@ -1692,7 +1734,7 @@ export const pageData2 = [
           name: "Get a FREE quote now!",
           href: "",
         },
-      ]
+      ],
     },
     services: {
       title: "KEY FEATURES",
@@ -1704,7 +1746,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <PerformanceMarketing2 />,
+          icon: <ContentCreation />,
         },
         {
           title: "PLATFORM STRATEGY",
@@ -1712,7 +1754,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <SocialMediaMarketing />,
+          icon: <PerformanceAnalytics />, // need to update
         },
         {
           title: "ENGAGEMENT CAMPAIGNS",
@@ -1720,7 +1762,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <WebsiteDesignDevelopment />,
+          icon: <ConversionTracking />, // need to update
         },
         {
           title: "PAID SOCIAL ADVERTISING",
@@ -1728,7 +1770,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <SearchEngineOptimization2 />,
+          icon: <PaidSocialCampaigns />,
         },
         {
           title: "DETAILED REPORTING",
@@ -1736,7 +1778,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <OtaListings />,
+          icon: <DetailedReporting />,
         },
       ],
       links: [
@@ -1754,8 +1796,10 @@ export const pageData2 = [
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],
-     number: "40%",
-     desc2:[`increase in client engagement is seen with robust  <b>social media marketing for immigration consultancy!</b>`],
+      number: "40%",
+      desc2: [
+        `increase in client engagement is seen with robust  <b>social media marketing for immigration consultancy!</b>`,
+      ],
     },
   },
   {
@@ -1783,7 +1827,7 @@ export const pageData2 = [
           name: "Get a FREE quote now!",
           href: "",
         },
-      ]
+      ],
     },
     services: {
       title: "KEY FEATURES",
@@ -1795,7 +1839,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <PerformanceMarketing2 />,
+          icon: <PPCAdvertising />,
         },
         {
           title: "PAID SOCIAL CAMPAIGNS",
@@ -1803,7 +1847,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <SocialMediaMarketing />,
+          icon: <PaidSocialCampaigns />,
         },
         {
           title: "LEAD GENERATION",
@@ -1811,7 +1855,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <WebsiteDesignDevelopment />,
+          icon: <ConversionTracking />,
         },
         {
           title: "RETARGETING & REMARKETING",
@@ -1819,7 +1863,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <SearchEngineOptimization2 />,
+          icon: <RetargetingAds />,
         },
         {
           title: "DETAILED REPORTING",
@@ -1827,7 +1871,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <OtaListings />,
+          icon: <DetailedReporting />,
         },
       ],
       links: [
@@ -1845,8 +1889,10 @@ export const pageData2 = [
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],
-     number: "35%",
-     desc2:[`increase in client inquiries- seen with  <b>Immigration performance marketing!</b>`],
+      number: "35%",
+      desc2: [
+        `increase in client inquiries- seen with  <b>Immigration performance marketing!</b>`,
+      ],
     },
   },
   // beauty industry service
@@ -1875,7 +1921,7 @@ export const pageData2 = [
           name: "Get a FREE quote now!",
           href: "",
         },
-      ]
+      ],
     },
     services: {
       title: "KEY FEATURES",
@@ -1887,7 +1933,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <PerformanceMarketing2 />,
+          icon: <MobileFriendly />,
         },
         {
           title: "E-COMMERCE INTEGRATION",
@@ -1895,7 +1941,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <SocialMediaMarketing />,
+          icon: <ECommerceIntegration />,
         },
         {
           title: "USER-FRIENDLY INTERFACE",
@@ -1903,7 +1949,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <WebsiteDesignDevelopment />,
+          icon: <UserFriendlyInterface />,
         },
         {
           title: "ENHANCED SITE SPEED",
@@ -1911,7 +1957,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <SearchEngineOptimization2 />,
+          icon: <EnhancedSiteSpeed />,
         },
         {
           title: "SEO-OPTIMIZED STRUCTURE",
@@ -1919,7 +1965,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <OtaListings />,
+          icon: <SEOOptimizedStructure />,
         },
       ],
       links: [
@@ -1937,8 +1983,10 @@ export const pageData2 = [
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],
-     number: "50%",
-     desc2:[`increase in online bookings-  <b>when your beauty website works its best!</b>`],
+      number: "50%",
+      desc2: [
+        `increase in online bookings-  <b>when your beauty website works its best!</b>`,
+      ],
     },
   },
   {
@@ -1966,7 +2014,7 @@ export const pageData2 = [
           name: "Get a FREE quote now!",
           href: "",
         },
-      ]
+      ],
     },
     services: {
       title: "KEY FEATURES",
@@ -1978,7 +2026,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <PerformanceMarketing2 />,
+          icon: <PPCAdvertising />,
         },
         {
           title: "PAID SOCIAL CAMPAIGNS",
@@ -1986,7 +2034,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <SocialMediaMarketing />,
+          icon: <PaidSocialCampaigns />,
         },
         {
           title: "LEAD GENERATION",
@@ -1994,7 +2042,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <WebsiteDesignDevelopment />,
+          icon: <ConversionTracking />, // need to update
         },
         {
           title: "RETARGETING & REMARKETING",
@@ -2002,7 +2050,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <SearchEngineOptimization2 />,
+          icon: <RetargetingAds />,
         },
         {
           title: "DETAILED REPORTING",
@@ -2010,7 +2058,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <OtaListings />,
+          icon: <DetailedReporting />,
         },
       ],
       links: [
@@ -2028,8 +2076,10 @@ export const pageData2 = [
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],
-     number: "35%",
-     desc2:[`increase in customer engagement is seen in beauty brands through <b>performance marketing.</b>`],
+      number: "35%",
+      desc2: [
+        `increase in customer engagement is seen in beauty brands through <b>performance marketing.</b>`,
+      ],
     },
   },
   {
@@ -2057,7 +2107,7 @@ export const pageData2 = [
           name: "Get a FREE quote now!",
           href: "",
         },
-      ]
+      ],
     },
     services: {
       title: "KEY FEATURES",
@@ -2069,7 +2119,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <PerformanceMarketing2 />,
+          icon: <ContentCreation />,
         },
         {
           title: "LEAD TRACKING",
@@ -2077,7 +2127,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <SocialMediaMarketing />,
+          icon: <PerformanceAnalytics />, // need to update
         },
         {
           title: "SALES AUTOMATION",
@@ -2085,7 +2135,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <WebsiteDesignDevelopment />,
+          icon: <ConversionTracking />, // need to update
         },
         {
           title: "REPORTING & ANALYTICS",
@@ -2093,7 +2143,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <SearchEngineOptimization2 />,
+          icon: <RetargetingAds />, // need to update
         },
         {
           title: "CUSTOMER SUPPORT",
@@ -2101,7 +2151,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <OtaListings />,
+          icon: <DetailedReporting />, // need to update
         },
       ],
       links: [
@@ -2119,8 +2169,10 @@ export const pageData2 = [
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],
-     number: "30%",
-     desc2:[`boost in lifetime value- <b>a big boost seen through beauty CRM strategies!</b>`],
+      number: "30%",
+      desc2: [
+        `boost in lifetime value- <b>a big boost seen through beauty CRM strategies!</b>`,
+      ],
     },
   },
   {
@@ -2147,7 +2199,7 @@ export const pageData2 = [
           name: "Get a FREE quote now!",
           href: "",
         },
-      ]
+      ],
     },
     services: {
       title: "KEY FEATURES",
@@ -2159,7 +2211,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <PerformanceMarketing2 />,
+          icon: <ContentCreation />,
         },
         {
           title: "PLATFORM STRATEGY",
@@ -2167,7 +2219,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <SocialMediaMarketing />,
+          icon: <PerformanceAnalytics />, // need to update
         },
         {
           title: "ENGAGEMENT CAMPAIGNS",
@@ -2175,7 +2227,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <WebsiteDesignDevelopment />,
+          icon: <ConversionTracking />, // need to update
         },
         {
           title: "PAID SOCIAL ADVERTISING",
@@ -2183,7 +2235,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <SearchEngineOptimization2 />,
+          icon: <PaidSocialCampaigns />, // need to change
         },
         {
           title: "DETAILED REPORTING",
@@ -2191,7 +2243,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <OtaListings />,
+          icon: <DetailedReporting />,
         },
       ],
       links: [
@@ -2209,8 +2261,10 @@ export const pageData2 = [
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],
-     number: "45%",
-     desc2:[`increase in client engagement is seen when beauty brands employ <b>social media marketing!</b>`],
+      number: "45%",
+      desc2: [
+        `increase in client engagement is seen when beauty brands employ <b>social media marketing!</b>`,
+      ],
     },
   },
   // clothing industry services
@@ -2239,7 +2293,7 @@ export const pageData2 = [
           name: "Get a FREE quote now!",
           href: "",
         },
-      ]
+      ],
     },
     services: {
       title: "KEY FEATURES",
@@ -2251,7 +2305,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <PerformanceMarketing2 />,
+          icon: <MobileFriendly />,
         },
         {
           title: "E-COMMERCE INTEGRATION",
@@ -2259,7 +2313,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <SocialMediaMarketing />,
+          icon: <ECommerceIntegration />,
         },
         {
           title: "USER-FRIENDLY INTERFACE",
@@ -2267,7 +2321,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <WebsiteDesignDevelopment />,
+          icon: <UserFriendlyInterface />,
         },
         {
           title: "ENHANCED SITE SPEED",
@@ -2275,7 +2329,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <SearchEngineOptimization2 />,
+          icon: <EnhancedSiteSpeed />,
         },
         {
           title: "SEO-OPTIMIZED STRUCTURE",
@@ -2283,7 +2337,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <OtaListings />,
+          icon: <SEOOptimizedStructure />,
         },
       ],
       links: [
@@ -2301,8 +2355,8 @@ export const pageData2 = [
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],
-     number: "50%",
-     desc2:[`increase in online sales through <b>optimized websites!</b>`],
+      number: "50%",
+      desc2: [`increase in online sales through <b>optimized websites!</b>`],
     },
   },
   {
@@ -2330,7 +2384,7 @@ export const pageData2 = [
           name: "Get a FREE quote now!",
           href: "",
         },
-      ]
+      ],
     },
     services: {
       title: "KEY FEATURES",
@@ -2342,7 +2396,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <PerformanceMarketing2 />,
+          icon: <ContentCreation />,
         },
         {
           title: "PLATFORM STRATEGY",
@@ -2350,7 +2404,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <SocialMediaMarketing />,
+          icon: <PerformanceAnalytics />, // need to update
         },
         {
           title: "ENGAGEMENT CAMPAIGNS",
@@ -2358,7 +2412,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <WebsiteDesignDevelopment />,
+          icon: <ConversionTracking />, // need to update
         },
         {
           title: "PAID SOCIAL ADVERTISING",
@@ -2366,7 +2420,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <SearchEngineOptimization2 />,
+          icon: <RetargetingAds />, // need to update
         },
         {
           title: "DETAILED REPORTING",
@@ -2374,7 +2428,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <OtaListings />,
+          icon: <DetailedReporting />,
         },
       ],
       links: [
@@ -2392,8 +2446,10 @@ export const pageData2 = [
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],
-     number: "45%",
-     desc2:[`increase is seen in organic traffic when your  <b>SEO is optimized!</b>`],
+      number: "45%",
+      desc2: [
+        `increase is seen in organic traffic when your  <b>SEO is optimized!</b>`,
+      ],
     },
   },
   {
@@ -2421,7 +2477,7 @@ export const pageData2 = [
           name: "Get a FREE quote now!",
           href: "",
         },
-      ]
+      ],
     },
     services: {
       title: "KEY FEATURES",
@@ -2433,7 +2489,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <PerformanceMarketing2 />,
+          icon: <CentralizedData />,
         },
         {
           title: "PERSONALIZED EMAIL",
@@ -2441,7 +2497,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <SocialMediaMarketing />,
+          icon: <PersonalizedEmail />,
         },
         {
           title: "CUSTOMER SEGMENTATION",
@@ -2449,7 +2505,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <WebsiteDesignDevelopment />,
+          icon: <ConversionTracking />, // need to update
         },
         {
           title: "LOYALTY PROGRAMS",
@@ -2457,7 +2513,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <SearchEngineOptimization2 />,
+          icon: <LoyaltyPrograms />,
         },
         {
           title: "CUSTOMER SUPPORT",
@@ -2465,7 +2521,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <OtaListings />,
+          icon: <DetailedReporting />, // need to update
         },
       ],
       links: [
@@ -2483,8 +2539,10 @@ export const pageData2 = [
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],
-     number: "45%",
-     desc2:[`increase in customer retention-  <b a big number boost with right CRM strategies!</b>`],
+      number: "45%",
+      desc2: [
+        `increase in customer retention-  <b a big number boost with right CRM strategies!</b>`,
+      ],
     },
   },
   {
@@ -2512,7 +2570,7 @@ export const pageData2 = [
           name: "Get a FREE quote now!",
           href: "",
         },
-      ]
+      ],
     },
     services: {
       title: "KEY FEATURES",
@@ -2524,7 +2582,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <PerformanceMarketing2 />,
+          icon: <ContentCreation />,
         },
         {
           title: "PLATFORM STRATEGY",
@@ -2532,7 +2590,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <SocialMediaMarketing />,
+          icon: <PerformanceAnalytics />, // need to update
         },
         {
           title: "ENGAGEMENT CAMPAIGNS",
@@ -2540,7 +2598,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <WebsiteDesignDevelopment />,
+          icon: <ConversionTracking />, // need to update
         },
         {
           title: "PAID SOCIAL ADVERTISING",
@@ -2548,7 +2606,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <SearchEngineOptimization2 />,
+          icon: <RetargetingAds />, // need to update
         },
         {
           title: "DETAILED REPORTING",
@@ -2556,7 +2614,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <OtaListings />,
+          icon: <DetailedReporting />,
         },
       ],
       links: [
@@ -2574,8 +2632,10 @@ export const pageData2 = [
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],
-     number: "35%",
-     desc2:[`boost in online sales is seen when <b>social media is used in the right manner!</b>`],
+      number: "35%",
+      desc2: [
+        `boost in online sales is seen when <b>social media is used in the right manner!</b>`,
+      ],
     },
   },
   {
@@ -2602,7 +2662,7 @@ export const pageData2 = [
           name: "Get a FREE quote now!",
           href: "",
         },
-      ]
+      ],
     },
     services: {
       title: "KEY FEATURES",
@@ -2614,7 +2674,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <PerformanceMarketing2 />,
+          icon: <PPCAdvertising />,
         },
         {
           title: "PAID SOCIAL CAMPAIGNS",
@@ -2622,7 +2682,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <SocialMediaMarketing />,
+          icon: <PaidSocialCampaigns />,
         },
         {
           title: "LEAD GENERATION",
@@ -2630,7 +2690,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <WebsiteDesignDevelopment />,
+          icon: <ConversionTracking />, // need to update
         },
         {
           title: "RETARGETING & REMARKETING",
@@ -2638,7 +2698,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <SearchEngineOptimization2 />,
+          icon: <RetargetingAds />,
         },
         {
           title: "DETAILED REPORTING",
@@ -2646,7 +2706,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <OtaListings />,
+          icon: <DetailedReporting />,
         },
       ],
       links: [
@@ -2664,8 +2724,10 @@ export const pageData2 = [
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],
-     number: "30%",
-     desc2:[`increase in online sales- that’s what the right  <b>performance marketing gets you!</b>`],
+      number: "30%",
+      desc2: [
+        `increase in online sales- that’s what the right  <b>performance marketing gets you!</b>`,
+      ],
     },
   },
 ];

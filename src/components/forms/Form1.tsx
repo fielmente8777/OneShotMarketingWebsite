@@ -13,6 +13,22 @@ import {
 import axios from "axios";
 
 const Form1 = () => {
+  const industries = useMemo(
+    () => [
+      "select Industry",
+      "Hotel Industry",
+      "Restaurant Industry",
+      "Immigration Industry",
+      "Beauty Industry",
+      "Clothing Industry",
+      "other Industry",
+    ],
+    []
+  );
+
+  const [selected, setSelected] = useState(industries[0]);
+  const [formRes, setFormRes] = useState(false);
+
   const [extend, setExtend] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const formRef = useRef<HTMLFormElement | null>(null);
@@ -22,6 +38,13 @@ const Form1 = () => {
     email: "",
     phone: "",
     message: "",
+    industriesName: "",
+  });
+  const [error, setError] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    industriesName: "",
   });
 
   const handleChange = (
@@ -37,22 +60,60 @@ const Form1 = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    // if (userPhone.length !== 10) {
-    //   setErrorMessage("Phone number must be exactly 10 digits.");
-    //   return;
-    // }
+    setError({
+      name: "",
+      email: "",
+      phone: "",
+      industriesName: "",
+    }); // Reset error messages on submit
 
-    // if (!emailRegex.test(userEmail)) {
-    //   setEmailErrorMessage("Please enter a valid email address.");
-    //   return;
-    // }
+    let isFormValid = true;
+
+    if (!formData.name) {
+      setError((prevError) => ({
+        ...prevError,
+        name: "Please enter your name",
+      }));
+      isFormValid = false;
+    }
+
+    if (!formData.email) {
+      setError((prevError) => ({
+        ...prevError,
+        email: "Please enter your email",
+      }));
+      isFormValid = false;
+    }
+
+    if (!formData.phone) {
+      setError((prevError) => ({
+        ...prevError,
+        phone: "Please enter your phone number",
+      }));
+      isFormValid = false;
+    }
+
+   
+
+    if (selected === "select Industry") {
+      setError((prevError) => ({
+        ...prevError,
+        industriesName: "Please select an industry",
+      }));
+      isFormValid = false;
+    }
+
+    if (!isFormValid) {
+      setFormRes(false);
+      return;
+    }
 
     try {
       // setFormRes(true);
       const { data } = await axios.post(
         "https://nexon.eazotel.com/eazotel/addcontacts",
         {
-          Domain: "sumit", // Replace with your actual domain value
+          Domain: process.env.NEXT_PUBLIC_DOMAIN || "defaultDomain", // Replace with your actual domain value or environment variable
           // Domain: "",
           email: formData?.email,
           Name: formData?.name,
@@ -66,38 +127,27 @@ const Form1 = () => {
         }
       );
 
-      // if (data.Status) {
-      //   setFormRes(true);
-      //   setUserName("");
-      //   setUserEmail("");
-      //   setUserMessage("");
-      //   setUserPhone("");
-      //   // setCountryCode("+91"); // Reset country code
-      //   setFormRes(false);
-      //   // router.push("/thank-you/");
-      // } else {
-      //   setFormRes(false);
-      //   alert("Something went wrong!");
-      // }
+      if (data.Status) {
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          message: "",
+          industriesName: "",
+        });
+        alert("Form submitted successfully!");
+        console.log(formData);
+        // router.push("/thank-you/");
+      } else {
+        setFormRes(false);
+        alert("Something went wrong!");
+      }
     } catch (error) {
       console.log(error);
+    } finally {
+      setFormRes(false);
     }
   };
-
-  const industries = useMemo(
-    () => [
-      "select Industry",
-      "Hotel Industry",
-      "Restaurant Industry",
-      "Immigration Industry",
-      "Beauty Industry",
-      "Clothing Industry",
-      "other Industry",
-    ],
-    []
-  );
-
-  const [selected, setSelected] = useState(industries[0]);
 
   useClickOutside(formRef, () => {
     if (extend) {
@@ -121,46 +171,55 @@ const Form1 = () => {
       onClick={() => setExtend(true)}
       ref={formRef}
     >
-      <div className="col-span-2 md:border-r border-light flex items-center justify-center gap-2 w-full py-3 px-4">
-        <label htmlFor="name">
-          <UserIcon />
-        </label>
-        <input
-          type="text"
-          name="name"
-          id="name"
-          placeholder="Full Name"
-          onChange={handleChange}
-          className="w-full bg-transparent text-white placeholder:text-white rounded-lg  focus:outline-none outline-none"
-        />
+      <div className="col-span-2 md:border-r border-light flex flex-col gap-2 w-full py-3 px-4">
+        <div className="flex items-center justify-center gap-2 w-full ">
+          <label htmlFor="name">
+            <UserIcon />
+          </label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Full Name"
+            onChange={handleChange}
+            className="w-full bg-transparent text-white placeholder:text-white rounded-lg  focus:outline-none outline-none"
+          />
+        </div>
+        {error.name && <span className="text-red-500">{error.name}</span>}
       </div>
 
-      <div className="col-span-2 md:border-r border-light flex items-center justify-center gap-2 w-full py-3 px-4">
-        <label htmlFor="phone">
-          <CallIcon />
-        </label>
-        <input
-          type="tel"
-          name="phone"
-          id="phone"
-          placeholder="Phone Number"
-          onChange={handleChange}
-          className="w-full bg-transparent text-white placeholder:text-white no-spinner rounded-lg focus:outline-none outline-none"
-        />
+      <div className="col-span-2 md:border-r border-light flex flex-col gap-2 w-full py-3 px-4">
+        <div className="flex items-center justify-center gap-2 w-full">
+          <label htmlFor="phone">
+            <CallIcon />
+          </label>
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="Phone Number"
+            onChange={handleChange}
+            className="w-full bg-transparent text-white placeholder:text-white no-spinner rounded-lg focus:outline-none outline-none"
+          />
+        </div>
+        {error.phone && <span className="text-red-500">{error.phone}</span>}
       </div>
-      <div className="col-span-2 w-full flex items-center justify-center gap-2 py-3 px-4">
-        <label htmlFor="email">
-          <MailIcon />
-        </label>
+      <div className="col-span-2 w-full flex flex-col gap-2 py-3 px-4">
+        <div className="flex items-center justify-center gap-2 w-full">
+          <label htmlFor="email">
+            <MailIcon />
+          </label>
 
-        <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="Email Id"
-          onChange={handleChange}
-          className="w-full bg-transparent text-white placeholder:text-white rounded-lg focus:outline-none outline-none"
-        />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email Id"
+            onChange={handleChange}
+            className="w-full bg-transparent text-white placeholder:text-white rounded-lg focus:outline-none outline-none"
+          />
+        </div>
+        {error.email && <span className="text-red-500">{error.email}</span>}
       </div>
 
       <div
@@ -210,29 +269,41 @@ const Form1 = () => {
             ))}
           </div>
         </div>
+        {error.industriesName && (
+          <span className="text-red-500 px-4">{error.industriesName}</span>
+        )}
       </div>
 
       <div
-        className={`col-span-2  ${extend ? "w-full flex items-center justify-center gap-2 py-3 px-4" : "hidden"}`}
+        className={`col-span-2  ${extend ? "w-full flex flex-col gap-2 py-3 px-4" : "hidden"}`}
       >
-        <label htmlFor="message">
-          <MessageIcon fill="#fff" className="fill-white w-10 aspect-square" />
-        </label>
-        <textarea
-          name="message"
-          id="message"
-          placeholder="Message"
-          rows={1}
-          onChange={handleChange}
-          className="w-full bg-transparent text-white placeholder:text-white focus:outline-none outline-none resize-none"
-        />
+        <div className="flex items-center justify-center gap-2 w-full">
+          <label htmlFor="message">
+            <MessageIcon
+              fill="#fff"
+              className="fill-white w-10 aspect-square"
+            />
+          </label>
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Message"
+            rows={1}
+            onChange={handleChange}
+            className="w-full bg-transparent text-white placeholder:text-white focus:outline-none outline-none resize-none"
+          />
+        </div>
       </div>
 
       <OnlyButton
         Props={{ type: "submit" }}
         className={`${extend ? "col-span-2 ms-1" : "col-span-1"} bg-secondary hover:bg-white hover:text-primary flex items-center justify-center py-3 rounded-lg font-semibold hover:shadow-2xl hover:scale-[1.01]`}
       >
-        Get a FREE quote!
+        {formRes ? (
+          <span className="border-t border-primary w-6 aspect-square animate-spin" />
+        ) : (
+          "Get a FREE quote!"
+        )}
       </OnlyButton>
     </form>
   );

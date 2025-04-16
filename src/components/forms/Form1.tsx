@@ -33,7 +33,7 @@ const Form1 = () => {
   const [isOpen, setIsOpen] = useState(false);
   const formRef = useRef<HTMLFormElement | null>(null);
   const dropDownRef = useRef<HTMLDivElement | null>(null);
-  
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -66,10 +66,10 @@ const Form1 = () => {
       ...formData,
       [name]: value,
     });
-    
+
     // Clear error when user starts typing
     if (error[name as keyof typeof error]) {
-      setError(prev => ({ ...prev, [name]: "" }));
+      setError((prev) => ({ ...prev, [name]: "" }));
     }
   };
 
@@ -114,7 +114,7 @@ const Form1 = () => {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    
+
     if (!validateForm()) {
       return;
     }
@@ -125,7 +125,7 @@ const Form1 = () => {
       const { data } = await axios.post(
         "https://nexon.eazotel.com/eazotel/addcontacts",
         {
-          Domain: process.env.NEXT_PUBLIC_DOMAIN || "defaultDomain",
+          Domain: "sumit",
           email: formData.email,
           Name: formData.name,
           Contact: formData.phone,
@@ -149,6 +149,12 @@ const Form1 = () => {
         setSubmitSuccess(true);
         setTimeout(() => setSubmitSuccess(false), 3000);
       } else {
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          message: "",
+        });
         alert("Submission failed. Please try again.");
       }
     } catch (error) {
@@ -197,7 +203,9 @@ const Form1 = () => {
             className="w-full bg-transparent text-white placeholder:text-white rounded-lg focus:outline-none outline-none"
           />
         </div>
-        {error.name && <span className="text-red-500 text-sm">{error.name}</span>}
+        {error.name && (
+          <span className="text-red-500 text-sm">{error.name}</span>
+        )}
       </div>
 
       <div className="col-span-2 md:border-r border-light flex flex-col gap-2 w-full py-3 px-4">
@@ -215,7 +223,9 @@ const Form1 = () => {
             className="w-full bg-transparent text-white placeholder:text-white no-spinner rounded-lg focus:outline-none outline-none"
           />
         </div>
-        {error.phone && <span className="text-red-500 text-sm">{error.phone}</span>}
+        {error.phone && (
+          <span className="text-red-500 text-sm">{error.phone}</span>
+        )}
       </div>
 
       <div className="col-span-2 w-full flex flex-col gap-2 py-3 px-4">
@@ -233,10 +243,14 @@ const Form1 = () => {
             className="w-full bg-transparent text-white placeholder:text-white rounded-lg focus:outline-none outline-none"
           />
         </div>
-        {error.email && <span className="text-red-500 text-sm">{error.email}</span>}
+        {error.email && (
+          <span className="text-red-500 text-sm">{error.email}</span>
+        )}
       </div>
 
-      <div className={`col-span-2 md:border-r border-light ${extend ? "block" : "hidden"}`}>
+      <div
+        className={`col-span-2 md:border-r border-light ${extend ? "block" : "hidden"}`}
+      >
         <div className="w-full relative" ref={dropDownRef}>
           <button
             onClick={() => setIsOpen(!isOpen)}
@@ -244,7 +258,10 @@ const Form1 = () => {
             className="w-full h-full p-3 text-left flex items-center bg-clr2 justify-between gap-3"
           >
             <span className="flex items-center justify-center gap-2">
-              <HotelIcon fill="#fff" className="fill-white w-10 aspect-square" />
+              <HotelIcon
+                fill="#fff"
+                className="fill-white w-10 aspect-square"
+              />
               <span className="uppercase text-white text-xs font-medium">
                 {selected}
               </span>
@@ -268,7 +285,7 @@ const Form1 = () => {
                 onClick={() => {
                   setSelected(industry);
                   setIsOpen(false);
-                  setError(prev => ({ ...prev, industriesName: "" }));
+                  setError((prev) => ({ ...prev, industriesName: "" }));
                 }}
                 className={`w-full px-4 bg-dark text-nowrap py-2 border-b border-clr6 text-left uppercase text-sm font-medium hover:text-clr2 hover:border-clr2 transition-colors duration-300 ease-in-out ${
                   selected === industry ? "text-clr2 border-clr2" : ""
@@ -280,14 +297,21 @@ const Form1 = () => {
           </div>
         </div>
         {error.industriesName && (
-          <span className="text-red-500 text-sm px-4">{error.industriesName}</span>
+          <span className="text-red-500 text-sm px-4">
+            {error.industriesName}
+          </span>
         )}
       </div>
 
-      <div className={`col-span-2 ${extend ? "w-full flex flex-col gap-2 py-3 px-4" : "hidden"}`}>
+      <div
+        className={`col-span-2 ${extend ? "w-full flex flex-col gap-2 py-3 px-4" : "hidden"}`}
+      >
         <div className="flex items-center justify-center gap-2 w-full">
           <label htmlFor="message">
-            <MessageIcon fill="#fff" className="fill-white w-10 aspect-square" />
+            <MessageIcon
+              fill="#fff"
+              className="fill-white w-10 aspect-square"
+            />
           </label>
           <textarea
             name="message"
@@ -304,11 +328,13 @@ const Form1 = () => {
       <OnlyButton
         Props={{ type: "submit", disabled: isSubmitting }}
         className={`${extend ? "col-span-2 ms-1" : "col-span-1"} ${
-          submitSuccess ? "bg-green-500" : "bg-secondary hover:bg-white hover:text-primary"
+          submitSuccess
+            ? "bg-green-500"
+            : "bg-secondary hover:bg-white hover:text-primary"
         } flex items-center justify-center py-3 rounded-lg font-semibold hover:shadow-2xl hover:scale-[1.01] transition-all`}
       >
         {isSubmitting ? (
-          <span className="border-t-2 border-white w-6 h-6 rounded-full animate-spin" />
+          <span className="border-t-2 border-primary w-6 h-6 rounded-full animate-spin " />
         ) : submitSuccess ? (
           "Thank You!"
         ) : (

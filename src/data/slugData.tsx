@@ -675,7 +675,7 @@ export const pageData2 = [
       subTitle: "Hotel Performance Marketing Services",
       description:
         "Grow your revenue with certified hotel performance marketer. Increase revenue by attracting more guests and delivering an enhanced hotel booking experience.",
-      src: imagesLink + "bnr2.webp",
+      src: imagesLink + "cmbnr1.webp",
       images: [""],
     },
     aboutUs: {
@@ -764,7 +764,7 @@ export const pageData2 = [
       subTitle: "Expert Hotel Social Media Marketing",
       description:
         "Gain exposure to your target audience with the right social media marketing strategies for your brand.",
-      src: imagesLink + "bnr2.webp",
+      src: imagesLink + "cmbnr1.webp",
       images: [""],
     },
     aboutUs: {
@@ -856,7 +856,7 @@ export const pageData2 = [
       subTitle: "Hotel Website Design & Development Services",
       description:
         "From seamless bookings to captivating visuals, we design websites that elevate your hotel’s brand and guest experience.",
-      src: imagesLink + "bnr2.webp",
+      src: imagesLink + "cmbnr1.webp",
       images: [""],
     },
     aboutUs: {
@@ -947,7 +947,7 @@ export const pageData2 = [
       subTitle: "Expert SEO Services",
       description:
         "Boost your online visibility, attract more guests, and drive bookings with targeted SEO strategies tailored for the hospitality industry.",
-      src: imagesLink + "bnr2.webp",
+      src: imagesLink + "cmbnr1.webp",
       images: [""],
     },
     aboutUs: {
@@ -1039,7 +1039,7 @@ export const pageData2 = [
       subTitle: "Presence on Leading OTAs",
       description:
         "Unlock greater exposure and higher bookings with expert OTA management tailored to your property.",
-      src: imagesLink + "bnr2.webp",
+      src: imagesLink + "cmbnr1.webp",
       images: [""],
     },
     aboutUs: {
@@ -1130,7 +1130,7 @@ export const pageData2 = [
       subTitle: "Brings Diners Straight to Your Door!",
       description:
         "Transform your online presence with a stunning, user-friendly website designed to attract customers and boost online presence!",
-      src: imagesLink + "bnr2.webp",
+      src: imagesLink + "cmbnr1.webp",
       images: [""],
     },
     aboutUs: {
@@ -1221,7 +1221,7 @@ export const pageData2 = [
       subTitle: "Expert SEO Services!",
       description:
         "Stand out online and draw in more diners with SEO strategies crafted to boost traffic and maximize bookings.",
-      src: imagesLink + "bnr2.webp",
+      src: imagesLink + "cmbnr1.webp",
       images: [""],
     },
     aboutUs: {
@@ -1310,7 +1310,7 @@ export const pageData2 = [
       subTitle: "Restaurant the Talk of the Town?",
       description:
         "Engage your audience, increase reservations, and build a loyal community with targeted social media marketing.",
-      src: imagesLink + "bnr2.webp",
+      src: imagesLink + "cmbnr1.webp",
       images: [""],
     },
     aboutUs: {
@@ -1400,7 +1400,7 @@ export const pageData2 = [
       subTitle: "Data-Driven Marketing Services",
       description:
         "Maximize foot traffic, increase online orders, and elevate your restaurant's brand with personalized performance marketing strategies.",
-      src: imagesLink + "bnr2.webp",
+      src: imagesLink + "cmbnr1.webp",
       images: [""],
     },
     aboutUs: {
@@ -1492,7 +1492,7 @@ export const pageData2 = [
       subTitle: "Trust and Credibility",
       description:
         "Build a professional, user-friendly website that attracts clients and showcases your immigration services with expert design and development.",
-      src: imagesLink + "bnr2.webp",
+      src: imagesLink + "cmbnr1.webp",
       images: [""],
     },
     aboutUs: {
@@ -1584,7 +1584,7 @@ export const pageData2 = [
       subTitle: "Visibility with Expert SEO!",
       description:
         "Attract more clients and rank higher on search engines with personalized SEO strategies.",
-      src: imagesLink + "bnr2.webp",
+      src: imagesLink + "cmbnr1.webp",
       images: [""],
     },
     aboutUs: {
@@ -1675,7 +1675,7 @@ export const pageData2 = [
       subTitle: "Exceptional Social Media Strategies!",
       description:
         "Engage potential clients, build trust, and grow your immigration consulting business through strategic social media campaigns",
-      src: imagesLink + "bnr2.webp",
+      src: imagesLink + "cmbnr1.webp",
       images: [""],
     },
     aboutUs: {
@@ -1766,7 +1766,7 @@ export const pageData2 = [
       subTitle: "Performance-Driven Marketing!",
       description:
         "Boost your client base and grow your immigration practice with customized marketing strategies that bring you the right leads.",
-      src: imagesLink + "bnr2.webp",
+      src: imagesLink + "cmbnr1.webp",
       images: [""],
     },
     aboutUs: {
@@ -1858,7 +1858,7 @@ export const pageData2 = [
       subTitle: "Just like your Beauty Business!",
       description:
         "A sleek, modern website is the first step in growing your beauty business—let’s create one that converts.",
-      src: imagesLink + "bnr2.webp",
+      src: imagesLink + "cmbnr1.webp",
       images: [""],
     },
     aboutUs: {
@@ -1949,7 +1949,7 @@ export const pageData2 = [
       subTitle: "Sales for your Beauty Business?",
       description:
         "Stand out in the competitive beauty industry with marketing strategies that drive traffic and increase sales.",
-      src: imagesLink + "bnr2.webp",
+      src: imagesLink + "cmbnr1.webp",
       images: [""],
     },
     aboutUs: {
@@ -2040,7 +2040,7 @@ export const pageData2 = [
       subTitle: "Relationships with our CRM Solutions!",
       description:
         "Enhance customer loyalty and boost retention by leveraging tailored CRM strategies that nurture relationships and drive business.",
-      src: imagesLink + "bnr2.webp",
+      src: imagesLink + "cmbnr1.webp",
       images: [""],
     },
     aboutUs: {
@@ -2131,7 +2131,7 @@ export const pageData2 = [
       subTitle: "Social Media Marketing Tactics!",
       description:
         "Grow your following organically by creating trends and quality that shines through.",
-      src: imagesLink + "bnr2.webp",
+      src: imagesLink + "cmbnr1.webp",
       images: [""],
     },
     aboutUs: {
@@ -2218,21 +2218,21 @@ export const pageData2 = [
     slug: "clothing-industry/website-design-and-development",
     title: "Website Design & Development",
     bannnerData: {
-      title: "TRANSFORM YOUR HOTEL’S REACH WITH",
-      subTitle: "Expert Hotel Social Media Marketing",
+      title: "SELL WHAT IS SEEN",
+      subTitle: "Build a Narrative that Drives your Brand!",
       description:
-        "Gain exposure to your target audience with the right social media marketing strategies for your brand.",
-      src: imagesLink + "bnr2.webp",
+        "Design a seamless, visually appealing website that makes shopping easy and boosts your clothing brand’s conversions.",
+      src: imagesLink + "cmbnr1.webp",
       images: [""],
     },
     aboutUs: {
-      title: "BOOST YOUR HOTEL BUSINESS",
-      subTitle: `Campaigns that <b>Drive your Business with Trends! </b>`,
+      title: "BOOST YOUR CLOTHING BUSINESS",
+      subTitle: `Exude a Presence that <b>Drives your Growth!</b>`,
       desc: [
-        "Social media platforms like Facebook, Instagram, LinkedIn, and Twitter are absolute goldmines when it comes to attracting potential guests to your hotel. Just think about it: a single post, story, or ad can grab the attention of someone who’s planning their next getaway, and in the best case, that one interaction can turn into a loyal customer for years to come.",
-        "That’s where our social media marketing service comes in. We don’t just post for the sake of posting; we take the time to understand your hotel's unique vibe and target audience. From creating eye-catching content that tells your story, to engaging with your followers in a meaningful way, we help build a real connection. And it’s not just about organic growth — we also run highly-targeted paid campaigns designed to drive bookings directly.",
+        "Your website is the heart of your brand. It’s where your customers shop, discover your collections, and engage with your story. At One Shot, we create sleek, user-friendly websites designed to enhance the online shopping experience and drive conversions. We ensure your site looks great on every device, loads fast, and makes purchasing easy, creating a seamless online shopping journey for your customers.",
+        "At One Shot, we take the time to understand your vision and design a site that not only showcases your products but also connects with your customers on a deeper level. We focus on creating an intuitive layout that makes navigation effortless and a streamlined checkout process that encourages repeat purchases.",
       ],
-      src: imagesLink + "im2.webp",
+      src: imagesLink + "cliim1.webp",
       images: [""],
       links: [
         {
@@ -2243,10 +2243,10 @@ export const pageData2 = [
     },
     services: {
       title: "KEY FEATURES",
-      subTitle: `Turn Likes into Bookings with Creative,<br /> <b> Results-Driven Social Campaigns</b>`,
+      subTitle: `Know a Website can do for your Clothing Brand!<br /> <b>Clothing Brand!</b>`,
       services: [
         {
-          title: "SOCIAL MEDIA STRATEGY",
+          title: "MOBILE-FRIENDLY",
           image: {
             src: "",
             alt: "",
@@ -2254,7 +2254,7 @@ export const pageData2 = [
           icon: <PerformanceMarketing2 />,
         },
         {
-          title: "CONTENT CREATION",
+          title: "E-COMMERCE INTEGRATION",
           image: {
             src: "",
             alt: "",
@@ -2262,7 +2262,7 @@ export const pageData2 = [
           icon: <SocialMediaMarketing />,
         },
         {
-          title: "COMMUNITY MANAGEMENT",
+          title: "USER-FRIENDLY INTERFACE",
           image: {
             src: "",
             alt: "",
@@ -2270,7 +2270,7 @@ export const pageData2 = [
           icon: <WebsiteDesignDevelopment />,
         },
         {
-          title: "PAID ADVERTISING",
+          title: "ENHANCED SITE SPEED",
           image: {
             src: "",
             alt: "",
@@ -2278,7 +2278,7 @@ export const pageData2 = [
           icon: <SearchEngineOptimization2 />,
         },
         {
-          title: "SOCIAL MEDIA ANALYTICS",
+          title: "SEO-OPTIMIZED STRUCTURE",
           image: {
             src: "",
             alt: "",
@@ -2295,35 +2295,35 @@ export const pageData2 = [
     },
     contactUs: {
       title: "CONTACT US TO KNOW MORE",
-      subTitle: `Explore the power of <b>Hotel Social Media Marketing</b> services.`,
+      subTitle: `Build your Vision into an <b>Online Presence that Sells!</b>`,
       desc: [
         "Leading Hotel digital marketing agency in Ontario.",
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],
-     number: "45%",
-     desc2:[`of hotel guests say they are likely to book a  <b>promotion seen on social media.</b>`],
+     number: "50%",
+     desc2:[`increase in online sales through <b>optimized websites!</b>`],
     },
   },
   {
     slug: "clothing-industry/search-engine-optimization",
     title: "Search Engine Optimization",
     bannnerData: {
-      title: "TRANSFORM YOUR HOTEL’S REACH WITH",
-      subTitle: "Expert Hotel Social Media Marketing",
+      title: "BUILD THE LOCAL CREDIBILITY OF YOUR",
+      subTitle: "Clothing Brand with Optimized SEO!",
       description:
-        "Gain exposure to your target audience with the right social media marketing strategies for your brand.",
-      src: imagesLink + "bnr2.webp",
+        "Drive sales that land directly at your website and stores through personalised SEO branding strategies!",
+      src: imagesLink + "cmbnr1.webp",
       images: [""],
     },
     aboutUs: {
-      title: "BOOST YOUR HOTEL BUSINESS",
-      subTitle: `Campaigns that <b>Drive your Business with Trends! </b>`,
+      title: "BOOST YOUR CLOTHING BUSINESS",
+      subTitle: `<b>Reach the Right Audience</b> for your Clothing Brand with <b>Right SEO Strategies!</b>`,
       desc: [
-        "Social media platforms like Facebook, Instagram, LinkedIn, and Twitter are absolute goldmines when it comes to attracting potential guests to your hotel. Just think about it: a single post, story, or ad can grab the attention of someone who’s planning their next getaway, and in the best case, that one interaction can turn into a loyal customer for years to come.",
-        "That’s where our social media marketing service comes in. We don’t just post for the sake of posting; we take the time to understand your hotel's unique vibe and target audience. From creating eye-catching content that tells your story, to engaging with your followers in a meaningful way, we help build a real connection. And it’s not just about organic growth — we also run highly-targeted paid campaigns designed to drive bookings directly.",
+        " In the fashion world, it’s crucial to be found. One Shot’s SEO services boost your brand’s visibility on search engines, helping you stand out in the crowded online marketplace. We focus on optimizing your website to rank higher for relevant keywords, ensuring you’re the first brand customers discover when searching for stylish clothing options.",
+        "One Shot’s SEO services are designed to make that happen. By optimizing your website’s content, structure, and keywords, we help your brand rank higher on search engines like Google. Whether it’s optimizing your product pages, enhancing your blog content, or improving your site’s load speed, we leave no stone unturned in getting your brand noticed. The result? More traffic, more leads, and ultimately, more sales for your clothing business. Let’s ensure you’re the first name on their mind when they think about fashion.",
       ],
-      src: imagesLink + "im2.webp",
+      src: imagesLink + "riim4.webp",
       images: [""],
       links: [
         {
@@ -2334,10 +2334,10 @@ export const pageData2 = [
     },
     services: {
       title: "KEY FEATURES",
-      subTitle: `Turn Likes into Bookings with Creative,<br /> <b> Results-Driven Social Campaigns</b>`,
+      subTitle: `Wondering how <b>to Scale your Clothing</b><br /> <b> Brand? These steps lead the way!</b>`,
       services: [
         {
-          title: "SOCIAL MEDIA STRATEGY",
+          title: "CONTENT CREATION",
           image: {
             src: "",
             alt: "",
@@ -2345,7 +2345,7 @@ export const pageData2 = [
           icon: <PerformanceMarketing2 />,
         },
         {
-          title: "CONTENT CREATION",
+          title: "PLATFORM STRATEGY",
           image: {
             src: "",
             alt: "",
@@ -2353,7 +2353,7 @@ export const pageData2 = [
           icon: <SocialMediaMarketing />,
         },
         {
-          title: "COMMUNITY MANAGEMENT",
+          title: "ENGAGEMENT CAMPAIGNS",
           image: {
             src: "",
             alt: "",
@@ -2361,7 +2361,7 @@ export const pageData2 = [
           icon: <WebsiteDesignDevelopment />,
         },
         {
-          title: "PAID ADVERTISING",
+          title: "PAID SOCIAL ADVERTISING",
           image: {
             src: "",
             alt: "",
@@ -2369,7 +2369,7 @@ export const pageData2 = [
           icon: <SearchEngineOptimization2 />,
         },
         {
-          title: "SOCIAL MEDIA ANALYTICS",
+          title: "DETAILED REPORTING",
           image: {
             src: "",
             alt: "",
@@ -2386,35 +2386,35 @@ export const pageData2 = [
     },
     contactUs: {
       title: "CONTACT US TO KNOW MORE",
-      subTitle: `Explore the power of <b>Hotel Social Media Marketing</b> services.`,
+      subTitle: `Build SEO Strategies that <b>Build a Presence for You!</b>`,
       desc: [
         "Leading Hotel digital marketing agency in Ontario.",
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],
      number: "45%",
-     desc2:[`of hotel guests say they are likely to book a  <b>promotion seen on social media.</b>`],
+     desc2:[`increase is seen in organic traffic when your  <b>SEO is optimized!</b>`],
     },
   },
   {
     slug: "clothing-industry/crm",
     title: "CRM",
     bannnerData: {
-      title: "TRANSFORM YOUR HOTEL’S REACH WITH",
-      subTitle: "Expert Hotel Social Media Marketing",
+      title: "YOU BUILD TRUST!",
+      subTitle: "When the Designs Speak for Themselves",
       description:
-        "Gain exposure to your target audience with the right social media marketing strategies for your brand.",
-      src: imagesLink + "bnr2.webp",
+        "Enhance customer loyalty, automate communication, and personalize experiences with our CRM solutions",
+      src: imagesLink + "cmbnr1.webp",
       images: [""],
     },
     aboutUs: {
       title: "BOOST YOUR HOTEL BUSINESS",
-      subTitle: `Campaigns that <b>Drive your Business with Trends! </b>`,
+      subTitle: `<b>Credibility</b> that Comes with Personalized <b>Automation Solutions!</b>`,
       desc: [
-        "Social media platforms like Facebook, Instagram, LinkedIn, and Twitter are absolute goldmines when it comes to attracting potential guests to your hotel. Just think about it: a single post, story, or ad can grab the attention of someone who’s planning their next getaway, and in the best case, that one interaction can turn into a loyal customer for years to come.",
-        "That’s where our social media marketing service comes in. We don’t just post for the sake of posting; we take the time to understand your hotel's unique vibe and target audience. From creating eye-catching content that tells your story, to engaging with your followers in a meaningful way, we help build a real connection. And it’s not just about organic growth — we also run highly-targeted paid campaigns designed to drive bookings directly.",
+        "Building lasting relationships with your customers is the key to long-term success in the fashion industry. At One Shot Marketing, we integrate advanced CRM solutions to help you better understand your customers, nurture leads, and improve customer loyalty. Our CRM services are designed to centralize customer data, streamline communication, and drive personalized marketing campaigns that turn one-time shoppers into repeat buyers. We ensure that your customers feel valued at every stage of their journey, from the moment they discover your brand to their ongoing engagement with it.",
+        "Our CRM services are designed to centralize customer data, streamline communication, and drive personalized marketing campaigns that turn one-time shoppers into repeat buyers. We ensure that your customers feel valued at every stage of their journey, from the moment they discover your brand to their ongoing engagement with it.",
       ],
-      src: imagesLink + "im2.webp",
+      src: imagesLink + "biim2.webp",
       images: [""],
       links: [
         {
@@ -2425,10 +2425,10 @@ export const pageData2 = [
     },
     services: {
       title: "KEY FEATURES",
-      subTitle: `Turn Likes into Bookings with Creative,<br /> <b> Results-Driven Social Campaigns</b>`,
+      subTitle: `When Trust and Credibility Steps in, a <br /> <b> Brand is Built</b>`,
       services: [
         {
-          title: "SOCIAL MEDIA STRATEGY",
+          title: "CENTRALIZED DATA",
           image: {
             src: "",
             alt: "",
@@ -2436,7 +2436,7 @@ export const pageData2 = [
           icon: <PerformanceMarketing2 />,
         },
         {
-          title: "CONTENT CREATION",
+          title: "PERSONALIZED EMAIL",
           image: {
             src: "",
             alt: "",
@@ -2444,7 +2444,7 @@ export const pageData2 = [
           icon: <SocialMediaMarketing />,
         },
         {
-          title: "COMMUNITY MANAGEMENT",
+          title: "CUSTOMER SEGMENTATION",
           image: {
             src: "",
             alt: "",
@@ -2452,7 +2452,7 @@ export const pageData2 = [
           icon: <WebsiteDesignDevelopment />,
         },
         {
-          title: "PAID ADVERTISING",
+          title: "LOYALTY PROGRAMS",
           image: {
             src: "",
             alt: "",
@@ -2460,7 +2460,7 @@ export const pageData2 = [
           icon: <SearchEngineOptimization2 />,
         },
         {
-          title: "SOCIAL MEDIA ANALYTICS",
+          title: "CUSTOMER SUPPORT",
           image: {
             src: "",
             alt: "",
@@ -2477,14 +2477,14 @@ export const pageData2 = [
     },
     contactUs: {
       title: "CONTACT US TO KNOW MORE",
-      subTitle: `Explore the power of <b>Hotel Social Media Marketing</b> services.`,
+      subTitle: `Ready to <b>Build Lasting Relationships with your Customers?</b>`,
       desc: [
         "Leading Hotel digital marketing agency in Ontario.",
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],
      number: "45%",
-     desc2:[`of hotel guests say they are likely to book a  <b>promotion seen on social media.</b>`],
+     desc2:[`increase in customer retention-  <b a big number boost with right CRM strategies!</b>`],
     },
   },
   {
@@ -2495,7 +2495,7 @@ export const pageData2 = [
       subTitle: "Expert Hotel Social Media Marketing",
       description:
         "Gain exposure to your target audience with the right social media marketing strategies for your brand.",
-      src: imagesLink + "bnr2.webp",
+      src: imagesLink + "cmbnr1.webp",
       images: [""],
     },
     aboutUs: {
@@ -2505,7 +2505,7 @@ export const pageData2 = [
         "Social media platforms like Facebook, Instagram, LinkedIn, and Twitter are absolute goldmines when it comes to attracting potential guests to your hotel. Just think about it: a single post, story, or ad can grab the attention of someone who’s planning their next getaway, and in the best case, that one interaction can turn into a loyal customer for years to come.",
         "That’s where our social media marketing service comes in. We don’t just post for the sake of posting; we take the time to understand your hotel's unique vibe and target audience. From creating eye-catching content that tells your story, to engaging with your followers in a meaningful way, we help build a real connection. And it’s not just about organic growth — we also run highly-targeted paid campaigns designed to drive bookings directly.",
       ],
-      src: imagesLink + "im2.webp",
+      src: imagesLink + "hiim2.webp",
       images: [""],
       links: [
         {
@@ -2516,10 +2516,10 @@ export const pageData2 = [
     },
     services: {
       title: "KEY FEATURES",
-      subTitle: `Turn Likes into Bookings with Creative,<br /> <b> Results-Driven Social Campaigns</b>`,
+      subTitle: `Let’s Explore how we can help you <br /> <b> Explore Social Media!</b>`,
       services: [
         {
-          title: "SOCIAL MEDIA STRATEGY",
+          title: "CONTENT CREATION",
           image: {
             src: "",
             alt: "",
@@ -2527,7 +2527,7 @@ export const pageData2 = [
           icon: <PerformanceMarketing2 />,
         },
         {
-          title: "CONTENT CREATION",
+          title: "PLATFORM STRATEGY",
           image: {
             src: "",
             alt: "",
@@ -2535,7 +2535,7 @@ export const pageData2 = [
           icon: <SocialMediaMarketing />,
         },
         {
-          title: "COMMUNITY MANAGEMENT",
+          title: "ENGAGEMENT CAMPAIGNS",
           image: {
             src: "",
             alt: "",
@@ -2543,7 +2543,7 @@ export const pageData2 = [
           icon: <WebsiteDesignDevelopment />,
         },
         {
-          title: "PAID ADVERTISING",
+          title: "PAID SOCIAL ADVERTISING",
           image: {
             src: "",
             alt: "",
@@ -2551,7 +2551,7 @@ export const pageData2 = [
           icon: <SearchEngineOptimization2 />,
         },
         {
-          title: "SOCIAL MEDIA ANALYTICS",
+          title: "DETAILED REPORTING",
           image: {
             src: "",
             alt: "",
@@ -2568,35 +2568,34 @@ export const pageData2 = [
     },
     contactUs: {
       title: "CONTACT US TO KNOW MORE",
-      subTitle: `Explore the power of <b>Hotel Social Media Marketing</b> services.`,
+      subTitle: `Know how we can <b>Harness the Power of Social Media for your Business!</b>`,
       desc: [
         "Leading Hotel digital marketing agency in Ontario.",
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],
-     number: "45%",
-     desc2:[`of hotel guests say they are likely to book a  <b>promotion seen on social media.</b>`],
+     number: "35%",
+     desc2:[`boost in online sales is seen when <b>social media is used in the right manner!</b>`],
     },
   },
   {
     slug: "clothing-industry/performance-marketing",
     title: "Performance Marketing",
     bannnerData: {
-      title: "TRANSFORM YOUR HOTEL’S REACH WITH",
-      subTitle: "Expert Hotel Social Media Marketing",
+      title: "TRANSFORM YOUR FASHION",
+      subTitle: "Visions into Powerful Conversions!",
       description:
-        "Gain exposure to your target audience with the right social media marketing strategies for your brand.",
-      src: imagesLink + "bnr2.webp",
+        "Build and convert clients that drive results for your clothing business! Find your tribe with One Shot!",
+      src: imagesLink + "cmbnr1.webp",
       images: [""],
     },
     aboutUs: {
-      title: "BOOST YOUR HOTEL BUSINESS",
-      subTitle: `Campaigns that <b>Drive your Business with Trends! </b>`,
+      title: "BOOST YOUR CLOTHING BUSINESS",
+      subTitle: `<b>From Leads to Conversion,</b> our Strategies <b>Drive your Forward!</b>`,
       desc: [
-        "Social media platforms like Facebook, Instagram, LinkedIn, and Twitter are absolute goldmines when it comes to attracting potential guests to your hotel. Just think about it: a single post, story, or ad can grab the attention of someone who’s planning their next getaway, and in the best case, that one interaction can turn into a loyal customer for years to come.",
-        "That’s where our social media marketing service comes in. We don’t just post for the sake of posting; we take the time to understand your hotel's unique vibe and target audience. From creating eye-catching content that tells your story, to engaging with your followers in a meaningful way, we help build a real connection. And it’s not just about organic growth — we also run highly-targeted paid campaigns designed to drive bookings directly.",
+        "Every clothing brand needs a strategy that attracts eyes, engages visitors, and drives sales. One Shot Marketing is all about delivering results through data-driven campaigns. We reach the right audience, at the right time, across the right channels. We optimize every dollar you spend, ensuring it brings the best possible return. Our goal is simple: help you sell more clothing, gain loyal customers, and grow your brand.",
       ],
-      src: imagesLink + "im2.webp",
+      src: imagesLink + "hiim1.webp",
       images: [""],
       links: [
         {
@@ -2607,10 +2606,10 @@ export const pageData2 = [
     },
     services: {
       title: "KEY FEATURES",
-      subTitle: `Turn Likes into Bookings with Creative,<br /> <b> Results-Driven Social Campaigns</b>`,
+      subTitle: `Craft Experiences that <b>Resonate with</b><br /> <b> Every Potential Customer</b>`,
       services: [
         {
-          title: "SOCIAL MEDIA STRATEGY",
+          title: "PPC ADVERTISING",
           image: {
             src: "",
             alt: "",
@@ -2618,7 +2617,7 @@ export const pageData2 = [
           icon: <PerformanceMarketing2 />,
         },
         {
-          title: "CONTENT CREATION",
+          title: "PAID SOCIAL CAMPAIGNS",
           image: {
             src: "",
             alt: "",
@@ -2626,7 +2625,7 @@ export const pageData2 = [
           icon: <SocialMediaMarketing />,
         },
         {
-          title: "COMMUNITY MANAGEMENT",
+          title: "LEAD GENERATION",
           image: {
             src: "",
             alt: "",
@@ -2634,7 +2633,7 @@ export const pageData2 = [
           icon: <WebsiteDesignDevelopment />,
         },
         {
-          title: "PAID ADVERTISING",
+          title: "RETARGETING & REMARKETING",
           image: {
             src: "",
             alt: "",
@@ -2642,7 +2641,7 @@ export const pageData2 = [
           icon: <SearchEngineOptimization2 />,
         },
         {
-          title: "SOCIAL MEDIA ANALYTICS",
+          title: "DETAILED REPORTING",
           image: {
             src: "",
             alt: "",
@@ -2659,14 +2658,14 @@ export const pageData2 = [
     },
     contactUs: {
       title: "CONTACT US TO KNOW MORE",
-      subTitle: `Explore the power of <b>Hotel Social Media Marketing</b> services.`,
+      subTitle: `Drive and Build a <b>Brand that Speaks for You!</b>`,
       desc: [
         "Leading Hotel digital marketing agency in Ontario.",
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],
-     number: "45%",
-     desc2:[`of hotel guests say they are likely to book a  <b>promotion seen on social media.</b>`],
+     number: "30%",
+     desc2:[`increase in online sales- that’s what the right  <b>performance marketing gets you!</b>`],
     },
   },
 ];

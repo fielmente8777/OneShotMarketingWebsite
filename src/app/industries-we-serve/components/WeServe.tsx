@@ -1,11 +1,13 @@
 "use client";
 import {
+  FormPopup,
   OnlyButton,
   SectionTitleSubTitle,
   SectionWithContainer,
   ServiceCard3,
   SliderSwip,
 } from "@/components";
+import { useState } from "react";
 
 interface Props {
   title: string;
@@ -23,6 +25,8 @@ interface Props {
 }
 
 const WeServe: React.FC<Props> = ({ title, subTitle, cards, links }) => {
+  const [openForm, setOpenForm] = useState(false);
+
   return (
     <SectionWithContainer>
       <div className="flex flex-col gap-8 md:gap-14 w-full">
@@ -62,6 +66,7 @@ const WeServe: React.FC<Props> = ({ title, subTitle, cards, links }) => {
               className="flex items-center justify-center w-full gap-1"
             >
               <OnlyButton
+                onclick={() => setOpenForm(true)}
                 className={`raleway bg-secondary text-white hover:box-shadow flex items-center gap-1 rounded-lg py-3 px-6 font-semibold`}
               >
                 {link.name}
@@ -70,6 +75,7 @@ const WeServe: React.FC<Props> = ({ title, subTitle, cards, links }) => {
           ))}
         </ul>
       </div>
+      <FormPopup openForm={openForm} setOpenForm={setOpenForm} />
     </SectionWithContainer>
   );
 };

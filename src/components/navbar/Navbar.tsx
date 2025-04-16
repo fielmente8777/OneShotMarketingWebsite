@@ -56,7 +56,7 @@ const Navbar = () => {
                     {link.name}
                     <span className="span-border"></span>
                     {link.subLinks && (
-                      <span className="group-hover:rotate-180 duration-300 transition-all ease-in-out">
+                      <span className="icon duration-300 transition-all ease-in-out">
                         <DropDownIcon />
                       </span>
                     )}
@@ -72,7 +72,7 @@ const Navbar = () => {
                             >
                               <Link
                                 href={subLink.href ? subLink.href : "#"}
-                                className={`w-full text-nowrap py-2 px-4 flex items-center gap-1 group capitalize text-light font-semibold description1 hover:bg-gray-200 ${pathName === subLink.href ? "bg-gray-200" : ""}`}
+                                className={`w-full text-nowrap py-2 px-4 flex items-center gap-1 group capitalize text-light font-semibold description1  ${pathName === subLink.href ? "bg-primary !text-white" : ""}`}
                               >
                                 {subLink.name}
                                 {subLink.subLinks && (
@@ -96,7 +96,7 @@ const Navbar = () => {
                                                 ? nestedSubLink.href
                                                 : "#"
                                             }
-                                            className={`w-full text-nowrap py-2 px-4 flex items-center text-light font-semibold description1 gap-1 group capitalize hover:bg-gray-200 ${pathName === subLink.href ? "bg-gray-200" : ""}`}
+                                            className={`w-full text-nowrap py-2 px-4 flex items-center text-light font-semibold description1 gap-1 group capitalize hover:bg-gray-200 ${pathName === nestedSubLink.href ? "bg-primary !text-white" : ""}`}
                                           >
                                             {nestedSubLink.name}
                                           </Link>

@@ -46,7 +46,7 @@ export const pagesData = [
       links: [
         {
           name: "Get a FREE quote!",
-          href: "",
+          href: "#contact",
         },
         {
           name: "Call Us",
@@ -185,7 +185,7 @@ export const pagesData = [
       links: [
         {
           name: "Get a FREE quote!",
-          href: "",
+          href: "#contact",
         },
         {
           name: "Call Us",
@@ -312,7 +312,7 @@ export const pagesData = [
       links: [
         {
           name: "Get a FREE quote!",
-          href: "",
+          href: "#contact",
         },
         {
           name: "Call Us",
@@ -439,7 +439,7 @@ export const pagesData = [
       links: [
         {
           name: "Get a FREE quote!",
-          href: "",
+          href: "#contact",
         },
         {
           name: "Call Us",
@@ -566,7 +566,7 @@ export const pagesData = [
       links: [
         {
           name: "Get a FREE quote!",
-          href: "",
+          href: "#contact",
         },
         {
           name: "Call Us",
@@ -802,7 +802,7 @@ export const pageData2 = [
       links: [
         {
           name: "Get a FREE quote now!",
-          href: "",
+          href: "#contact",
         },
       ],
     },
@@ -895,7 +895,7 @@ export const pageData2 = [
       links: [
         {
           name: "Get a FREE quote now!",
-          href: "",
+          href: "#contact",
         },
       ],
     },
@@ -989,7 +989,7 @@ export const pageData2 = [
       links: [
         {
           name: "Get a FREE quote now!",
-          href: "",
+          href: "#contact",
         },
       ],
     },
@@ -1011,7 +1011,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <PerformanceAnalytics />,
+          icon: <PerformanceAnalytics />,//NEED TO UPDATE
         },
         {
           title: "LINK- BUILDING",
@@ -1019,7 +1019,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <ConversionTracking />,
+          icon: <ConversionTracking />,//NEED TO UPDATE
         },
         {
           title: "KEYWORD RESEARCH",
@@ -1027,7 +1027,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <RetargetingAds />,
+          icon: <RetargetingAds />,//NEED TO UPDATE
         },
         {
           title: "PERFORMANCE TRACKING",
@@ -1081,7 +1081,7 @@ export const pageData2 = [
       links: [
         {
           name: "Get a FREE quote now!",
-          href: "",
+          href: "#contact",
         },
       ],
     },
@@ -1175,7 +1175,7 @@ export const pageData2 = [
       links: [
         {
           name: "Get a FREE quote now!",
-          href: "",
+          href: "#contact",
         },
       ],
     },
@@ -1358,7 +1358,7 @@ export const pageData2 = [
       links: [
         {
           name: "Get a FREE quote now!",
-          href: "",
+          href: "#contact",
         },
       ],
     },
@@ -1451,7 +1451,7 @@ export const pageData2 = [
       links: [
         {
           name: "Get a FREE quote now!",
-          href: "",
+          href: "#contact",
         },
       ],
     },
@@ -1546,7 +1546,7 @@ export const pageData2 = [
       links: [
         {
           name: "Get a FREE quote now!",
-          href: "",
+          href: "#contact",
         },
       ],
     },
@@ -1639,7 +1639,7 @@ export const pageData2 = [
       links: [
         {
           name: "Get a FREE quote now!",
-          href: "",
+          href: "#contact",
         },
       ],
     },
@@ -1732,7 +1732,7 @@ export const pageData2 = [
       links: [
         {
           name: "Get a FREE quote now!",
-          href: "",
+          href: "#contact",
         },
       ],
     },
@@ -1825,7 +1825,7 @@ export const pageData2 = [
       links: [
         {
           name: "Get a FREE quote now!",
-          href: "",
+          href: "#contact",
         },
       ],
     },
@@ -1919,7 +1919,7 @@ export const pageData2 = [
       links: [
         {
           name: "Get a FREE quote now!",
-          href: "",
+          href: "#contact",
         },
       ],
     },
@@ -2012,7 +2012,7 @@ export const pageData2 = [
       links: [
         {
           name: "Get a FREE quote now!",
-          href: "",
+          href: "#contact",
         },
       ],
     },
@@ -2105,7 +2105,7 @@ export const pageData2 = [
       links: [
         {
           name: "Get a FREE quote now!",
-          href: "",
+          href: "#contact",
         },
       ],
     },
@@ -2197,7 +2197,7 @@ export const pageData2 = [
       links: [
         {
           name: "Get a FREE quote now!",
-          href: "",
+          href: "#contact",
         },
       ],
     },
@@ -2291,7 +2291,7 @@ export const pageData2 = [
       links: [
         {
           name: "Get a FREE quote now!",
-          href: "",
+          href: "#contact",
         },
       ],
     },
@@ -2382,7 +2382,7 @@ export const pageData2 = [
       links: [
         {
           name: "Get a FREE quote now!",
-          href: "",
+          href: "#contact",
         },
       ],
     },
@@ -2475,7 +2475,7 @@ export const pageData2 = [
       links: [
         {
           name: "Get a FREE quote now!",
-          href: "",
+          href: "#contact",
         },
       ],
     },
@@ -2568,7 +2568,7 @@ export const pageData2 = [
       links: [
         {
           name: "Get a FREE quote now!",
-          href: "",
+          href: "#contact",
         },
       ],
     },
@@ -2660,7 +2660,7 @@ export const pageData2 = [
       links: [
         {
           name: "Get a FREE quote now!",
-          href: "",
+          href: "#contact",
         },
       ],
     },

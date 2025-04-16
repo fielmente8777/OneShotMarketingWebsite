@@ -14,7 +14,7 @@ const page = () => {
       <Banner {...AboutUsPageData.bannnerData} />
       <FeaturedIn {...AboutUsPageData.featuredIn} />
       <FormSection desc={AboutUsPageData.bannnerData.description} />
-      <TwoColSection {...AboutUsPageData.aboutUs} aspect="max-lg:aspect-[4/2]"/>
+      <TwoColSection {...AboutUsPageData.aboutUs} aspect="max-lg:aspect-[4/2] aspect-[4/2.8]"/>
       <TwoColSection {...AboutUsPageData.whyChooseUs} index={1} />
       <MileStoneSection cards={AboutUsPageData.mileStones} />
       <ContactUsSection {...AboutUsPageData.contactUs} />

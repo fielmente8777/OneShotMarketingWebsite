@@ -31,7 +31,7 @@ const ContactUsSection: React.FC<ContactUsSectionProps> = ({
   number,
 }) => {
   return (
-    <SectionWithContainer>
+    <SectionWithContainer sectionId="contact">
       <div className="grid md:grid-cols-6 grid-cols-1 gap-4 md:gap-8">
         <div className={`flex flex-col gap-4 md:col-span-4 col-span-2 w-full`}>
           <SectionTitleSubTitle

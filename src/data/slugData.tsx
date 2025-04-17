@@ -5,6 +5,7 @@ import {
   DetailedReporting,
   ECommerceIntegration,
   EnhancedSiteSpeed,
+  LinkBinding,
   LoyaltyPrograms,
   MobileFriendly,
   OnPageSEO,
@@ -14,9 +15,14 @@ import {
   PerformanceAnalytics,
   PerformanceMarketing2,
   PersonalizedEmail,
+  PlatformStrategy,
   PPCAdvertising,
+  PricingStrategy,
+  RateParityManagement,
+  ReputationManagement,
   RetargetingAds,
   SearchEngineOptimization2,
+  SeasionalPromosion,
   SEOOptimizedStructure,
   SocailMediaStrategy,
   SocialMediaMarketing,
@@ -1011,7 +1017,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <PerformanceAnalytics />,//NEED TO UPDATE
+          icon: <PerformanceAnalytics />, //NEED TO UPDATE
         },
         {
           title: "LINK- BUILDING",
@@ -1019,7 +1025,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <ConversionTracking />,//NEED TO UPDATE
+          icon: <LinkBinding />, //NEED TO UPDATE
         },
         {
           title: "KEYWORD RESEARCH",
@@ -1027,7 +1033,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <RetargetingAds />,//NEED TO UPDATE
+          icon: <RetargetingAds />, //NEED TO UPDATE
         },
         {
           title: "PERFORMANCE TRACKING",
@@ -1103,7 +1109,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <PerformanceAnalytics />,
+          icon: <PricingStrategy />,
         },
         {
           title: "RATE PARITY MANAGEMENT",
@@ -1111,7 +1117,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <ConversionTracking />,
+          icon: <RateParityManagement />,
         },
         {
           title: "SEASONAL PROMOTIONS",
@@ -1119,7 +1125,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <RetargetingAds />,
+          icon: <SeasionalPromosion />,
         },
         {
           title: "REPUTATION MANAGEMENT",
@@ -1127,7 +1133,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <DetailedReporting />,
+          icon: <ReputationManagement />,
         },
       ],
       links: [
@@ -1296,7 +1302,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <ConversionTracking />,
+          icon: <LinkBinding />,
         },
         {
           title: "KEYWORD RESEARCH",
@@ -1669,7 +1675,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <ConversionTracking />, // need to update
+          icon: <LinkBinding />, // need to update
         },
         {
           title: "KEYWORD RESEARCH",
@@ -1754,7 +1760,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <PerformanceAnalytics />, // need to update
+          icon: <PlatformStrategy />, // need to update
         },
         {
           title: "ENGAGEMENT CAMPAIGNS",
@@ -2219,7 +2225,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <PerformanceAnalytics />, // need to update
+          icon: <PlatformStrategy />, // need to update
         },
         {
           title: "ENGAGEMENT CAMPAIGNS",
@@ -2404,7 +2410,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <PerformanceAnalytics />, // need to update
+          icon: <PlatformStrategy />, // need to update
         },
         {
           title: "ENGAGEMENT CAMPAIGNS",
@@ -2590,7 +2596,7 @@ export const pageData2 = [
             src: "",
             alt: "",
           },
-          icon: <PerformanceAnalytics />, // need to update
+          icon: <PlatformStrategy />, // need to update
         },
         {
           title: "ENGAGEMENT CAMPAIGNS",

@@ -5,7 +5,7 @@ const Logo = "/logo-3.png";
 
 const page = () => {
   return (
-    <SectionWithContainer>
+    <SectionWithContainer sectionClassName="h-screen flex items-center justify-center">
       <div className="grid md:grid-cols-2 gap-6">
         <div className="relative max-w-96 w-full mx-auto md:aspect-[4/2] aspect-[3/1]">
           <Image src={Logo} alt="Logo" fill className="object-contain" />

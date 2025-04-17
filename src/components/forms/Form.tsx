@@ -6,13 +6,14 @@ import React, { useMemo, useRef, useState } from "react";
 import { countries } from "@/data/countryCode";
 import { DropDownIcon } from "@/data/icons";
 import useClickOutside from "@/hooks/useClickOutside";
+import { useRouter } from "next/navigation";
 
 const Form = ({
   setOpenForm,
 }: {
   setOpenForm?: React.Dispatch<React.SetStateAction<boolean>>;
 }) => {
-  // const router = useRouter();
+  const router = useRouter();
   const [userName, setUserName] = useState("");
   const [userEmail, setUserEmail] = useState("");
   const [userMessage, setUserMessage] = useState("");
@@ -77,8 +78,7 @@ const Form = ({
       const { data } = await axios.post(
         "https://nexon.eazotel.com/eazotel/addcontacts",
         {
-          Domain: "sumit",
-          // Domain: "", // Replace with your actual domain value
+          Domain: "sumittest",// Replace with your actual domain value
           email: userEmail,
           Name: userName,
           Contact: userPhone, // Combine country code and phone number
@@ -101,7 +101,7 @@ const Form = ({
         if (setOpenForm) setOpenForm(false);
         setFormRes(false);
 
-        // router.push("/thank-you/");
+        router.push("/thank-you");
       } else {
         setFormRes(false);
         alert("Something went wrong!");

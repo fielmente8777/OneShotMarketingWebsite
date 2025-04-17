@@ -11,8 +11,10 @@ import {
   UserIcon,
 } from "@/data/icons";
 import axios from "axios";
+import { useRouter } from "next/navigation";
 
 const Form1 = () => {
+  const router = useRouter();
   const industries = useMemo(
     () => [
       "Select Industry",
@@ -125,7 +127,7 @@ const Form1 = () => {
       const { data } = await axios.post(
         "https://nexon.eazotel.com/eazotel/addcontacts",
         {
-          Domain: "sumit",
+          Domain: "sumittest", // Replace with your actual domain value or "test",
           email: formData.email,
           Name: formData.name,
           Contact: formData.phone,
@@ -148,6 +150,7 @@ const Form1 = () => {
         setSelected(industries[0]);
         setSubmitSuccess(true);
         setTimeout(() => setSubmitSuccess(false), 3000);
+        router.push("/thank-you");
       } else {
         setFormData({
           name: "",

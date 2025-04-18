@@ -56,7 +56,7 @@ export const pagesData = [
         },
         {
           name: "Call Us",
-          href: "/contact-us",
+          href: "tel:+14388554446",
         },
       ],
     },
@@ -195,7 +195,7 @@ export const pagesData = [
         },
         {
           name: "Call Us",
-          href: "/contact-us",
+          href: "tel:+14388554446",
         },
       ],
     },
@@ -322,7 +322,7 @@ export const pagesData = [
         },
         {
           name: "Call Us",
-          href: "/contact-us",
+          href: "tel:+14388554446",
         },
       ],
     },
@@ -449,7 +449,7 @@ export const pagesData = [
         },
         {
           name: "Call Us",
-          href: "/contact-us",
+          href: "tel:+14388554446",
         },
       ],
     },
@@ -576,7 +576,7 @@ export const pagesData = [
         },
         {
           name: "Call Us",
-          href: "/contact-us",
+          href: "tel:+14388554446",
         },
       ],
     },
@@ -766,7 +766,7 @@ export const pageData2 = [
       links: [
         {
           name: "Call Us Now!",
-          href: "/contact-us",
+          href: "tel:+14388554446",
         },
       ],
     },
@@ -860,7 +860,7 @@ export const pageData2 = [
       links: [
         {
           name: "Call Us Now!",
-          href: "/contact-us",
+          href: "tel:+14388554446",
         },
       ],
     },
@@ -953,7 +953,7 @@ export const pageData2 = [
       links: [
         {
           name: "Call Us Now!",
-          href: "/contact-us",
+          href: "tel:+14388554446",
         },
       ],
     },
@@ -1047,7 +1047,7 @@ export const pageData2 = [
       links: [
         {
           name: "Call Us Now!",
-          href: "/contact-us",
+          href: "tel:+14388554446",
         },
       ],
     },
@@ -1139,7 +1139,7 @@ export const pageData2 = [
       links: [
         {
           name: "Call Us Now!",
-          href: "/contact-us",
+          href: "tel:+14388554446",
         },
       ],
     },
@@ -1233,7 +1233,7 @@ export const pageData2 = [
       links: [
         {
           name: "Call Us Now!",
-          href: "/contact-us",
+          href: "tel:+14388554446",
         },
       ],
     },
@@ -1324,7 +1324,7 @@ export const pageData2 = [
       links: [
         {
           name: "Call Us Now!",
-          href: "/contact-us",
+          href: "tel:+14388554446",
         },
       ],
     },
@@ -1416,7 +1416,7 @@ export const pageData2 = [
       links: [
         {
           name: "Call Us Now!",
-          href: "/contact-us",
+          href: "tel:+14388554446",
         },
       ],
     },
@@ -1509,7 +1509,7 @@ export const pageData2 = [
       links: [
         {
           name: "Call Us Now!",
-          href: "/contact-us",
+          href: "tel:+14388554446",
         },
       ],
     },
@@ -1604,7 +1604,7 @@ export const pageData2 = [
       links: [
         {
           name: "Call Us Now!",
-          href: "/contact-us",
+          href: "tel:+14388554446",
         },
       ],
     },
@@ -1697,7 +1697,7 @@ export const pageData2 = [
       links: [
         {
           name: "Call Us Now!",
-          href: "/contact-us",
+          href: "tel:+14388554446",
         },
       ],
     },
@@ -1790,7 +1790,7 @@ export const pageData2 = [
       links: [
         {
           name: "Call Us Now!",
-          href: "/contact-us",
+          href: "tel:+14388554446",
         },
       ],
     },
@@ -1883,7 +1883,7 @@ export const pageData2 = [
       links: [
         {
           name: "Call Us Now!",
-          href: "/contact-us",
+          href: "tel:+14388554446",
         },
       ],
     },
@@ -1977,7 +1977,7 @@ export const pageData2 = [
       links: [
         {
           name: "Call Us Now!",
-          href: "/contact-us",
+          href: "tel:+14388554446",
         },
       ],
     },
@@ -2070,7 +2070,7 @@ export const pageData2 = [
       links: [
         {
           name: "Call Us Now!",
-          href: "/contact-us",
+          href: "tel:+14388554446",
         },
       ],
     },
@@ -2163,7 +2163,7 @@ export const pageData2 = [
       links: [
         {
           name: "Call Us Now!",
-          href: "/contact-us",
+          href: "tel:+14388554446",
         },
       ],
     },
@@ -2255,7 +2255,7 @@ export const pageData2 = [
       links: [
         {
           name: "Call Us Now!",
-          href: "/contact-us",
+          href: "tel:+14388554446",
         },
       ],
     },
@@ -2349,7 +2349,7 @@ export const pageData2 = [
       links: [
         {
           name: "Call Us Now!",
-          href: "/contact-us",
+          href: "tel:+14388554446",
         },
       ],
     },
@@ -2440,7 +2440,7 @@ export const pageData2 = [
       links: [
         {
           name: "Call Us Now!",
-          href: "/contact-us",
+          href: "tel:+14388554446",
         },
       ],
     },
@@ -2533,7 +2533,7 @@ export const pageData2 = [
       links: [
         {
           name: "Call Us Now!",
-          href: "/contact-us",
+          href: "tel:+14388554446",
         },
       ],
     },
@@ -2626,7 +2626,7 @@ export const pageData2 = [
       links: [
         {
           name: "Call Us Now!",
-          href: "/contact-us",
+          href: "tel:+14388554446",
         },
       ],
     },
@@ -2718,7 +2718,7 @@ export const pageData2 = [
       links: [
         {
           name: "Call Us Now!",
-          href: "/contact-us",
+          href: "tel:+14388554446",
         },
       ],
     },

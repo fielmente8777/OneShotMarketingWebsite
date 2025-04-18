@@ -13,8 +13,8 @@ interface Props {
 const TrustedBrand: React.FC<Props> = ({ title, images }) => {
   return (
     <SectionWithContainer
-      sectionClassName="relative md:!pb-36 md:after:content-[''] md:after:rotate-90 md:after:absolute md:after:top-3 after:left-[-3.5rem] after:w-[30rem] after:z-[-1] after:h-full after:opacity-40 after:bg-cover after:bg-no-repeat after:bg-[url('/bg2.PNG')]
-    md:before:absolute before:top-[1rem] before:right-[0rem] before:w-[19rem] before:h-[25rem] before:opacity-100 before:bg-cover before:bg-no-repeat before:bg-[url('/Vector.svg')]
+      sectionClassName="relative md:!pb-36 md:after:content-[''] md:after:rotate-90 md:after:absolute md:after:top-3 after:left-[-3.5rem] after:w-[30rem] after:z-[-1] after:h-full after:opacity-40 after:bg-cover after:bg-no-repeat after:bg-[url('/bg2.png')]
+    md:before:absolute before:top-[1rem] before:right-[0rem] before:w-[19rem] before:h-[25rem] before:opacity-100 before:z-[-1] before:bg-cover before:bg-no-repeat before:bg-[url('/Vector.svg')]
     "
     >
       <div className="w-full rounded-[2rem] box-shadow2  flex flex-col items-center justify-center gap-8 md:py-12 md:px-20 p-6">

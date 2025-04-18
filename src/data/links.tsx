@@ -228,6 +228,10 @@ export const FooterLinks: FooterLinksProps[] = [
         href: "/industries-we-serve/restaurant-industry",
       },
       {
+        name: "Immigration Digital Marketing",
+        href: "/industries-we-serve/immigration-industry",
+      },
+      {
         name: "beauty digital marketing",
         href: "/industries-we-serve/beauty-industry",
       },

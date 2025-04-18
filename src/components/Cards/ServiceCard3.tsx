@@ -24,12 +24,12 @@ const ServiceCard3: React.FC<ServiceCardProps> = ({
       )}
       <div className=" flex flex-col items-center justify-center gap-4 px-4 py-4">
         <Tag
-          className={`heading text-center font-medium text-dark ${titlePx ? "md:px-10" : ""}`}
+          className={`heading text-center text-2xl max-lg:px-14 font-medium text-dark ${titlePx ? "md:px-10" : ""}`}
         >
           {title}
         </Tag>
         <div className="w-full h-[1px] bg-secondary max-w-[6.5rem]"></div>
-        <p className="heading4 text-center text-light">{desc}</p>
+        <p className="md:heading4 text-lg max-lg:px-4 text-center text-light">{desc}</p>
       </div>
     </div>
   );

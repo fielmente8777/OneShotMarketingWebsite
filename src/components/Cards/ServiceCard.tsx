@@ -18,12 +18,12 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
     <div className="w-full bg-white rounded-2xl border border-primary md:hover:box-shadow duration-300 transition-all ease-in-out flex flex-col items-center justify-center gap-4 py-6 px-4">
       {icon && <span className="">{icon}</span>}
       <Tag
-        className={`heading2 text-center font-medium md:h-[4.3ch] text-primary ${titlePx ? "md:px-10" : ""}`}
+        className={`md:heading2 text-2xl max-lg:px-14 text-center font-medium md:h-[4.3ch] text-primary ${titlePx ? "md:px-10" : ""}`}
       >
         {title}
       </Tag>
       <div className="w-full h-[1px] bg-secondary max-w-[6.5rem]"></div>
-      <p className="heading4 text-center text-primary">{desc}</p>
+      <p className="md:heading4 text-lg text-center max-lg:px-4 text-primary">{desc}</p>
     </div>
   );
 };

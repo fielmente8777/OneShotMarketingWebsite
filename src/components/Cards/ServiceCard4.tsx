@@ -19,11 +19,11 @@ const ServiceCard4: React.FC<ServiceCardProps> = ({
       {icon && <span className="">{icon}</span>}
       <div className="w-full h-[1px] bg-secondary max-w-[6.5rem]"></div>
       <Tag
-        className={`heading3 text-center font-medium md:h-[4.3ch] text-primary ${titlePx ? "md:px-10" : ""}`}
+        className={`md:heading3 text-center max-lg:px-14 font-medium md:h-[4.3ch] text-primary ${titlePx ? "md:px-10" : ""}`}
       >
         {title}
       </Tag>
-      {desc && <p className="heading4 text-center text-primary">{desc}</p>}
+      {desc && <p className="md:heading4 text-lg text-center text-primary">{desc}</p>}
     </div>
   );
 };

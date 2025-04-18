@@ -22,11 +22,11 @@ const ServiceCard2: React.FC<ServiceCardProps> = ({
       className="w-full bg-white rounded-2xl group border border-primary md:hover:box-shadow md:shadow-2xl duration-300 transition-all ease-in-out flex flex-col items-center justify-center gap-4 py-6 px-4"
     >
       <span className="">{icon ? icon : ""}</span>
-      <Tag className="heading2 text-center font-medium text-primary px-10">
+      <Tag className="md:heading2 max-lg:px-14 text-2xl text-center font-medium text-primary px-10">
         {title}
       </Tag>
       <div className="w-full h-[1px] bg-secondary max-w-[6.5rem]"></div>
-      <p className="heading4 text-center text-primary">{desc}</p>
+      <p className="md:heading4 text-lg max-lg:px-4  text-center text-primary">{desc}</p>
       <button className="group-hover:scale-110 group-active:scale-95 group-hover:rotate-[30deg] duration-300 transition-all ease-in-out">
         <ArrowUpIcon />
       </button>

@@ -9,7 +9,7 @@ function Call({ callNumber }: { callNumber: string }) {
         href={`tel:+ ${callNumber ? callNumber : "911234567890"} `}
         target="_blank"
         rel="noreferrer"
-        className="w-12 h-12 rounded-full flex items-center justify-center bg-primary hover:bg-primary/95 hover:shadow-2xl transition-all"
+        className="w-12 h-12 rounded-full flex items-center justify-center bg-normal hover:bg-normal/80 hover:shadow-2xl transition-all"
       >
         <IoCall size={29} color="white" />
         <span className="sr-only">call</span>

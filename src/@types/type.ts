@@ -5,6 +5,7 @@ export interface CommonProps {
   subTitle: string;
   desc?: string;
   noOslider?: number;
+  borderTop?: boolean;
   services: {
     title: string;
     desc?: string;

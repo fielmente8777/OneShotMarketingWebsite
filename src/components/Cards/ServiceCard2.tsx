@@ -22,7 +22,7 @@ const ServiceCard2: React.FC<ServiceCardProps> = ({
       className="w-full bg-white rounded-2xl group border border-primary md:hover:box-shadow md:shadow-2xl duration-300 transition-all ease-in-out flex flex-col items-center justify-center gap-4 py-6 px-4"
     >
       <span className="">{icon ? icon : ""}</span>
-      <Tag className="md:heading2 max-lg:px-14 text-2xl text-center font-medium text-primary px-10">
+      <Tag className="md:heading2 max-lg:px-14 text-2xl text-center font-semibold text-primary px-10">
         {title}
       </Tag>
       <div className="w-full h-[1px] bg-secondary max-w-[6.5rem]"></div>

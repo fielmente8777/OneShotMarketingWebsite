@@ -44,13 +44,9 @@ const IndustriesServe: React.FC<CommonProps> = ({
                 slidesPerView: 3,
                 spaceBetween: 24,
               },
-              640: {
-                slidesPerView: 2,
-                spaceBetween: 22,
-              },
             }}
-            classNameSwiper="w-full "
-            classNameSwiperSlide="p-1"
+            classNameSwiper="w-full !p-1"
+            classNameSwiperSlide=""
           >
             {(item) => <ServiceCard5 {...item} level={4} />}
           </SliderSwip>

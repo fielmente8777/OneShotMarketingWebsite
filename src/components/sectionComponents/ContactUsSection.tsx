@@ -31,7 +31,14 @@ const ContactUsSection: React.FC<ContactUsSectionProps> = ({
   number,
 }) => {
   return (
-    <SectionWithContainer sectionId="contact">
+    <SectionWithContainer
+      sectionId="contact"
+      sectionClassName={`${
+        testimonial
+          ? `relative md:!pb-36 md:after:content-[''] md:after:absolute md:after:top-12 after:left-[-3.5rem] after:w-[30rem] after:z-[-1] after:h-full  after:bg-contain after:bg-no-repeat after:bg-[url('/Vector1.png')]  md:before:absolute before:opacity-30 before:bottom-16 before:right-[3.5rem] before:w-[500px] before:aspect-square before:h-full  before:opacity-100 before:z-[-1] before:bg-cover before:bg-no-repeat before:bg-[url('/bg2.png')]`
+          : ""
+      }`}
+    >
       <div className="grid md:grid-cols-6 grid-cols-1 gap-4 md:gap-8">
         <div className={`flex flex-col gap-4 md:col-span-4 col-span-2 w-full`}>
           <SectionTitleSubTitle
@@ -85,7 +92,7 @@ const ContactUsSection: React.FC<ContactUsSectionProps> = ({
                     spaceBetween: 24,
                   },
                 }}
-                classNameSwiper="w-full "
+                classNameSwiper="w-full rounded-2xl"
                 classNameSwiperSlide="w-full p-1"
               >
                 {(item) => <TestimonialCard {...item} />}

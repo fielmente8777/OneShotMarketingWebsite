@@ -9,6 +9,7 @@ export interface CommonProps {
   services: {
     title: string;
     desc?: string;
+    arrayDesc?: string[];
     image?: {
       src: string;
       alt: string;

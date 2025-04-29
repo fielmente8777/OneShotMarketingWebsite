@@ -19,7 +19,8 @@ const ContactUsSection: React.FC<ContactUsSectionProps> = ({
   contactInfo,
 }) => {
   return (
-    <SectionWithContainer>
+    <SectionWithContainer
+      sectionClassName="relative md:!pb-36 md:after:content-[''] md:after:absolute md:after:top-2 after:left-2 after:w-[20rem] after:z-[-1] after:h-full after:bg-contain after:bg-no-repeat after:bg-[url('/Vector.png')] md:before:absolute before:-bottom-12 before:right-1 before:w-[19rem] before:h-[25rem] before:opacity-100 before:z-[-1] before:bg-contain before:bg-no-repeat before:bg-[url('/Vector1.png')]">
       <div className="grid md:grid-cols-5 grid-cols-1 gap-4 md:gap-16">
         <div className={`flex flex-col gap-4 col-span-3 w-full md:max-w-xl`}>
           <SectionTitleSubTitle

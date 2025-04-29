@@ -455,11 +455,11 @@ export const ServicePageData = {
   },
   services: {
     title: "ALL SERVICES",
-    subTitle: `Digital Marketing Services`,
+    subTitle: `Digital Marketing <b>Services</b>`,
     services: [
       {
         title: "HOTEL INDUSTRY SERVICES",
-        desc: [
+        arrayDesc: [
           "Performance Marketing",
           "Social Media Marketing",
           "Website Design & Development",
@@ -475,7 +475,7 @@ export const ServicePageData = {
       },
       {
         title: "RESTAURANT INDUSTRY SERVICES",
-        desc: [
+        arrayDesc: [
           "Website Design & Development",
           "Search Engine Optimisation",
           "Social Media Marketing",
@@ -490,7 +490,7 @@ export const ServicePageData = {
       },
       {
         title: "IMMIGRATION INDUSTRY SERVICES",
-        desc: [
+        arrayDesc: [
           "Website Design & Development",
           "Search Engine Optimisation",
           "Social Media Marketing",
@@ -505,7 +505,7 @@ export const ServicePageData = {
       },
       {
         title: "BEAUTY INDUSTRY SERVICES",
-        desc: [
+        arrayDesc: [
           "Website Design & Development",
           "Performance Marketing",
           "CRM",
@@ -520,7 +520,7 @@ export const ServicePageData = {
       },
       {
         title: "CLOTHING INDUSTRY SERVICES",
-        desc: [
+        arrayDesc: [
           "Website Design & Development",
           "Search Engine Optimisation",
           "CRM",

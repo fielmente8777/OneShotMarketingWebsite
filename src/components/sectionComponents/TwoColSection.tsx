@@ -1,7 +1,9 @@
+"use client";
 import Image from "next/image";
 import SectionTitleSubTitle from "./SectionTitleSubTitle";
 import SectionWithContainer from "./SectionWithContainer";
 import { LinkButton } from "../buttons";
+import SliderSwip from "../SliderSwip";
 
 export interface TwoColSectionProps {
   title: string;
@@ -81,7 +83,7 @@ const TwoColSection: React.FC<TwoColSectionProps> = ({
               <h2 className="heading3 font-semibold text-secondary">
                 {featuredIn.title}
               </h2>
-              <div className="flex gap-8">
+              <div className="lg:flex hidden gap-8">
                 {featuredIn.images.map((image, index) => (
                   <Image
                     src={image}
@@ -92,6 +94,30 @@ const TwoColSection: React.FC<TwoColSectionProps> = ({
                     className="object-contain"
                   />
                 ))}
+              </div>
+
+              <div className="w-full max-lg:block hidden">
+                <SliderSwip data={featuredIn.images}
+                slidesPerView={3}
+                spaceBetween={20}
+                breakpoints={{
+                  768: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                  },
+                }}
+                classNameSwiperSlide="relative aspect-[4/.92] h-[3.5rem] w-full"
+                >
+                  {(src) => (
+                    <Image
+                      src={src}
+                      alt={featuredIn.title}
+                      key={index}
+                      fill
+                      className="object-contain"
+                    />
+                  )}
+                </SliderSwip>
               </div>
             </div>
           )}

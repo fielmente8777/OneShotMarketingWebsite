@@ -314,6 +314,7 @@ export const pagesData = [
         `<b>Generate clientele for your immigration consultation through robust digital marketing.</b>`,
       ],
       src: imagesLink + "iim1.webp",
+      imageClassName:"object-cover",
       images: [""],
       links: [
         {
@@ -713,7 +714,7 @@ export const pageData2 = [
         `visitors exit your website before room booking. <b>We will help you sell more.</b>`,
       ],
       number: "70%",
-      src: imagesLink + "hiim1.webp",
+      src: imagesLink + "hiimN1.webp",
       images: [""],
       aspect: "aspect-[4/4]",
       imageClassName: "!rounded-none",
@@ -1640,7 +1641,7 @@ export const pageData2 = [
         "Want your immigration agency to stand out online? Our SEO services boost your visibility with targeted keywords, engaging content, and niche targeting. One Shot employs proven strategies to help you rank higher on search engines and attract clients that are searching for a trusted service.",
         "We focus on more than just keywords—we take a comprehensive approach, optimizing your site’s structure, content, and even local SEO, to ensure it ranks higher on search engines. Whether someone’s looking for visa assistance or immigration advice in your area, we make sure your agency shows up at the top of their search. By continuously monitoring and adjusting our strategies, we ensure your online presence grows steadily, bringing in new leads and building your agency’s reputation as a trusted expert in the field",
       ],
-      src: imagesLink + "hiim4.webp",
+      src: imagesLink + "immiim2.webp",
       images: [""],
       links: [
         {
@@ -1733,7 +1734,7 @@ export const pageData2 = [
         "In a world where social media is often the first place people turn to for answers, your immigration services need to stand out in the digital crowd. That’s where One Shot Marketing comes in—we help you craft meaningful, engaging content that speaks directly to your audience's needs and concerns. Whether it's through informative posts, success stories, or answering common questions, we ensure that your social media presence builds trust and credibility. By tapping into the power of social media, we make it easier for prospective clients to find you, connect with you, and ultimately, choose you as their go-to resource for immigration support. ",
         `<b>Let’s turn your social media into a tool that not only informs but also converts leads into loyal clients.</b>`,
       ],
-      src: imagesLink + "hiim2.webp",
+      src: imagesLink + "immiim3.webp",
       images: [""],
       links: [
         {
@@ -1826,7 +1827,7 @@ export const pageData2 = [
         "Maximize your investment with our Performance Marketing services tailored specifically for immigration consultants. We know that finding the right clients is crucial for your business, which is why we focus on strategies that speak directly to your target audience. Using data-driven insights, we ensure that your marketing efforts are aimed at the people who need your services the most—at exactly the right time. Whether it's prospective clients seeking visas, residency, or legal advice, our approach connects you with the individuals most likely to take action.",
         "With One Shot, you're not just throwing ads into the void—you're building a smart, sustainable strategy that brings in qualified leads and measurable results. Let us help you grow your immigration consulting business by targeting the right people, increasing inquiries, and ultimately converting those leads into loyal clients.",
       ],
-      src: imagesLink + "riim4.webp",
+      src: imagesLink + "immiim4.webp",
       images: [""],
       links: [
         {
@@ -2013,7 +2014,7 @@ export const pageData2 = [
         "When it comes to beauty, results matter. At One Shot Marketing, we get that every ad should not only showcase your products but also deliver real, measurable outcomes. We track every click, every purchase, and ensure your marketing dollars are working hard for you. No fluff, just results. If you want to see your beauty business grow through campaigns that make a difference, we’re here to help you shine.",
         "Whether it’s promoting a new product, offering exclusive deals, or building brand awareness, we tailor each campaign to reach the right people at the right time. With detailed analytics and ongoing optimization, we ensure that every dollar you spend is getting you closer to your goals. At One Shot Marketing, we’re here to help your beauty business not just stay relevant, but thrive and stand out in a crowded market. Let’s create campaigns that truly move the needle!",
       ],
-      src: imagesLink + "riim4.webp",
+      src: imagesLink + "biim2.webp",
       images: [""],
       links: [
         {
@@ -2106,7 +2107,7 @@ export const pageData2 = [
         "Beauty is all about relationships—connecting with customers, understanding their needs, and delivering personalized experiences. By centralizing customer data and automating follow-ups, we ensure that your beauty business never misses an opportunity to engage with your customers. Whether it’s sending them special offers, reminding them to restock their favorite products, or offering personalized recommendations, we create meaningful connections that keep your clients coming back. After all, loyal customers are the heart of every successful beauty business.",
         "Beauty is all about relationships—connecting with customers, understanding their needs, and delivering personalized experiences. By centralizing customer data and automating follow-ups, we ensure that your beauty business never misses an opportunity to engage with your customers. Whether it’s sending them special offers, reminding them to restock their favorite products, or offering personalized recommendations, we create meaningful connections that keep your clients coming back. After all, loyal customers are the heart of every successful beauty business.",
       ],
-      src: imagesLink + "biim2.webp",
+      src: imagesLink + "biim3.webp",
       images: [""],
       links: [
         {
@@ -2198,7 +2199,7 @@ export const pageData2 = [
       desc: [
         "In the beauty industry, social media is everything. It's where trends start, products go viral, and loyal customers are made. At One Shot Marketing, we create social media strategies that not only engage but also inspire your audience to take action.From organic content to paid campaigns, we’ll elevate your beauty brand and turn your social channels into powerful sales tools that build a community of passionate followers.",
       ],
-      src: imagesLink + "hiim2.webp",
+      src: imagesLink + "biim4.webp",
       images: [""],
       links: [
         {
@@ -2383,7 +2384,7 @@ export const pageData2 = [
         " In the fashion world, it’s crucial to be found. One Shot’s SEO services boost your brand’s visibility on search engines, helping you stand out in the crowded online marketplace. We focus on optimizing your website to rank higher for relevant keywords, ensuring you’re the first brand customers discover when searching for stylish clothing options.",
         "One Shot’s SEO services are designed to make that happen. By optimizing your website’s content, structure, and keywords, we help your brand rank higher on search engines like Google. Whether it’s optimizing your product pages, enhancing your blog content, or improving your site’s load speed, we leave no stone unturned in getting your brand noticed. The result? More traffic, more leads, and ultimately, more sales for your clothing business. Let’s ensure you’re the first name on their mind when they think about fashion.",
       ],
-      src: imagesLink + "riim4.webp",
+      src: imagesLink + "cliim2.webp",
       images: [""],
       links: [
         {
@@ -2476,7 +2477,7 @@ export const pageData2 = [
         "Building lasting relationships with your customers is the key to long-term success in the fashion industry. At One Shot Marketing, we integrate advanced CRM solutions to help you better understand your customers, nurture leads, and improve customer loyalty. Our CRM services are designed to centralize customer data, streamline communication, and drive personalized marketing campaigns that turn one-time shoppers into repeat buyers. We ensure that your customers feel valued at every stage of their journey, from the moment they discover your brand to their ongoing engagement with it.",
         "Our CRM services are designed to centralize customer data, streamline communication, and drive personalized marketing campaigns that turn one-time shoppers into repeat buyers. We ensure that your customers feel valued at every stage of their journey, from the moment they discover your brand to their ongoing engagement with it.",
       ],
-      src: imagesLink + "biim2.webp",
+      src: imagesLink + "cliim3.webp",
       images: [""],
       links: [
         {
@@ -2569,7 +2570,7 @@ export const pageData2 = [
         "Social media platforms like Facebook, Instagram, LinkedIn, and Twitter are absolute goldmines when it comes to attracting potential guests to your hotel. Just think about it: a single post, story, or ad can grab the attention of someone who’s planning their next getaway, and in the best case, that one interaction can turn into a loyal customer for years to come.",
         "That’s where our social media marketing service comes in. We don’t just post for the sake of posting; we take the time to understand your hotel's unique vibe and target audience. From creating eye-catching content that tells your story, to engaging with your followers in a meaningful way, we help build a real connection. And it’s not just about organic growth — we also run highly-targeted paid campaigns designed to drive bookings directly.",
       ],
-      src: imagesLink + "hiim2.webp",
+      src: imagesLink + "cliim4.webp",
       images: [""],
       links: [
         {
@@ -2661,7 +2662,7 @@ export const pageData2 = [
       desc: [
         "Every clothing brand needs a strategy that attracts eyes, engages visitors, and drives sales. One Shot Marketing is all about delivering results through data-driven campaigns. We reach the right audience, at the right time, across the right channels. We optimize every dollar you spend, ensuring it brings the best possible return. Our goal is simple: help you sell more clothing, gain loyal customers, and grow your brand.",
       ],
-      src: imagesLink + "hiim1.webp",
+      src: imagesLink + "cliim5.webp",
       images: [""],
       links: [
         {

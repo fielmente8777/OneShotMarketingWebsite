@@ -51,8 +51,8 @@ const page = async (props: Params) => {
         <TwoColSection
           {...industriesData.aboutUs}
           btn2Css
-          aspect="md:aspect-[4/3.8] aspect-[4/2.8]"
-          imageClassName="!object-contain"
+          aspect="md:aspect-[4/3.6] aspect-[4/2.8]"
+          imageClassName={industriesData.aboutUs.imageClassName || "!object-contain"}
         />
       </section>
       <ServicesSection {...industriesData.services} />

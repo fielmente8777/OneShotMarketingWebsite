@@ -189,8 +189,12 @@ export const homePageData = {
     desc: [
       "At One Shot Marketing, we take pride in delivering tailored digital marketing solutions that make a difference.",
     ],
-    src: imagesLink + "im2.webp",
-    images: [""],
+    // src: imagesLink + "im2.webp",
+    images: [
+      imagesLink + "im2.webp",
+      imagesLink + "im3.webp",
+      imagesLink + "im4.webp",
+    ],
     links: [
       {
         name: "Get a FREE quote!",
@@ -350,7 +354,7 @@ export const IndustriesPageData = {
       {
         title: "Hotel Industry",
         desc: "Helping hotels stand out in a crowded market with targeted digital marketing strategies. From SEO to social media, we drive bookings and boost online visibility for your property.",
-        src: imagesLink + "im11.webp",
+        src: imagesLink + "hbnr.webp",
         images: [""],
       },
       {
@@ -392,7 +396,11 @@ export const IndustriesPageData = {
       "At One Shot Marketing, we take pride in delivering tailored digital marketing solutions that make a difference.",
     ],
     src: imagesLink + "im3.webp",
-    images: [""],
+    images: [
+      imagesLink + "im4.webp",
+      imagesLink + "im2.webp",
+      imagesLink + "im3.webp",
+    ],
     links: [
       {
         name: "Get a FREE quote!",
@@ -548,8 +556,12 @@ export const ServicePageData = {
     desc: [
       "At One Shot Marketing, we take pride in delivering tailored digital marketing solutions that make a difference.",
     ],
-    src: imagesLink + "im3.webp",
-    images: [""],
+    // src: imagesLink + "im3.webp",
+    images: [
+      imagesLink + "im3.webp",
+      imagesLink + "im2.webp",
+      imagesLink + "im4.webp",
+    ],
     links: [
       {
         name: "Get a FREE quote!",

@@ -71,6 +71,7 @@ export const pagesData = [
             src: "",
             alt: "",
           },
+          href:"/services/hotel-industry/performance-marketing",
           icon: <PerformanceMarketing2 />,
         },
         {
@@ -80,6 +81,7 @@ export const pagesData = [
             src: "",
             alt: "",
           },
+          href:"/services/hotel-industry/social-media-marketing",
           icon: <SocialMediaMarketing />,
         },
         {
@@ -89,6 +91,7 @@ export const pagesData = [
             src: "",
             alt: "",
           },
+          href:"/services/hotel-industry/website-design-and-development",
           icon: <WebsiteDesignDevelopment />,
         },
         {
@@ -98,6 +101,7 @@ export const pagesData = [
             src: "",
             alt: "",
           },
+          href:"/services/hotel-industry/search-engine-optimization",
           icon: <SearchEngineOptimization2 />,
         },
         {
@@ -107,6 +111,7 @@ export const pagesData = [
             src: "",
             alt: "",
           },
+          href:"/services/hotel-industry/OTA-listings-and-management",
           icon: <OtaListings />,
         },
       ],
@@ -210,6 +215,7 @@ export const pagesData = [
             src: "",
             alt: "",
           },
+          href: "/services/restaurant-industry/website-design-and-development",
           icon: <WebsiteDesignDevelopment />,
         },
         {
@@ -219,6 +225,7 @@ export const pagesData = [
             src: "",
             alt: "",
           },
+          href: "/services/restaurant-industry/search-engine-optimization",
           icon: <SearchEngineOptimization2 />,
         },
         {
@@ -228,6 +235,7 @@ export const pagesData = [
             src: "",
             alt: "",
           },
+          href: "/services/restaurant-industry/social-media-marketing",
           icon: <SocialMediaMarketing />,
         },
         {
@@ -237,6 +245,7 @@ export const pagesData = [
             src: "",
             alt: "",
           },
+          href: "/services/restaurant-industry/performance-marketing",
           icon: <PerformanceMarketing2 />,
         },
       ],
@@ -338,6 +347,7 @@ export const pagesData = [
             src: "",
             alt: "",
           },
+          href:"/services/immigration-industry/website-design-and-development",
           icon: <WebsiteDesignDevelopment />,
         },
         {
@@ -347,6 +357,7 @@ export const pagesData = [
             src: "",
             alt: "",
           },
+          href:"/services/immigration-industry/search-engine-optimization",
           icon: <SearchEngineOptimization2 />,
         },
         {
@@ -356,6 +367,7 @@ export const pagesData = [
             src: "",
             alt: "",
           },
+          href:"/services/immigration-industry/social-media-marketing",
           icon: <SocialMediaMarketing />,
         },
         {
@@ -365,6 +377,7 @@ export const pagesData = [
             src: "",
             alt: "",
           },
+          href:"/services/immigration-industry/performance-marketing",
           icon: <PerformanceMarketing2 />,
         },
       ],
@@ -465,6 +478,7 @@ export const pagesData = [
             src: "",
             alt: "",
           },
+          href:"/services/beauty-industry/website-design-and-development",
           icon: <WebsiteDesignDevelopment />,
         },
         {
@@ -474,6 +488,7 @@ export const pagesData = [
             src: "",
             alt: "",
           },
+          href:"/services/beauty-industry/performance-marketing",
           icon: <PerformanceMarketing2 />,
         },
         {
@@ -483,6 +498,7 @@ export const pagesData = [
             src: "",
             alt: "",
           },
+          href:"/services/beauty-industry/crm",
           icon: <SearchEngineOptimization2 />,
         },
         {
@@ -492,6 +508,7 @@ export const pagesData = [
             src: "",
             alt: "",
           },
+          href:"/services/beauty-industry/social-media-marketing",
           icon: <SocialMediaMarketing />,
         },
       ],
@@ -592,6 +609,7 @@ export const pagesData = [
             src: "",
             alt: "",
           },
+          href:"/services/clothing-industry/website-design-and-development",
           icon: <WebsiteDesignDevelopment />,
         },
         {
@@ -601,6 +619,7 @@ export const pagesData = [
             src: "",
             alt: "",
           },
+          href:"/services/clothing-industry/search-engine-optimization",
           icon: <SearchEngineOptimization2 />,
         },
         {
@@ -610,6 +629,7 @@ export const pagesData = [
             src: "",
             alt: "",
           },
+          href:"/services/clothing-industry/crm",
           icon: <SocialMediaMarketing />,
         },
         {
@@ -619,6 +639,7 @@ export const pagesData = [
             src: "",
             alt: "",
           },
+          href:"/services/clothing-industry/social-media-marketing",
           icon: <SocialMediaMarketing />,
         },
         {
@@ -628,6 +649,7 @@ export const pagesData = [
             src: "",
             alt: "",
           },
+          href:"/services/clothing-industry/performance-marketing",
           icon: <PerformanceMarketing2 />,
         },
       ],

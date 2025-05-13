@@ -267,17 +267,17 @@ export const FooterLinks: FooterLinksProps[] = [
 export const SocialLinks: SocialLinksProps[] = [
   {
     name: "facebook",
-    href: "https://www.facebook.com/",
+    href: "https://www.facebook.com/oneshotsales",
     icon: <FacebookIcon />,
   },
   {
     name: "instagram",
-    href: "https://www.instagram.com/",
+    href: "https://www.instagram.com/oneshot_marketing/",
     icon: <InstagramIcon />,
   },
   {
     name: "linkedin",
-    href: "https://www.linkedin.com/",
+    href: "https://www.linkedin.com/company/oneshotmarketing",
     icon: <LinkedInIcon />,
   },
 ];

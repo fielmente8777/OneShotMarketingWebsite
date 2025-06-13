@@ -27,6 +27,7 @@ const Form = ({
   const [isOpen1, setIsOpen1] = useState(false);
 
   const dropDownRef3 = useRef<HTMLDivElement | null>(null);
+
   const industries = useMemo(
     () => [
       "select Industry",
@@ -78,7 +79,7 @@ const Form = ({
       const { data } = await axios.post(
         "https://nexon.eazotel.com/eazotel/addcontacts",
         {
-          Domain: "sumittest",// Replace with your actual domain value
+          Domain: "sumittest", // Replace with your actual domain value
           email: userEmail,
           Name: userName,
           Contact: userPhone, // Combine country code and phone number

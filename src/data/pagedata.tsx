@@ -48,6 +48,7 @@ export const homePageData = {
       },
     ],
   },
+
   featuredServices: {
     title: "Featured Services",
     subTitle: `Enhance Your Brand's Success <br /> with Our Digital Marketing Solutions!`,
@@ -101,6 +102,7 @@ export const homePageData = {
       },
     ],
   },
+
   experience: {
     title: "8+ Years of Experience",
     subTitle: `Data Driven, <b>Award Winning</b>  Digital Marketing <b>Agency.</b>`,
@@ -334,6 +336,7 @@ export const AboutUsPageData = {
     ],
   },
 };
+
 export const IndustriesPageData = {
   bannnerData: {
     title: "INDUSTRIES WE SERVE",
@@ -426,6 +429,7 @@ export const IndustriesPageData = {
     ],
   },
 };
+
 export const ServicePageData = {
   bannnerData: {
     title: "OUR SERVICES",

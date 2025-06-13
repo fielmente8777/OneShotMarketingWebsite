@@ -56,7 +56,7 @@ export const pagesData = [
         },
         {
           name: "Call Us",
-          href: "/contact-us",
+          href: "tel:+14388554446",
         },
       ],
     },
@@ -66,20 +66,22 @@ export const pagesData = [
       services: [
         {
           title: "PERFORMANCE MARKETING",
-          desc: "We drive quality traffic to increase direct bookings at the best cost.",
+          desc: "Drive direct bookings with data-driven hotel performance marketing.",
           image: {
             src: "",
             alt: "",
           },
+          href:"/services/hotel-industry/performance-marketing",
           icon: <PerformanceMarketing2 />,
         },
         {
           title: "SOCIAL MEDIA MARKETING",
-          desc: "We curate content and create paid campaigns that drive results.",
+          desc: "Turn stays into stories with hotel social media marketing that captivates.",
           image: {
             src: "",
             alt: "",
           },
+          href:"/services/hotel-industry/social-media-marketing",
           icon: <SocialMediaMarketing />,
         },
         {
@@ -89,6 +91,7 @@ export const pagesData = [
             src: "",
             alt: "",
           },
+          href:"/services/hotel-industry/website-design-and-development",
           icon: <WebsiteDesignDevelopment />,
         },
         {
@@ -98,15 +101,17 @@ export const pagesData = [
             src: "",
             alt: "",
           },
+          href:"/services/hotel-industry/search-engine-optimization",
           icon: <SearchEngineOptimization2 />,
         },
         {
           title: "OTA LISTING & MANAGEMENT",
-          desc: "We manage and optimize your OTA listings for maximum visibility.",
+          desc: "Maximize visibility with seamless hotel OTA listing and management.",
           image: {
             src: "",
             alt: "",
           },
+          href:"/services/hotel-industry/OTA-listings-and-management",
           icon: <OtaListings />,
         },
       ],
@@ -132,14 +137,14 @@ export const pagesData = [
           question:
             "Is One Shot Marketing the best seo company in Mississauga for hotels?",
           answer: [
-            "We offer a range of services including performance marketing, social media management, website design, SEO, and OTA listing management to help your hotel stand out in the digital landscape.",
+            `One Shot Marketing is a leading SEO company in Mississauga, specializing in helping hotels enhance their online visibility and attract more guests. With tailored SEO strategies focused on improving search rankings, we ensure your hotel stands out in a competitive market. While we’re proud of our results, the "best" depends on your specific needs, and we're here to deliver!`,
           ],
         },
         {
           question:
-            "Is One Shot experienced as a software development company in Ontario?",
+            "Is One Shot an experienced hotel marketing agency in Ontario?",
           answer: [
-            "We offer performance marketing, social media marketing, website design and development, search engine optimization, and OTA listing management.",
+            "Yes, One Shot Marketing has experience in hotel marketing, providing tailored solutions for businesses in Ontario. Our team combines technical expertise with a customer-focused approach, delivering high-quality software solutions that meet your specific needs. Whether it’s custom applications, websites, or integrations, we ensure your project is executed seamlessly and efficiently, helping your business thrive.",
           ],
         },
       ],
@@ -180,7 +185,7 @@ export const pagesData = [
       src: imagesLink + "rbnr.webp",
     },
     aboutUs: {
-      title: "ELEVATING THE RESTAURANT INDUSTRY IN THE DIGITAL LANDSCAPE",
+      title: "Escalating your restaurant business with best digital marketing strategies",
       subTitle: `<b>The Best Restaurant Marketing </b> Agency in <b>Canada!</b>`,
       desc: [
         "Thriving in an extremely competitive market can be a task, especially when it comes to restaurants and unique dining spaces. Over the years, One Shot has helped elevate many dining experiences to the attention they deserve—through a stronger online presence, targeted marketing strategies, and a keen understanding of customer engagement. By crafting compelling narratives that resonate with diners, One Shot has successfully transformed the way restaurants present themselves to the public, amplifying their unique identities and ensuring they stand out in a crowded marketplace. With data-driven insights and creative content, we've been able to reach the right audience, drive more foot traffic, and convert casual visitors into loyal patrons.",
@@ -195,7 +200,7 @@ export const pagesData = [
         },
         {
           name: "Call Us",
-          href: "/contact-us",
+          href: "tel:+14388554446",
         },
       ],
     },
@@ -205,38 +210,42 @@ export const pagesData = [
       services: [
         {
           title: "WEBSITE DESIGN & DEVELOPMENT",
-          desc: "We create custom websites that look great and are easy for guests to use.",
+          desc: " Convey a vibe that best explains your space with custom designs",
           image: {
             src: "",
             alt: "",
           },
+          href: "/services/restaurant-industry/website-design-and-development",
           icon: <WebsiteDesignDevelopment />,
         },
         {
           title: "SEARCH ENGINE OPTIMIZATION",
-          desc: "Our SEO optimizes your site to rank higher on Google, driving more relevant traffic.",
+          desc: "Attract more organic traffic from search terms related to your location & cuisine",
           image: {
             src: "",
             alt: "",
           },
+          href: "/services/restaurant-industry/search-engine-optimization",
           icon: <SearchEngineOptimization2 />,
         },
         {
           title: "SOCIAL MEDIA MARKETING",
-          desc: "We curate content and create paid campaigns that drive results.",
+          desc: "From delicious content creation to community management, create content that resonates",
           image: {
             src: "",
             alt: "",
           },
+          href: "/services/restaurant-industry/social-media-marketing",
           icon: <SocialMediaMarketing />,
         },
         {
           title: "PERFORMANCE MARKETING",
-          desc: "We drive quality traffic to increase direct bookings at the best cost.",
+          desc: "Building targeted ad campaigns across channels to attract new diners & recurring business",
           image: {
             src: "",
             alt: "",
           },
+          href: "/services/restaurant-industry/performance-marketing",
           icon: <PerformanceMarketing2 />,
         },
       ],
@@ -260,13 +269,13 @@ export const pagesData = [
         {
           question: "Where is the best place to advertise a restaurant?",
           answer: [
-            "We offer a range of services including performance marketing, social media management, website design, SEO, and OTA listing management to help your hotel stand out in the digital landscape.",
+            "The best places to advertise a restaurant include social media platforms, local directories, Google Ads, and food review sites. Collaborating with a digital marketing agency in Mississauga can help optimize local SEO, manage online campaigns, and reach the right audience, ensuring increased visibility and customer engagement.",
           ],
         },
         {
           question: "How important is marketing for a restaurant?",
           answer: [
-            "We offer performance marketing, social media marketing, website design and development, search engine optimization, and OTA listing management.",
+            "Marketing is crucial for a restaurant as it helps build brand awareness, attract new customers, and retain loyal ones. Effective marketing strategies, like social media engagement and local SEO, can boost visibility, drive traffic, and ultimately increase sales, ensuring the restaurant stays competitive in a crowded market.",
           ],
         },
       ],
@@ -307,13 +316,14 @@ export const pagesData = [
       src: imagesLink + "imbnr.webp",
     },
     aboutUs: {
-      title: "ELEVATING THE IMMIGRATION INDUSTRY IN THE DIGITAL LANDSCAPE",
+      title: "Generate clientele for your immigration consultation through robust digital marketing",
       subTitle: `<b>The Best Immigration </b> Marketing  Agency in <b>Canada!</b>`,
       desc: [
         "At One Shot Marketing, we understand that identifying the needs of your specific niche is crucial, but even more important is understanding your unique needs as a business. That’s where we come in. We specialize in creating tailored, end-to-end digital marketing strategies designed specifically for immigration consultancies. With our in-depth knowledge and expertise, we focus on driving results that truly matter—conversions. Our strategies are built to attract, engage, and convert your ideal clients, ensuring that every step of your marketing journey is optimized for success. Whether it's refining your online presence or enhancing lead generation, we’ve got you covered every step of the way. Let us take your business to the next level with strategies that bring measurable results.",
         `<b>Generate clientele for your immigration consultation through robust digital marketing.</b>`,
       ],
       src: imagesLink + "iim1.webp",
+      imageClassName:"object-cover",
       images: [""],
       links: [
         {
@@ -322,7 +332,7 @@ export const pagesData = [
         },
         {
           name: "Call Us",
-          href: "/contact-us",
+          href: "tel:+14388554446",
         },
       ],
     },
@@ -332,38 +342,42 @@ export const pagesData = [
       services: [
         {
           title: "WEBSITE DESIGN & DEVELOPMENT",
-          desc: "We create custom websites that look great and are easy for guests to use.",
+          desc: "Create a user-friendly, responsive website that builds trust for clients.",
           image: {
             src: "",
             alt: "",
           },
+          href:"/services/immigration-industry/website-design-and-development",
           icon: <WebsiteDesignDevelopment />,
         },
         {
           title: "SEARCH ENGINE OPTIMIZATION",
-          desc: "Our SEO optimizes your site to rank higher on Google, driving more relevant traffic.",
+          desc: "Boost visibility and attract potential business with targeted SEO strategies.",
           image: {
             src: "",
             alt: "",
           },
+          href:"/services/immigration-industry/search-engine-optimization",
           icon: <SearchEngineOptimization2 />,
         },
         {
           title: "SOCIAL MEDIA MARKETING",
-          desc: "We curate content and create paid campaigns that drive results.",
+          desc: "Connects potential clients with expert immigration guidance through Social channels.",
           image: {
             src: "",
             alt: "",
           },
+          href:"/services/immigration-industry/social-media-marketing",
           icon: <SocialMediaMarketing />,
         },
         {
           title: "PERFORMANCE MARKETING",
-          desc: "We drive quality traffic to increase direct bookings at the best cost.",
+          desc: "Maximize ROI with data-driven Performance Marketing for immigration consultants.",
           image: {
             src: "",
             alt: "",
           },
+          href:"/services/immigration-industry/performance-marketing",
           icon: <PerformanceMarketing2 />,
         },
       ],
@@ -387,13 +401,13 @@ export const pagesData = [
         {
           question: "How to get clients for immigration?",
           answer: [
-            "We offer a range of services including performance marketing, social media management, website design, SEO, and OTA listing management to help your hotel stand out in the digital landscape.",
+            "To get clients for immigration services, focus on targeted marketing through social media, content marketing, and Google Ads. Partnering with the best SEO company in Mississauga can improve your website’s visibility, boost local search rankings, and attract potential clients actively searching for immigration services, increasing leads and conversions.",
           ],
         },
         {
           question: "How do I market my immigration services?",
           answer: [
-            "We offer performance marketing, social media marketing, website design and development, search engine optimization, and OTA listing management.",
+            "To market your immigration services, focus on optimizing your website for SEO, creating informative content, and leveraging social media to build trust. Partnering with an experienced SEO agency can boost your online visibility, improve local search rankings, and attract potential clients searching for immigration assistance, driving more leads.",
           ],
         },
       ],
@@ -434,7 +448,7 @@ export const pagesData = [
       src: imagesLink + "bibnr.webp",
     },
     aboutUs: {
-      title: "ELEVATING THE BEAUTY INDUSTRY IN THE DIGITAL LANDSCAPE",
+      title: "Turn clicks into clients with expert beauty marketing services",
       subTitle: `<b>The Expert Beauty Marketing </b> Agency in <b>Canada!</b>`,
       desc: [
         "At One Shot Marketing, we know that understanding the beauty industry is only part of the equation—what truly matters is understanding your brand’s unique needs. That’s why we specialize in creating customized digital marketing strategies designed to elevate your beauty business. Our approach is conversion-driven, meaning we focus on strategies that not only boost your brand’s visibility but also attract more clients and drive revenue growth. From enhancing your online presence to optimizing every aspect of your marketing, we’re here to ensure your business stands out in the competitive beauty industry. Let’s work together to amplify your brand, engage your target audience, and achieve measurable results!",
@@ -449,7 +463,7 @@ export const pagesData = [
         },
         {
           name: "Call Us",
-          href: "/contact-us",
+          href: "tel:+14388554446",
         },
       ],
     },
@@ -459,38 +473,42 @@ export const pagesData = [
       services: [
         {
           title: "WEBSITE DESIGN & DEVELOPMENT",
-          desc: "We create custom websites that look great and are easy for guests to use.",
+          desc: "Design stunning, easy-to-navigate websites that reflect the luxury & quality of your brand.",
           image: {
             src: "",
             alt: "",
           },
+          href:"/services/beauty-industry/website-design-and-development",
           icon: <WebsiteDesignDevelopment />,
         },
         {
           title: "PERFORMANCE MARKETING",
-          desc: "We drive quality traffic to increase direct bookings at the best cost.",
+          desc: "When it comes to beauty, results matter- track every click & purchase with our metrics.",
           image: {
             src: "",
             alt: "",
           },
+          href:"/services/beauty-industry/performance-marketing",
           icon: <PerformanceMarketing2 />,
         },
         {
           title: "CRM",
-          desc: "Understand customers & their needs, delivering personalized experiences.",
+          desc: "Connect with customers, understanding their needs, and delivering personalized experiences.",
           image: {
             src: "",
             alt: "",
           },
+          href:"/services/beauty-industry/crm",
           icon: <SearchEngineOptimization2 />,
         },
         {
           title: "SOCIAL MEDIA MARKETING",
-          desc: "We curate content and create paid campaigns that drive results.",
+          desc: "Create social media strategies that engage & inspire your audience to take action.",
           image: {
             src: "",
             alt: "",
           },
+          href:"/services/beauty-industry/social-media-marketing",
           icon: <SocialMediaMarketing />,
         },
       ],
@@ -514,13 +532,13 @@ export const pagesData = [
         {
           question: "How do I advertise my beauty services?",
           answer: [
-            "We offer a range of services including performance marketing, social media management, website design, SEO, and OTA listing management to help your hotel stand out in the digital landscape.",
+            "To advertise beauty services, focus on social media campaigns, influencer collaborations, and local promotions. A digital marketing agency in Ontario can help optimize online presence, create targeted ads, and enhance your brand visibility, attracting local clients and building long-term customer loyalty.",
           ],
         },
         {
           question: "How to get leads for beauty business?",
           answer: [
-            "We offer performance marketing, social media marketing, website design and development, search engine optimization, and OTA listing management.",
+            "To generate leads for a beauty business, use online advertising, build a strong social media presence, and engage in email marketing. Partnering with a digital marketing agency in Mississauga can improve your lead generation strategy, drive targeted traffic, and convert followers into loyal customers.",
           ],
         },
       ],
@@ -576,7 +594,7 @@ export const pagesData = [
         },
         {
           name: "Call Us",
-          href: "/contact-us",
+          href: "tel:+14388554446",
         },
       ],
     },
@@ -586,47 +604,52 @@ export const pagesData = [
       services: [
         {
           title: "WEBSITE DESIGN & DEVELOPMENT",
-          desc: "We create custom websites that look great and are easy for guests to use.",
+          desc: "User-friendly websites designed to enhance online shopping experience and drive conversions.",
           image: {
             src: "",
             alt: "",
           },
+          href:"/services/clothing-industry/website-design-and-development",
           icon: <WebsiteDesignDevelopment />,
         },
         {
           title: "SEARCH ENGINE OPTIMIZATION",
-          desc: "Our SEO optimizes your site to rank higher on Google, driving more relevant traffic.",
+          desc: "Stand out in the crowded online marketplace and connect with your target audience.",
           image: {
             src: "",
             alt: "",
           },
+          href:"/services/clothing-industry/search-engine-optimization",
           icon: <SearchEngineOptimization2 />,
         },
         {
           title: "CRM",
-          desc: "Understand customers & their needs, delivering personalized experiences.",
+          desc: "Nurture leads & improve customer loyalty with our CRM tools.",
           image: {
             src: "",
             alt: "",
           },
+          href:"/services/clothing-industry/crm",
           icon: <SocialMediaMarketing />,
         },
         {
           title: "SOCIAL MEDIA MARKETING",
-          desc: "We curate content and create paid campaigns that drive results.",
+          desc: "Create authentic connections with your audience & amplify your brand story with Social Media.",
           image: {
             src: "",
             alt: "",
           },
+          href:"/services/clothing-industry/social-media-marketing",
           icon: <SocialMediaMarketing />,
         },
         {
           title: "PERFORMANCE MARKETING",
-          desc: "We drive quality traffic to increase direct bookings at the best cost.",
+          desc: "Build a strategy that attracts eyes, engages visitors, and drives sales.",
           image: {
             src: "",
             alt: "",
           },
+          href:"/services/clothing-industry/performance-marketing",
           icon: <PerformanceMarketing2 />,
         },
       ],
@@ -650,22 +673,22 @@ export const pagesData = [
         {
           question: "What is included in fashion marketing?",
           answer: [
-            "We offer a range of services including performance marketing, social media management, website design, SEO, and OTA listing management to help your hotel stand out in the digital landscape.",
+            "Fashion marketing includes branding, trend analysis, advertising campaigns, content creation, influencer partnerships, and public relations. Working with a digital marketing agency in Mississauga can enhance your fashion brand’s online presence, ensuring your campaigns are engaging and effectively targeting the right consumer segments.",
           ],
         },
         {
           question: "How can I promote my clothing brand with marketing?",
           answer: [
-            "We offer performance marketing, social media marketing, website design and development, search engine optimization, and OTA listing management.",
+            "Promote your clothing brand through social media campaigns, influencer collaborations, and SEO optimization. Working with SEO companies for small business can boost your website’s searchability, improve customer engagement, and drive traffic, leading to higher brand awareness and increased sales for your clothing business.",
           ],
         },
       ],
     },
     contactUs: {
       title: "CONTACT US TO KNOW MORE",
-      subTitle: `Explore the Benefits of <b>Hotel Marketing Services!</b>`,
+      subTitle: `Explore the Benefits of <b>Clothing Marketing Services!</b>`,
       desc: [
-        "Leading Hotel digital marketing agency in Ontario.",
+        "Leading Clothing digital marketing agency in Ontario.",
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],
@@ -709,11 +732,11 @@ export const pageData2 = [
         "A hotel needs visitors, reviews, and countless eyes on it to explore its full capacity—and expanding this reach requires measured strategies. One Shot focuses on delivering results by creating data-driven campaigns across multiple channels. We drive high-quality traffic, increase conversions, and optimize ad spend to help your hotel gain more direct bookings at the best possible cost.",
         "Our expert team leverages advanced targeting techniques to reach potential guests at every stage of their booking journey. We continuously monitor and refine our campaigns, ensuring that your hotel stays ahead of the competition.",
       ],
-      desc2: [
-        `visitors exit your website before room booking. <b>We will help you sell more.</b>`,
-      ],
-      number: "70%",
-      src: imagesLink + "hiim1.webp",
+      // desc2: [
+      //   `visitors exit your website before room booking. <b>We will help you sell more.</b>`,
+      // ],
+      // number: "70%",
+      src: imagesLink + "hiimN1.webp",
       images: [""],
       aspect: "aspect-[4/4]",
       imageClassName: "!rounded-none",
@@ -766,7 +789,7 @@ export const pageData2 = [
       links: [
         {
           name: "Call Us Now!",
-          href: "/contact-us",
+          href: "tel:+14388554446",
         },
       ],
     },
@@ -774,13 +797,13 @@ export const pageData2 = [
       title: "CONTACT US TO KNOW MORE",
       subTitle: `Explore the Benefits of <b>Hotel Performance Marketing!</b>`,
       desc: [
-        "Leading Hotel digital marketing agency in Ontario.",
+        "Leading hotel digital marketing agency in Ontario.",
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],
-      number: "90%",
+      number: "92%",
       desc2: [
-        `visitors exit your website before room booking. <b>We will help you sell more.</b>`,
+        `of all hotel bookings are secured from online bookings!`,
       ],
     },
   },
@@ -796,7 +819,7 @@ export const pageData2 = [
       images: [""],
     },
     aboutUs: {
-      title: "BOOST YOUR HOTEL BUSINESS",
+      title: "Elevate your Hotel's ROI",
       subTitle: `Campaigns that <b>Drive your Business with Trends! </b>`,
       desc: [
         "Social media platforms like Facebook, Instagram, LinkedIn, and Twitter are absolute goldmines when it comes to attracting potential guests to your hotel. Just think about it: a single post, story, or ad can grab the attention of someone who’s planning their next getaway, and in the best case, that one interaction can turn into a loyal customer for years to come.",
@@ -860,7 +883,7 @@ export const pageData2 = [
       links: [
         {
           name: "Call Us Now!",
-          href: "/contact-us",
+          href: "tel:+14388554446",
         },
       ],
     },
@@ -890,7 +913,7 @@ export const pageData2 = [
       images: [""],
     },
     aboutUs: {
-      title: "BOOST YOUR HOTEL BUSINESS",
+      title: "Build clientele of a lifetime",
       subTitle: `<b>Website</b> that Turns Casual Visitors into <b>Loyal Guests!</b>`,
       desc: [
         "Your website is the heartbeat of your hotel’s online presence – it’s often the first place potential guests will discover your property. That’s why we focus on creating custom websites that not only look amazing but are incredibly easy for guests to navigate. We understand that booking a room should be a smooth, hassle-free experience, so we design intuitive booking systems that make securing a stay a breeze.",
@@ -953,7 +976,7 @@ export const pageData2 = [
       links: [
         {
           name: "Call Us Now!",
-          href: "/contact-us",
+          href: "tel:+14388554446",
         },
       ],
     },
@@ -983,7 +1006,7 @@ export const pageData2 = [
       images: [""],
     },
     aboutUs: {
-      title: "BOOST YOUR HOTEL BUSINESS",
+      title: "Build a digital presence that drives growth",
       subTitle: `SEO that <b>Drives Success from the Root! </b>`,
       desc: [
         "Ever wondered how your competitors are consistently bringing in more business? The secret is simple – SEO. By optimizing your website for search engines, they’re making sure their hotel ranks higher when potential guests search for accommodations in your area. Our SEO services are designed to boost your hotel’s visibility, making it easier for future guests to find you when they search for relevant keywords. The result? More organic traffic to your site, and ultimately, more bookings.",
@@ -1001,7 +1024,7 @@ export const pageData2 = [
     },
     services: {
       title: "KEY FEATURES",
-      subTitle: `Attract <b>Organic Traffic & Potential</b>,<br /> <b> Business</b> with our range of services!`,
+      subTitle: `Attract <b>Organic Traffic & Potential</b> <br /> <b> Business</b> with our range of services!`,
       services: [
         {
           title: "ON-PAGE SEO",
@@ -1047,7 +1070,7 @@ export const pageData2 = [
       links: [
         {
           name: "Call Us Now!",
-          href: "/contact-us",
+          href: "tel:+14388554446",
         },
       ],
     },
@@ -1059,9 +1082,9 @@ export const pageData2 = [
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],
-      number: "75%",
+      number: "94%",
       desc2: [
-        `of searchers never go past the  <b>first page of search results!</b>`,
+        ` of all clicks come from <b>Organic search results!</b>`,
       ],
     },
   },
@@ -1077,7 +1100,7 @@ export const pageData2 = [
       images: [""],
     },
     aboutUs: {
-      title: "BOOST YOUR HOTEL BUSINESS",
+      title: "Lead the way through OTA",
       subTitle: `Build your <b>Hotel's Presence </b>on <b>Leading OTA's Today!</b>`,
       desc: [
         "Maintaining presence on Online Travel Agencies is essential for maximum visibility and reach. Sites like Booking.com, Expedia, and Airbnb are the strongest marketplaces for your hotel. One Shot manages and optimizes your OTA listings to ensure they are fully optimized for visibility and conversions. From updating images and descriptions to optimizing pricing strategies, we ensure your property stands out in a crowded market.Explore your possibilities with top hotel marketing agencies in Canada.",
@@ -1139,7 +1162,7 @@ export const pageData2 = [
       links: [
         {
           name: "Call Us Now!",
-          href: "/contact-us",
+          href: "tel:+14388554446",
         },
       ],
     },
@@ -1170,7 +1193,7 @@ export const pageData2 = [
       images: [""],
     },
     aboutUs: {
-      title: "BOOST YOUR RESTAURANT BUSINESS",
+      title: "Elevate your restaurant's presence",
       subTitle: `<b>Build a Presence</b> that Stays for a Lifetime with our <b>Website Designing Expertise!</b>`,
       desc: [
         "Custom designs are essential to portray the essence of your restaurant. Conveying a vibe that best explains your space- is a feat not everyone can achieve! We offer custom website design and development that ensures your site is visually appealing, user-friendly, and optimized for online reservations. Whether it’s showcasing your menu or integrating with your reservation system, we create websites that make it easy for your customers to connect with you. ",
@@ -1233,7 +1256,7 @@ export const pageData2 = [
       links: [
         {
           name: "Call Us Now!",
-          href: "/contact-us",
+          href: "tel:+14388554446",
         },
       ],
     },
@@ -1241,11 +1264,11 @@ export const pageData2 = [
       title: "CONTACT US TO KNOW MORE",
       subTitle: `Let’s build a website that <b>works as hard as your kitchen!</b>`,
       desc: [
-        "Leading Hotel digital marketing agency in Ontario.",
+        "Leading Restaurant marketing agency in Ontario.",
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],
-      number: "35%",
+      number: "30%",
       desc2: [
         `boost in customer retention- <b>seen with an optimized website.</b>`,
       ],
@@ -1263,7 +1286,7 @@ export const pageData2 = [
       images: [""],
     },
     aboutUs: {
-      title: "BOOST YOUR RESTAURANT BUSINESS",
+      title: "Boost your restaurant's local visibility",
       subTitle: `SEO that Boosts <b>your Image to the Right Audience!</b>`,
       desc: [
         "How would you know if someone around you is looking for some curated flavours that only you serve? The answer- SEO. To ensure your restaurant gets noticed by potential diners, we offer expert SEO services that help your website rank higher on search engines like Google. By optimizing your website’s content and structure, we help you attract more organic traffic from search terms related to your location, cuisine, and dining experience",
@@ -1271,10 +1294,10 @@ export const pageData2 = [
       ],
       src: imagesLink + "riim2.webp",
       images: [""],
-      desc2: [
-        `visitors exit your website before room booking. <b>We will help you sell more.</b>`,
-      ],
-      number: "70%",
+      // desc2: [
+      //   `visitors exit your website before room booking. <b>We will help you sell more.</b>`,
+      // ],
+      // number: "70%",
     },
     services: {
       title: "KEY FEATURES",
@@ -1324,7 +1347,7 @@ export const pageData2 = [
       links: [
         {
           name: "Call Us Now!",
-          href: "/contact-us",
+          href: "tel:+14388554446",
         },
       ],
     },
@@ -1332,7 +1355,7 @@ export const pageData2 = [
       title: "CONTACT US TO KNOW MORE",
       subTitle: `Contact us Today and <b>Let’s Help More Diners Find your Restaurant!</b>`,
       desc: [
-        "Leading Hotel digital marketing agency in Ontario.",
+        "Leading Restaurant marketing agency in Ontario.",
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],
@@ -1354,7 +1377,7 @@ export const pageData2 = [
       images: [""],
     },
     aboutUs: {
-      title: "BOOST YOUR RESTAURANT BUSINESS",
+      title: "Social channels that boost your restaurant's presence",
       subTitle: `<b>Make Social Channels</b> that exude <b>your Authenticity!</b>`,
       desc: [
         "A single social media post done right can do wonders for your restaurant—it’s all about sparking curiosity and making your audience crave what you serve! We understand that today’s diners are looking for more than just great food; they want an experience they can connect with, share, and talk about. That’s where we come in! From mouthwatering photos of your latest dishes to behind-the-scenes glimpses of your kitchen, we’ll help you create content that not only showcases your menu but also tells your unique story. We’ll help you build a strong, authentic online presence, ensuring your restaurant becomes a go-to spot that people can’t stop talking about—both online and in person. Ready to turn your social media followers into your biggest fans? Let’s make it happen!",
@@ -1416,7 +1439,7 @@ export const pageData2 = [
       links: [
         {
           name: "Call Us Now!",
-          href: "/contact-us",
+          href: "tel:+14388554446",
         },
       ],
     },
@@ -1424,11 +1447,11 @@ export const pageData2 = [
       title: "CONTACT US TO KNOW MORE",
       subTitle: `Create a buzz with <b> Our Marketing Expertise!</b>`,
       desc: [
-        "Leading Hotel digital marketing agency in Ontario.",
+        "Leading Restaurant marketing agency in Ontario.",
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],
-      number: "45%",
+      number: "40%",
       desc2: [
         `increase in customer engagement recorded through <b>social media marketing!</b>`,
       ],
@@ -1446,7 +1469,7 @@ export const pageData2 = [
       images: [""],
     },
     aboutUs: {
-      title: "BOOST YOUR RESTAURANT BUSINESS",
+      title: "Marketing that works for your brand",
       subTitle: `Build Performance Channels that <b>Drive Sales for your Restaurant!</b>`,
       desc: [
         "As a restaurant owner, you know that every busy night is a testament to your hard work and dedication. But keeping that momentum going requires smart marketing that works as hard as you do. That’s where One Shot comes in. We don’t just set up ads and forget about them—we’re constantly fine-tuning, optimizing, and analyzing results to ensure every penny you spend delivers the best possible return. Whether it’s attracting new faces or re-engaging your loyal regulars, our tailored campaigns on Google, social media, and display networks are designed to keep your tables full and your kitchen bustling.",
@@ -1509,7 +1532,7 @@ export const pageData2 = [
       links: [
         {
           name: "Call Us Now!",
-          href: "/contact-us",
+          href: "tel:+14388554446",
         },
       ],
     },
@@ -1517,11 +1540,11 @@ export const pageData2 = [
       title: "CONTACT US TO KNOW MORE",
       subTitle: `<b>Metrics to Footfall</b> with Our Restaurant <b>Performance Marketing Services!</b>`,
       desc: [
-        "Leading Hotel digital marketing agency in Ontario.",
+        "Leading Restaurant marketing agency in Ontario.",
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],
-      number: "40%",
+      number: "30%",
       desc2: [
         `increase in revenue within the first 6 months!with  <b>excellent performance marketing!</b>`,
       ],
@@ -1540,7 +1563,7 @@ export const pageData2 = [
       images: [""],
     },
     aboutUs: {
-      title: "BOOST YOUR IMMIGRATION BUSINESS",
+      title: "Credibility that drives your business",
       subTitle: `Campaigns that <b>Drive your Business with Trends! </b>`,
       desc: [
         "Looking to create a website that truly represents your immigration agency? Our design and development services focus on crafting user-friendly, responsive websites that make it easy for clients to explore visa options and get the help they need.",
@@ -1604,7 +1627,7 @@ export const pageData2 = [
       links: [
         {
           name: "Call Us Now!",
-          href: "/contact-us",
+          href: "tel:+14388554446",
         },
       ],
     },
@@ -1612,11 +1635,11 @@ export const pageData2 = [
       title: "CONTACT US TO KNOW MORE",
       subTitle: `Let’s Turn your Ideas into a <b>Website that Converts!</b>`,
       desc: [
-        "Leading Hotel digital marketing agency in Ontario.",
+        "Leading Immigration marketing agency in Ontario.",
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],
-      number: "56%",
+      number: "50%",
       desc2: [
         `increase in online inquiries- <b>when your immigration website is optimized!</b>`,
       ],
@@ -1634,13 +1657,13 @@ export const pageData2 = [
       images: [""],
     },
     aboutUs: {
-      title: "BOOST YOUR IMMIGRATION BUSINESS",
+      title: "Bring visibility to your immigration business",
       subTitle: `Reach the <b>Right Clientele</b> with our <b>Expert SEO Services!</b>`,
       desc: [
         "Want your immigration agency to stand out online? Our SEO services boost your visibility with targeted keywords, engaging content, and niche targeting. One Shot employs proven strategies to help you rank higher on search engines and attract clients that are searching for a trusted service.",
         "We focus on more than just keywords—we take a comprehensive approach, optimizing your site’s structure, content, and even local SEO, to ensure it ranks higher on search engines. Whether someone’s looking for visa assistance or immigration advice in your area, we make sure your agency shows up at the top of their search. By continuously monitoring and adjusting our strategies, we ensure your online presence grows steadily, bringing in new leads and building your agency’s reputation as a trusted expert in the field",
       ],
-      src: imagesLink + "hiim4.webp",
+      src: imagesLink + "immiim2.webp",
       images: [""],
       links: [
         {
@@ -1697,7 +1720,7 @@ export const pageData2 = [
       links: [
         {
           name: "Call Us Now!",
-          href: "/contact-us",
+          href: "tel:+14388554446",
         },
       ],
     },
@@ -1705,7 +1728,7 @@ export const pageData2 = [
       title: "CONTACT US TO KNOW MORE",
       subTitle: `It’s time to make a <b>lasting impression!</b>`,
       desc: [
-        "Leading Hotel digital marketing agency in Ontario.",
+        "Leading Immigration marketing agency in Ontario.",
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],
@@ -1727,13 +1750,13 @@ export const pageData2 = [
       images: [""],
     },
     aboutUs: {
-      title: "BOOST YOUR IMMIGRATION BUSINESS",
+      title: "Build channels that drive social engagement",
       subTitle: `A Social Media Channel that Builds a <b>Credible Presence Across Channels!</b>`,
       desc: [
         "In a world where social media is often the first place people turn to for answers, your immigration services need to stand out in the digital crowd. That’s where One Shot Marketing comes in—we help you craft meaningful, engaging content that speaks directly to your audience's needs and concerns. Whether it's through informative posts, success stories, or answering common questions, we ensure that your social media presence builds trust and credibility. By tapping into the power of social media, we make it easier for prospective clients to find you, connect with you, and ultimately, choose you as their go-to resource for immigration support. ",
         `<b>Let’s turn your social media into a tool that not only informs but also converts leads into loyal clients.</b>`,
       ],
-      src: imagesLink + "hiim2.webp",
+      src: imagesLink + "immiim3.webp",
       images: [""],
       links: [
         {
@@ -1790,7 +1813,7 @@ export const pageData2 = [
       links: [
         {
           name: "Call Us Now!",
-          href: "/contact-us",
+          href: "tel:+14388554446",
         },
       ],
     },
@@ -1798,7 +1821,7 @@ export const pageData2 = [
       title: "CONTACT US TO KNOW MORE",
       subTitle: `Let’s make your <b>Social Media Work for your Consultancy!</b>`,
       desc: [
-        "Leading Hotel digital marketing agency in Ontario.",
+        "Leading Immigration marketing agency in Ontario.",
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],
@@ -1820,13 +1843,13 @@ export const pageData2 = [
       images: [""],
     },
     aboutUs: {
-      title: "BOOST YOUR IMMIGRATION BUSINESS",
+      title: "Drive sales through robust performance marketing",
       subTitle: `Bring the Right Numbers with our <b>Performance Marketing Strategies!</b>`,
       desc: [
         "Maximize your investment with our Performance Marketing services tailored specifically for immigration consultants. We know that finding the right clients is crucial for your business, which is why we focus on strategies that speak directly to your target audience. Using data-driven insights, we ensure that your marketing efforts are aimed at the people who need your services the most—at exactly the right time. Whether it's prospective clients seeking visas, residency, or legal advice, our approach connects you with the individuals most likely to take action.",
         "With One Shot, you're not just throwing ads into the void—you're building a smart, sustainable strategy that brings in qualified leads and measurable results. Let us help you grow your immigration consulting business by targeting the right people, increasing inquiries, and ultimately converting those leads into loyal clients.",
       ],
-      src: imagesLink + "riim4.webp",
+      src: imagesLink + "immiim4.webp",
       images: [""],
       links: [
         {
@@ -1883,7 +1906,7 @@ export const pageData2 = [
       links: [
         {
           name: "Call Us Now!",
-          href: "/contact-us",
+          href: "tel:+14388554446",
         },
       ],
     },
@@ -1891,7 +1914,7 @@ export const pageData2 = [
       title: "CONTACT US TO KNOW MORE",
       subTitle: `Ready to expand your <b>Immigration consultancy reach?</b>`,
       desc: [
-        "Leading Hotel digital marketing agency in Ontario.",
+        "Leading Immigration marketing agency in Ontario.",
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],
@@ -1914,7 +1937,7 @@ export const pageData2 = [
       images: [""],
     },
     aboutUs: {
-      title: "BOOST YOUR BEAUTY BRAND",
+      title: "Invoke a presence that captures",
       subTitle: `Build a Website that <b>Captivates your Audience!</b>`,
       desc: [
         "Your website is the virtual storefront of your beauty business, and it needs to captivate and convert. At One Shot Marketing, we design stunning, easy-to-navigate websites that reflect the luxury and quality of your brand while making it effortless for customers to shop and learn more about your beauty products or services.",
@@ -1977,7 +2000,7 @@ export const pageData2 = [
       links: [
         {
           name: "Call Us Now!",
-          href: "/contact-us",
+          href: "tel:+14388554446",
         },
       ],
     },
@@ -1985,7 +2008,7 @@ export const pageData2 = [
       title: "CONTACT US TO KNOW MORE",
       subTitle: `Your beauty business deserves a  <b>Website that Works for You!</b>`,
       desc: [
-        "Leading Hotel digital marketing agency in Ontario.",
+        "Leading Beauty marketing agency in Ontario.",
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],
@@ -2007,13 +2030,13 @@ export const pageData2 = [
       images: [""],
     },
     aboutUs: {
-      title: "BOOST YOUR BEAUTY BRAND",
+      title: "A brand that is driven by metrics",
       subTitle: `<b>Performance</b> that Turns Trends into <b>your Business!</b>`,
       desc: [
         "When it comes to beauty, results matter. At One Shot Marketing, we get that every ad should not only showcase your products but also deliver real, measurable outcomes. We track every click, every purchase, and ensure your marketing dollars are working hard for you. No fluff, just results. If you want to see your beauty business grow through campaigns that make a difference, we’re here to help you shine.",
         "Whether it’s promoting a new product, offering exclusive deals, or building brand awareness, we tailor each campaign to reach the right people at the right time. With detailed analytics and ongoing optimization, we ensure that every dollar you spend is getting you closer to your goals. At One Shot Marketing, we’re here to help your beauty business not just stay relevant, but thrive and stand out in a crowded market. Let’s create campaigns that truly move the needle!",
       ],
-      src: imagesLink + "riim4.webp",
+      src: imagesLink + "biim2.webp",
       images: [""],
       links: [
         {
@@ -2070,7 +2093,7 @@ export const pageData2 = [
       links: [
         {
           name: "Call Us Now!",
-          href: "/contact-us",
+          href: "tel:+14388554446",
         },
       ],
     },
@@ -2078,7 +2101,7 @@ export const pageData2 = [
       title: "CONTACT US TO KNOW MORE",
       subTitle: `Want to see your <b>Beauty Business Thrive?</b>`,
       desc: [
-        "Leading Hotel digital marketing agency in Ontario.",
+        "Leading Beauty marketing agency in Ontario.",
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],
@@ -2100,13 +2123,13 @@ export const pageData2 = [
       images: [""],
     },
     aboutUs: {
-      title: "BOOST YOUR BEAUTY BRAND",
+      title: "Build connections that drive growth",
       subTitle: `Connect with your <b>Audience like Never Before!</b>`,
       desc: [
         "Beauty is all about relationships—connecting with customers, understanding their needs, and delivering personalized experiences. By centralizing customer data and automating follow-ups, we ensure that your beauty business never misses an opportunity to engage with your customers. Whether it’s sending them special offers, reminding them to restock their favorite products, or offering personalized recommendations, we create meaningful connections that keep your clients coming back. After all, loyal customers are the heart of every successful beauty business.",
         "Beauty is all about relationships—connecting with customers, understanding their needs, and delivering personalized experiences. By centralizing customer data and automating follow-ups, we ensure that your beauty business never misses an opportunity to engage with your customers. Whether it’s sending them special offers, reminding them to restock their favorite products, or offering personalized recommendations, we create meaningful connections that keep your clients coming back. After all, loyal customers are the heart of every successful beauty business.",
       ],
-      src: imagesLink + "biim2.webp",
+      src: imagesLink + "biim3.webp",
       images: [""],
       links: [
         {
@@ -2163,7 +2186,7 @@ export const pageData2 = [
       links: [
         {
           name: "Call Us Now!",
-          href: "/contact-us",
+          href: "tel:+14388554446",
         },
       ],
     },
@@ -2171,11 +2194,11 @@ export const pageData2 = [
       title: "CONTACT US TO KNOW MORE",
       subTitle: `Connect and Build Client Relationships with <b>Best CRM Solutions</b>`,
       desc: [
-        "Leading Hotel digital marketing agency in Ontario.",
+        "Leading Beauty marketing agency in Ontario.",
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],
-      number: "30%",
+      number: "40%",
       desc2: [
         `boost in lifetime value- <b>a big boost seen through beauty CRM strategies!</b>`,
       ],
@@ -2193,12 +2216,12 @@ export const pageData2 = [
       images: [""],
     },
     aboutUs: {
-      title: "BOOST YOUR BEAUTY BRAND",
+      title: "A presence that converts",
       subTitle: `A Social Media that Drives Trends to <b>Become your Revenue!</b>`,
       desc: [
         "In the beauty industry, social media is everything. It's where trends start, products go viral, and loyal customers are made. At One Shot Marketing, we create social media strategies that not only engage but also inspire your audience to take action.From organic content to paid campaigns, we’ll elevate your beauty brand and turn your social channels into powerful sales tools that build a community of passionate followers.",
       ],
-      src: imagesLink + "hiim2.webp",
+      src: imagesLink + "biim4.webp",
       images: [""],
       links: [
         {
@@ -2255,7 +2278,7 @@ export const pageData2 = [
       links: [
         {
           name: "Call Us Now!",
-          href: "/contact-us",
+          href: "tel:+14388554446",
         },
       ],
     },
@@ -2263,11 +2286,11 @@ export const pageData2 = [
       title: "CONTACT US TO KNOW MORE",
       subTitle: `Create a Buzz with your <b>Creative Insights through One Shot!</b>`,
       desc: [
-        "Leading Hotel digital marketing agency in Ontario.",
+        "Leading Beauty marketing agency in Ontario.",
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],
-      number: "45%",
+      number: "40%",
       desc2: [
         `increase in client engagement is seen when beauty brands employ <b>social media marketing!</b>`,
       ],
@@ -2286,7 +2309,7 @@ export const pageData2 = [
       images: [""],
     },
     aboutUs: {
-      title: "BOOST YOUR CLOTHING BUSINESS",
+      title: "A website that shows your vision",
       subTitle: `Exude a Presence that <b>Drives your Growth!</b>`,
       desc: [
         "Your website is the heart of your brand. It’s where your customers shop, discover your collections, and engage with your story. At One Shot, we create sleek, user-friendly websites designed to enhance the online shopping experience and drive conversions. We ensure your site looks great on every device, loads fast, and makes purchasing easy, creating a seamless online shopping journey for your customers.",
@@ -2349,7 +2372,7 @@ export const pageData2 = [
       links: [
         {
           name: "Call Us Now!",
-          href: "/contact-us",
+          href: "tel:+14388554446",
         },
       ],
     },
@@ -2357,7 +2380,7 @@ export const pageData2 = [
       title: "CONTACT US TO KNOW MORE",
       subTitle: `Build your Vision into an <b>Online Presence that Sells!</b>`,
       desc: [
-        "Leading Hotel digital marketing agency in Ontario.",
+        "Leading Clothing marketing agency in Ontario.",
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],
@@ -2377,13 +2400,13 @@ export const pageData2 = [
       images: [""],
     },
     aboutUs: {
-      title: "BOOST YOUR CLOTHING BUSINESS",
+      title: "Build a clothing business that thrives",
       subTitle: `<b>Reach the Right Audience</b> for your Clothing Brand with <b>Right SEO Strategies!</b>`,
       desc: [
         " In the fashion world, it’s crucial to be found. One Shot’s SEO services boost your brand’s visibility on search engines, helping you stand out in the crowded online marketplace. We focus on optimizing your website to rank higher for relevant keywords, ensuring you’re the first brand customers discover when searching for stylish clothing options.",
         "One Shot’s SEO services are designed to make that happen. By optimizing your website’s content, structure, and keywords, we help your brand rank higher on search engines like Google. Whether it’s optimizing your product pages, enhancing your blog content, or improving your site’s load speed, we leave no stone unturned in getting your brand noticed. The result? More traffic, more leads, and ultimately, more sales for your clothing business. Let’s ensure you’re the first name on their mind when they think about fashion.",
       ],
-      src: imagesLink + "riim4.webp",
+      src: imagesLink + "cliim2.webp",
       images: [""],
       links: [
         {
@@ -2440,7 +2463,7 @@ export const pageData2 = [
       links: [
         {
           name: "Call Us Now!",
-          href: "/contact-us",
+          href: "tel:+14388554446",
         },
       ],
     },
@@ -2448,11 +2471,11 @@ export const pageData2 = [
       title: "CONTACT US TO KNOW MORE",
       subTitle: `Build SEO Strategies that <b>Build a Presence for You!</b>`,
       desc: [
-        "Leading Hotel digital marketing agency in Ontario.",
+        "Leading Clothing marketing agency in Ontario.",
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],
-      number: "45%",
+      number: "40%",
       desc2: [
         `increase is seen in organic traffic when your  <b>SEO is optimized!</b>`,
       ],
@@ -2470,13 +2493,13 @@ export const pageData2 = [
       images: [""],
     },
     aboutUs: {
-      title: "BOOST YOUR HOTEL BUSINESS",
+      title: "Connect with your audience through credibility",
       subTitle: `<b>Credibility</b> that Comes with Personalized <b>Automation Solutions!</b>`,
       desc: [
         "Building lasting relationships with your customers is the key to long-term success in the fashion industry. At One Shot Marketing, we integrate advanced CRM solutions to help you better understand your customers, nurture leads, and improve customer loyalty. Our CRM services are designed to centralize customer data, streamline communication, and drive personalized marketing campaigns that turn one-time shoppers into repeat buyers. We ensure that your customers feel valued at every stage of their journey, from the moment they discover your brand to their ongoing engagement with it.",
         "Our CRM services are designed to centralize customer data, streamline communication, and drive personalized marketing campaigns that turn one-time shoppers into repeat buyers. We ensure that your customers feel valued at every stage of their journey, from the moment they discover your brand to their ongoing engagement with it.",
       ],
-      src: imagesLink + "biim2.webp",
+      src: imagesLink + "cliim3.webp",
       images: [""],
       links: [
         {
@@ -2533,7 +2556,7 @@ export const pageData2 = [
       links: [
         {
           name: "Call Us Now!",
-          href: "/contact-us",
+          href: "tel:+14388554446",
         },
       ],
     },
@@ -2541,7 +2564,7 @@ export const pageData2 = [
       title: "CONTACT US TO KNOW MORE",
       subTitle: `Ready to <b>Build Lasting Relationships with your Customers?</b>`,
       desc: [
-        "Leading Hotel digital marketing agency in Ontario.",
+        "Leading Clothing marketing agency in Ontario.",
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],
@@ -2563,13 +2586,13 @@ export const pageData2 = [
       images: [""],
     },
     aboutUs: {
-      title: "BOOST YOUR HOTEL BUSINESS",
+      title: "Change your brand's identity with optimized presence",
       subTitle: `Campaigns that <b>Drive your Business with Trends! </b>`,
       desc: [
         "Social media platforms like Facebook, Instagram, LinkedIn, and Twitter are absolute goldmines when it comes to attracting potential guests to your hotel. Just think about it: a single post, story, or ad can grab the attention of someone who’s planning their next getaway, and in the best case, that one interaction can turn into a loyal customer for years to come.",
         "That’s where our social media marketing service comes in. We don’t just post for the sake of posting; we take the time to understand your hotel's unique vibe and target audience. From creating eye-catching content that tells your story, to engaging with your followers in a meaningful way, we help build a real connection. And it’s not just about organic growth — we also run highly-targeted paid campaigns designed to drive bookings directly.",
       ],
-      src: imagesLink + "hiim2.webp",
+      src: imagesLink + "cliim4.webp",
       images: [""],
       links: [
         {
@@ -2626,7 +2649,7 @@ export const pageData2 = [
       links: [
         {
           name: "Call Us Now!",
-          href: "/contact-us",
+          href: "tel:+14388554446",
         },
       ],
     },
@@ -2634,11 +2657,11 @@ export const pageData2 = [
       title: "CONTACT US TO KNOW MORE",
       subTitle: `Know how we can <b>Harness the Power of Social Media for your Business!</b>`,
       desc: [
-        "Leading Hotel digital marketing agency in Ontario.",
+        "Leading Clothing marketing agency in Ontario.",
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],
-      number: "35%",
+      number: "30%",
       desc2: [
         `boost in online sales is seen when <b>social media is used in the right manner!</b>`,
       ],
@@ -2656,12 +2679,12 @@ export const pageData2 = [
       images: [""],
     },
     aboutUs: {
-      title: "BOOST YOUR CLOTHING BUSINESS",
+      title: "Metrics that drive your growth",
       subTitle: `<b>From Leads to Conversion,</b> our Strategies <b>Drive your Forward!</b>`,
       desc: [
         "Every clothing brand needs a strategy that attracts eyes, engages visitors, and drives sales. One Shot Marketing is all about delivering results through data-driven campaigns. We reach the right audience, at the right time, across the right channels. We optimize every dollar you spend, ensuring it brings the best possible return. Our goal is simple: help you sell more clothing, gain loyal customers, and grow your brand.",
       ],
-      src: imagesLink + "hiim1.webp",
+      src: imagesLink + "cliim5.webp",
       images: [""],
       links: [
         {
@@ -2718,7 +2741,7 @@ export const pageData2 = [
       links: [
         {
           name: "Call Us Now!",
-          href: "/contact-us",
+          href: "tel:+14388554446",
         },
       ],
     },
@@ -2726,7 +2749,7 @@ export const pageData2 = [
       title: "CONTACT US TO KNOW MORE",
       subTitle: `Drive and Build a <b>Brand that Speaks for You!</b>`,
       desc: [
-        "Leading Hotel digital marketing agency in Ontario.",
+        "Leading Clothing marketing agency in Ontario.",
         `350+ satisfied clients and counting. Helping businesses grow through innovative digital marketing strategies.`,
         "8+ Years of expertise.",
       ],

@@ -191,8 +191,12 @@ export const homePageData = {
     desc: [
       "At One Shot Marketing, we take pride in delivering tailored digital marketing solutions that make a difference.",
     ],
-    src: imagesLink + "im2.webp",
-    images: [""],
+    // src: imagesLink + "im2.webp",
+    images: [
+      imagesLink + "im2.webp",
+      imagesLink + "im3.webp",
+      imagesLink + "im4.webp",
+    ],
     links: [
       {
         name: "Get a FREE quote!",
@@ -353,32 +357,37 @@ export const IndustriesPageData = {
       {
         title: "Hotel Industry",
         desc: "Helping hotels stand out in a crowded market with targeted digital marketing strategies. From SEO to social media, we drive bookings and boost online visibility for your property.",
-        src: imagesLink + "im11.webp",
+        src: imagesLink + "hbnr.webp",
         images: [""],
+        href: "/industries-we-serve/hotel-industry",
       },
       {
         title: "Restaurant Industry",
         desc: "Transforming restaurant brands with creative digital marketing solutions that attract diners. We specialize in social media campaigns, online ads, & SEO to drive traffic and increase sales.",
         src: imagesLink + "im9.webp",
         images: [""],
+        href: "/industries-we-serve/restaurant-industry",
       },
       {
         title: "Immigration Industry",
         desc: "Elevating immigration brands with targeted digital marketing that reaches the right audience. From engaging social media campaigns and strategic online ads to SEO optimization.",
         src: imagesLink + "im8.webp",
         images: [""],
+        href: "/industries-we-serve/immigration-industry",
       },
       {
         title: "Beauty Industry",
         desc: "Elevating beauty brands with powerful digital marketing strategies that captivate your audience. From influencer partnerships to targeted ads, we boost sales in the beauty.",
         src: imagesLink + "im10.webp",
         images: [""],
+        href: "/industries-we-serve/beauty-industry",
       },
       {
         title: "Clothing Industry",
         desc: "Boosting clothing brands with innovative digital marketing strategies to drive sales and enhance visibility. We specialize in social media, influencer partnerships, and targeted ads.",
         src: imagesLink + "im5.webp",
         images: [""],
+        href: "/industries-we-serve/clothing-industry",
       },
     ],
     links: [
@@ -395,7 +404,11 @@ export const IndustriesPageData = {
       "At One Shot Marketing, we take pride in delivering tailored digital marketing solutions that make a difference.",
     ],
     src: imagesLink + "im3.webp",
-    images: [""],
+    images: [
+      imagesLink + "im4.webp",
+      imagesLink + "im2.webp",
+      imagesLink + "im3.webp",
+    ],
     links: [
       {
         name: "Get a FREE quote!",
@@ -459,11 +472,11 @@ export const ServicePageData = {
   },
   services: {
     title: "ALL SERVICES",
-    subTitle: `Digital Marketing Services`,
+    subTitle: `Digital Marketing <b>Services</b>`,
     services: [
       {
         title: "HOTEL INDUSTRY SERVICES",
-        desc: [
+        arrayDesc: [
           "Performance Marketing",
           "Social Media Marketing",
           "Website Design & Development",
@@ -479,7 +492,7 @@ export const ServicePageData = {
       },
       {
         title: "RESTAURANT INDUSTRY SERVICES",
-        desc: [
+        arrayDesc: [
           "Website Design & Development",
           "Search Engine Optimisation",
           "Social Media Marketing",
@@ -494,7 +507,7 @@ export const ServicePageData = {
       },
       {
         title: "IMMIGRATION INDUSTRY SERVICES",
-        desc: [
+        arrayDesc: [
           "Website Design & Development",
           "Search Engine Optimisation",
           "Social Media Marketing",
@@ -509,7 +522,7 @@ export const ServicePageData = {
       },
       {
         title: "BEAUTY INDUSTRY SERVICES",
-        desc: [
+        arrayDesc: [
           "Website Design & Development",
           "Performance Marketing",
           "CRM",
@@ -524,7 +537,7 @@ export const ServicePageData = {
       },
       {
         title: "CLOTHING INDUSTRY SERVICES",
-        desc: [
+        arrayDesc: [
           "Website Design & Development",
           "Search Engine Optimisation",
           "CRM",
@@ -552,8 +565,12 @@ export const ServicePageData = {
     desc: [
       "At One Shot Marketing, we take pride in delivering tailored digital marketing solutions that make a difference.",
     ],
-    src: imagesLink + "im3.webp",
-    images: [""],
+    // src: imagesLink + "im3.webp",
+    images: [
+      imagesLink + "im3.webp",
+      imagesLink + "im2.webp",
+      imagesLink + "im4.webp",
+    ],
     links: [
       {
         name: "Get a FREE quote!",

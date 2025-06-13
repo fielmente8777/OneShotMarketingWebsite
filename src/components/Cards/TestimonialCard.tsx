@@ -19,7 +19,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
           ))}
         </div>
       )}
-      <p className="heading4 text-light">{desc}</p>
+      <p className="text-lg text-light">{desc}</p>
       <h3 className="heading2 text-normal">{name}</h3>
     </div>
   );

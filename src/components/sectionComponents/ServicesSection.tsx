@@ -13,6 +13,7 @@ const ServicesSection: React.FC<CommonProps> = ({
   links,
   services,
   noOslider = 4,
+  borderTop
 }) => {
   return (
     <SectionWithContainer sectionClassName="bg-primary">
@@ -60,13 +61,13 @@ const ServicesSection: React.FC<CommonProps> = ({
             classNameSwiper="w-full"
             classNameSwiperSlide="p-2"
           >
-            {(item) => <ServiceCard4 {...item} level={4} />}
+            {(item) => <ServiceCard4 {...item} level={4} borderTop={borderTop} />}
           </SliderSwip>
           <div className="service-pagination flex items-center justify-center gap-1 mt-4"></div>
-          <button className="absolute service-prev top-1/2  -translate-y-1/2 -left-2 z-10">
+          <button className="absolute service-prev md:top-[40%] top-[38%] -left-2 z-10 lg:block hidden">
             <BtnPrev width={36} />
           </button>
-          <button className="absolute service-next top-1/2  -translate-y-1/2 -right-2 z-10">
+          <button className="absolute service-next md:top-[40%] top-[38%] -right-2 z-10 lg:block hidden">
             <BtnNext width={36} />
           </button>
         </div>

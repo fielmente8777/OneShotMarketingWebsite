@@ -253,8 +253,8 @@ export const FooterLinks: FooterLinksProps[] = [
         href: "/contact-us",
       },
       {
-        name: "+1 (438) 855-4446",
-        href: "/tel:+14388554446",
+          name: "+1 (742) 222-2288",
+        href: "/tel:+17422222288",
       },
       {
         name: "info@oneshotmarketing.ca",

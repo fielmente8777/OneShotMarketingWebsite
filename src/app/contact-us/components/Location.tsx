@@ -1,9 +1,12 @@
+"use client";
 import {
+  FormPopup,
   LazyLoadedMap,
   OnlyButton,
   SectionTitleSubTitle,
   SectionWithContainer,
 } from "@/components";
+import { useState } from "react";
 
 interface LocationProps {
   title: string;
@@ -15,6 +18,7 @@ interface LocationProps {
   }[];
 }
 const Location: React.FC<LocationProps> = ({ title, subTitle, src, links }) => {
+  const [openForm, setOpenForm] = useState(false);
   return (
     <SectionWithContainer>
       <div className="w-full flex flex-col gap-4 md:gap-16">
@@ -31,6 +35,7 @@ const Location: React.FC<LocationProps> = ({ title, subTitle, src, links }) => {
           {links?.map((link, index) => (
             <li key={index} className="flex items-center justify-center w-full gap-1">
               <OnlyButton
+                onclick={() => setOpenForm(true)}
                 className={`raleway bg-secondary text-white hover:box-shadow flex items-center gap-1 rounded-lg py-3 px-6 font-semibold`}
               >
                 {link.name}
@@ -39,6 +44,7 @@ const Location: React.FC<LocationProps> = ({ title, subTitle, src, links }) => {
           ))}
         </ul>
       </div>
+      <FormPopup openForm={openForm} setOpenForm={setOpenForm} />
     </SectionWithContainer>
   );
 };

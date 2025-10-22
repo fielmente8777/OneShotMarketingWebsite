@@ -121,14 +121,14 @@ const Navbar = () => {
                 })}
               </ul>
               <Link
-                href={"tel:438-855-4446"}
+                href={"tel:+1742-222-2288"}
                 target="_blank"
                 className="md:px-4 md:py-2 md:hover:box-shadow flex items-center gap-1 md:border border-primary bg-white text-primary rounded-lg hover:bg-primary hover:text-white duration-300 transition-all ease-in-out"
               >
                 <span className="">
                   <OutlinePhone className="fill-current stroke-currentColor md:w-7 aspect-square" />
                 </span>
-                <span className="md:block hidden"> 438-855-4446</span>
+                <span className="md:block hidden"> 742-222-2288</span>
               </Link>
             </nav>
           </Container>

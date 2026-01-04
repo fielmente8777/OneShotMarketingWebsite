@@ -246,7 +246,7 @@ export const FooterLinks: FooterLinksProps[] = [
     links: [
       {
         name: "3064 Hurontario St. Mississauga, Ontario",
-        href: "/contact-us",
+        href: "https://maps.app.goo.gl/vtaGTKbLnrtHH4gW8",
       },
       {
         name: "148 St Surrey, BC V3S 3E8, Canada",

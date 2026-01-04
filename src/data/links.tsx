@@ -1,8 +1,8 @@
 import { JSX } from "react";
 import { FacebookIcon, InstagramIcon, LinkedInIcon } from "./icons";
 
-
-export const imagesLink ="https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/OneShotMarketingWebsite/"
+export const imagesLink =
+  "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/OneShotMarketingWebsite/";
 
 interface NveLinksProps {
   name: string;
@@ -252,13 +252,17 @@ export const FooterLinks: FooterLinksProps[] = [
         name: "148 St Surrey, BC V3S 3E8, Canada",
         href: "/contact-us",
       },
+      // {
+      //   name: "+1 (742) 222-2288",
+      //   href: "/tel:+17422222288",
+      // },
       {
-          name: "+1 (742) 222-2288",
-        href: "/tel:+17422222288",
+        name: "+1 (438) 855-4446",
+        href: "tel:+14388554446",
       },
       {
         name: "info@oneshotmarketing.ca",
-        href: "/mailto:info@oneshotmarketing.ca",
+        href: "mailto:info@oneshotmarketing.ca",
       },
     ],
   },

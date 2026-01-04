@@ -623,7 +623,7 @@ export const ContactUsPageData = {
       },
       {
         title: "Phone",
-        desc: ["+1 (742) 222-2288"],
+        desc: ["+1 (438) 855-4446"],
         icon: <CallIcon className="text-black fill-dark" />,
       },
       {

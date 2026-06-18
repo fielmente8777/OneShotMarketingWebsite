@@ -20,30 +20,30 @@ export const homePageData = {
     subTitle: "One Shot Marketing",
     description:
       "Unlock your brand’s potential with digital strategies that deliver results.",
-    src: imagesLink + "bnr1.webp",
+    src:  "/OneShotMarketingWebsite/bnr1.webp",
     images: [""],
   },
   trustedTopBrands: {
     title: "Trusted by Top Brands",
     images: [
       {
-        src: imagesLink + "inc.webp",
+        src: "/OneShotMarketingWebsite/inc.webp",
         alt: "inc",
       },
       {
-        src: imagesLink + "meta.webp",
+        src: "/OneShotMarketingWebsite/meta.webp",
         alt: "meta",
       },
       {
-        src: imagesLink + "micro.webp",
+        src: "/OneShotMarketingWebsite/micro.webp",
         alt: "microsoft",
       },
       {
-        src: imagesLink + "amazon.webp",
+        src: "/OneShotMarketingWebsite/amazon.webp",
         alt: "amazon",
       },
       {
-        src: imagesLink + "google.webp",
+        src: "/OneShotMarketingWebsite/google.webp",
         alt: "google",
       },
     ],
@@ -110,7 +110,7 @@ export const homePageData = {
       `One Shot Marketing delivers results-driven digital marketing solutions to elevate your brand. Our expert team specializes in SEO, performance marketing, social media management, and content creation, tailoring strategies for measurable growth. We focus on maximizing ROI and helping businesses succeed in the digital world.`,
       `<b>Partner with One Shot Marketing, Canada and let’s achieve success together.</b>`,
     ],
-    src: imagesLink + "im1.webp",
+    src: "/OneShotMarketingWebsite/im1.webp",
     images: [""],
     links: [
       {
@@ -193,9 +193,9 @@ export const homePageData = {
     ],
     // src: imagesLink + "im2.webp",
     images: [
-      imagesLink + "im2.webp",
-      imagesLink + "im3.webp",
-      imagesLink + "im4.webp",
+      "/OneShotMarketingWebsite/im2.webp",
+      "/OneShotMarketingWebsite/im3.webp",
+       "/OneShotMarketingWebsite/im4.webp",
     ],
     links: [
       {
@@ -237,30 +237,30 @@ export const AboutUsPageData = {
     subTitle: "One Shot Marketing",
     description:
       "Unlock your brand’s potential with digital strategies that deliver results.",
-    src: imagesLink + "bnr2.webp",
+    src: "/OneShotMarketingWebsite/bnr2.webp",
     images: [""],
   },
   featuredIn: {
     title: "Featured In",
     images: [
       {
-        src: imagesLink + "Forbes.webp",
+        src: "/OneShotMarketingWebsite/Forbes.webp",
         alt: "Forbes",
       },
       {
-        src: imagesLink + "builtin.webp",
+        src: "/OneShotMarketingWebsite/builtin.webp",
         alt: "builtin",
       },
       {
-        src: imagesLink + "inclo.webp",
+        src: "/OneShotMarketingWebsite/inclo.webp",
         alt: "inc",
       },
       {
-        src: imagesLink + "fast_company.webp",
+        src: "/OneShotMarketingWebsite/fast_company.webp",
         alt: "fastcompany",
       },
       {
-        src: imagesLink + "clutch.webp",
+        src: "/OneShotMarketingWebsite/clutch.webp",
         alt: "clutch",
       },
     ],
@@ -288,7 +288,7 @@ export const AboutUsPageData = {
       "One Shot Marketing is a trusted name in the digital marketing industry. No more dealing with poor communication, unclear reports, or limited services.",
       "One Shot Marketing is flexible and adaptable. Whether you’re a small startup or an established enterprise, we tailor strategies to fit your unique business needs. We’ll craft a customized marketing plan that aligns perfectly with your goals, no matter the industry.",
     ],
-    src: imagesLink + "im6.webp",
+    src: "/OneShotMarketingWebsite/im6.webp",
     images: [""],
     links: [
       {
@@ -347,7 +347,7 @@ export const IndustriesPageData = {
     subTitle: "One Shot Marketing",
     description:
       "Unlock your brand’s potential with digital strategies that deliver results.",
-    src: imagesLink + "bnr2.webp",
+    src:"/OneShotMarketingWebsite/bnr2.webp",
     images: [""],
   },
   exploreIndustries: {
@@ -357,35 +357,35 @@ export const IndustriesPageData = {
       {
         title: "Hotel Industry",
         desc: "Helping hotels stand out in a crowded market with targeted digital marketing strategies. From SEO to social media, we drive bookings and boost online visibility for your property.",
-        src: imagesLink + "hbnr.webp",
+        src: "/OneShotMarketingWebsite/hbnr.webp",
         images: [""],
         href: "/industries-we-serve/hotel-industry",
       },
       {
         title: "Restaurant Industry",
         desc: "Transforming restaurant brands with creative digital marketing solutions that attract diners. We specialize in social media campaigns, online ads, & SEO to drive traffic and increase sales.",
-        src: imagesLink + "im9.webp",
+        src: "/OneShotMarketingWebsite/im9.webp",
         images: [""],
         href: "/industries-we-serve/restaurant-industry",
       },
       {
         title: "Immigration Industry",
         desc: "Elevating immigration brands with targeted digital marketing that reaches the right audience. From engaging social media campaigns and strategic online ads to SEO optimization.",
-        src: imagesLink + "im8.webp",
+        src: "/OneShotMarketingWebsite/im8.webp",
         images: [""],
         href: "/industries-we-serve/immigration-industry",
       },
       {
         title: "Beauty Industry",
         desc: "Elevating beauty brands with powerful digital marketing strategies that captivate your audience. From influencer partnerships to targeted ads, we boost sales in the beauty.",
-        src: imagesLink + "im10.webp",
+        src:"/OneShotMarketingWebsite/im10.webp",
         images: [""],
         href: "/industries-we-serve/beauty-industry",
       },
       {
         title: "Clothing Industry",
         desc: "Boosting clothing brands with innovative digital marketing strategies to drive sales and enhance visibility. We specialize in social media, influencer partnerships, and targeted ads.",
-        src: imagesLink + "im5.webp",
+        src: "/OneShotMarketingWebsite/im5.webp",
         images: [""],
         href: "/industries-we-serve/clothing-industry",
       },
@@ -403,11 +403,11 @@ export const IndustriesPageData = {
     desc: [
       "At One Shot Marketing, we take pride in delivering tailored digital marketing solutions that make a difference.",
     ],
-    src: imagesLink + "im3.webp",
+    src: "/OneShotMarketingWebsite/im3.webp",
     images: [
-      imagesLink + "im4.webp",
-      imagesLink + "im2.webp",
-      imagesLink + "im3.webp",
+     "/OneShotMarketingWebsite/im4.webp",
+      "/OneShotMarketingWebsite/im2.webp",
+       "/OneShotMarketingWebsite/im3.webp",
     ],
     links: [
       {
@@ -449,7 +449,7 @@ export const ServicePageData = {
     subTitle: "One Shot Marketing",
     description:
       "Unlock your brand’s potential with digital strategies that deliver results.",
-    src: imagesLink + "bnr2.webp",
+    src: "/OneShotMarketingWebsite/bnr2.webp",
     images: [""],
   },
   digitalMarketing: {
@@ -458,15 +458,15 @@ export const ServicePageData = {
     desc: [
       "With One Shot Marketing, you gain access to top-tier services, streamlined processes, and a dedicated team focused on driving the growth of your business. Our innovative strategies, tailored approach, and commitment to results ensure your brand stands out, attracting more customers and achieving measurable success.",
     ],
-    src: imagesLink + "im7.webp",
+    src: "/OneShotMarketingWebsite/im7.webp",
     images: [""],
     featuredIn: {
       title: "Featured In",
       images: [
-        imagesLink + "Forbes.webp",
-        imagesLink + "Bloomberg_Businessweek.webp",
-        imagesLink + "bloomberg.webp",
-        imagesLink + "inclo.webp",
+        "/OneShotMarketingWebsite/Forbes.webp",
+      "/OneShotMarketingWebsite/Bloomberg_Businessweek.webp",
+        "/OneShotMarketingWebsite/bloomberg.webp",
+        "/OneShotMarketingWebsite/inclo.webp",
       ],
     },
   },
@@ -567,9 +567,9 @@ export const ServicePageData = {
     ],
     // src: imagesLink + "im3.webp",
     images: [
-      imagesLink + "im3.webp",
-      imagesLink + "im2.webp",
-      imagesLink + "im4.webp",
+     "/OneShotMarketingWebsite/im3.webp",
+      "/OneShotMarketingWebsite/im2.webp",
+      "/OneShotMarketingWebsite/im4.webp",
     ],
     links: [
       {

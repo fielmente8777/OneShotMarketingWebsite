@@ -38,7 +38,7 @@ export const pagesData = [
     banner: {
       title: "Hotel Industry",
       images: [""],
-      src: imagesLink + "hbnr.webp",
+      src: "/OneShotMarketingWebsite/hbnr.webp",
     },
     aboutUs: {
       title: "ELEVATING THE HOTEL INDUSTRY IN THE DIGITAL LANDSCAPE",
@@ -47,7 +47,7 @@ export const pagesData = [
         "Over the years, One Shot Marketing has worked with hoteliers across the world and built a strong digital presence for them. We are the perfect choice for brands looking for an end-to-end hotel marketing agency. From curating unique websites to managing your social media channels, One Shot will ensure your digital presence reflects the special nature of your property. Our team is dedicated to delivering personalized, data-driven strategies that drive bookings, enhance brand recognition, and engage potential guests in meaningful ways. We combine creative design with advanced technology to provide a seamless and impactful digital experience, helping you stand out in an increasingly competitive market.",
         `<b>Build a stunning brand identity & transform your digital presence with One Shot- The best Hotel Marketing Agency in Canada.</b>`,
       ],
-      src: imagesLink + "him1.webp",
+      src: "/OneShotMarketingWebsite/him1.webp",
       images: [""],
       links: [
         {
@@ -124,7 +124,7 @@ export const pagesData = [
     },
     Faq: {
       title: "Frequently Asked <b>Questions</b>",
-      src: imagesLink + "faq.webp",
+      src: "/OneShotMarketingWebsite/faq.webp",
       faqs: [
         {
           question:
@@ -182,7 +182,7 @@ export const pagesData = [
     banner: {
       title: "Hotel Industry",
       images: [""],
-      src: imagesLink + "rbnr.webp",
+      src:  "/OneShotMarketingWebsite/rbnr.webp",
     },
     aboutUs: {
       title: "Escalating your restaurant business with best digital marketing strategies",
@@ -191,7 +191,7 @@ export const pagesData = [
         "Thriving in an extremely competitive market can be a task, especially when it comes to restaurants and unique dining spaces. Over the years, One Shot has helped elevate many dining experiences to the attention they deserve—through a stronger online presence, targeted marketing strategies, and a keen understanding of customer engagement. By crafting compelling narratives that resonate with diners, One Shot has successfully transformed the way restaurants present themselves to the public, amplifying their unique identities and ensuring they stand out in a crowded marketplace. With data-driven insights and creative content, we've been able to reach the right audience, drive more foot traffic, and convert casual visitors into loyal patrons.",
         `<b>Redefine culinary experiences with exquisite restaurant marketing services.</b>`,
       ],
-      src: imagesLink + "rim1.webp",
+      src: "/OneShotMarketingWebsite/rim1.webp",
       images: [""],
       links: [
         {
@@ -258,7 +258,7 @@ export const pagesData = [
     },
     Faq: {
       title: "Frequently Asked <b>Questions</b>",
-      src: imagesLink + "faq.webp",
+      src: "/OneShotMarketingWebsite/faq.webp",
       faqs: [
         {
           question: "What is the best marketing strategy for restaurants?",
@@ -313,7 +313,7 @@ export const pagesData = [
     banner: {
       title: "Hotel Industry",
       images: [""],
-      src: imagesLink + "imbnr.webp",
+      src: "/OneShotMarketingWebsite/imbnr.webp",
     },
     aboutUs: {
       title: "Generate clientele for your immigration consultation through robust digital marketing",
@@ -322,7 +322,7 @@ export const pagesData = [
         "At One Shot Marketing, we understand that identifying the needs of your specific niche is crucial, but even more important is understanding your unique needs as a business. That’s where we come in. We specialize in creating tailored, end-to-end digital marketing strategies designed specifically for immigration consultancies. With our in-depth knowledge and expertise, we focus on driving results that truly matter—conversions. Our strategies are built to attract, engage, and convert your ideal clients, ensuring that every step of your marketing journey is optimized for success. Whether it's refining your online presence or enhancing lead generation, we’ve got you covered every step of the way. Let us take your business to the next level with strategies that bring measurable results.",
         `<b>Generate clientele for your immigration consultation through robust digital marketing.</b>`,
       ],
-      src: imagesLink + "iim1.webp",
+      src: "/OneShotMarketingWebsite/iim1.webp",
       imageClassName:"object-cover",
       images: [""],
       links: [
@@ -390,7 +390,7 @@ export const pagesData = [
     },
     Faq: {
       title: "Frequently Asked <b>Questions</b>",
-      src: imagesLink + "faq.webp",
+      src: "/OneShotMarketingWebsite/faq.webp",
       faqs: [
         {
           question: "How can I promote my immigration services?",
@@ -445,7 +445,7 @@ export const pagesData = [
     banner: {
       title: "Hotel Industry",
       images: [""],
-      src: imagesLink + "bibnr.webp",
+      src:  "/OneShotMarketingWebsite/bibnr.webp",
     },
     aboutUs: {
       title: "Turn clicks into clients with expert beauty marketing services",
@@ -454,7 +454,7 @@ export const pagesData = [
         "At One Shot Marketing, we know that understanding the beauty industry is only part of the equation—what truly matters is understanding your brand’s unique needs. That’s why we specialize in creating customized digital marketing strategies designed to elevate your beauty business. Our approach is conversion-driven, meaning we focus on strategies that not only boost your brand’s visibility but also attract more clients and drive revenue growth. From enhancing your online presence to optimizing every aspect of your marketing, we’re here to ensure your business stands out in the competitive beauty industry. Let’s work together to amplify your brand, engage your target audience, and achieve measurable results!",
         `<b>Build branding that exudes beauty with every click through One Shot Marketing’s digital expertise.</b>`,
       ],
-      src: imagesLink + "bim1.webp",
+      src: "/OneShotMarketingWebsite/bim1.webp",
       images: [""],
       links: [
         {
@@ -521,7 +521,7 @@ export const pagesData = [
     },
     Faq: {
       title: "Frequently Asked <b>Questions</b>",
-      src: imagesLink + "faq.webp",
+      src: "/OneShotMarketingWebsite/faq.webp",
       faqs: [
         {
           question: "How do you market beauty products to customers?",
@@ -576,7 +576,7 @@ export const pagesData = [
     banner: {
       title: "Hotel Industry",
       images: [""],
-      src: imagesLink + "clbnr.webp",
+      src: "/OneShotMarketingWebsite/clbnr.webp",
     },
     aboutUs: {
       title: "ELEVATING FASHION BRANDS WITH TRENDSETTING SERVICES",
@@ -585,7 +585,7 @@ export const pagesData = [
         "At One Shot Marketing, we get it—fashion isn’t just about clothing; it’s about telling a story, making a statement, and creating a lasting impression. We’ve worked with clothing brands around the world to develop strong, authentic digital presences that stand out. As the best clothing brand marketing agency in Canada, we specialize in end-to-end marketing strategies that transform your online presence. Whether it’s designing a stunning website, engaging your audience on social media, or driving sales through targeted campaigns, we’re here to elevate your brand and help you connect with your fashion-forward customers in a way that feels personal and real.",
         `<b>Build a bold, unforgettable brand identity with One Shot Marketing.</b>`,
       ],
-      src: imagesLink + "clim1.webp",
+      src: "/OneShotMarketingWebsite/clim1.webp",
       images: [""],
       links: [
         {
@@ -662,7 +662,7 @@ export const pagesData = [
     },
     Faq: {
       title: "Frequently Asked <b>Questions</b>",
-      src: imagesLink + "faq.webp",
+      src: "/OneShotMarketingWebsite/faq.webp",
       faqs: [
         {
           question: "What is the best marketing strategy for a clothing brand?",
@@ -722,7 +722,7 @@ export const pageData2 = [
       subTitle: "Hotel Performance Marketing Services",
       description:
         "Grow your revenue with certified hotel performance marketer. Increase revenue by attracting more guests and delivering an enhanced hotel booking experience.",
-      src: imagesLink + "cmbnr1.webp",
+      src: "/OneShotMarketingWebsite/cmbnr1.webp",
       images: [""],
     },
     aboutUs: {
@@ -736,7 +736,7 @@ export const pageData2 = [
       //   `visitors exit your website before room booking. <b>We will help you sell more.</b>`,
       // ],
       // number: "70%",
-      src: imagesLink + "hiimN1.webp",
+      src: "/OneShotMarketingWebsite/hiimN1.webp",
       images: [""],
       aspect: "aspect-[4/4]",
       imageClassName: "!rounded-none",
@@ -815,7 +815,7 @@ export const pageData2 = [
       subTitle: "Expert Hotel Social Media Marketing",
       description:
         "Gain exposure to your target audience with the right social media marketing strategies for your brand.",
-      src: imagesLink + "cmbnr1.webp",
+      src: "/OneShotMarketingWebsite/cmbnr1.webp",
       images: [""],
     },
     aboutUs: {
@@ -825,7 +825,7 @@ export const pageData2 = [
         "Social media platforms like Facebook, Instagram, LinkedIn, and Twitter are absolute goldmines when it comes to attracting potential guests to your hotel. Just think about it: a single post, story, or ad can grab the attention of someone who’s planning their next getaway, and in the best case, that one interaction can turn into a loyal customer for years to come.",
         "That’s where our social media marketing service comes in. We don’t just post for the sake of posting; we take the time to understand your hotel's unique vibe and target audience. From creating eye-catching content that tells your story, to engaging with your followers in a meaningful way, we help build a real connection. And it’s not just about organic growth — we also run highly-targeted paid campaigns designed to drive bookings directly.",
       ],
-      src: imagesLink + "hiim2.webp",
+      src: "/OneShotMarketingWebsite/hiim2.webp",
       aspect: "aspect-[4/4] ",
       images: [""],
       links: [
@@ -909,7 +909,7 @@ export const pageData2 = [
       subTitle: "Hotel Website Design & Development Services",
       description:
         "From seamless bookings to captivating visuals, we design websites that elevate your hotel’s brand and guest experience.",
-      src: imagesLink + "cmbnr1.webp",
+      src: "/OneShotMarketingWebsite/cmbnr1.webp",
       images: [""],
     },
     aboutUs: {
@@ -919,7 +919,7 @@ export const pageData2 = [
         "Your website is the heartbeat of your hotel’s online presence – it’s often the first place potential guests will discover your property. That’s why we focus on creating custom websites that not only look amazing but are incredibly easy for guests to navigate. We understand that booking a room should be a smooth, hassle-free experience, so we design intuitive booking systems that make securing a stay a breeze.",
         "With mobile-friendly designs, your website will look stunning on any device, ensuring that guests can easily browse, book, and learn more about your hotel no matter where they are. Our goal is to make sure your site loads quickly, offers a seamless user experience, and most importantly, converts visitors into confirmed bookings.",
       ],
-      src: imagesLink + "hiim3.webp",
+      src: "/OneShotMarketingWebsite/hiim3.webp",
       images: [""],
       links: [
         {
@@ -1002,7 +1002,7 @@ export const pageData2 = [
       subTitle: "Expert SEO Services",
       description:
         "Boost your online visibility, attract more guests, and drive bookings with targeted SEO strategies tailored for the hospitality industry.",
-      src: imagesLink + "cmbnr1.webp",
+      src: "/OneShotMarketingWebsite/cmbnr1.webp",
       images: [""],
     },
     aboutUs: {
@@ -1012,7 +1012,7 @@ export const pageData2 = [
         "Ever wondered how your competitors are consistently bringing in more business? The secret is simple – SEO. By optimizing your website for search engines, they’re making sure their hotel ranks higher when potential guests search for accommodations in your area. Our SEO services are designed to boost your hotel’s visibility, making it easier for future guests to find you when they search for relevant keywords. The result? More organic traffic to your site, and ultimately, more bookings.",
         "We focus on strategies that will help your website rank higher on Google and other major search engines. By targeting specific, high-value search terms related to your hotel, we make sure you’re not just another option in a crowded market.",
       ],
-      src: imagesLink + "hiim4.webp",
+      src: "/OneShotMarketingWebsite/hiim4.webp",
       aspect: "aspect-[4/4]",
       images: [""],
       links: [
@@ -1096,7 +1096,7 @@ export const pageData2 = [
       subTitle: "Presence on Leading OTAs",
       description:
         "Unlock greater exposure and higher bookings with expert OTA management tailored to your property.",
-      src: imagesLink + "cmbnr1.webp",
+      src: "/OneShotMarketingWebsite/cmbnr1.webp",
       images: [""],
     },
     aboutUs: {
@@ -1105,7 +1105,7 @@ export const pageData2 = [
       desc: [
         "Maintaining presence on Online Travel Agencies is essential for maximum visibility and reach. Sites like Booking.com, Expedia, and Airbnb are the strongest marketplaces for your hotel. One Shot manages and optimizes your OTA listings to ensure they are fully optimized for visibility and conversions. From updating images and descriptions to optimizing pricing strategies, we ensure your property stands out in a crowded market.Explore your possibilities with top hotel marketing agencies in Canada.",
       ],
-      src: imagesLink + "hiim5.webp",
+      src:  "/OneShotMarketingWebsite/hiim5.webp",
       images: [""],
       links: [
         {
@@ -1199,7 +1199,7 @@ export const pageData2 = [
         "Custom designs are essential to portray the essence of your restaurant. Conveying a vibe that best explains your space- is a feat not everyone can achieve! We offer custom website design and development that ensures your site is visually appealing, user-friendly, and optimized for online reservations. Whether it’s showcasing your menu or integrating with your reservation system, we create websites that make it easy for your customers to connect with you. ",
         "Our custom designs ensure that your site not only looks stunning but also functions flawlessly, from easy navigation to seamless reservation booking. Let’s create a website that gives your customers a taste of what’s to come—and leaves them hungry for more!",
       ],
-      src: imagesLink + "riim1.webp",
+      src: "/OneShotMarketingWebsite/riim1.webp",
       images: [""],
       links: [
         {
@@ -1282,7 +1282,7 @@ export const pageData2 = [
       subTitle: "Expert SEO Services!",
       description:
         "Stand out online and draw in more diners with SEO strategies crafted to boost traffic and maximize bookings.",
-      src: imagesLink + "cmbnr1.webp",
+      src:  "/OneShotMarketingWebsite/cmbnr1.webp",
       images: [""],
     },
     aboutUs: {
@@ -1292,7 +1292,7 @@ export const pageData2 = [
         "How would you know if someone around you is looking for some curated flavours that only you serve? The answer- SEO. To ensure your restaurant gets noticed by potential diners, we offer expert SEO services that help your website rank higher on search engines like Google. By optimizing your website’s content and structure, we help you attract more organic traffic from search terms related to your location, cuisine, and dining experience",
         `Imagine someone Googling "best sushi near me" or "romantic dinner spots” in your city—you want to be the first name they see! We make sure your restaurant is the one that stands out when it matters most, bringing in diners who are already searching for what you offer. It’s time to make your restaurant the first thing they find!`,
       ],
-      src: imagesLink + "riim2.webp",
+      src:  "/OneShotMarketingWebsite/riim2.webp",
       images: [""],
       // desc2: [
       //   `visitors exit your website before room booking. <b>We will help you sell more.</b>`,
@@ -1373,7 +1373,7 @@ export const pageData2 = [
       subTitle: "Restaurant the Talk of the Town?",
       description:
         "Engage your audience, increase reservations, and build a loyal community with targeted social media marketing.",
-      src: imagesLink + "cmbnr1.webp",
+      src: "/OneShotMarketingWebsite/cmbnr1.webp",
       images: [""],
     },
     aboutUs: {
@@ -1382,7 +1382,7 @@ export const pageData2 = [
       desc: [
         "A single social media post done right can do wonders for your restaurant—it’s all about sparking curiosity and making your audience crave what you serve! We understand that today’s diners are looking for more than just great food; they want an experience they can connect with, share, and talk about. That’s where we come in! From mouthwatering photos of your latest dishes to behind-the-scenes glimpses of your kitchen, we’ll help you create content that not only showcases your menu but also tells your unique story. We’ll help you build a strong, authentic online presence, ensuring your restaurant becomes a go-to spot that people can’t stop talking about—both online and in person. Ready to turn your social media followers into your biggest fans? Let’s make it happen!",
       ],
-      src: imagesLink + "riim3.webp",
+      src: "/OneShotMarketingWebsite/riim3.webp",
       images: [""],
       links: [
         {
@@ -1465,7 +1465,7 @@ export const pageData2 = [
       subTitle: "Data-Driven Marketing Services",
       description:
         "Maximize foot traffic, increase online orders, and elevate your restaurant's brand with personalized performance marketing strategies.",
-      src: imagesLink + "cmbnr1.webp",
+      src: "/OneShotMarketingWebsite/cmbnr1.webp",
       images: [""],
     },
     aboutUs: {
@@ -1475,7 +1475,7 @@ export const pageData2 = [
         "As a restaurant owner, you know that every busy night is a testament to your hard work and dedication. But keeping that momentum going requires smart marketing that works as hard as you do. That’s where One Shot comes in. We don’t just set up ads and forget about them—we’re constantly fine-tuning, optimizing, and analyzing results to ensure every penny you spend delivers the best possible return. Whether it’s attracting new faces or re-engaging your loyal regulars, our tailored campaigns on Google, social media, and display networks are designed to keep your tables full and your kitchen bustling.",
         "We’re here to help your restaurant shine, even in a crowded market. Let’s make every marketing move count! ",
       ],
-      src: imagesLink + "riim4.webp",
+      src:  "/OneShotMarketingWebsite/riim4.webp",
       images: [""],
       links: [
         {
@@ -1559,7 +1559,7 @@ export const pageData2 = [
       subTitle: "Trust and Credibility",
       description:
         "Build a professional, user-friendly website that attracts clients and showcases your immigration services with expert design and development.",
-      src: imagesLink + "cmbnr1.webp",
+      src: "/OneShotMarketingWebsite/cmbnr1.webp",
       images: [""],
     },
     aboutUs: {
@@ -1570,7 +1570,7 @@ export const pageData2 = [
         "Our team not only ensures your website is visually appealing but also highly functional, with easy-to-navigate pages, clear calls to action, and integrated forms for inquiries or consultations. With a strong online presence, your agency will not only stand out but also build lasting relationships with clients who can trust you to guide them through their immigration journey.",
         `<b>Let’s create a website that not only showcases your expertise but also drives real results!</b>`,
       ],
-      src: imagesLink + "immiim1.webp",
+      src: "/OneShotMarketingWebsite/immiim1.webp",
       images: [""],
       links: [
         {
@@ -1653,7 +1653,7 @@ export const pageData2 = [
       subTitle: "Visibility with Expert SEO!",
       description:
         "Attract more clients and rank higher on search engines with personalized SEO strategies.",
-      src: imagesLink + "cmbnr1.webp",
+      src: "/OneShotMarketingWebsite/cmbnr1.webp",
       images: [""],
     },
     aboutUs: {
@@ -1663,7 +1663,7 @@ export const pageData2 = [
         "Want your immigration agency to stand out online? Our SEO services boost your visibility with targeted keywords, engaging content, and niche targeting. One Shot employs proven strategies to help you rank higher on search engines and attract clients that are searching for a trusted service.",
         "We focus on more than just keywords—we take a comprehensive approach, optimizing your site’s structure, content, and even local SEO, to ensure it ranks higher on search engines. Whether someone’s looking for visa assistance or immigration advice in your area, we make sure your agency shows up at the top of their search. By continuously monitoring and adjusting our strategies, we ensure your online presence grows steadily, bringing in new leads and building your agency’s reputation as a trusted expert in the field",
       ],
-      src: imagesLink + "immiim2.webp",
+      src: "/OneShotMarketingWebsite/immiim2.webp",
       images: [""],
       links: [
         {
@@ -1746,7 +1746,7 @@ export const pageData2 = [
       subTitle: "Exceptional Social Media Strategies!",
       description:
         "Engage potential clients, build trust, and grow your immigration consulting business through strategic social media campaigns",
-      src: imagesLink + "cmbnr1.webp",
+      src: "/OneShotMarketingWebsite/cmbnr1.webp",
       images: [""],
     },
     aboutUs: {
@@ -1756,7 +1756,7 @@ export const pageData2 = [
         "In a world where social media is often the first place people turn to for answers, your immigration services need to stand out in the digital crowd. That’s where One Shot Marketing comes in—we help you craft meaningful, engaging content that speaks directly to your audience's needs and concerns. Whether it's through informative posts, success stories, or answering common questions, we ensure that your social media presence builds trust and credibility. By tapping into the power of social media, we make it easier for prospective clients to find you, connect with you, and ultimately, choose you as their go-to resource for immigration support. ",
         `<b>Let’s turn your social media into a tool that not only informs but also converts leads into loyal clients.</b>`,
       ],
-      src: imagesLink + "immiim3.webp",
+      src: "/OneShotMarketingWebsite/immiim3.webp",
       images: [""],
       links: [
         {
@@ -1849,7 +1849,7 @@ export const pageData2 = [
         "Maximize your investment with our Performance Marketing services tailored specifically for immigration consultants. We know that finding the right clients is crucial for your business, which is why we focus on strategies that speak directly to your target audience. Using data-driven insights, we ensure that your marketing efforts are aimed at the people who need your services the most—at exactly the right time. Whether it's prospective clients seeking visas, residency, or legal advice, our approach connects you with the individuals most likely to take action.",
         "With One Shot, you're not just throwing ads into the void—you're building a smart, sustainable strategy that brings in qualified leads and measurable results. Let us help you grow your immigration consulting business by targeting the right people, increasing inquiries, and ultimately converting those leads into loyal clients.",
       ],
-      src: imagesLink + "immiim4.webp",
+      src: "/OneShotMarketingWebsite/immiim4.webp",
       images: [""],
       links: [
         {
@@ -1933,7 +1933,7 @@ export const pageData2 = [
       subTitle: "Just like your Beauty Business!",
       description:
         "A sleek, modern website is the first step in growing your beauty business—let’s create one that converts.",
-      src: imagesLink + "cmbnr1.webp",
+      src: "/OneShotMarketingWebsite/cmbnr1.webp",
       images: [""],
     },
     aboutUs: {
@@ -1943,7 +1943,7 @@ export const pageData2 = [
         "Your website is the virtual storefront of your beauty business, and it needs to captivate and convert. At One Shot Marketing, we design stunning, easy-to-navigate websites that reflect the luxury and quality of your brand while making it effortless for customers to shop and learn more about your beauty products or services.",
         "From showcasing your beauty services with stunning imagery to making online booking or shopping a breeze, we ensure every element is designed to build trust and drive conversions. Plus, with mobile optimization, your website will look flawless on any device, ensuring that no matter where your clients are, they can easily access your offerings. Let's work together to create a website that not only reflects your brand's elegance but also drives real results for your business!",
       ],
-      src: imagesLink + "biim1.webp",
+      src:  "/OneShotMarketingWebsite/biim1.webp",
       images: [""],
       links: [
         {
@@ -2036,7 +2036,7 @@ export const pageData2 = [
         "When it comes to beauty, results matter. At One Shot Marketing, we get that every ad should not only showcase your products but also deliver real, measurable outcomes. We track every click, every purchase, and ensure your marketing dollars are working hard for you. No fluff, just results. If you want to see your beauty business grow through campaigns that make a difference, we’re here to help you shine.",
         "Whether it’s promoting a new product, offering exclusive deals, or building brand awareness, we tailor each campaign to reach the right people at the right time. With detailed analytics and ongoing optimization, we ensure that every dollar you spend is getting you closer to your goals. At One Shot Marketing, we’re here to help your beauty business not just stay relevant, but thrive and stand out in a crowded market. Let’s create campaigns that truly move the needle!",
       ],
-      src: imagesLink + "biim2.webp",
+      src:"/OneShotMarketingWebsite/biim2.webp",
       images: [""],
       links: [
         {
@@ -2119,7 +2119,7 @@ export const pageData2 = [
       subTitle: "Relationships with our CRM Solutions!",
       description:
         "Enhance customer loyalty and boost retention by leveraging tailored CRM strategies that nurture relationships and drive business.",
-      src: imagesLink + "cmbnr1.webp",
+      src: "/OneShotMarketingWebsite/cmbnr1.webp",
       images: [""],
     },
     aboutUs: {
@@ -2129,7 +2129,7 @@ export const pageData2 = [
         "Beauty is all about relationships—connecting with customers, understanding their needs, and delivering personalized experiences. By centralizing customer data and automating follow-ups, we ensure that your beauty business never misses an opportunity to engage with your customers. Whether it’s sending them special offers, reminding them to restock their favorite products, or offering personalized recommendations, we create meaningful connections that keep your clients coming back. After all, loyal customers are the heart of every successful beauty business.",
         "Beauty is all about relationships—connecting with customers, understanding their needs, and delivering personalized experiences. By centralizing customer data and automating follow-ups, we ensure that your beauty business never misses an opportunity to engage with your customers. Whether it’s sending them special offers, reminding them to restock their favorite products, or offering personalized recommendations, we create meaningful connections that keep your clients coming back. After all, loyal customers are the heart of every successful beauty business.",
       ],
-      src: imagesLink + "biim3.webp",
+      src:"/OneShotMarketingWebsite/biim3.webp",
       images: [""],
       links: [
         {
@@ -2212,7 +2212,7 @@ export const pageData2 = [
       subTitle: "Social Media Marketing Tactics!",
       description:
         "Grow your following organically by creating trends and quality that shines through.",
-      src: imagesLink + "cmbnr1.webp",
+      src:  "/OneShotMarketingWebsite/cmbnr1.webp",
       images: [""],
     },
     aboutUs: {
@@ -2221,7 +2221,7 @@ export const pageData2 = [
       desc: [
         "In the beauty industry, social media is everything. It's where trends start, products go viral, and loyal customers are made. At One Shot Marketing, we create social media strategies that not only engage but also inspire your audience to take action.From organic content to paid campaigns, we’ll elevate your beauty brand and turn your social channels into powerful sales tools that build a community of passionate followers.",
       ],
-      src: imagesLink + "biim4.webp",
+      src: "/OneShotMarketingWebsite/biim4.webp",
       images: [""],
       links: [
         {
@@ -2305,7 +2305,7 @@ export const pageData2 = [
       subTitle: "Build a Narrative that Drives your Brand!",
       description:
         "Design a seamless, visually appealing website that makes shopping easy and boosts your clothing brand’s conversions.",
-      src: imagesLink + "cmbnr1.webp",
+      src: "/OneShotMarketingWebsite/cmbnr1.webp",
       images: [""],
     },
     aboutUs: {
@@ -2315,7 +2315,7 @@ export const pageData2 = [
         "Your website is the heart of your brand. It’s where your customers shop, discover your collections, and engage with your story. At One Shot, we create sleek, user-friendly websites designed to enhance the online shopping experience and drive conversions. We ensure your site looks great on every device, loads fast, and makes purchasing easy, creating a seamless online shopping journey for your customers.",
         "At One Shot, we take the time to understand your vision and design a site that not only showcases your products but also connects with your customers on a deeper level. We focus on creating an intuitive layout that makes navigation effortless and a streamlined checkout process that encourages repeat purchases.",
       ],
-      src: imagesLink + "cliim1.webp",
+      src:  "/OneShotMarketingWebsite/cliim1.webp",
       images: [""],
       links: [
         {
@@ -2396,7 +2396,7 @@ export const pageData2 = [
       subTitle: "Clothing Brand with Optimized SEO!",
       description:
         "Drive sales that land directly at your website and stores through personalised SEO branding strategies!",
-      src: imagesLink + "cmbnr1.webp",
+      src: "/OneShotMarketingWebsite/cmbnr1.webp",
       images: [""],
     },
     aboutUs: {
@@ -2406,7 +2406,7 @@ export const pageData2 = [
         " In the fashion world, it’s crucial to be found. One Shot’s SEO services boost your brand’s visibility on search engines, helping you stand out in the crowded online marketplace. We focus on optimizing your website to rank higher for relevant keywords, ensuring you’re the first brand customers discover when searching for stylish clothing options.",
         "One Shot’s SEO services are designed to make that happen. By optimizing your website’s content, structure, and keywords, we help your brand rank higher on search engines like Google. Whether it’s optimizing your product pages, enhancing your blog content, or improving your site’s load speed, we leave no stone unturned in getting your brand noticed. The result? More traffic, more leads, and ultimately, more sales for your clothing business. Let’s ensure you’re the first name on their mind when they think about fashion.",
       ],
-      src: imagesLink + "cliim2.webp",
+      src:"/OneShotMarketingWebsite/cliim2.webp",
       images: [""],
       links: [
         {
@@ -2489,7 +2489,7 @@ export const pageData2 = [
       subTitle: "When the Designs Speak for Themselves",
       description:
         "Enhance customer loyalty, automate communication, and personalize experiences with our CRM solutions",
-      src: imagesLink + "cmbnr1.webp",
+      src: "/OneShotMarketingWebsite/cmbnr1.webp",
       images: [""],
     },
     aboutUs: {
@@ -2499,7 +2499,7 @@ export const pageData2 = [
         "Building lasting relationships with your customers is the key to long-term success in the fashion industry. At One Shot Marketing, we integrate advanced CRM solutions to help you better understand your customers, nurture leads, and improve customer loyalty. Our CRM services are designed to centralize customer data, streamline communication, and drive personalized marketing campaigns that turn one-time shoppers into repeat buyers. We ensure that your customers feel valued at every stage of their journey, from the moment they discover your brand to their ongoing engagement with it.",
         "Our CRM services are designed to centralize customer data, streamline communication, and drive personalized marketing campaigns that turn one-time shoppers into repeat buyers. We ensure that your customers feel valued at every stage of their journey, from the moment they discover your brand to their ongoing engagement with it.",
       ],
-      src: imagesLink + "cliim3.webp",
+      src:  "/OneShotMarketingWebsite/cliim3.webp",
       images: [""],
       links: [
         {
@@ -2592,7 +2592,7 @@ export const pageData2 = [
         "Social media platforms like Facebook, Instagram, LinkedIn, and Twitter are absolute goldmines when it comes to attracting potential guests to your hotel. Just think about it: a single post, story, or ad can grab the attention of someone who’s planning their next getaway, and in the best case, that one interaction can turn into a loyal customer for years to come.",
         "That’s where our social media marketing service comes in. We don’t just post for the sake of posting; we take the time to understand your hotel's unique vibe and target audience. From creating eye-catching content that tells your story, to engaging with your followers in a meaningful way, we help build a real connection. And it’s not just about organic growth — we also run highly-targeted paid campaigns designed to drive bookings directly.",
       ],
-      src: imagesLink + "cliim4.webp",
+      src: "/OneShotMarketingWebsite/cliim4.webp",
       images: [""],
       links: [
         {
@@ -2675,7 +2675,7 @@ export const pageData2 = [
       subTitle: "Visions into Powerful Conversions!",
       description:
         "Build and convert clients that drive results for your clothing business! Find your tribe with One Shot!",
-      src: imagesLink + "cmbnr1.webp",
+      src: "/OneShotMarketingWebsite/cmbnr1.webp",
       images: [""],
     },
     aboutUs: {
@@ -2684,7 +2684,7 @@ export const pageData2 = [
       desc: [
         "Every clothing brand needs a strategy that attracts eyes, engages visitors, and drives sales. One Shot Marketing is all about delivering results through data-driven campaigns. We reach the right audience, at the right time, across the right channels. We optimize every dollar you spend, ensuring it brings the best possible return. Our goal is simple: help you sell more clothing, gain loyal customers, and grow your brand.",
       ],
-      src: imagesLink + "cliim5.webp",
+      src: "/OneShotMarketingWebsite/cliim5.webp",
       images: [""],
       links: [
         {

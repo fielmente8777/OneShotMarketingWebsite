@@ -1,6 +1,7 @@
 import Image from "next/image";
-import { Container, Section } from "../sectionComponents";
-import { Form1 } from "../forms";
+import Container from "@/components/sectionComponents/Container";
+import Section from "@/components/sectionComponents/Section";
+import Form1 from "@/components/forms/Form1";
 import { BannerProps } from "@/@types/type";
 
 const Banner: React.FC<BannerProps> = ({
@@ -16,6 +17,10 @@ const Banner: React.FC<BannerProps> = ({
           src={src}
           alt={title ? title : "banner"}
           fill
+          preload
+          fetchPriority="high"
+          sizes="100vw"
+          quality={60}
           className="object-cover"
         />
         <div className="absolute inset-0 bg-black opacity-80"></div>

@@ -27,9 +27,9 @@ const ServiceCard2: React.FC<ServiceCardProps> = ({
       </Tag>
       <div className="w-full h-[1px] bg-secondary max-w-[6.5rem]"></div>
       <p className="md:heading4 text-lg max-lg:px-4  text-center text-primary">{desc}</p>
-      <button className="group-hover:scale-110 group-active:scale-95 group-hover:rotate-[30deg] duration-300 transition-all ease-in-out">
+      <span className="group-hover:scale-110 group-active:scale-95 group-hover:rotate-[30deg] duration-300 transition-all ease-in-out" aria-hidden="true">
         <ArrowUpIcon />
-      </button>
+      </span>
     </Link>
   );
 };

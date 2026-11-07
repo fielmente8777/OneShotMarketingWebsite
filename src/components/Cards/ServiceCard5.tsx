@@ -36,9 +36,9 @@ const ServiceCard5: React.FC<ServiceCardProps> = ({
           </p>
         ))}
       </div>
-      <button className="group-hover:scale-110 mt-auto group-active:scale-95 group-hover:rotate-[30deg] duration-300 transition-all ease-in-out">
+      <span className="group-hover:scale-110 mt-auto group-active:scale-95 group-hover:rotate-[30deg] duration-300 transition-all ease-in-out" aria-hidden="true">
         <ArrowUpIcon />
-      </button>
+      </span>
     </Link>
   );
 };

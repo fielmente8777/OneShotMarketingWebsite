@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import ChatbotWidget from "./ChatbotWidget";
-import axios from "axios";
+import { postContact } from "@/lib/postContact";
 import { usePathname } from "next/navigation";
 
 export interface FormData {
@@ -36,9 +36,7 @@ const RenderChatBot = () => {
     const checkOutDate = formData["check-out"];
     const guest = formData["number of guest"];
     try {
-      const { data } = await axios.post(
-        "https://nexon.eazotel.com/eazotel/addcontacts",
-        {
+      await postContact({
           Domain: "oneshotmarketing",
           Contact: `${phone}`,
           email: `${email}`,
@@ -50,22 +48,15 @@ const RenderChatBot = () => {
           check_out: `${checkOutDate}`,
           numbers_of_guest: `${guest}`,
           created_from: "Eazobot",
-        },
-        {
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }
-      );
-      console.log(data);
+      });
     } catch (error) {
-      console.log(error);
+      console.error(error);
     }
   };
 
   return (
     <>
-      {pathName !== "/thank-you/" && (
+      {pathName !== "/thank-you" && (
         <ChatbotWidget
           onSubmit={handleSumbit}
           messages={welcomeMessage}

@@ -1,6 +1,6 @@
 "use client";
-import { ChangeEvent, useMemo, useRef, useState } from "react";
-import { OnlyButton } from "../buttons";
+import { ChangeEvent, useId, useMemo, useRef, useState } from "react";
+import OnlyButton from "@/components/buttons/OnlyButton";
 import useClickOutside from "@/hooks/useClickOutside";
 import {
   CallIcon,
@@ -10,11 +10,12 @@ import {
   MessageIcon,
   UserIcon,
 } from "@/data/icons";
-import axios from "axios";
+import { postContact } from "@/lib/postContact";
 import { useRouter } from "next/navigation";
 
 const Form1 = () => {
   const router = useRouter();
+  const uid = useId();
   const industries = useMemo(
     () => [
       "Select Industry",
@@ -124,21 +125,13 @@ const Form1 = () => {
     setIsSubmitting(true);
 
     try {
-      const { data } = await axios.post(
-        "https://nexon.eazotel.com/eazotel/addcontacts",
-        {
-          Domain: "oneshotmarketing", // Replace with your actual domain value or "test",
-          email: formData.email,
-          Name: formData.name,
-          Contact: formData.phone,
-          Description: `Industry Name: ${selected}, Message: ${formData.message}`,
-        },
-        {
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }
-      );
+      const data = await postContact({
+        Domain: "oneshotmarketing", // Replace with your actual domain value or "test",
+        email: formData.email,
+        Name: formData.name,
+        Contact: formData.phone,
+        Description: `Industry Name: ${selected}, Message: ${formData.message}`,
+      });
 
       if (data.Status) {
         setFormData({
@@ -193,13 +186,14 @@ const Form1 = () => {
     >
       <div className="col-span-2 md:border-r border-light flex flex-col gap-2 w-full py-3 px-4">
         <div className="flex items-center justify-center gap-2 w-full">
-          <label htmlFor="name">
+          <label htmlFor={`${uid}-name`}>
             <UserIcon />
           </label>
           <input
             type="text"
             name="name"
-            id="name"
+            id={`${uid}-name`}
+            aria-label="Full Name"
             value={formData.name}
             placeholder="Full Name"
             onChange={handleChange}
@@ -213,13 +207,14 @@ const Form1 = () => {
 
       <div className="col-span-2 md:border-r border-light flex flex-col gap-2 w-full py-3 px-4">
         <div className="flex items-center justify-center gap-2 w-full">
-          <label htmlFor="phone">
+          <label htmlFor={`${uid}-phone`}>
             <CallIcon />
           </label>
           <input
             type="number"
             name="phone"
-            id="phone"
+            id={`${uid}-phone`}
+            aria-label="Phone Number"
             value={formData.phone}
             placeholder="Phone Number"
             onChange={handleChange}
@@ -233,13 +228,14 @@ const Form1 = () => {
 
       <div className="col-span-2 w-full flex flex-col gap-2 py-3 px-4">
         <div className="flex items-center justify-center gap-2 w-full">
-          <label htmlFor="email">
+          <label htmlFor={`${uid}-email`}>
             <MailIcon />
           </label>
           <input
             type="email"
             name="email"
-            id="email"
+            id={`${uid}-email`}
+            aria-label="Email Id"
             value={formData.email}
             placeholder="Email Id"
             onChange={handleChange}
@@ -258,6 +254,8 @@ const Form1 = () => {
           <button
             onClick={() => setIsOpen(!isOpen)}
             type="button"
+            aria-haspopup="listbox"
+            aria-expanded={isOpen}
             className="w-full h-full p-3 text-left flex items-center bg-clr2 justify-between gap-3"
           >
             <span className="flex items-center justify-center gap-2">
@@ -310,7 +308,7 @@ const Form1 = () => {
         className={`col-span-2 ${extend ? "w-full flex flex-col gap-2 py-3 px-4" : "hidden"}`}
       >
         <div className="flex items-center justify-center gap-2 w-full">
-          <label htmlFor="message">
+          <label htmlFor={`${uid}-message`}>
             <MessageIcon
               fill="#fff"
               className="fill-white w-10 aspect-square"
@@ -318,7 +316,8 @@ const Form1 = () => {
           </label>
           <textarea
             name="message"
-            id="message"
+            id={`${uid}-message`}
+            aria-label="Message (Optional)"
             value={formData.message}
             placeholder="Message (Optional)"
             rows={1}

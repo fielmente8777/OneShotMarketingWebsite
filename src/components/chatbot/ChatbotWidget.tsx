@@ -1,8 +1,12 @@
 // src/components/ChatbotWidget.jsx
 import React, { useEffect, useState } from "react";
+import dynamic from "next/dynamic";
 import "./chatbot.css";
 import ChatbotButton from "./ChatbotButton";
-import ChatWindow, { Option } from "./ChatWindow";
+import type { Option } from "./ChatWindow";
+
+// The chat window (and its date picker) is only downloaded when opened
+const ChatWindow = dynamic(() => import("./ChatWindow"), { ssr: false });
 
 export type ChatbotFormData<Flows extends readonly { key: string }[]> = {
   [K in Flows[number]["key"]]: string | string[];
@@ -43,9 +47,9 @@ const ChatbotWidget = ({
 
   const hanldeSubmit = async (formData: Record<string, string | string[]>) => {
     try {
-      if (onSubmit) onSubmit(formData);
+      if (onSubmit) await onSubmit(formData);
     } catch (error) {
-      console.log(error);
+      console.error(error);
     }
   };
 
@@ -54,28 +58,19 @@ const ChatbotWidget = ({
       setIsOpen(true);
     }, openInterval || 3000);
 
-    return () => clearInterval(interval);
+    return () => clearTimeout(interval);
   }, [openInterval]);
 
-  const [innerWidth, setInnerWidth] = useState<number | null>(null);
+  // Lock page scroll while the full-screen (mobile) chat is open
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      setInnerWidth(window.innerWidth);
-      const handleResize = () => {
-        setInnerWidth(window.innerWidth);
-      };
-      window.addEventListener("resize", handleResize);
-      if (isOpen) {
-        if (innerWidth && innerWidth < 640) {
-          document.body.style.overflow = "hidden";
-        } else {
-          document.body.style.overflow = "auto";
-        }
-      } else {
-        document.body.style.overflow = "auto";
-      }
-    }
-  }, [isOpen, innerWidth]);
+    const applyOverflow = () => {
+      document.body.style.overflow =
+        isOpen && window.innerWidth < 640 ? "hidden" : "auto";
+    };
+    applyOverflow();
+    window.addEventListener("resize", applyOverflow);
+    return () => window.removeEventListener("resize", applyOverflow);
+  }, [isOpen]);
 
   return (
     <div>

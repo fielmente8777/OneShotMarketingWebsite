@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Section } from "../sectionComponents";
+import Section from "@/components/sectionComponents/Section";
 import { BannerProps } from "@/@types/type";
 
 const Banner2: React.FC<BannerProps> = ({ src }) => {
@@ -10,6 +10,9 @@ const Banner2: React.FC<BannerProps> = ({ src }) => {
           src={src ? src : ""}
           alt="banner"
           fill
+          preload
+          fetchPriority="high"
+          sizes="100vw"
           className="object-cover"
         />
       </div>

@@ -7,6 +7,17 @@ import {
 } from "@/components";
 import { ServicePageData } from "@/data/pagedata";
 import IndustriesServe from "./components/IndustriesServe";
+import type { Metadata } from "next";
+import { toMetaDescription } from "@/data/site";
+
+const description = toMetaDescription(ServicePageData.digitalMarketing.desc[0]);
+
+export const metadata: Metadata = {
+  title: "Our Services",
+  description,
+  alternates: { canonical: "/services" },
+  openGraph: { title: "Our Services", description, url: "/services" },
+};
 
 const page = () => {
   return (

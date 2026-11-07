@@ -1,6 +1,6 @@
 "use client";
 import { FooterLinks, SocialLinks } from "@/data/links";
-import { SectionWithContainer } from "../sectionComponents";
+import SectionWithContainer from "@/components/sectionComponents/SectionWithContainer";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
@@ -20,7 +20,7 @@ const Footer = () => {
                   <Image
                     src="/logo2.png"
                     alt="logo"
-                    width={123.2}
+                    width={123}
                     height={64}
                   />
                 </Link>

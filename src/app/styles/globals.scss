@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+/* Fonts are self-hosted via next/font (see src/app/layout.tsx) */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -11,19 +11,19 @@
 }
 
 .raleway {
-  font-family: "Raleway", sans-serif;
+  font-family: var(--font-raleway), "Raleway", sans-serif;
 }
 .montserrat {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-montserrat), "Montserrat", sans-serif;
 }
 
 .inter {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-inter), "Inter", sans-serif;
   font-optical-sizing: auto;
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-montserrat), "Montserrat", sans-serif;
 }
 
 h1,
@@ -33,7 +33,7 @@ h4,
 h5,
 h6 {
   font-weight: normal;
-  font-family: "Raleway", sans-serif;
+  font-family: var(--font-raleway), "Raleway", sans-serif;
 }
 
 input,
@@ -62,10 +62,10 @@ select {
 
  
   .raleway {
-    font-family: "Raleway", sans-serif;
+    font-family: var(--font-raleway), "Raleway", sans-serif;
   }
   .montserrat {
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--font-montserrat), "Montserrat", sans-serif;
   }
 
   .hide-scrollbar {
@@ -76,7 +76,7 @@ select {
     }
   }
   body {
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--font-montserrat), "Montserrat", sans-serif;
   }
   .max-width {
     max-width: 1280px;

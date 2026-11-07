@@ -272,7 +272,7 @@ export const AboutUsPageData = {
       "One Shot Marketing delivers results-driven digital marketing solutions to elevate your brand. Specializing in SEO, performance marketing, social media management, and content creation, we craft tailored strategies that drive measurable growth and maximize ROI.",
       "With a focus on data-driven insights and innovative tactics, we continuously optimize your online presence to boost traffic, engagement, and conversions. Our customer-centric approach ensures long-term success in the ever-evolving digital landscape.",
     ],
-    src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/OneShotMarketingWebsite/logoimg.webp",
+    src: imagesLink + "logoimg.webp",
     images: [""],
     links: [
       {

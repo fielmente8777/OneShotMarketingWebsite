@@ -8,6 +8,8 @@ import {
 } from "@/components";
 import Banner2 from "@/components/banner/Banner2";
 import { pageData2, pagesData } from "@/data/slugData";
+import type { Metadata } from "next";
+import { toMetaDescription } from "@/data/site";
 
 interface Params {
   params: Promise<{
@@ -27,25 +29,45 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata(props: Params) {
-  const data = await props.params;
-  const slugs = await data.slugs;
-  const slugsData = pageData2.find(
-    (item) => item.slug.split("/").join("/") === slugs.join("/")
-  );
-  if (!slugsData) {
+export const dynamicParams = false;
+
+export async function generateMetadata(props: Params): Promise<Metadata> {
+  const { slugs } = await props.params;
+  const fallback: Metadata = { title: "Services", description: "Services" };
+  if (!slugs) return fallback;
+
+  if (slugs.length === 2) {
+    const slugsData = pageData2.find((item) => item.slug === slugs.join("/"));
+    if (!slugsData) return fallback;
+    const title = slugsData.bannnerData.subTitle;
+    const description = toMetaDescription(slugsData.bannnerData.description);
+    const url = `/services/${slugsData.slug}`;
     return {
-      title: "Services",
-      description: "Services",
+      title,
+      description,
+      alternates: { canonical: url },
+      openGraph: {
+        title,
+        description,
+        url,
+        images: [{ url: slugsData.bannnerData.src, alt: title }],
+      },
     };
   }
-  const slugsData2 = pagesData.find((item) => item.slug === slugs[0]);
-  if (!slugsData2) {
+
+  if (slugs.length === 1) {
+    const slugsData = pagesData.find((item) => item.slug === slugs[0]);
+    if (!slugsData) return fallback;
+    const description = toMetaDescription(slugsData.aboutUs.desc[0]);
     return {
-      title: "Services",
-      description: "Services",
+      title: slugsData.title,
+      description,
+      // Same content as the industry page, so point search engines there
+      alternates: { canonical: `/industries-we-serve/${slugsData.slug}` },
     };
   }
+
+  return fallback;
 }
 
 const page = async (props: Params) => {

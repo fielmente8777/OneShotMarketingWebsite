@@ -2,7 +2,7 @@
 import Image from "next/image";
 import SectionTitleSubTitle from "./SectionTitleSubTitle";
 import SectionWithContainer from "./SectionWithContainer";
-import { LinkButton } from "../buttons";
+import LinkButton from "@/components/buttons/LinkButton";
 import SliderSwip from "../SliderSwip";
 import { Autoplay } from "swiper/modules";
 
@@ -48,7 +48,8 @@ const TwoColSection2: React.FC<TwoColSectionProps> = ({
                   src={img}
                   alt={title}
                   fill
-                  className="md:object-cover object-top rounded-2xl "
+                  sizes="(max-width: 768px) 100vw, 66vw"
+                  className="object-cover object-top rounded-2xl "
                 />
               )}
             </SliderSwip>

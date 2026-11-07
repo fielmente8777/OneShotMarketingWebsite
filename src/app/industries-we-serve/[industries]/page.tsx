@@ -2,6 +2,9 @@ import { ContactUsSection, ServicesSection, TwoColSection } from "@/components";
 import Banner2 from "@/components/banner/Banner2";
 import FaqSection from "@/components/sectionComponents/FaqSection";
 import { pagesData } from "@/data/slugData";
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import { toMetaDescription } from "@/data/site";
 
 interface Params {
   params: Promise<{
@@ -18,7 +21,9 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata(props: Params) {
+export const dynamicParams = false;
+
+export async function generateMetadata(props: Params): Promise<Metadata> {
   const industries = await props.params;
 
   const industriesSlug = await industries.industries;
@@ -30,9 +35,18 @@ export async function generateMetadata(props: Params) {
       description: "Industries We Serve",
     };
   }
+  const description = toMetaDescription(industriesData.aboutUs.desc[0]);
+  const url = `/industries-we-serve/${industriesData.slug}`;
   return {
     title: industriesData.title,
-    description: industriesData.title,
+    description,
+    alternates: { canonical: url },
+    openGraph: {
+      title: industriesData.title,
+      description,
+      url,
+      images: [{ url: industriesData.banner.src, alt: industriesData.title }],
+    },
   };
 }
 
@@ -42,12 +56,12 @@ const page = async (props: Params) => {
   const industriesSlug = await industries.industries;
   const industriesData = pagesData.find((data) => data.slug === industriesSlug);
   if (!industriesData) {
-    return <h1>Industries We Serve</h1>;
+    notFound();
   }
   return (
     <main>
       <Banner2 {...industriesData.banner} />
-      <section className="relative after:absolute after:inset-0 after:bg-[url('/bg1.PNG')] after:bg-no-repeat after:bg-cover after:z-[-1]">
+      <section className="relative after:absolute after:inset-0 after:bg-[url('/bg1.webp')] after:bg-no-repeat after:bg-cover after:z-[-1]">
         <TwoColSection
           {...industriesData.aboutUs}
           btn2Css

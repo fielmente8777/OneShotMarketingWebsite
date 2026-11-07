@@ -26,7 +26,13 @@ const ServiceCard3: React.FC<ServiceCardProps> = ({
     >
       {src && (
         <div className="relative w-full md:aspect-[4/2.5] aspect-[4/2.5] overflow-hidden rounded-2xl">
-          <Image src={src} alt={title} fill className="object-cover" />
+          <Image
+            src={src}
+            alt={title}
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 608px"
+            className="object-cover"
+          />
         </div>
       )}
       <div className=" flex flex-col items-center justify-center gap-4 px-4 py-4">

@@ -2,7 +2,8 @@
 import { CommonProps } from "@/@types/type";
 import SectionWithContainer from "./SectionWithContainer";
 import SectionTitleSubTitle from "./SectionTitleSubTitle";
-import { LinkButton, SliderSwip } from "@/components";
+import LinkButton from "@/components/buttons/LinkButton";
+import SliderSwip from "@/components/SliderSwip";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { BtnNext, BtnPrev } from "@/data/icons";
 import ServiceCard4 from "../Cards/ServiceCard4";
@@ -64,10 +65,10 @@ const ServicesSection: React.FC<CommonProps> = ({
             {(item) => <ServiceCard4 {...item} level={4} borderTop={borderTop} />}
           </SliderSwip>
           <div className="service-pagination flex items-center justify-center gap-1 mt-4"></div>
-          <button className="absolute service-prev md:top-[40%] top-[38%] -left-2 z-10 lg:block hidden">
+          <button type="button" aria-label="Previous slide" className="absolute service-prev md:top-[40%] top-[38%] -left-2 z-10 lg:block hidden">
             <BtnPrev width={36} />
           </button>
-          <button className="absolute service-next md:top-[40%] top-[38%] -right-2 z-10 lg:block hidden">
+          <button type="button" aria-label="Next slide" className="absolute service-next md:top-[40%] top-[38%] -right-2 z-10 lg:block hidden">
             <BtnNext width={36} />
           </button>
         </div>

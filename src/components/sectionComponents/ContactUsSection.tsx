@@ -1,10 +1,10 @@
 "use client";
 import { Autoplay, Navigation } from "swiper/modules";
-import { Form } from "../forms";
+import Form from "@/components/forms/Form";
 import SliderSwip from "../SliderSwip";
 import SectionTitleSubTitle from "./SectionTitleSubTitle";
 import SectionWithContainer from "./SectionWithContainer";
-import { TestimonialCard } from "../Cards";
+import TestimonialCard from "@/components/Cards/TestimonialCard";
 import { BtnNext, BtnPrev, TickIcon } from "@/data/icons";
 
 export interface ContactUsSectionProps {
@@ -35,7 +35,7 @@ const ContactUsSection: React.FC<ContactUsSectionProps> = ({
       sectionId="contact"
       sectionClassName={`${
         testimonial
-          ? `relative md:!pb-36 md:after:content-[''] md:after:absolute md:after:top-12 after:left-[-3.5rem] after:w-[30rem] after:z-[-1] after:h-full  after:bg-contain after:bg-no-repeat after:bg-[url('/Vector1.png')]  md:before:absolute before:opacity-30 before:bottom-16 before:right-[3.5rem] before:w-[500px] before:aspect-square before:h-full  before:opacity-100 before:z-[-1] before:bg-cover before:bg-no-repeat before:bg-[url('/bg2.png')]`
+          ? `relative md:!pb-36 md:after:content-[''] md:after:absolute md:after:top-12 after:left-[-3.5rem] after:w-[30rem] after:z-[-1] after:h-full  after:bg-contain after:bg-no-repeat after:bg-[url('/Vector1.webp')]  md:before:absolute before:opacity-30 before:bottom-16 before:right-[3.5rem] before:w-[500px] before:aspect-square before:h-full  before:opacity-100 before:z-[-1] before:bg-cover before:bg-no-repeat before:bg-[url('/bg2.webp')]`
           : ""
       }`}
     >
@@ -98,10 +98,18 @@ const ContactUsSection: React.FC<ContactUsSectionProps> = ({
                 {(item) => <TestimonialCard {...item} />}
               </SliderSwip>
               <div className="absolute right-5 bottom-5 flex gap-2 items-center justify-center z-10">
-                <button className="testimonial-prev ">
+                <button
+                  type="button"
+                  className="testimonial-prev "
+                  aria-label="Previous testimonial"
+                >
                   <BtnPrev className="w-10 aspect-square hover:scale-105 active:scale-95" />
                 </button>
-                <button className="testimonial-next">
+                <button
+                  type="button"
+                  className="testimonial-next"
+                  aria-label="Next testimonial"
+                >
                   <BtnNext className="w-10 aspect-square hover:scale-105 active:scale-95" />
                 </button>
               </div>
@@ -126,7 +134,7 @@ const ContactUsSection: React.FC<ContactUsSectionProps> = ({
           )}
         </div>
         <div className="w-full col-span-2">
-          <Form />
+          <Form id={null} />
         </div>
       </div>
     </SectionWithContainer>

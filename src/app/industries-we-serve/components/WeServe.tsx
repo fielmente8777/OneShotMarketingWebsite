@@ -1,12 +1,10 @@
 "use client";
-import {
-  FormPopup,
-  OnlyButton,
-  SectionTitleSubTitle,
-  SectionWithContainer,
-  ServiceCard3,
-  SliderSwip,
-} from "@/components";
+import FormPopup from "@/components/popup/FormPopup";
+import OnlyButton from "@/components/buttons/OnlyButton";
+import SectionTitleSubTitle from "@/components/sectionComponents/SectionTitleSubTitle";
+import SectionWithContainer from "@/components/sectionComponents/SectionWithContainer";
+import ServiceCard3 from "@/components/Cards/ServiceCard3";
+import SliderSwip from "@/components/SliderSwip";
 import { useState } from "react";
 
 interface Props {

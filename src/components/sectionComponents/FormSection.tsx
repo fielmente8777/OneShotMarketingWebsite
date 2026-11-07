@@ -1,4 +1,4 @@
-import { Form1 } from "../forms";
+import Form1 from "@/components/forms/Form1";
 import SectionWithContainer from "./SectionWithContainer";
 
 interface FormSectionProps {

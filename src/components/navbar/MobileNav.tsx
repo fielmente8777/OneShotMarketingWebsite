@@ -17,12 +17,15 @@ const MobileNav: React.FC<MobileNavProps> = ({ mobileMenu, setMobileMenu }) => {
   const pathName = usePathname();
   return (
     <div
-      className={`fixed inset-0 z-50 bg-black/80 transition-all duration-300 ${mobileMenu ? "translate-x-0" : "-translate-x-full"}`}
+      className={`fixed inset-0 z-50 bg-black/80 transition-all duration-300 ${mobileMenu ? "translate-x-0" : "-translate-x-full invisible"}`}
+      aria-hidden={!mobileMenu}
     >
       <div className="w-full h-full relative">
         <button
+          type="button"
           onClick={() => setMobileMenu(false)}
           className="absolute top-8 right-4 z-20 cursor-pointer"
+          aria-label="Close menu"
         >
           <AiOutlineClose size={25} color="#183f62" />
         </button>
@@ -36,9 +39,10 @@ const MobileNav: React.FC<MobileNavProps> = ({ mobileMenu, setMobileMenu }) => {
                 <Image
                   src="/logo.png"
                   alt="one shot logo"
-                  priority={true}
                   quality={100}
                   fill
+                  sizes="(min-width: 768px) 256px, 84px"
+                  className="object-contain"
                 />
               </Link>
             </div>
@@ -64,6 +68,8 @@ const MobileNav: React.FC<MobileNavProps> = ({ mobileMenu, setMobileMenu }) => {
                             )
                           }
                           className="flex items-center gap-2 w-1/5 justify-center"
+                          aria-label={`Toggle ${link.name} submenu`}
+                          aria-expanded={openDropDown === index}
                         >
                           <span
                             className={
@@ -102,6 +108,8 @@ const MobileNav: React.FC<MobileNavProps> = ({ mobileMenu, setMobileMenu }) => {
                                     )
                                   }
                                   className="flex items-center gap-2 w-1/5 justify-center"
+                                  aria-label={`Toggle ${subLink.name} submenu`}
+                                  aria-expanded={openSubDropDown === subIndex}
                                 >
                                   <DropDownIcon />
                                 </button>

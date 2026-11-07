@@ -1,11 +1,9 @@
 "use client";
-import {
-  FormPopup,
-  LazyLoadedMap,
-  OnlyButton,
-  SectionTitleSubTitle,
-  SectionWithContainer,
-} from "@/components";
+import FormPopup from "@/components/popup/FormPopup";
+import LazyLoadedMap from "@/components/maps/LazyLoadedMap";
+import OnlyButton from "@/components/buttons/OnlyButton";
+import SectionTitleSubTitle from "@/components/sectionComponents/SectionTitleSubTitle";
+import SectionWithContainer from "@/components/sectionComponents/SectionWithContainer";
 import { useState } from "react";
 
 interface LocationProps {

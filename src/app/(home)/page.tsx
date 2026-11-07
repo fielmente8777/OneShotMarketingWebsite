@@ -9,6 +9,11 @@ import {
 import TrustedBrand from "./components/TrustedBrand";
 import FeaturedServices from "./components/FeaturedServices";
 import IndustriesServe from "./components/IndustriesServe";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+};
 
 export default function Home() {
   return (

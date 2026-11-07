@@ -1,12 +1,10 @@
 "use client";
 import { CommonProps } from "@/@types/type";
-import {
-  FormPopup,
-  OnlyButton,
-  SectionTitleSubTitle,
-  SectionWithContainer,
-  SliderSwip,
-} from "@/components";
+import FormPopup from "@/components/popup/FormPopup";
+import OnlyButton from "@/components/buttons/OnlyButton";
+import SectionTitleSubTitle from "@/components/sectionComponents/SectionTitleSubTitle";
+import SectionWithContainer from "@/components/sectionComponents/SectionWithContainer";
+import SliderSwip from "@/components/SliderSwip";
 import ServiceCard2 from "@/components/Cards/ServiceCard2";
 import { useState } from "react";
 

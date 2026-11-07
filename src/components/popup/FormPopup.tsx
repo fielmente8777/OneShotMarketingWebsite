@@ -1,6 +1,6 @@
 "use client";
 import { useEffect } from "react";
-import { Form } from "../forms";
+import Form from "@/components/forms/Form";
 import { AiOutlineClose } from "react-icons/ai";
 
 interface Props {
@@ -28,15 +28,24 @@ const FormPopup: React.FC<Props> = ({ openForm, setOpenForm }) => {
         }
       }}
     >
-      <div className="max-w-sm shadow-2xl rounded-3xl w-full relative">
+      {openForm && (
+      <div
+        className="max-w-sm shadow-2xl rounded-3xl w-full relative"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Get a Free Quote"
+      >
         <button
+          type="button"
+          aria-label="Close form"
           onClick={() => setOpenForm(false)}
           className="absolute md:top-4 top-8 right-4 z-20 cursor-pointer text-white bg-tertiary p-2 rounded-full aspect-square hover:bg-secondary"
         >
           <AiOutlineClose size={20} />
         </button>
-        <Form setOpenForm={setOpenForm} />
+        <Form setOpenForm={setOpenForm} id={null} />
       </div>
+      )}
     </div>
   );
 };

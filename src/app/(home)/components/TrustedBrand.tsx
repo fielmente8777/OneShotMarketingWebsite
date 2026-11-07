@@ -1,5 +1,6 @@
 "use client";
-import { SectionWithContainer, SliderSwip } from "@/components";
+import SectionWithContainer from "@/components/sectionComponents/SectionWithContainer";
+import SliderSwip from "@/components/SliderSwip";
 import Image from "next/image";
 import { Autoplay } from "swiper/modules";
 
@@ -13,7 +14,7 @@ interface Props {
 const TrustedBrand: React.FC<Props> = ({ title, images }) => {
   return (
     <SectionWithContainer
-      sectionClassName="relative md:!pb-36 md:after:content-[''] md:after:rotate-90 md:after:absolute md:after:top-0 after:left-[-3.5rem] after:w-[30rem] after:z-[-1] after:h-full after:opacity-40 after:bg-cover after:bg-no-repeat after:bg-[url('/bg2.png')]
+      sectionClassName="relative md:!pb-36 md:after:content-[''] md:after:rotate-90 md:after:absolute md:after:top-0 after:left-[-3.5rem] after:w-[30rem] after:z-[-1] after:h-full after:opacity-40 after:bg-cover after:bg-no-repeat after:bg-[url('/bg2.webp')]
     md:before:absolute before:top-[1rem] before:right-[0rem] before:w-[19rem] before:h-[25rem] before:opacity-100 before:z-[-1] before:bg-cover before:bg-no-repeat before:bg-[url('/Vector.svg')]
     "
     >
@@ -28,6 +29,7 @@ const TrustedBrand: React.FC<Props> = ({ title, images }) => {
                 src={image.src}
                 alt={image.alt}
                 fill
+                sizes="(min-width: 1024px) 200px, 40vw"
                 className={`object-contain`}
               />
             </div>
@@ -58,7 +60,7 @@ const TrustedBrand: React.FC<Props> = ({ title, images }) => {
                 centeredSlides: true,
               },
             }}
-            classNameSwiper="mySwiper w-full"
+            classNameSwiper="mySwiper trusted-swiper w-full"
           >
             {(item) => (
               <div className="relative aspect-[3/1.04] w-full">
@@ -66,6 +68,7 @@ const TrustedBrand: React.FC<Props> = ({ title, images }) => {
                   src={item.src}
                   alt={item.alt}
                   fill
+                  sizes="40vw"
                   className={`object-contain`}
                 />
               </div>

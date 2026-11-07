@@ -1,12 +1,10 @@
 "use client";
 import { CommonProps } from "@/@types/type";
-import {
-  FormPopup,
-  OnlyButton,
-  SectionTitleSubTitle,
-  SectionWithContainer,
-  SliderSwip,
-} from "@/components";
+import FormPopup from "@/components/popup/FormPopup";
+import OnlyButton from "@/components/buttons/OnlyButton";
+import SectionTitleSubTitle from "@/components/sectionComponents/SectionTitleSubTitle";
+import SectionWithContainer from "@/components/sectionComponents/SectionWithContainer";
+import SliderSwip from "@/components/SliderSwip";
 import ServiceCard5 from "@/components/Cards/ServiceCard5";
 import { BtnNext, BtnPrev } from "@/data/icons";
 import { useState } from "react";
@@ -20,7 +18,7 @@ const IndustriesServe: React.FC<CommonProps> = ({
 }) => {
   const [openForm, setOpenForm] = useState(false);
   return (
-    <SectionWithContainer sectionClassName="bg-primary text-white bg-[url('/bg1.PNG')] bg-cover bg-no-repeat bg-center bg-blend-color bg-rotate-90">
+    <SectionWithContainer sectionClassName="bg-primary text-white">
       <div className="w-full flex flex-col items-center justify-center gap-4 lg:gap-10">
         <SectionTitleSubTitle title={title} subTitle={subTitle} textCenter />
 
@@ -50,10 +48,10 @@ const IndustriesServe: React.FC<CommonProps> = ({
           >
             {(item) => <ServiceCard5 {...item} level={4} />}
           </SliderSwip>
-          <button className="absolute service-prev md:top-[40%] top-[38%] -left-2 z-10 lg:block hidden">
+          <button type="button" aria-label="Previous slide" className="absolute service-prev md:top-[40%] top-[38%] -left-2 z-10 lg:block hidden">
             <BtnPrev width={36} />
           </button>
-          <button className="absolute service-next md:top-[40%] top-[38%] -right-2 z-10 lg:block hidden">
+          <button type="button" aria-label="Next slide" className="absolute service-next md:top-[40%] top-[38%] -right-2 z-10 lg:block hidden">
             <BtnNext width={36} />
           </button>
         </div>

@@ -1,12 +1,10 @@
 "use client";
 import { CommonProps } from "@/@types/type";
-import {
-  LinkButton,
-  SectionTitleSubTitle,
-  SectionWithContainer,
-  ServiceCard,
-  SliderSwip,
-} from "@/components";
+import LinkButton from "@/components/buttons/LinkButton";
+import SectionTitleSubTitle from "@/components/sectionComponents/SectionTitleSubTitle";
+import SectionWithContainer from "@/components/sectionComponents/SectionWithContainer";
+import ServiceCard from "@/components/Cards/ServiceCard";
+import SliderSwip from "@/components/SliderSwip";
 
 
 const FeaturedServices: React.FC<CommonProps> = ({
@@ -17,7 +15,7 @@ const FeaturedServices: React.FC<CommonProps> = ({
   links,
 }) => {
   return (
-    <SectionWithContainer sectionClassName="bg-primary text-white bg-[url('/bg1.PNG')] bg-cover bg-no-repeat bg-center bg-blend-color bg-rotate-90">
+    <SectionWithContainer sectionClassName="bg-primary text-white">
       <div className="flex flex-col gap-10 items-center justify-center w-full bg">
         <SectionTitleSubTitle title={title} subTitle={subTitle} textCenter/>
         <SliderSwip

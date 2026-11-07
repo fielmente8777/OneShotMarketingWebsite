@@ -7,6 +7,17 @@ import {
 } from "@/components";
 import { AboutUsPageData } from "@/data/pagedata";
 import FeaturedIn from "./component/FeaturedIn";
+import type { Metadata } from "next";
+import { toMetaDescription } from "@/data/site";
+
+const description = toMetaDescription(AboutUsPageData.aboutUs.desc[0]);
+
+export const metadata: Metadata = {
+  title: "About Us",
+  description,
+  alternates: { canonical: "/about-us" },
+  openGraph: { title: "About Us", description, url: "/about-us" },
+};
 
 const page = () => {
   return (

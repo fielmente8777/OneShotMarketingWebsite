@@ -2,7 +2,7 @@
 import Image from "next/image";
 import SectionTitleSubTitle from "./SectionTitleSubTitle";
 import SectionWithContainer from "./SectionWithContainer";
-import { LinkButton } from "../buttons";
+import LinkButton from "@/components/buttons/LinkButton";
 import SliderSwip from "../SliderSwip";
 
 export interface TwoColSectionProps {
@@ -60,7 +60,7 @@ const TwoColSection: React.FC<TwoColSectionProps> = ({
             alt={title}
             fill
             className={`object-cover ${isRounded && "rounded-2xl"}  ${imageClassName}`}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            sizes="(max-width: 768px) 100vw, 50vw"
           />
         </div>
         <div
@@ -112,8 +112,8 @@ const TwoColSection: React.FC<TwoColSectionProps> = ({
                     <Image
                       src={src}
                       alt={featuredIn.title}
-                      key={index}
                       fill
+                      sizes="33vw"
                       className="object-contain"
                     />
                   )}

@@ -1,5 +1,6 @@
 "use client";
-import { SectionWithContainer, SliderSwip } from "@/components";
+import SectionWithContainer from "@/components/sectionComponents/SectionWithContainer";
+import SliderSwip from "@/components/SliderSwip";
 import Image from "next/image";
 import { Autoplay } from "swiper/modules";
 
@@ -23,6 +24,7 @@ const FeaturedIn: React.FC<FeaturedInProps> = ({ title, images }) => {
               src={image.src}
               alt={image.alt}
               fill
+              sizes="250px"
               className={`object-contain`}
             />
           </div>
@@ -55,6 +57,7 @@ const FeaturedIn: React.FC<FeaturedInProps> = ({ title, images }) => {
                 src={img.src}
                 alt={img.alt}
                 fill
+                sizes="150px"
                 className={`object-contain`}
               />
             </div>

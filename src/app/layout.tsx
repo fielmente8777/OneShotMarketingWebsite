@@ -1,26 +1,110 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import Call from "@/components/ContactButton/Call";
+import Whatsapp from "@/components/ContactButton/WhatsApp";
+import DeferredAnalytics from "@/components/analytics/DeferredAnalytics";
+import Footer from "@/components/footer/Footer";
+import Navbar from "@/components/navbar/Navbar";
+import { SITE_NAME, SITE_URL } from "@/data/site";
+import type { Metadata, Viewport } from "next";
+import { Inter, Montserrat, Raleway } from "next/font/google";
+import Script from "next/script";
 import "./styles/globals.scss";
 import "./styles/nav&button.scss";
-import { Call, Footer, Navbar, Whatsapp } from "@/components";
-import Script from "next/script";
-import RenderChatBot from "@/components/chatbot/RenderChatBot";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+// Self-hosted fonts (no render-blocking request to fonts.googleapis.com)
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
   subsets: ["latin"],
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const raleway = Raleway({
+  variable: "--font-raleway",
   subsets: ["latin"],
+  display: "swap",
 });
+
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+  display: "swap",
+  preload: false,
+});
+
+const DEFAULT_TITLE =
+  "Best Digital Marketing Agency and Website Development Company Ontario Canada";
+const DEFAULT_DESCRIPTION =
+  "One Shot Marketing is a  trusted SEO agency in Ontario. Affordable SEO, digital marketing, Shopify, graphic design & software development experts. Visit us!";
 
 export const metadata: Metadata = {
-  title:
-    "Best Digital Marketing Agency and Website Development Company Ontario Canada",
-  description:
-    "One Shot Marketing is a  trusted SEO agency in Ontario. Affordable SEO, digital marketing, Shopify, graphic design & software development experts. Visit us!",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: DEFAULT_TITLE,
+    template: `%s | ${SITE_NAME}`,
+  },
+  description: DEFAULT_DESCRIPTION,
+  applicationName: SITE_NAME,
+  verification: {
+    google: "KscLBx3GJE8xoyahZIQ-8_EEDX2dRuzKMp5cPm-pRTQ",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_CA",
+    siteName: SITE_NAME,
+    title: DEFAULT_TITLE,
+    description: DEFAULT_DESCRIPTION,
+    url: "/",
+    images: [{ url: "/logo-3.png", alt: SITE_NAME }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: DEFAULT_TITLE,
+    description: DEFAULT_DESCRIPTION,
+    images: ["/logo-3.png"],
+  },
+  formatDetection: {
+    telephone: false,
+  },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#183F62",
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  name: "One shot Marketing",
+  image: `${SITE_URL}/logo-3.png`,
+  logo: `${SITE_URL}/logo-3.png`,
+  "@id": `${SITE_URL}/#organization`,
+  url: `${SITE_URL}/`,
+  telephone: "+1 (438) 855-4446",
+  email: "info@oneshotmarketing.ca",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "3064 Hurontario St.",
+    addressLocality: "Mississauga",
+    addressRegion: "ON",
+    addressCountry: "CA",
+  },
+  sameAs: [
+    "https://www.facebook.com/oneshotsales",
+    "https://www.instagram.com/oneshot_marketing/",
+    "https://www.linkedin.com/company/oneshotmarketing",
+  ],
 };
 
 export default function RootLayout({
@@ -31,74 +115,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta
-          name="google-site-verification"
-          content="KscLBx3GJE8xoyahZIQ-8_EEDX2dRuzKMp5cPm-pRTQ"
-        />
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-96F5G7J5CW"
-          strategy="afterInteractive"
-        />
-        <Script
-          id="google-analytics"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-96F5G7J5CW');
-          `,
-          }}
-        />
-
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: `
-          {
-            "@context": "https://schema.org",
-            "@type": "LodgingBusiness",
-            "name": "One shot Marketing",
-            "image": "",
-            "@id": "",
-            "url": "https://www.minimalisthotels.com/",
-            "telephone": "+1 (438) 855-4446",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "3064 Hurontario St.",
-              "addressLocality": "Mississauga",
-              "postalCode": "7539",
-              "addressCountry": "CA"
-            },
-          }           `,
-          }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-
-        {/* <!-- Google Tag Manager --> */}
-        {/* <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-T428S42K');</script> */}
-        <Script
-          id="google-tag-manager"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-T428S42K');
-          `,
-          }}
-        />
-        {/* <!-- End Google Tag Manager --> */}
       </head>
       <body
         suppressHydrationWarning={true}
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${montserrat.variable} ${raleway.variable} ${inter.variable} antialiased`}
       >
         {/* <!-- Google Tag Manager (noscript) --> */}
         <noscript>
@@ -107,15 +131,31 @@ export default function RootLayout({
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}
+            title="Google Tag Manager"
           ></iframe>
         </noscript>
         {/* <!-- End Google Tag Manager (noscript) --> */}
         <Navbar />
-        <RenderChatBot />
         {children}
         <Footer />
         <Call callNumber="14388554446" />
         <Whatsapp whatsAppNumber="+14388554446" />
+        {/* Google Analytics + Google Tag Manager, loaded after first interaction */}
+        <DeferredAnalytics />
+
+        {/* Eazbot (Next.js, e.g. in app/layout.jsx) */}
+        <Script id="eazbot-config" strategy="afterInteractive">
+          {`
+    window.eazbotConfig = {
+      ndid: "bd1e4e81-ef82-4a31-99df-5bbf65ecd9da",
+      hid: "85272375",
+    };
+  `}
+        </Script>
+        <Script
+          src="https://cb-script.dyq28lyxrazm2.amplifyapp.com/widget/lead-chatbot.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );

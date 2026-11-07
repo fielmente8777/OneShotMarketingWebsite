@@ -40,8 +40,7 @@ const Accordion: React.FC<AccordionProps> = ({
           </h3>
           {icon && (
             <span
-              aria-label="accordion icon"
-              role="svg"
+              aria-hidden="true"
               onClick={() => setIsAccordionOpen(!isAccordionOpen)}
               className={`text-dark ${isAccordionOpen ? "-rotate-180" : ""} duration-300 transition-all ease-in-out`}
             >

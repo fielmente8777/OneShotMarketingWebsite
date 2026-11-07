@@ -1457,94 +1457,94 @@ export const SEOOptimizedStructure = () => {
       <path
         d="M27.1938 12.4609C22.7493 12.4609 19.1465 16.0638 19.1465 20.5082C19.1465 24.9527 22.7495 28.5555 27.1938 28.5555C31.6382 28.5555 35.2411 24.9527 35.2411 20.5082"
         stroke="#183F62"
-        stroke-miterlimit="10"
-        stroke-linejoin="round"
+        strokeMiterlimit="10"
+        strokeLinejoin="round"
       />
       <path
         d="M27.1934 10.0938V20.5096H37.6092C37.6092 14.757 32.9459 10.0938 27.1934 10.0938Z"
         stroke="#183F62"
-        stroke-miterlimit="10"
-        stroke-linejoin="round"
+        strokeMiterlimit="10"
+        strokeLinejoin="round"
       />
       <path
         d="M36.002 52.625H60.4768"
         stroke="#183F62"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M38.1113 52.6291V44.7969H44.863V52.6291"
         stroke="#183F62"
-        stroke-miterlimit="10"
-        stroke-linejoin="round"
+        strokeMiterlimit="10"
+        strokeLinejoin="round"
       />
       <path
         d="M44.8633 52.6244V38.1406H51.615V52.6244"
         stroke="#183F62"
-        stroke-miterlimit="10"
-        stroke-linejoin="round"
+        strokeMiterlimit="10"
+        strokeLinejoin="round"
       />
       <path
         d="M51.6152 52.6271V42.6562H58.3669V52.6271"
         stroke="#183F62"
-        stroke-miterlimit="10"
-        stroke-linejoin="round"
+        strokeMiterlimit="10"
+        strokeLinejoin="round"
       />
       <path
         d="M11.3218 70.4554C7.90367 70.4554 5.13281 67.6846 5.13281 64.2664V61.1719H55.4891V64.2664C55.4891 67.6846 58.2599 70.4554 61.6781 70.4554H11.3218Z"
         stroke="#183F62"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M11.7559 61.1688V1.54688H67.8676V64.2633C67.8676 67.6815 65.0968 70.4524 61.6786 70.4524"
         stroke="#183F62"
-        stroke-miterlimit="10"
-        stroke-linejoin="round"
+        strokeMiterlimit="10"
+        strokeLinejoin="round"
       />
       <path
         d="M44.5391 28.5469H60.476"
         stroke="#183F62"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M44.5391 21.7969H60.476"
         stroke="#183F62"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M44.5391 15.0469H60.476"
         stroke="#183F62"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M19.1465 52.625H29.0717"
         stroke="#183F62"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M19.1465 45.875H29.0717"
         stroke="#183F62"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M19.1465 39.125H29.0717"
         stroke="#183F62"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );

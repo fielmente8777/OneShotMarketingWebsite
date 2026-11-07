@@ -1,8 +1,10 @@
 import { JSX } from "react";
 import { FacebookIcon, InstagramIcon, LinkedInIcon } from "./icons";
 
-export const imagesLink =
-  "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/OneShotMarketingWebsite/";
+// Images are served from /public (optimised copies of the S3 originals).
+// Loading them locally avoids the image optimizer timing out on large S3 files.
+// Previous source: https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/OneShotMarketingWebsite/
+export const imagesLink = "/OneShotMarketingWebsite/";
 
 interface NveLinksProps {
   name: string;

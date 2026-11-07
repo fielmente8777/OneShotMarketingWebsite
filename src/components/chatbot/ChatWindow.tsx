@@ -1,6 +1,6 @@
 // src/components/ChatWindow.jsx
 import Image from "next/image";
-import React, { ChangeEvent, useEffect, useRef, useState } from "react";
+import React, { ChangeEvent, Fragment, useEffect, useRef, useState } from "react";
 import DatePicker from "react-datepicker";
 import { IoIosSend } from "react-icons/io";
 import "react-datepicker/dist/react-datepicker.css";
@@ -101,7 +101,6 @@ const ChatWindow = ({
       month: "2-digit",
       day: "2-digit",
     });
-    console.log(value);
     const [day, month, year] = value.split("/");
 
     if (!value) return;
@@ -109,7 +108,6 @@ const ChatWindow = ({
     const currentFlow = messageFlows[currentIndex];
     const key = currentFlow.key || `q${currentIndex}`;
     const answer = `${day}-${month}-${year}`;
-    console.log(answer);
     const today = new Date();
     today.setHours(0, 0, 0, 0);
 
@@ -205,7 +203,6 @@ const ChatWindow = ({
     let answer = input;
 
     if (key === "phone") {
-      console.log("aaya");
       answer = `${countryCode} ${answer}`;
     }
 
@@ -463,13 +460,12 @@ const ChatWindow = ({
         </div>
 
         {chat.map((msg, index) => (
-          <>
+          <Fragment key={index}>
             {msg.sender === "bot" && index !== 0 && (
               <p className="text-sm rounded-lg text-[#474747]">{title}</p>
             )}
 
             <div
-              key={index}
               style={{
                 background: `${
                   msg?.sender === "user"
@@ -552,12 +548,12 @@ const ChatWindow = ({
                   )}
               </div>
             )}
-          </>
+          </Fragment>
         ))}
 
         {showFinalMessage && (
           <div className="max-w-full px-3 py-2 rounded-lg text-sm self-start bg-gray-200 text-gray-800">
-            {`🎉 ${finalMessage}` || "🎉 Thank you for your responses!"}
+            {`🎉 ${finalMessage || "Thank you for your responses!"}`}
           </div>
         )}
 
@@ -592,6 +588,7 @@ const ChatWindow = ({
             <div className="w-full flex items-center">
               {messageFlows[currentIndex]?.key === "phone" && (
                 <select
+                  aria-label="Country code"
                   onChange={(e) => setCountryCode(e.target.value)}
                   // defaultValue={countries[0].code}
                   value={countryCode}
@@ -638,6 +635,7 @@ const ChatWindow = ({
                   value={input}
                   onChange={handleChange}
                   placeholder="Type your answer..."
+                  aria-label={messageFlows[currentIndex]?.question || "Your answer"}
                   className="w-full h-full flex-grow rounded-md px-3 py-4 text-sm outline-none bg-transparent"
                   disabled={
                     !!messageFlows[currentIndex].options ||
@@ -650,6 +648,7 @@ const ChatWindow = ({
 
             <button
               type="submit"
+              aria-label="Send"
               // style={{
               //   background: theme || "#C2185B",
               // }}
@@ -662,7 +661,7 @@ const ChatWindow = ({
               <span className="inline-block duration-200">
                 <IoIosSend
                   size={24}
-                  color={theme || "C2185B"}
+                  color={theme || "#C2185B"}
                   opacity={`${
                     messageFlows?.length === currentStep ? "0.4" : "1"
                   }`}

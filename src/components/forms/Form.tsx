@@ -1,7 +1,7 @@
 "use client";
 
-import axios from "axios";
-import React, { useMemo, useRef, useState } from "react";
+import React, { useId, useMemo, useRef, useState } from "react";
+import { postContact } from "@/lib/postContact";
 // import { useRouter } from "next/navigation";
 import { countries } from "@/data/countryCode";
 import { DropDownIcon } from "@/data/icons";
@@ -10,10 +10,14 @@ import { useRouter } from "next/navigation";
 
 const Form = ({
   setOpenForm,
+  id = "contact",
 }: {
   setOpenForm?: React.Dispatch<React.SetStateAction<boolean>>;
+  /** DOM id of the <form>; pass null when the page already has an element with this id */
+  id?: string | null;
 }) => {
   const router = useRouter();
+  const uid = useId();
   const [userName, setUserName] = useState("");
   const [userEmail, setUserEmail] = useState("");
   const [userMessage, setUserMessage] = useState("");
@@ -63,7 +67,6 @@ const Form = ({
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setFormRes(true);
 
     if (userPhone.length !== 10) {
       setErrorMessage("Phone number must be exactly 10 digits.");
@@ -75,22 +78,15 @@ const Form = ({
       return;
     }
 
+    setFormRes(true);
     try {
-      const { data } = await axios.post(
-        "https://nexon.eazotel.com/eazotel/addcontacts",
-        {
-          Domain: "oneshotmarketing", // Replace with your actual domain value
-          email: userEmail,
-          Name: userName,
-          Contact: userPhone, // Combine country code and phone number
-          Description: `Industry Name ${selected}, Message: ${userMessage},`,
-        },
-        {
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }
-      );
+      const data = await postContact({
+        Domain: "oneshotmarketing", // Replace with your actual domain value
+        email: userEmail,
+        Name: userName,
+        Contact: userPhone, // Combine country code and phone number
+        Description: `Industry Name ${selected}, Message: ${userMessage},`,
+      });
 
       if (data.Status) {
         setFormRes(true);
@@ -108,7 +104,9 @@ const Form = ({
         alert("Something went wrong!");
       }
     } catch (error) {
-      console.log(error);
+      console.error(error);
+      setFormRes(false);
+      alert("Something went wrong!");
     }
   };
 
@@ -132,8 +130,9 @@ const Form = ({
       content: (
         <div className="flex gap-2 text-base">
           <select
-            id="countryCode"
+            id={`${uid}-countryCode`}
             name="countryCode"
+            aria-label="Country code"
             value={countryCode}
             onChange={(e) => setCountryCode(e.target.value)}
             className={` bg-transparent rounded-lg text-[#333333] focus:outline-none ps-2`}
@@ -151,9 +150,11 @@ const Form = ({
           </select>
           <input
             type="number"
-            id="phone"
+            id={`${uid}-phone`}
             name="phone"
             placeholder="Mobile number*"
+            aria-label="Mobile number"
+            autoComplete="tel-national"
             value={userPhone}
             onChange={handlePhoneChange}
             className="w-full bg-transparent border-l border-light px-2 py-3 placeholder:text-[#4C4C4C] text-black no-spinner appearance-none focus:outline-none"
@@ -171,6 +172,9 @@ const Form = ({
           <button
             onClick={() => setIsOpen1(!isOpen1)}
             type="button"
+            aria-haspopup="listbox"
+            aria-expanded={isOpen1}
+            aria-label={`Industry: ${selected}`}
             className="w-full h-full p-3  text-left flex items-center bg-clr2  justify-between gap-3"
           >
             <span className="capitalize text-light description1">
@@ -219,7 +223,7 @@ const Form = ({
     {
       tag: "textarea",
       type: "text",
-      name: "",
+      name: "message",
       placeholder: "Tell us something about your enquiry!",
       required: true,
       value: userMessage,
@@ -233,7 +237,7 @@ const Form = ({
     <form
       onSubmit={handleSubmit}
       className="flex flex-col h-full gap-4 bg-primary max-md:px-4 p-6 max-md:mt-6 text-base rounded-2xl w-full"
-      id="contact"
+      id={id ?? undefined}
     >
       <h3 className="text-xl lg:text-[2rem]/[2.5rem] font-normal text-white">
         Get a Free Quote!
@@ -245,16 +249,17 @@ const Form = ({
             {data.tag === "div"
               ? data.content
               : React.createElement(data.tag, {
-                  id: data.name,
-                  type: data.type,
+                  id: `${uid}-${data.name}`,
+                  type: data.tag === "textarea" ? undefined : data.type,
                   name: data.name,
                   value: data.value,
                   onChange: data.onChange,
                   placeholder: data.placeholder,
+                  "aria-label": data.placeholder.replace(/\*$/, ""),
                   required: data.required,
                   autoComplete: "off",
                   spellCheck: "false",
-                  rows: "3",
+                  rows: data.tag === "textarea" ? 3 : undefined,
                   className:
                     "w-full bg-transparent no-spinner p-3 resize-none placeholder:text-[#4C4C4C] focus:outline-none valid:outline-blue-primary invalid:outline-Saffron-primary",
                 })}
@@ -269,6 +274,8 @@ const Form = ({
       ))}
 
       <button
+        type="submit"
+        disabled={formRes}
         className={`raleway  bg-secondary text-white hover:bg-secondary/80 flex justify-center items-center gap-1 rounded-lg py-3 px- font-semibold `}
       >
         {formRes ? "Loading...." : "Submit"}

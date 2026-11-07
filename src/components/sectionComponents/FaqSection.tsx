@@ -1,6 +1,6 @@
 import Image from "next/image";
 import SectionWithContainer from "./SectionWithContainer";
-import { Accordion } from "../Cards";
+import Accordion from "@/components/Cards/Accordion";
 import { FaqSectionProps } from "@/@types/type";
 import SectionTitleSubTitle from "./SectionTitleSubTitle";
 import { DropDownIcon } from "@/data/icons";
@@ -24,6 +24,7 @@ const FaqSection: React.FC<FaqSectionProps> = ({ title, src, faqs: items }) => {
             src={src}
             alt={title}
             fill
+            sizes="(max-width: 768px) 100vw, 33vw"
             className="object-contain object-top rounded-2xl "
           />
         </div>

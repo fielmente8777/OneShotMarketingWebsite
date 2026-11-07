@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { Container } from "../sectionComponents";
+import Container from "@/components/sectionComponents/Container";
 import Link from "next/link";
 import { NaveLinks } from "@/data/links";
 import { DropDownIcon, OutlinePhone } from "@/data/icons";
@@ -30,8 +30,11 @@ const Navbar = () => {
             <nav className="flex items-center justify-between py-3">
               <div className="max-lg:block hidden">
                 <button
+                  type="button"
                   className="lg:hidden"
                   onClick={() => setMobileMenu(true)}
+                  aria-label="Open menu"
+                  aria-expanded={mobileMenu}
                 >
                   <AiOutlineMenu size={25} color="#183f62" />
                 </button>
@@ -45,7 +48,14 @@ const Navbar = () => {
                   href={"/"}
                   className="flex relative md:h-[3.5rem] h-[2.5rem]  md:aspect-[4/1.8] aspect-[3/1.5]"
                 >
-                  <Image src="/logo.png" alt="one shot logo" fill />
+                  <Image
+                    src="/logo.png"
+                    alt="one shot logo"
+                    fill
+                    preload
+                    sizes="(min-width: 768px) 125px, 84px"
+                    className="object-contain"
+                  />
                 </Link>
               </div>
               <ul className="lg:flex hidden item-center gap-10">
@@ -69,7 +79,6 @@ const Navbar = () => {
                         <span className="nav-1">
                           {link.subLinks.map((subLink, index) => {
                             return (
-                              <>
                                 <span
                                   className="relative group nav-2"
                                   key={index + 1}
@@ -111,7 +120,6 @@ const Navbar = () => {
                                     </span>
                                   )}
                                 </span>
-                              </>
                             );
                           })}
                         </span>
@@ -121,8 +129,8 @@ const Navbar = () => {
                 })}
               </ul>
               <Link
-                href={"tel:+1438-855-4446"}
-                target="_blank"
+                href={"tel:+14388554446"}
+                aria-label="Call 438-855-4446"
                 className="md:px-4 md:py-2 md:hover:box-shadow flex items-center gap-1 md:border border-primary bg-white text-primary rounded-lg hover:bg-primary hover:text-white duration-300 transition-all ease-in-out"
               >
                 <span className="">

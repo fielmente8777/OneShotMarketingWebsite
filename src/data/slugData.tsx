@@ -2570,7 +2570,7 @@ export const pageData2 = [
       ],
       number: "45%",
       desc2: [
-        `increase in customer retention-  <b a big number boost with right CRM strategies!</b>`,
+        `increase in customer retention-  <b>a big number boost with right CRM strategies!</b>`,
       ],
     },
   },

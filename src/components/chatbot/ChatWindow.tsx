@@ -5,7 +5,10 @@ import DatePicker from "react-datepicker";
 import { IoIosSend } from "react-icons/io";
 import "react-datepicker/dist/react-datepicker.css";
 import "./input-date.scss";
-import { countries } from "./constant";
+import { formatPhone, isValidPhone } from "@/data/countries";
+import CountryCodeSelect, {
+  useCountry,
+} from "@/components/forms/CountryCodeSelect";
 
 export type Option = {
   label: string;
@@ -54,7 +57,7 @@ const ChatWindow = ({
   const [showFinalMessage, setShowFinalMessage] = useState(false);
   const [chat, setChat] = useState<ChatMessage[]>([]);
   const [checkInDate, setCheckInDate] = useState<Date | null>(null);
-  const [countryCode, setCountryCode] = useState<string>("+91");
+  const [country, setCountry] = useCountry();
 
   const [startDate] = useState(new Date());
 
@@ -203,7 +206,15 @@ const ChatWindow = ({
     let answer = input;
 
     if (key === "phone") {
-      answer = `${countryCode} ${answer}`;
+      const digits = answer.replace(/\D/g, "");
+      if (!isValidPhone(country, digits)) {
+        addBotMessage(
+          `❌ Please enter a valid ${country.name} phone number.`,
+          key
+        );
+        return;
+      }
+      answer = formatPhone(country, digits);
     }
 
     // Step 1: Show user's message
@@ -587,18 +598,11 @@ const ChatWindow = ({
           <div className="flex items-center gap-2 w-full border sm:border-none border-gray-600 sm:rounded-none rounded-full px-2">
             <div className="w-full flex items-center">
               {messageFlows[currentIndex]?.key === "phone" && (
-                <select
-                  aria-label="Country code"
-                  onChange={(e) => setCountryCode(e.target.value)}
-                  // defaultValue={countries[0].code}
-                  value={countryCode}
-                >
-                  {countries.map((countryCode, idx) => (
-                    <option key={idx} value={countryCode.code}>
-                      {countryCode.code}
-                    </option>
-                  ))}
-                </select>
+                <CountryCodeSelect
+                  placement="top"
+                  value={country}
+                  onChange={setCountry}
+                />
               )}
 
               {messageFlows[currentIndex]?.type?.toLowerCase() === "date" ? (

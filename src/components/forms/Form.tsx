@@ -3,8 +3,9 @@
 import React, { useId, useMemo, useRef, useState } from "react";
 import { postContact } from "@/lib/postContact";
 // import { useRouter } from "next/navigation";
-import { countries } from "@/data/countryCode";
+import { formatPhone, isValidPhone } from "@/data/countries";
 import { DropDownIcon } from "@/data/icons";
+import CountryCodeSelect, { useCountry } from "./CountryCodeSelect";
 import useClickOutside from "@/hooks/useClickOutside";
 import { useRouter } from "next/navigation";
 
@@ -22,7 +23,7 @@ const Form = ({
   const [userEmail, setUserEmail] = useState("");
   const [userMessage, setUserMessage] = useState("");
   const [userPhone, setUserPhone] = useState("");
-  const [countryCode, setCountryCode] = useState("+1"); // Default country code
+  const [country, setCountry] = useCountry();
   const [formRes, setFormRes] = useState(false);
   const [emailErrorMessage, setEmailErrorMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
@@ -50,11 +51,11 @@ const Form = ({
   const [selected, setSelected] = useState(industries[0]);
 
   const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const value = e.target.value.replace(/\D/g, ""); // Remove non-numeric characters
-    if (value.length <= 10) {
-      setUserPhone(value);
-      setErrorMessage(value.length < 10 ? "Please enter a valid number" : "");
-    }
+    const value = e.target.value.replace(/\D/g, "").slice(0, 14); // digits only
+    setUserPhone(value);
+    setErrorMessage(
+      value && !isValidPhone(country, value) ? "Please enter a valid number" : ""
+    );
   };
 
   const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -68,8 +69,8 @@ const Form = ({
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    if (userPhone.length !== 10) {
-      setErrorMessage("Phone number must be exactly 10 digits.");
+    if (!isValidPhone(country, userPhone)) {
+      setErrorMessage(`Please enter a valid ${country.name} phone number.`);
       return;
     }
 
@@ -84,7 +85,7 @@ const Form = ({
         Domain: "oneshotmarketing", // Replace with your actual domain value
         email: userEmail,
         Name: userName,
-        Contact: userPhone, // Combine country code and phone number
+        Contact: formatPhone(country, userPhone), // e.g. "+1 4165551234"
         Description: `Industry Name ${selected}, Message: ${userMessage},`,
       });
 
@@ -128,33 +129,28 @@ const Form = ({
       placeholder: "Your Phone*",
       required: true,
       content: (
-        <div className="flex gap-2 text-base">
-          <select
+        <div className="flex w-full gap-2 text-base">
+          <CountryCodeSelect
             id={`${uid}-countryCode`}
-            name="countryCode"
-            aria-label="Country code"
-            value={countryCode}
-            onChange={(e) => setCountryCode(e.target.value)}
-            className={` bg-transparent rounded-lg text-[#333333] focus:outline-none ps-2`}
-            style={{ width: `${countryCode.length * 3.9}ch` }}
-          >
-            {countries.map((country, index) => (
-              <option
-                key={index}
-                value={country.code}
-                className="text-black bg-gray-100"
-              >
-                {`${country.code} ${country.name}`}
-              </option>
-            ))}
-          </select>
+            value={country}
+            onChange={(c) => {
+              setCountry(c);
+              setErrorMessage(
+                userPhone && !isValidPhone(c, userPhone)
+                  ? "Please enter a valid number"
+                  : ""
+              );
+            }}
+          />
           <input
-            type="number"
+            type="tel"
+            inputMode="numeric"
             id={`${uid}-phone`}
             name="phone"
             placeholder="Mobile number*"
             aria-label="Mobile number"
             autoComplete="tel-national"
+            required
             value={userPhone}
             onChange={handlePhoneChange}
             className="w-full bg-transparent border-l border-light px-2 py-3 placeholder:text-[#4C4C4C] text-black no-spinner appearance-none focus:outline-none"

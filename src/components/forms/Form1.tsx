@@ -3,7 +3,6 @@ import { ChangeEvent, useId, useMemo, useRef, useState } from "react";
 import OnlyButton from "@/components/buttons/OnlyButton";
 import useClickOutside from "@/hooks/useClickOutside";
 import {
-  CallIcon,
   DropDownIcon,
   HotelIcon,
   MailIcon,
@@ -12,6 +11,8 @@ import {
 } from "@/data/icons";
 import { postContact } from "@/lib/postContact";
 import { useRouter } from "next/navigation";
+import { formatPhone, isValidPhone } from "@/data/countries";
+import CountryCodeSelect, { useCountry } from "./CountryCodeSelect";
 
 const Form1 = () => {
   const router = useRouter();
@@ -30,6 +31,7 @@ const Form1 = () => {
   );
 
   const [selected, setSelected] = useState(industries[0]);
+  const [country, setCountry] = useCountry();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
   const [extend, setExtend] = useState(false);
@@ -56,15 +58,14 @@ const Form1 = () => {
     return re.test(email);
   };
 
-  const validatePhone = (phone: string) => {
-    const re = /^[0-9]{10,15}$/;
-    return re.test(phone);
-  };
-
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
-    const { name, value } = e.target;
+    const { name } = e.target;
+    const value =
+      name === "phone"
+        ? e.target.value.replace(/\D/g, "").slice(0, 14)
+        : e.target.value;
     setFormData({
       ...formData,
       [name]: value,
@@ -101,8 +102,8 @@ const Form1 = () => {
     if (!formData.phone.trim()) {
       newErrors.phone = "Please enter your phone number";
       isValid = false;
-    } else if (!validatePhone(formData.phone)) {
-      newErrors.phone = "Please enter a valid phone number (10-15 digits)";
+    } else if (!isValidPhone(country, formData.phone)) {
+      newErrors.phone = `Please enter a valid ${country.name} phone number`;
       isValid = false;
     }
 
@@ -129,7 +130,7 @@ const Form1 = () => {
         Domain: "oneshotmarketing", // Replace with your actual domain value or "test",
         email: formData.email,
         Name: formData.name,
-        Contact: formData.phone,
+        Contact: formatPhone(country, formData.phone),
         Description: `Industry Name: ${selected}, Message: ${formData.message}`,
       });
 
@@ -207,11 +208,19 @@ const Form1 = () => {
 
       <div className="col-span-2 md:border-r border-light flex flex-col gap-2 w-full py-3 px-4">
         <div className="flex items-center justify-center gap-2 w-full">
-          <label htmlFor={`${uid}-phone`}>
-            <CallIcon />
-          </label>
+          <CountryCodeSelect
+            variant="dark"
+            className="-ms-2"
+            value={country}
+            onChange={(c) => {
+              setCountry(c);
+              setError((prev) => ({ ...prev, phone: "" }));
+            }}
+          />
           <input
-            type="number"
+            type="tel"
+            inputMode="numeric"
+            autoComplete="tel-national"
             name="phone"
             id={`${uid}-phone`}
             aria-label="Phone Number"

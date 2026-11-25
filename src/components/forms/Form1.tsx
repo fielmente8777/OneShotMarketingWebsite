@@ -9,13 +9,18 @@ import {
   MessageIcon,
   UserIcon,
 } from "@/data/icons";
-import { postContact } from "@/lib/postContact";
-import { useRouter } from "next/navigation";
-import { formatPhone, isValidPhone } from "@/data/countries";
+import useContactSubmit from "@/hooks/useContactSubmit";
+import {
+  describePhoneLength,
+  formatPhone,
+  getEmailError,
+  getNameError,
+  getPhoneError,
+  sanitizePhoneInput,
+} from "@/data/countries";
 import CountryCodeSelect, { useCountry } from "./CountryCodeSelect";
 
 const Form1 = () => {
-  const router = useRouter();
   const uid = useId();
   const industries = useMemo(
     () => [
@@ -32,8 +37,7 @@ const Form1 = () => {
 
   const [selected, setSelected] = useState(industries[0]);
   const [country, setCountry] = useCountry();
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitSuccess, setSubmitSuccess] = useState(false);
+  const { submit, isSubmitting, isSubmitted, isBusy } = useContactSubmit();
   const [extend, setExtend] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const formRef = useRef<HTMLFormElement | null>(null);
@@ -53,112 +57,71 @@ const Form1 = () => {
     industriesName: "",
   });
 
-  const validateEmail = (email: string) => {
-    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return re.test(email);
-  };
-
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     const { name } = e.target;
     const value =
-      name === "phone"
-        ? e.target.value.replace(/\D/g, "").slice(0, 14)
-        : e.target.value;
+      name === "phone" ? sanitizePhoneInput(e.target.value) : e.target.value;
     setFormData({
       ...formData,
       [name]: value,
     });
 
-    // Clear error when user starts typing
+    // Once an error is showing, re-check live so it clears as soon as it's fixed
     if (error[name as keyof typeof error]) {
-      setError((prev) => ({ ...prev, [name]: "" }));
+      setError((prev) => ({ ...prev, [name]: fieldError(name, value) }));
     }
   };
 
+  const fieldError = (name: string, value: string) =>
+    name === "name"
+      ? getNameError(value)
+      : name === "email"
+        ? getEmailError(value)
+        : name === "phone"
+          ? getPhoneError(country, value)
+          : "";
+
+  const handleBlur = (e: React.FocusEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+    if (value) setError((prev) => ({ ...prev, [name]: fieldError(name, value) }));
+  };
+
   const validateForm = () => {
-    let isValid = true;
     const newErrors = {
-      name: "",
-      email: "",
-      phone: "",
-      industriesName: "",
+      name: getNameError(formData.name),
+      email: getEmailError(formData.email),
+      phone: getPhoneError(country, formData.phone),
+      industriesName:
+        selected === industries[0] ? "Please select your industry." : "",
     };
 
-    if (!formData.name.trim()) {
-      newErrors.name = "Please enter your name";
-      isValid = false;
-    }
-
-    if (!formData.email.trim()) {
-      newErrors.email = "Please enter your email";
-      isValid = false;
-    } else if (!validateEmail(formData.email)) {
-      newErrors.email = "Please enter a valid email";
-      isValid = false;
-    }
-
-    if (!formData.phone.trim()) {
-      newErrors.phone = "Please enter your phone number";
-      isValid = false;
-    } else if (!isValidPhone(country, formData.phone)) {
-      newErrors.phone = `Please enter a valid ${country.name} phone number`;
-      isValid = false;
-    }
-
-    if (selected === "Select Industry") {
-      newErrors.industriesName = "Please select an industry";
-      isValid = false;
-    }
-
     setError(newErrors);
-    return isValid;
+    // The industry picker lives in the collapsed part of the form
+    if (newErrors.industriesName) setExtend(true);
+    return !Object.values(newErrors).some(Boolean);
   };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    if (isBusy) return; // a lead is already being sent
 
     if (!validateForm()) {
       return;
     }
 
-    setIsSubmitting(true);
+    const ok = await submit({
+      name: formData.name,
+      email: formData.email,
+      phone: formatPhone(country, formData.phone),
+      description: `Industry Name: ${selected}, Message: ${formData.message.trim()}`,
+    });
 
-    try {
-      const data = await postContact({
-        Domain: "oneshotmarketing", // Replace with your actual domain value or "test",
-        email: formData.email,
-        Name: formData.name,
-        Contact: formatPhone(country, formData.phone),
-        Description: `Industry Name: ${selected}, Message: ${formData.message}`,
-      });
-
-      if (data.Status) {
-        setFormData({
-          name: "",
-          email: "",
-          phone: "",
-          message: "",
-        });
-        setSelected(industries[0]);
-        setSubmitSuccess(true);
-        setTimeout(() => setSubmitSuccess(false), 3000);
-        router.push("/thank-you");
-      } else {
-        setFormData({
-          name: "",
-          email: "",
-          phone: "",
-          message: "",
-        });
-        alert("Submission failed. Please try again.");
-      }
-    } catch (error) {
-      console.error("Submission error:", error);
-      alert("An error occurred. Please try again later.");
-    } finally {
-      setIsSubmitting(false);
+    // On failure the visitor's input is kept so they can simply retry
+    if (ok) {
+      setFormData({ name: "", email: "", phone: "", message: "" });
+      setSelected(industries[0]);
     }
   };
 
@@ -177,6 +140,7 @@ const Form1 = () => {
   return (
     <form
       onSubmit={handleSubmit}
+      noValidate
       className={`w-full md:grid flex flex-col max-lg:gap-2 ${
         extend ? "grid-cols-6 md:gap-y-4 max-lg:mb-8" : "grid-cols-7"
       } text-white transition-all duration-500 ease-in-out transform ${
@@ -186,7 +150,7 @@ const Form1 = () => {
       ref={formRef}
     >
       <div className="col-span-2 md:border-r border-light flex flex-col gap-2 w-full py-3 px-4">
-        <div className="flex items-center justify-center gap-2 w-full">
+        <div className="flex items-center gap-2 w-full h-10">
           <label htmlFor={`${uid}-name`}>
             <UserIcon />
           </label>
@@ -195,9 +159,11 @@ const Form1 = () => {
             name="name"
             id={`${uid}-name`}
             aria-label="Full Name"
+            aria-invalid={!!error.name}
             value={formData.name}
             placeholder="Full Name"
             onChange={handleChange}
+            onBlur={handleBlur}
             className="w-full bg-transparent text-white placeholder:text-white rounded-lg focus:outline-none outline-none"
           />
         </div>
@@ -207,14 +173,18 @@ const Form1 = () => {
       </div>
 
       <div className="col-span-2 md:border-r border-light flex flex-col gap-2 w-full py-3 px-4">
-        <div className="flex items-center justify-center gap-2 w-full">
+        <div className="flex items-center gap-2 w-full h-10">
           <CountryCodeSelect
             variant="dark"
             className="-ms-2"
             value={country}
             onChange={(c) => {
               setCountry(c);
-              setError((prev) => ({ ...prev, phone: "" }));
+              // Re-check against the newly chosen country's length
+              setError((prev) => ({
+                ...prev,
+                phone: formData.phone ? getPhoneError(c, formData.phone) : "",
+              }));
             }}
           />
           <input
@@ -223,10 +193,12 @@ const Form1 = () => {
             autoComplete="tel-national"
             name="phone"
             id={`${uid}-phone`}
-            aria-label="Phone Number"
+            aria-label={`Phone Number, ${describePhoneLength(country)}`}
+            aria-invalid={!!error.phone}
             value={formData.phone}
             placeholder="Phone Number"
             onChange={handleChange}
+            onBlur={handleBlur}
             className="w-full bg-transparent text-white placeholder:text-white no-spinner rounded-lg focus:outline-none outline-none"
           />
         </div>
@@ -236,7 +208,7 @@ const Form1 = () => {
       </div>
 
       <div className="col-span-2 w-full flex flex-col gap-2 py-3 px-4">
-        <div className="flex items-center justify-center gap-2 w-full">
+        <div className="flex items-center gap-2 w-full h-10">
           <label htmlFor={`${uid}-email`}>
             <MailIcon />
           </label>
@@ -245,9 +217,11 @@ const Form1 = () => {
             name="email"
             id={`${uid}-email`}
             aria-label="Email Id"
+            aria-invalid={!!error.email}
             value={formData.email}
             placeholder="Email Id"
             onChange={handleChange}
+            onBlur={handleBlur}
             className="w-full bg-transparent text-white placeholder:text-white rounded-lg focus:outline-none outline-none"
           />
         </div>
@@ -316,7 +290,7 @@ const Form1 = () => {
       <div
         className={`col-span-2 ${extend ? "w-full flex flex-col gap-2 py-3 px-4" : "hidden"}`}
       >
-        <div className="flex items-center justify-center gap-2 w-full">
+        <div className="flex items-center gap-2 w-full h-10">
           <label htmlFor={`${uid}-message`}>
             <MessageIcon
               fill="#fff"
@@ -337,16 +311,28 @@ const Form1 = () => {
       </div>
 
       <OnlyButton
-        Props={{ type: "submit", disabled: isSubmitting }}
+        Props={{
+          type: "submit",
+          disabled: isBusy,
+          "aria-busy": isSubmitting,
+        }}
         className={`${extend ? "col-span-2 ms-1" : "col-span-1"} ${
-          submitSuccess
+          isSubmitted
             ? "bg-green-500"
             : "bg-secondary hover:bg-white hover:text-primary"
-        } flex items-center justify-center py-3 rounded-lg font-semibold hover:shadow-2xl hover:scale-[1.01] transition-all`}
+        } flex items-center justify-center py-3 rounded-lg font-semibold hover:shadow-2xl hover:scale-[1.01] transition-all disabled:cursor-not-allowed disabled:hover:scale-100 disabled:hover:shadow-none ${
+          isSubmitting ? "opacity-80 hover:bg-secondary hover:text-white" : ""
+        }`}
       >
         {isSubmitting ? (
-          <span className="border-t-2 border-primary w-6 h-6 rounded-full animate-spin " />
-        ) : submitSuccess ? (
+          <>
+            <span
+              aria-hidden="true"
+              className="border-t-2 border-primary w-6 h-6 rounded-full animate-spin"
+            />
+            <span className="sr-only">Submitting...</span>
+          </>
+        ) : isSubmitted ? (
           "Thank You!"
         ) : (
           "Get a FREE quote!"

@@ -1,13 +1,18 @@
 "use client";
 
 import React, { useId, useMemo, useRef, useState } from "react";
-import { postContact } from "@/lib/postContact";
-// import { useRouter } from "next/navigation";
-import { formatPhone, isValidPhone } from "@/data/countries";
+import {
+  describePhoneLength,
+  formatPhone,
+  getEmailError,
+  getNameError,
+  getPhoneError,
+  sanitizePhoneInput,
+} from "@/data/countries";
 import { DropDownIcon } from "@/data/icons";
 import CountryCodeSelect, { useCountry } from "./CountryCodeSelect";
 import useClickOutside from "@/hooks/useClickOutside";
-import { useRouter } from "next/navigation";
+import useContactSubmit from "@/hooks/useContactSubmit";
 
 const Form = ({
   setOpenForm,
@@ -17,17 +22,18 @@ const Form = ({
   /** DOM id of the <form>; pass null when the page already has an element with this id */
   id?: string | null;
 }) => {
-  const router = useRouter();
   const uid = useId();
   const [userName, setUserName] = useState("");
   const [userEmail, setUserEmail] = useState("");
   const [userMessage, setUserMessage] = useState("");
   const [userPhone, setUserPhone] = useState("");
   const [country, setCountry] = useCountry();
-  const [formRes, setFormRes] = useState(false);
-  const [emailErrorMessage, setEmailErrorMessage] = useState("");
-  const [errorMessage, setErrorMessage] = useState("");
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const { submit, isSubmitting, isSubmitted, isBusy } = useContactSubmit({
+    onSuccess: () => setOpenForm?.(false),
+  });
+  const [errors, setErrors] = useState<Record<string, string>>({});
+  const setFieldError = (field: string, message: string) =>
+    setErrors((prev) => ({ ...prev, [field]: message }));
 
   const [isOpen1, setIsOpen1] = useState(false);
 
@@ -50,64 +56,51 @@ const Form = ({
 
   const [selected, setSelected] = useState(industries[0]);
 
+  const getIndustryError = (value: string) =>
+    value === industries[0] ? "Please select your industry." : "";
+  const getMessageError = (value: string) =>
+    value.trim() ? "" : "Please tell us a little about your enquiry.";
+
+  // Errors appear on blur / submit; once shown they update live as the user types.
   const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const value = e.target.value.replace(/\D/g, "").slice(0, 14); // digits only
+    const value = sanitizePhoneInput(e.target.value);
     setUserPhone(value);
-    setErrorMessage(
-      value && !isValidPhone(country, value) ? "Please enter a valid number" : ""
-    );
+    if (errors.phone) setFieldError("phone", getPhoneError(country, value));
   };
 
   const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
     setUserEmail(value);
-    setEmailErrorMessage(
-      !emailRegex.test(value) ? "Please enter a valid email address" : ""
-    );
+    if (errors.email) setFieldError("email", getEmailError(value));
   };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    if (isBusy) return; // a lead is already being sent
 
-    if (!isValidPhone(country, userPhone)) {
-      setErrorMessage(`Please enter a valid ${country.name} phone number.`);
-      return;
-    }
+    const newErrors = {
+      name: getNameError(userName),
+      phone: getPhoneError(country, userPhone),
+      industry: getIndustryError(selected),
+      email: getEmailError(userEmail),
+      message: getMessageError(userMessage),
+    };
+    setErrors(newErrors);
+    if (Object.values(newErrors).some(Boolean)) return;
 
-    if (!emailRegex.test(userEmail)) {
-      setEmailErrorMessage("Please enter a valid email address.");
-      return;
-    }
+    const ok = await submit({
+      name: userName,
+      email: userEmail,
+      phone: formatPhone(country, userPhone), // e.g. "+1 4165551234"
+      description: `Industry Name: ${selected}, Message: ${userMessage.trim()}`,
+    });
 
-    setFormRes(true);
-    try {
-      const data = await postContact({
-        Domain: "oneshotmarketing", // Replace with your actual domain value
-        email: userEmail,
-        Name: userName,
-        Contact: formatPhone(country, userPhone), // e.g. "+1 4165551234"
-        Description: `Industry Name ${selected}, Message: ${userMessage},`,
-      });
-
-      if (data.Status) {
-        setFormRes(true);
-        setUserName("");
-        setUserEmail("");
-        setUserMessage("");
-        setUserPhone("");
-        // setCountryCode("+91"); // Reset country code
-        if (setOpenForm) setOpenForm(false);
-        setFormRes(false);
-
-        router.push("/thank-you");
-      } else {
-        setFormRes(false);
-        alert("Something went wrong!");
-      }
-    } catch (error) {
-      console.error(error);
-      setFormRes(false);
-      alert("Something went wrong!");
+    if (ok) {
+      setUserName("");
+      setUserEmail("");
+      setUserMessage("");
+      setUserPhone("");
+      setSelected(industries[0]);
     }
   };
 
@@ -121,7 +114,9 @@ const Form = ({
       value: userName,
       onChange: (e: React.ChangeEvent<HTMLInputElement>) => {
         setUserName(e.target.value);
+        if (errors.name) setFieldError("name", getNameError(e.target.value));
       },
+      onBlur: () => setFieldError("name", getNameError(userName)),
     },
     {
       tag: "div", // Use div to wrap select and input for phone number
@@ -135,11 +130,9 @@ const Form = ({
             value={country}
             onChange={(c) => {
               setCountry(c);
-              setErrorMessage(
-                userPhone && !isValidPhone(c, userPhone)
-                  ? "Please enter a valid number"
-                  : ""
-              );
+              // Re-check against the newly chosen country's length
+              if (userPhone || errors.phone)
+                setFieldError("phone", userPhone ? getPhoneError(c, userPhone) : "");
             }}
           />
           <input
@@ -147,12 +140,16 @@ const Form = ({
             inputMode="numeric"
             id={`${uid}-phone`}
             name="phone"
-            placeholder="Mobile number*"
-            aria-label="Mobile number"
+            placeholder={`Mobile number* (${describePhoneLength(country)})`}
+            aria-label={`Mobile number, ${describePhoneLength(country)}`}
+            aria-invalid={!!errors.phone}
             autoComplete="tel-national"
             required
             value={userPhone}
             onChange={handlePhoneChange}
+            onBlur={() =>
+              userPhone && setFieldError("phone", getPhoneError(country, userPhone))
+            }
             className="w-full bg-transparent border-l border-light px-2 py-3 placeholder:text-[#4C4C4C] text-black no-spinner appearance-none focus:outline-none"
           />
         </div>
@@ -195,6 +192,7 @@ const Form = ({
                 onClick={() => {
                   setSelected(industry);
                   setIsOpen1(false);
+                  setFieldError("industry", getIndustryError(industry));
                 }}
                 className={`w-full px-4 bg-white text-nowrap py-2 border-b border-clr6 text-left uppercase text-sm font-medium hover:text-clr2 hover:border-clr2 transition-colors duration-300 ease-in-out ${
                   selected === industry ? "text-clr2 border-clr2" : ""
@@ -215,16 +213,20 @@ const Form = ({
       required: true,
       value: userEmail,
       onChange: handleEmailChange,
+      onBlur: () =>
+        userEmail && setFieldError("email", getEmailError(userEmail)),
     },
     {
       tag: "textarea",
       type: "text",
       name: "message",
-      placeholder: "Tell us something about your enquiry!",
+      placeholder: "Tell us something about your enquiry!*",
       required: true,
       value: userMessage,
       onChange: (e: React.ChangeEvent<HTMLInputElement>) => {
         setUserMessage(e.target.value);
+        if (errors.message)
+          setFieldError("message", getMessageError(e.target.value));
       },
     },
   ];
@@ -232,6 +234,7 @@ const Form = ({
   return (
     <form
       onSubmit={handleSubmit}
+      noValidate
       className="flex flex-col h-full gap-4 bg-primary max-md:px-4 p-6 max-md:mt-6 text-base rounded-2xl w-full"
       id={id ?? undefined}
     >
@@ -250,6 +253,8 @@ const Form = ({
                   name: data.name,
                   value: data.value,
                   onChange: data.onChange,
+                  onBlur: data.onBlur,
+                  "aria-invalid": !!errors[data.name],
                   placeholder: data.placeholder,
                   "aria-label": data.placeholder.replace(/\*$/, ""),
                   required: data.required,
@@ -260,21 +265,27 @@ const Form = ({
                     "w-full bg-transparent no-spinner p-3 resize-none placeholder:text-[#4C4C4C] focus:outline-none valid:outline-blue-primary invalid:outline-Saffron-primary",
                 })}
           </div>
-          {data.name === "phone" && errorMessage && (
-            <p className="text-sm text-red-500 mt-2">{errorMessage}</p>
-          )}
-          {data.name === "email" && emailErrorMessage && (
-            <p className="text-sm text-red-500 mt-2">{emailErrorMessage}</p>
+          {errors[data.name] && (
+            <p role="alert" className="text-sm text-red-500 mt-2">
+              {errors[data.name]}
+            </p>
           )}
         </div>
       ))}
 
       <button
         type="submit"
-        disabled={formRes}
-        className={`raleway  bg-secondary text-white hover:bg-secondary/80 flex justify-center items-center gap-1 rounded-lg py-3 px- font-semibold `}
+        disabled={isBusy}
+        aria-busy={isSubmitting}
+        className="raleway bg-secondary text-white hover:bg-secondary/80 flex justify-center items-center gap-2 rounded-lg py-3 font-semibold disabled:opacity-70 disabled:cursor-not-allowed disabled:hover:bg-secondary"
       >
-        {formRes ? "Loading...." : "Submit"}
+        {isSubmitting && (
+          <span
+            aria-hidden="true"
+            className="w-4 h-4 border-2 border-white/40 border-t-white rounded-full animate-spin"
+          />
+        )}
+        {isSubmitted ? "Submitted ✓" : isSubmitting ? "Submitting..." : "Submit"}
       </button>
     </form>
   );

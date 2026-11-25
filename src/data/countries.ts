@@ -241,16 +241,132 @@ const byIso = new Map(countries.map((c) => [c.iso, c]));
 export const getCountry = (iso: string | null | undefined): Country =>
   byIso.get((iso || "").toLowerCase()) ?? byIso.get(DEFAULT_COUNTRY_ISO)!;
 
-/** "+1 4165551234" — the format sent to the contacts API */
-export const formatPhone = (country: Country, national: string) =>
-  `+${country.dial} ${national}`;
+/* ------------------------------------------------------------------ */
+/* Phone number rules                                                  */
+/* ------------------------------------------------------------------ */
 
-/** National number length check (E.164 allows max 15 digits incl. dial code). */
-export const isValidPhone = (country: Country, national: string) => {
-  if (!/^\d+$/.test(national)) return false;
-  // Fixed-length numbering plans (all +1 / NANP countries are 10 digits)
-  const fixed: Record<string, number> = { in: 10, cn: 11 };
-  const exact = country.dial === "1" ? 10 : fixed[country.iso];
-  if (exact) return national.length === exact;
-  return national.length >= 6 && national.length + country.dial.length <= 15;
+/**
+ * Allowed length of the national number (without the country code and
+ * without a leading trunk "0"), as [min, max]. Covers mobiles and landlines,
+ * since businesses often leave a landline. All +1 (NANP) countries are 10.
+ */
+const PHONE_LENGTHS: Record<string, [number, number]> = {
+  af: [9, 9], al: [8, 9], dz: [8, 9], ad: [6, 9], ao: [9, 9], ar: [10, 11],
+  am: [8, 8], aw: [7, 7], au: [9, 9], at: [7, 13], az: [9, 9], bh: [8, 8],
+  bd: [8, 10], by: [9, 9], be: [8, 9], bz: [7, 7], bj: [8, 10], bt: [7, 8],
+  bo: [8, 8], ba: [8, 9], bw: [7, 8], br: [10, 11], bn: [7, 7], bg: [7, 9],
+  bf: [8, 8], bi: [8, 8], kh: [8, 9], cm: [9, 9], cv: [7, 7], cf: [8, 8],
+  td: [8, 8], cl: [9, 9], cn: [10, 11], co: [10, 10], km: [7, 7], cg: [9, 9],
+  cd: [9, 9], ck: [5, 5], cr: [8, 8], ci: [10, 10], hr: [8, 9], cu: [8, 8],
+  cw: [7, 8], cy: [8, 8], cz: [9, 9], dk: [8, 8], dj: [8, 8], ec: [8, 9],
+  eg: [9, 10], sv: [8, 8], gq: [9, 9], er: [7, 7], ee: [7, 8], sz: [8, 8],
+  et: [9, 9], fo: [6, 6], fj: [7, 7], fi: [6, 10], fr: [9, 9], gf: [9, 9],
+  pf: [8, 8], ga: [7, 8], gm: [7, 7], ge: [9, 9], de: [6, 11], gh: [9, 9],
+  gi: [8, 8], gr: [10, 10], gl: [6, 6], gp: [9, 9], gt: [8, 8], gn: [9, 9],
+  gw: [9, 9], gy: [7, 7], ht: [8, 8], hn: [8, 8], hk: [8, 8], hu: [8, 9],
+  is: [7, 7], in: [10, 10], id: [9, 12], ir: [10, 10], iq: [10, 10],
+  ie: [7, 9], il: [8, 9], it: [6, 11], jp: [9, 10], jo: [8, 9], kz: [10, 10],
+  ke: [9, 9], ki: [8, 8], xk: [8, 8], kw: [8, 8], kg: [9, 9], la: [8, 10],
+  lv: [8, 8], lb: [7, 8], ls: [8, 8], lr: [7, 9], ly: [9, 9], li: [7, 7],
+  lt: [8, 8], lu: [6, 9], mo: [8, 8], mg: [9, 9], mw: [7, 9], my: [9, 10],
+  mv: [7, 7], ml: [8, 8], mt: [8, 8], mh: [7, 7], mq: [9, 9], mr: [8, 8],
+  mu: [7, 8], yt: [9, 9], mx: [10, 10], fm: [7, 7], md: [8, 8], mc: [8, 9],
+  mn: [8, 8], me: [8, 8], ma: [9, 9], mz: [8, 9], mm: [8, 10], na: [8, 9],
+  nr: [7, 7], np: [8, 10], nl: [9, 9], nc: [6, 6], nz: [8, 10], ni: [8, 8],
+  ne: [8, 8], ng: [8, 10], kp: [8, 10], mk: [8, 8], no: [8, 8], om: [8, 8],
+  pk: [9, 10], pw: [7, 7], ps: [9, 9], pa: [7, 8], pg: [7, 8], py: [9, 9],
+  pe: [8, 9], ph: [8, 10], pl: [9, 9], pt: [9, 9], qa: [8, 8], re: [9, 9],
+  ro: [9, 9], ru: [10, 10], rw: [9, 9], ws: [5, 7], sm: [6, 10], st: [7, 7],
+  sa: [9, 9], sn: [9, 9], rs: [8, 10], sc: [7, 7], sl: [8, 8], sg: [8, 8],
+  sk: [9, 9], si: [8, 8], sb: [7, 7], so: [7, 9], za: [9, 9], kr: [8, 10],
+  ss: [9, 9], es: [9, 9], lk: [9, 9], sd: [9, 9], sr: [6, 7], se: [7, 9],
+  ch: [9, 9], sy: [8, 9], tw: [8, 9], tj: [9, 9], tz: [9, 9], th: [8, 9],
+  tl: [7, 8], tg: [8, 8], to: [5, 7], tn: [8, 8], tr: [10, 10], tm: [8, 8],
+  tv: [5, 6], ug: [9, 9], ua: [9, 9], ae: [8, 9], gb: [9, 10], uy: [8, 8],
+  uz: [9, 9], vu: [5, 7], va: [6, 11], ve: [10, 10], vn: [9, 10],
+  ye: [7, 9], zm: [9, 9], zw: [9, 9],
+};
+
+/** Countries whose numbers genuinely start with 0 (no trunk prefix to drop). */
+const KEEPS_LEADING_ZERO = new Set(["it", "va", "sm", "ci", "ga", "cg"]);
+
+/** Digits only, capped at E.164's 15 — use in phone input onChange handlers. */
+export const sanitizePhoneInput = (value: string) =>
+  value.replace(/\D/g, "").slice(0, 15);
+
+export const getPhoneLength = (country: Country): [number, number] =>
+  country.dial === "1"
+    ? [10, 10]
+    : PHONE_LENGTHS[country.iso] ?? [6, 15 - country.dial.length];
+
+/** "10-digit", "7- or 8-digit", "7 to 11 digit" */
+export const describePhoneLength = (country: Country) => {
+  const [min, max] = getPhoneLength(country);
+  if (min === max) return `${min}-digit`;
+  if (max - min === 1) return `${min}- or ${max}-digit`;
+  return `${min} to ${max} digit`;
+};
+
+/**
+ * Turn what the visitor typed into the national number for `country`:
+ * drops a pasted country code (e.g. "14165551234" for Canada) or a local
+ * trunk "0" (e.g. "07911123456" for the UK) when that makes the length fit.
+ */
+export const normalizePhone = (country: Country, input: string) => {
+  const digits = input.replace(/\D/g, "");
+  const [min, max] = getPhoneLength(country);
+  const fits = (n: string) => n.length >= min && n.length <= max;
+  if (fits(digits)) return digits;
+
+  if (digits.startsWith(country.dial)) {
+    const rest = digits.slice(country.dial.length);
+    if (fits(rest)) return rest;
+  }
+  if (digits.startsWith("0") && !KEEPS_LEADING_ZERO.has(country.iso)) {
+    const rest = digits.replace(/^0+/, "");
+    if (fits(rest)) return rest;
+  }
+  return digits;
+};
+
+export const isValidPhone = (country: Country, input: string) => {
+  const national = normalizePhone(country, input);
+  const [min, max] = getPhoneLength(country);
+  return national.length >= min && national.length <= max;
+};
+
+/**
+ * Error text for a phone field, or "" when it is valid. The message is about
+ * the country the visitor already chose, e.g.
+ * "Please enter a valid 10-digit phone number for India."
+ */
+export const getPhoneError = (country: Country, input: string) => {
+  if (!input.replace(/\D/g, "")) return "Please enter your phone number.";
+  if (isValidPhone(country, input)) return "";
+  return `Please enter a valid ${describePhoneLength(country)} phone number for ${country.name}.`;
+};
+
+/** "+1 4165551234" — the format sent to the contacts API */
+export const formatPhone = (country: Country, input: string) =>
+  `+${country.dial} ${normalizePhone(country, input)}`;
+
+/* ------------------------------------------------------------------ */
+/* Other field checks shared by the forms and the chatbot              */
+/* ------------------------------------------------------------------ */
+
+const EMAIL_RE = /^[^\s@]+@[^\s@.]+(\.[^\s@.]+)*\.[a-z]{2,}$/i;
+
+export const getEmailError = (email: string) => {
+  const v = email.trim();
+  if (!v) return "Please enter your email address.";
+  if (!EMAIL_RE.test(v)) return "Please enter a valid email address (e.g. name@company.com).";
+  return "";
+};
+
+export const getNameError = (name: string) => {
+  const v = name.trim();
+  if (!v) return "Please enter your name.";
+  if (v.length < 2) return "Please enter your full name.";
+  if (!/[A-Za-zÀ-￿]/.test(v)) return "Please enter a valid name.";
+  return "";
 };

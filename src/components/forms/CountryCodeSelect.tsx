@@ -5,11 +5,6 @@ import { countries, Country, getCountry } from "@/data/countries";
 import { detectCountry } from "@/lib/detectCountry";
 import useClickOutside from "@/hooks/useClickOutside";
 
-/**
- * Selected country for a phone field. Starts as the default (so server and
- * client HTML match), then switches to the visitor's detected country after
- * mount, unless the visitor has already picked one.
- */
 export function useCountry() {
   const [country, setCountryState] = useState<Country>(() => getCountry(null));
   const touched = useRef(false);
@@ -26,9 +21,7 @@ export function useCountry() {
   return [country, setCountry] as const;
 }
 
-/** Small lazy-loaded flag image (emoji flags don't render on Windows). */
 export const Flag = ({ iso, name }: { iso: string; name?: string }) => (
-  // eslint-disable-next-line @next/next/no-img-element
   <img
     src={`https://flagcdn.com/w20/${iso}.png`}
     srcSet={`https://flagcdn.com/w40/${iso}.png 2x`}
@@ -44,9 +37,7 @@ export const Flag = ({ iso, name }: { iso: string; name?: string }) => (
 type Props = {
   value: Country;
   onChange: (c: Country) => void;
-  /** Colour scheme of the surrounding field */
   variant?: "light" | "dark";
-  /** Open the list above the button (e.g. in the chatbot footer) */
   placement?: "top" | "bottom";
   className?: string;
   id?: string;

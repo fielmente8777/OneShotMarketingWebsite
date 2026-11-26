@@ -22,7 +22,6 @@ const TwoColSection2: React.FC<TwoColSectionProps> = ({
   title,
   subTitle,
   desc,
-  // src,
   images,
   links,
   btnCss = false,
@@ -34,7 +33,6 @@ const TwoColSection2: React.FC<TwoColSectionProps> = ({
           {images && (
             <SliderSwip
               data={images}
-              // classNameSwiper=""
               modules={[Autoplay]}
               autoplay={{ delay: 2000, disableOnInteraction: false }}
               classNameSwiperSlide="relative md:aspect-[4/2] aspect-[4/2.5] w-full"

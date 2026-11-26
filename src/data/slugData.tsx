@@ -732,10 +732,6 @@ export const pageData2 = [
         "A hotel needs visitors, reviews, and countless eyes on it to explore its full capacity—and expanding this reach requires measured strategies. One Shot focuses on delivering results by creating data-driven campaigns across multiple channels. We drive high-quality traffic, increase conversions, and optimize ad spend to help your hotel gain more direct bookings at the best possible cost.",
         "Our expert team leverages advanced targeting techniques to reach potential guests at every stage of their booking journey. We continuously monitor and refine our campaigns, ensuring that your hotel stays ahead of the competition.",
       ],
-      // desc2: [
-      //   `visitors exit your website before room booking. <b>We will help you sell more.</b>`,
-      // ],
-      // number: "70%",
       src: imagesLink + "hiimN1.webp",
       images: [""],
       aspect: "aspect-[4/4]",
@@ -1180,7 +1176,6 @@ export const pageData2 = [
       ],
     },
   },
-  // restaurant industry service
   {
     slug: "restaurant-industry/website-design-and-development",
     title: "Website Design & Development",
@@ -1294,10 +1289,6 @@ export const pageData2 = [
       ],
       src: imagesLink + "riim2.webp",
       images: [""],
-      // desc2: [
-      //   `visitors exit your website before room booking. <b>We will help you sell more.</b>`,
-      // ],
-      // number: "70%",
     },
     services: {
       title: "KEY FEATURES",
@@ -1550,7 +1541,6 @@ export const pageData2 = [
       ],
     },
   },
-  // immigration industry service
   {
     slug: "immigration-industry/website-design-and-development",
     title: "Website Design & Development",
@@ -1924,7 +1914,6 @@ export const pageData2 = [
       ],
     },
   },
-  // beauty industry service
   {
     slug: "beauty-industry/website-design-and-development",
     title: "Website Design & Development",
@@ -2296,7 +2285,6 @@ export const pageData2 = [
       ],
     },
   },
-  // clothing industry services
   {
     slug: "clothing-industry/website-design-and-development",
     title: "Website Design & Development",

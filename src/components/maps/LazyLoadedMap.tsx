@@ -1,5 +1,4 @@
 "use client";
-// components/LazyLoadedMap.jsx
 import dynamic from "next/dynamic";
 import { useEffect, useRef, useState } from "react";
 
@@ -14,11 +13,6 @@ const EmbeddedMap = dynamic(() => import("./EmbeddedMap"), {
   loading: Loading,
 });
 
-/**
- * Mounts the Google Maps iframe only when it is about to scroll into view.
- * (The browser's native iframe lazy-loading starts ~1250px+ early, which
- * pulled ~600KB of Maps JavaScript into the initial page load.)
- */
 const LazyLoadedMap: React.FC<{ src: string }> = ({ src }) => {
   const ref = useRef<HTMLDivElement | null>(null);
   const [visible, setVisible] = useState(false);

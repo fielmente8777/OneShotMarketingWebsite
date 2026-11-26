@@ -68,7 +68,6 @@ const Form1 = () => {
       [name]: value,
     });
 
-    // Once an error is showing, re-check live so it clears as soon as it's fixed
     if (error[name as keyof typeof error]) {
       setError((prev) => ({ ...prev, [name]: fieldError(name, value) }));
     }
@@ -98,7 +97,6 @@ const Form1 = () => {
     };
 
     setError(newErrors);
-    // The industry picker lives in the collapsed part of the form
     if (newErrors.industriesName) setExtend(true);
     return !Object.values(newErrors).some(Boolean);
   };
@@ -118,7 +116,6 @@ const Form1 = () => {
       description: `Industry Name: ${selected}, Message: ${formData.message.trim()}`,
     });
 
-    // On failure the visitor's input is kept so they can simply retry
     if (ok) {
       setFormData({ name: "", email: "", phone: "", message: "" });
       setSelected(industries[0]);
@@ -180,7 +177,6 @@ const Form1 = () => {
             value={country}
             onChange={(c) => {
               setCountry(c);
-              // Re-check against the newly chosen country's length
               setError((prev) => ({
                 ...prev,
                 phone: formData.phone ? getPhoneError(c, formData.phone) : "",

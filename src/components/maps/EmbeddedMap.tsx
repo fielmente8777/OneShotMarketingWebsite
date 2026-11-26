@@ -1,4 +1,3 @@
-// components/EmbeddedMap.jsx
 import React from "react";
 
 const EmbeddedMap: React.FC<{ src: string }> = ({ src }) => {

@@ -5,10 +5,8 @@ import Section from "@/components/sectionComponents/Section";
 export interface LegalSection {
   id: string;
   heading: string;
-  /** Paragraphs; may contain simple inline HTML (links, <b>). */
   body?: string[];
   list?: string[];
-  /** Paragraphs shown after the list. */
   after?: string[];
 }
 

@@ -22,7 +22,6 @@ export const metadata: Metadata = {
 
 const strip = (html: string) => html.replace(/<[^>]*>/g, "").replace(/\s+/g, " ").trim();
 
-// Every service page already showcases a piece of work; collect them here.
 const workItems: WorkItem[] = pageData2.map((p) => {
   const industrySlug = p.slug.split("/")[0];
   const industry =

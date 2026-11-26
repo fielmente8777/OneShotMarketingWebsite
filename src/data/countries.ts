@@ -1,14 +1,11 @@
 export interface Country {
-  /** ISO 3166-1 alpha-2, lowercase (also used for the flag image) */
   iso: string;
   name: string;
-  /** International dialling code, digits only (no "+") */
   dial: string;
 }
 
 export const DEFAULT_COUNTRY_ISO = "us";
 
-/** Sorted by name. NANP countries share +1 (the area code is part of the number). */
 export const countries: Country[] = [
   { iso: "af", name: "Afghanistan", dial: "93" },
   { iso: "al", name: "Albania", dial: "355" },
@@ -241,15 +238,6 @@ const byIso = new Map(countries.map((c) => [c.iso, c]));
 export const getCountry = (iso: string | null | undefined): Country =>
   byIso.get((iso || "").toLowerCase()) ?? byIso.get(DEFAULT_COUNTRY_ISO)!;
 
-/* ------------------------------------------------------------------ */
-/* Phone number rules                                                  */
-/* ------------------------------------------------------------------ */
-
-/**
- * Allowed length of the national number (without the country code and
- * without a leading trunk "0"), as [min, max]. Covers mobiles and landlines,
- * since businesses often leave a landline. All +1 (NANP) countries are 10.
- */
 const PHONE_LENGTHS: Record<string, [number, number]> = {
   af: [9, 9], al: [8, 9], dz: [8, 9], ad: [6, 9], ao: [9, 9], ar: [10, 11],
   am: [8, 8], aw: [7, 7], au: [9, 9], at: [7, 13], az: [9, 9], bh: [8, 8],
@@ -287,10 +275,8 @@ const PHONE_LENGTHS: Record<string, [number, number]> = {
   ye: [7, 9], zm: [9, 9], zw: [9, 9],
 };
 
-/** Countries whose numbers genuinely start with 0 (no trunk prefix to drop). */
 const KEEPS_LEADING_ZERO = new Set(["it", "va", "sm", "ci", "ga", "cg"]);
 
-/** Digits only, capped at E.164's 15 — use in phone input onChange handlers. */
 export const sanitizePhoneInput = (value: string) =>
   value.replace(/\D/g, "").slice(0, 15);
 
@@ -299,7 +285,6 @@ export const getPhoneLength = (country: Country): [number, number] =>
     ? [10, 10]
     : PHONE_LENGTHS[country.iso] ?? [6, 15 - country.dial.length];
 
-/** "10-digit", "7- or 8-digit", "7 to 11 digit" */
 export const describePhoneLength = (country: Country) => {
   const [min, max] = getPhoneLength(country);
   if (min === max) return `${min}-digit`;
@@ -307,11 +292,6 @@ export const describePhoneLength = (country: Country) => {
   return `${min} to ${max} digit`;
 };
 
-/**
- * Turn what the visitor typed into the national number for `country`:
- * drops a pasted country code (e.g. "14165551234" for Canada) or a local
- * trunk "0" (e.g. "07911123456" for the UK) when that makes the length fit.
- */
 export const normalizePhone = (country: Country, input: string) => {
   const digits = input.replace(/\D/g, "");
   const [min, max] = getPhoneLength(country);
@@ -335,24 +315,14 @@ export const isValidPhone = (country: Country, input: string) => {
   return national.length >= min && national.length <= max;
 };
 
-/**
- * Error text for a phone field, or "" when it is valid. The message is about
- * the country the visitor already chose, e.g.
- * "Please enter a valid 10-digit phone number for India."
- */
 export const getPhoneError = (country: Country, input: string) => {
   if (!input.replace(/\D/g, "")) return "Please enter your phone number.";
   if (isValidPhone(country, input)) return "";
   return `Please enter a valid ${describePhoneLength(country)} phone number for ${country.name}.`;
 };
 
-/** "+1 4165551234" — the format sent to the contacts API */
 export const formatPhone = (country: Country, input: string) =>
   `+${country.dial} ${normalizePhone(country, input)}`;
-
-/* ------------------------------------------------------------------ */
-/* Other field checks shared by the forms and the chatbot              */
-/* ------------------------------------------------------------------ */
 
 const EMAIL_RE = /^[^\s@]+@[^\s@.]+(\.[^\s@.]+)*\.[a-z]{2,}$/i;
 

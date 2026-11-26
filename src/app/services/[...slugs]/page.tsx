@@ -62,7 +62,6 @@ export async function generateMetadata(props: Params): Promise<Metadata> {
     return {
       title: slugsData.title,
       description,
-      // Same content as the industry page, so point search engines there
       alternates: { canonical: `/industries-we-serve/${slugsData.slug}` },
     };
   }

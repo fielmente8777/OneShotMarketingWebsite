@@ -7,25 +7,18 @@
 .env.*
 /.next/
 
-# Ignore node_modules
 node_modules
 
-# Ignore build output directories
 .next
 out
 
-# Ignore public assets
 public
 
-# Ignore test coverage reports
 coverage
 
-# Ignore distribution files
 dist
 
-# Ignore all HTML files
 **/*.html
 
-# Ignore minified files
 **/*.min.js
 **/*.min.css

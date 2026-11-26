@@ -5,38 +5,22 @@ import { useRouter } from "next/navigation";
 import { postContact } from "@/lib/postContact";
 
 const DOMAIN = "oneshotmarketing";
-/** Minimum gap between two submit attempts (guards double clicks / Enter spam) */
 const RETRY_COOLDOWN_MS = 2000;
-/** When not redirecting, how long the form stays locked after a successful lead */
 const SUCCESS_LOCK_MS = 5000;
 
 export type ContactPayload = {
   name: string;
   email: string;
-  /** Already formatted with the dial code, e.g. "+91 9876543210" */
   phone: string;
   description: string;
-  /** Any extra fields the contacts API accepts (check_in, created_from, ...) */
   extra?: Record<string, unknown>;
 };
 
 type Options = {
-  /** Runs after a successful submit, before the redirect (e.g. close a popup) */
   onSuccess?: () => void;
-  /** Where to go after a successful submit; null to stay on the page */
   redirectTo?: string | null;
 };
 
-/**
- * Submits any enquiry form on the site to the Eazotel contacts API.
- * The form validates its own fields, then calls `submit(payload)`;
- * this hook handles the request, loading state, errors and the redirect.
- *
- * Duplicate leads are blocked: a synchronous lock drops any submit fired
- * while one is in flight (React state alone is too slow for double clicks),
- * failed attempts have a short cooldown, and after a success the form stays
- * locked while the visitor is redirected.
- */
 export default function useContactSubmit({
   onSuccess,
   redirectTo = "/thank-you",
@@ -108,9 +92,7 @@ export default function useContactSubmit({
   return {
     submit,
     isSubmitting,
-    /** True after a successful lead until the redirect (or the lock expires) */
     isSubmitted,
-    /** Use for the submit button's `disabled` */
     isBusy: isSubmitting || isSubmitted,
   };
 }

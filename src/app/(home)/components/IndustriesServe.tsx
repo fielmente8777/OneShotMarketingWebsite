@@ -53,7 +53,6 @@ const IndustriesServe: React.FC<CommonProps> = ({
           {links?.map((item, index) => (
             <li key={index}>
               <OnlyButton
-                // href={item.href}
                 onclick={() => setOpenForm(true)}
                 className={`${index === 0 ? "bg-secondary px-4 py-2 md:px-6 md:py-3 rounded hover:box-shadow" : "underline underline-offset-4 hover:text-secondary"} font-semibold text-white decoration1 text-center`}
               >

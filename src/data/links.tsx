@@ -1,9 +1,6 @@
 import { JSX } from "react";
 import { FacebookIcon, InstagramIcon, LinkedInIcon } from "./icons";
 
-// Images are served from /public (optimised copies of the S3 originals).
-// Loading them locally avoids the image optimizer timing out on large S3 files.
-// Previous source: https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/OneShotMarketingWebsite/
 export const imagesLink = "/OneShotMarketingWebsite/";
 
 interface NveLinksProps {
@@ -68,7 +65,6 @@ export const NaveLinks: NveLinksProps[] = [
     subLinks: [
       {
         name: "hotel industry",
-        // href: "/services/hotel-industry",
         subLinks: [
           {
             name: "performance marketing",
@@ -94,7 +90,6 @@ export const NaveLinks: NveLinksProps[] = [
       },
       {
         name: "restaurant Industry",
-        // href: "/services/restaurant-industry",
         subLinks: [
           {
             name: "website design & development",
@@ -116,7 +111,6 @@ export const NaveLinks: NveLinksProps[] = [
       },
       {
         name: "immigration Industry",
-        // href: "/services/immigration-industry",
         subLinks: [
           {
             name: "website design & development",
@@ -138,7 +132,6 @@ export const NaveLinks: NveLinksProps[] = [
       },
       {
         name: "beauty Industry",
-        // href: "/services/beauty-industry",
         subLinks: [
           {
             name: "website design & development",
@@ -160,7 +153,6 @@ export const NaveLinks: NveLinksProps[] = [
       },
       {
         name: "clothing Industry",
-        // href: "/services/clothing-industry",
         subLinks: [
           {
             name: "website design & development",
@@ -254,10 +246,6 @@ export const FooterLinks: FooterLinksProps[] = [
         name: "148 St Surrey, BC V3S 3E8, Canada",
         href: "/contact-us",
       },
-      // {
-      //   name: "+1 (742) 222-2288",
-      //   href: "/tel:+17422222288",
-      // },
       {
         name: "+1 (438) 855-4446",
         href: "tel:+14388554446",

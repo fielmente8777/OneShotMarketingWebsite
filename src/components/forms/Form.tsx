@@ -19,7 +19,6 @@ const Form = ({
   id = "contact",
 }: {
   setOpenForm?: React.Dispatch<React.SetStateAction<boolean>>;
-  /** DOM id of the <form>; pass null when the page already has an element with this id */
   id?: string | null;
 }) => {
   const uid = useId();
@@ -61,7 +60,6 @@ const Form = ({
   const getMessageError = (value: string) =>
     value.trim() ? "" : "Please tell us a little about your enquiry.";
 
-  // Errors appear on blur / submit; once shown they update live as the user types.
   const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = sanitizePhoneInput(e.target.value);
     setUserPhone(value);
@@ -130,7 +128,6 @@ const Form = ({
             value={country}
             onChange={(c) => {
               setCountry(c);
-              // Re-check against the newly chosen country's length
               if (userPhone || errors.phone)
                 setFieldError("phone", userPhone ? getPhoneError(c, userPhone) : "");
             }}

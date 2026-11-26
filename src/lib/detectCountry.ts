@@ -1,14 +1,5 @@
 import { countries, DEFAULT_COUNTRY_ISO } from "@/data/countries";
 
-/**
- * Best-guess visitor country, computed on the device (no network request):
- *   1. IANA timezone (e.g. "America/Toronto" -> "ca", "Asia/Kolkata" -> "in")
- *   2. Region of the browser language (e.g. "fr-CA" -> "ca")
- *   3. DEFAULT_COUNTRY_ISO ("us")
- * The result is cached for the page lifetime, so every form shares it.
- */
-
-// Timezone -> country, grouped by country to keep the source small.
 const ZONES: Record<string, string> = {
   us: "New_York Chicago Denver Los_Angeles Phoenix Anchorage Detroit Boise Adak Juneau Sitka Nome Yakutat Metlakatla Menominee Honolulu",
   ca: "Toronto Montreal Vancouver Edmonton Winnipeg Halifax St_Johns Regina Moncton Glace_Bay Goose_Bay Whitehorse Dawson Dawson_Creek Fort_Nelson Creston Iqaluit Rankin_Inlet Resolute Cambridge_Bay Inuvik Yellowknife Swift_Current Thunder_Bay Nipigon Rainy_River Atikokan Blanc-Sablon Pangnirtung",

@@ -4,7 +4,6 @@ export const SITE_URL = (
 
 export const SITE_NAME = "One Shot Marketing";
 
-/** Shortens a piece of existing copy into a meta description (~155 chars). */
 export function toMetaDescription(text: string, max = 155) {
   const plain = text
     .replace(/<[^>]*>/g, "")

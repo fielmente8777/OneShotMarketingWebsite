@@ -1,4 +1,3 @@
-/* Fonts are self-hosted via next/font (see src/app/layout.tsx) */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -133,11 +132,9 @@ select {
 
   .heading1 {
     font-size: 1.75rem;
-    // line-height: normal;
 
     @media (width < 640px) {
       font-size: 1.25rem;
-      // line-height: normal;
     }
   }
 
@@ -156,7 +153,6 @@ select {
     line-height: 1.5rem;
     @media (width < 640px) {
       font-size: 1rem;
-      // line-height: normal;
     }
   }
 
@@ -171,31 +167,25 @@ select {
 
   .description1 {
     font-size: 1rem;
-    // line-height: normal;
 
     @media (width < 640px) {
       font-size: 0.75rem;
-      // line-height: normal;
     }
   }
 
   .description2 {
     font-size: 0.875rem;
-    // line-height: normal;
 
     @media (width < 640px) {
       font-size: 0.625rem;
-      // line-height: normal;
     }
   }
 
   .description3 {
     font-size: 0.75rem;
-    // line-height: normal;
 
     @media (width < 640px) {
       font-size: 0.5rem;
-      // line-height: normal;
     }
   }
 

@@ -10,7 +10,6 @@ import Script from "next/script";
 import "./styles/globals.scss";
 import "./styles/nav&button.scss";
 
-// Self-hosted fonts (no render-blocking request to fonts.googleapis.com)
 const montserrat = Montserrat({
   variable: "--font-montserrat",
   subsets: ["latin"],

@@ -60,7 +60,6 @@ const Navbar = () => {
               </div>
               <ul className="lg:flex hidden item-center gap-10">
                 {NaveLinks?.slice(1, NaveLinks.length).map((link, index) => {
-                  // const id = index + 1;
                   return (
                     <li key={index} className="relative nav">
                       <Link

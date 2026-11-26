@@ -191,7 +191,6 @@ export const homePageData = {
     desc: [
       "At One Shot Marketing, we take pride in delivering tailored digital marketing solutions that make a difference.",
     ],
-    // src: imagesLink + "im2.webp",
     images: [
       imagesLink + "im2.webp",
       imagesLink + "im3.webp",
@@ -565,7 +564,6 @@ export const ServicePageData = {
     desc: [
       "At One Shot Marketing, we take pride in delivering tailored digital marketing solutions that make a difference.",
     ],
-    // src: imagesLink + "im3.webp",
     images: [
       imagesLink + "im3.webp",
       imagesLink + "im2.webp",
